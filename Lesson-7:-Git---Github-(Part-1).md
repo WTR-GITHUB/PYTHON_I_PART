@@ -1,0 +1,1 @@
+1. Git status ,add , commit , push.
