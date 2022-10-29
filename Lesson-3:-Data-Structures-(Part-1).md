@@ -2,7 +2,10 @@
 
 In this section we will cover another Python Data Structure - List or what in other programming languages is called an array.
 
-Lists can contain no values whatsoever, be empty, or as many objects as RAM allows us to hold. What is more, it so happens that in Python lists can hold any types of values,  it could be other objects, functions, strings, integers, your own data types or even other lists.
+Lists can contain no values whatsoever, be empty, or as many objects as RAM allows us to hold. What is more, it so happens that in Python lists can hold any types of values,  it could be other objects, functions, strings, integers, your own data types or even other lists. What is also important to mentiond is that we can change values within the list, lists are mutable python objects.
+
+## Notation
+the notation of the list is simply these brackets: []
 
 ## Creating an empty list in python:
 ```python
@@ -92,7 +95,17 @@ for item in my_list:
     print(item + 20)
 ```
 
+## changing an existing value within the list
+
+```python
+my_list = [1, 2, 3]
+my_list[2] = 5
+print(my_list)
+```
 
 # Tuple
+
+Another very similar python built-in data structure is Tuple. The main difference here is that Tuple is immutable. Meaning that we have an object that contains multiple values, they can be duplicated, almost all characteristics are similar except that the items in Tuple by design cannot be changed.
+
 
 
