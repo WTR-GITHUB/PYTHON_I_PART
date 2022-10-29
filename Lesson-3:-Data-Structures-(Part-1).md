@@ -2,10 +2,10 @@
 
 In this section we will cover another Python Data Structure - List or what in other programming languages is called an array.
 
-Lists can contain no values whatsoever, be empty, or as many objects as RAM allows us to hold. What is more, it so happens that in Python lists can hold any types of values,  it could be other objects, functions, strings, integers, your own data types or even other lists. What is also important to mentiond is that we can change values within the list, lists are mutable python objects.
+Lists can contain no values whatsoever, be empty, or as many objects as RAM allows us to hold. What is more, it so happens that in Python lists can hold any types of values,  it could be other objects, functions, strings, integers, your own data types or even other lists. What is also important to mention is that we can change values within the list, lists are mutable python objects.
 
 ## Notation
-the notation of the list is simply these brackets: [ ]
+the notation of the list is simply these brackets: [ ] two brackets with values in between separated by commas.
 
 ## Creating an empty list in python:
 ```python
@@ -102,10 +102,51 @@ my_list = [1, 2, 3]
 my_list[2] = 5
 print(my_list)
 ```
+## Slicing
+As with the string we can also be slicing items withing the list as well. each and every item in the list contains an index starting at 0. So we can perform same type of slicing:
+
+```python
+my_list = ["first", "second", "third"]
+print(my_list[-1])
+print(my_list[:1])
+print(my_list[::2])
+print(my_list[::-1])
+print(my_list[0:2])
+```
+
 
 # Tuple
 
 Another very similar python built-in data structure is Tuple. The main difference here is that Tuple is immutable. Meaning that we have an object that contains multiple values, they can be duplicated, almost all characteristics are similar except that the items in Tuple by design cannot be changed.
+
+## Notation
+
+Tuple notation in python is ( ) - two parentheses with values in between separated by commas.
+
+### Creating tuples
+```python
+empty_tuple = ()
+tuple_single_item = (1,)
+another_tuple = (1, 2, 3)
+```
+Note that single item tuple must contain comma, even though it's just a single item. Other than that it is all the same as the List
+### Operations
+
+those are simply exactly the same, except that you are unable to mutate the tuple. If you try doing so, you will get an error:
+
+🛑 
+```python
+my_tuple = (1, 2, 3)
+my_tuple[0] = 500 # TypeError: 'tuple' object does not support item assignment
+```
+
+# Tuples vs Lists
+
+Now it seems that Lists are much better than tuples, but in programming everything is not always one sided, it depends on certain situations.
+Usually it is recommended to use Tuple on static values that do not change as it is a bit faster in python than lists. And we should be using lists whenever we have values that are going to be changing, or the list itself will grow or shrink in size.
+
+
+# Exercises:
 
 
 
