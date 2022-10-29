@@ -8,7 +8,9 @@ Lists can contain no values whatsoever, be empty, or as many objects as RAM allo
 ```python
 my_list = [] # Instantiating empty list
 ```
-## Adding values to the list 
+## Special python lists methods
+
+### append()
 There is method called .append() that allows to insert an item into the list: append(<object>)
 
 ```python
@@ -16,8 +18,10 @@ my_list = []
 
 name = "Tom"
 my_list.append(name)
-print(my_list)
+print(my_list) # ['asdf']
 ```
+
+
 
 # Tuple
 
