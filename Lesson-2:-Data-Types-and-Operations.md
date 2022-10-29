@@ -121,6 +121,50 @@ What is more with strings we can select certain characters from the word. In pyt
 name = "Code Academy"
 print(name[5])
 
+# A
+
+print(name[-2])
+
+# m
+
+print(name[5:12])
+
+# Academy
+
+print(name[5:])
+
+# Academy
+
+print(name[:4])
+
+# Code
+
+print(name[5:12:1])
+
+# Academy
+
+print(name[5::2])
+
+# Aaey
+
+print(name[::-1])
+
+# ymedacA edoC
+
+print(name.split())
+
+# ['Code', 'Academy']
+
+print(name.upper())
+
+# CODE ACADEMY
+
+print(name.replace('c', 'k'))
+
+# Code Akademy
+
+print(name.replace('Code', 'Music'))
+
 ```
 
 It is also possible to get the last or second to last character from string:
@@ -236,6 +280,24 @@ FIRST_NAME = "Albert"
 
 Python will understand such notion but your colleagues will hate you for this, so please following the naming conventions to make life easy to everyone.
 
+Variables cannot be called as Python built in functions or special words like:
+'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
 
 
 
+# Excercises
+1
+1. Create a program that allows user to Enter his/her name and Age
+2. Calculate the year in which user was born
+3. Print the answer to the Terminal
+
+
+2
+1. Create a program that allows user to enter a full sentence
+2. print the sentence backwards
+3. print every second letter in the sentence
+
+3
+1. Create a program that expects user to enter two numbers
+2. multiply those numbers and print the answer
+3. Create similar programs with other signs.
