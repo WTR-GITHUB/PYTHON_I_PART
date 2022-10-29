@@ -215,4 +215,26 @@ print(f"Your name is {name}, you are {age} years old"
 ```
 
 
+# Variable naming conventions
+
+As per PEP8 https://peps.python.org/pep-0008/ there are some guidelines to follow when naming your variables. In Python simple variables as we have seen today should be named with snake_case style. What is more constants should be all capital letter, and hidden variables or functions should start with "_"
+
+```python
+_hidden_variable = "secret"
+PI = 3.14
+first_name = "Albert"
+last_name = "Einstein"
+```
+
+possible but does not comply with PEP8:
+```python
+FirstName = "Albert"
+First_Name = "Albert"
+FIRST_NAME = "Albert"
+```
+
+Python will understand such notion but your colleagues will hate you for this, so please following the naming conventions to make life easy to everyone.
+
+
+
 
