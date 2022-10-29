@@ -116,7 +116,7 @@ sentence = "I really enjoy learning python !"
 Strings have plenty of useful in-built functionality in Python, more information [here](https://www.w3schools.com/python/python_ref_string.asp)
 
 What is more with strings we can select certain characters from the word. In python it works:
-
+![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/string_ops.png)
 ```python
 name = "Code Academy"
 print(name[5])
