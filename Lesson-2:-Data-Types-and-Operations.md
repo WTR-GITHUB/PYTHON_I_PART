@@ -17,10 +17,15 @@ print(b)
 
 # Integer Operations
 Possible operations:
-| Sign  | Meaning |
+| Operation| Result |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| x + y  | sum of x and y  |
+| x - y  | difference of x and y  |
+| x * y  | product of x and y  |
+| x / y  | quotient of x and y  |
+| x // y  | floored quotient of x and y  |
+| x % y  | remainder of x / y  |
+
 ```python
 a = 5
 b = 25
