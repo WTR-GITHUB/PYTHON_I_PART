@@ -5,7 +5,7 @@ In this section we will cover another Python Data Structure - List or what in ot
 Lists can contain no values whatsoever, be empty, or as many objects as RAM allows us to hold. What is more, it so happens that in Python lists can hold any types of values,  it could be other objects, functions, strings, integers, your own data types or even other lists. What is also important to mentiond is that we can change values within the list, lists are mutable python objects.
 
 ## Notation
-the notation of the list is simply these brackets: []
+the notation of the list is simply these brackets: [ ]
 
 ## Creating an empty list in python:
 ```python
