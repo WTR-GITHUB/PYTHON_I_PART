@@ -78,10 +78,18 @@ print(min(my_list))
 
 ## iterating over elements within the list
 
+The biggest strength within the lists is that we can have a list of certain actions, objects that we want to do one after another, we can iterate over them and do some actions. 
 ```python
 my_list = [1, 2, 3]
 for item in my_list:
     print(item)
+```
+or we could do some operations along the way as well!
+
+```python
+my_list = [1, 2, 3]
+for item in my_list:
+    print(item + 20)
 ```
 
 
