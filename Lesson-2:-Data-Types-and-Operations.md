@@ -287,17 +287,17 @@ Variables cannot be called as Python built in functions or special words like:
 
 # Excercises
 1
-1. Create a program that allows user to Enter his/her name and Age
-2. Calculate the year in which user was born
-3. Print the answer to the Terminal
+* Create a program that allows user to Enter his/her name and Age
+* Calculate the year in which user was born
+* Print the answer to the Terminal
 
 
 2
-1. Create a program that allows user to enter a full sentence
-2. print the sentence backwards
-3. print every second letter in the sentence
+* Create a program that allows user to enter a full sentence
+* print the sentence backwards
+* print every second letter in the sentence
 
 3
-1. Create a program that expects user to enter two numbers
-2. multiply those numbers and print the answer
-3. Create similar programs with other signs.
+* Create a program that expects user to enter two numbers
+* multiply those numbers and print the answer
+* Create similar programs with other signs.
