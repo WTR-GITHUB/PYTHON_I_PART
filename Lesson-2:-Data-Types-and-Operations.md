@@ -123,8 +123,85 @@ print(name[5])
 
 ```
 
-# Conversion of types
+It is also possible to get the last or second to last character from string:
+```python
+print(name[-1])
+print(name[-2])
+```
 
+You can also do slicing of string:
+```python
+name = "Code Academy"
+print(name[:4])
+
+print(name[5:12])
+```
+
+Try doing any of the methods that are described in the link above:
+```python
+name = "Code Academy"
+print(name.upper())
+
+print(name.replace('c', 'k'))
+```
+Or any other as you wish.
+
+# Combining of string
+You may also combine various string together to make other variables:
+
+```python
+greeting = "Hello, my name is"
+name = "Tom"
+
+completed_greeting = f"{greeting} {name}"
+print(completed_greeting)
+```
+Or:
+
+```python
+greeting = "Hello, my name is"
+name = "Tom"
+
+completed_greeting = greeting + " " + name
+print(completed_greeting)
+```
+
+Wow! "+" operator does work on strings too! All it does is just concatenation, unfortunately "-" in the case of string does not make any particular sense so this method is not allowed on string type.
+
+# Conversion of types
+What is more important to mention are methods allowing to transform data from one type to another:
+```python
+str()
+int()
+float()
+```
+
+What is important to mention here is not all data types are compatible for such operations. For example:
+```python
+a = "Hello"
+b = int(a)
+```
+This will simply throw an error because it does not even make sense how the alhapnumeric value can suddenly become an integer
+
+Rule of thumb is that all integers, floats can be translated to string, but only numeric strings can be transformed to int() or float():
+```python
+# Valid operations:
+a = "55"
+b = int(a)
+c = float(a)
+
+a = 55
+b = str(a)
+c = float(a)
+
+# Invalid Operations
+
+a = "Hello"
+b = int(a)
+
+c = float(a)
+
+```
 
 
 
