@@ -60,5 +60,45 @@ print(c)
 Z = {..., -2.5 , ..., -2.0, ... , -1.0, ... , 0, ... , 1.0, ... , 2.0, ... , 2.5, ...}
 
 ### Note that there can be endless number possibilities between two floats.
- 
+
+# Integer Operations
+Same operations/ mathematical expressions apply to the float numbers
+
+Possible operations:
+| Operation| Result |
+| ------------- | ------------- |
+| x + y  | sum of x and y  |
+| x - y  | difference of x and y  |
+| x * y  | product of x and y  |
+| x / y  | quotient of x and y  |
+| x // y  | floored quotient of x and y  |
+| x % y  | remainder of x / y  |
+| x ** y | x to the power y |
+
+```python
+a = 5
+b = 25
+
+c = a + b 
+print(c) # prints 20
+
+c = a - b
+print(c)
+
+c = a * b
+print(c)
+
+c = b / a
+print(a)
+
+c = b // a
+print(a)
+
+
+c = a % b
+print(c)
+
+c = a ** b
+print(c)
+```
 
