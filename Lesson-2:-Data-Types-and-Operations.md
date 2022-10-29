@@ -53,7 +53,7 @@ print(c)
 c = a ** b
 print(c)
 ```
-
+:check
 
 # Float type
 
@@ -184,8 +184,9 @@ b = int(a)
 This will simply throw an error because it does not even make sense how the alhapnumeric value can suddenly become an integer
 
 Rule of thumb is that all integers, floats can be translated to string, but only numeric strings can be transformed to int() or float():
+
 ```python
-# Valid operations:
+✅ 
 a = "55"
 b = int(a)
 c = float(a)
@@ -194,8 +195,7 @@ a = 55
 b = str(a)
 c = float(a)
 
-# Invalid Operations
-
+🛑 
 a = "Hello"
 b = int(a)
 
@@ -217,15 +217,16 @@ print(f"Your name is {name}, you are {age} years old"
 
 # Variable naming conventions
 
-As per PEP8 https://peps.python.org/pep-0008/ there are some guidelines to follow when naming your variables. In Python simple variables as we have seen today should be named with snake_case style. What is more constants should be all capital letter, and hidden variables or functions should start with "_"
+As per PEP8 https://peps.python.org/pep-0008/ there are some guidelines to follow when naming your variables. In Python simple variables as we have seen today should be named with snake_case style. What is more constants should be all capital letter, and hidden variables or functions should start with "_".
 
+✅ 
 ```python
 _hidden_variable = "secret"
 PI = 3.14
 first_name = "Albert"
 last_name = "Einstein"
 ```
-
+⛔ 
 possible but does not comply with PEP8:
 ```python
 FirstName = "Albert"
