@@ -102,3 +102,16 @@ c = a ** b
 print(c)
 ```
 
+# String
+
+String is simply a piece of text, it could be a single letter or the while word or an entire sentence:
+```python
+letter = "a"
+name = "Code Academy"
+sentence = "I really enjoy learning python !"
+```
+
+
+
+
+
