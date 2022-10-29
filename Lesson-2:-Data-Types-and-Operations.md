@@ -25,6 +25,7 @@ Possible operations:
 | x / y  | quotient of x and y  |
 | x // y  | floored quotient of x and y  |
 | x % y  | remainder of x / y  |
+| x ** y | x to the power y |
 
 ```python
 a = 5
@@ -32,6 +33,25 @@ b = 25
 
 c = a + b 
 print(c) # prints 20
+
+c = a - b
+print(c)
+
+c = a * b
+print(c)
+
+c = b / a
+print(a)
+
+c = b // a
+print(a)
+
+
+c = a % b
+print(c)
+
+c = a ** b
+print(c)
 ```
 
 
