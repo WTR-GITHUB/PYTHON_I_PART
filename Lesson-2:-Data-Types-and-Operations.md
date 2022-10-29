@@ -203,5 +203,16 @@ c = float(a)
 
 ```
 
+# User input
+
+You program may ask user to enter something and use it for the further operations:
+
+```python
+name = input("Enter you name: ")
+age = input("Enter your age: ")
+
+print(f"Your name is {name}, you are {age} years old"
+```
+
 
 
