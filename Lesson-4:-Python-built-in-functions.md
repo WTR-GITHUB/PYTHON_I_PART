@@ -1,6 +1,4 @@
-Print, type, len, ..etc.
-
-# Built-in functions
+# 🐍 Built-in functions
 
 ## print()
 
@@ -15,3 +13,23 @@ print(object(s), sep=separator, end=end, file=file, flush=flush)
 | file  | Optional. Specify what to print at the end. Default is '\n' (line feed)  |
 | flush  | Optional. An object with a write method. Default is sys.stdout  |
 | x // y  | Optional. A Boolean, specifying if the output is flushed (True) or buffered (False). Default is False  |
+
+Some examples:
+```python
+# Simple print
+print("hello world")
+
+# Gets the same result but slightly different:
+print("hello", "world")
+
+# Gets the same result but is even more different:
+print(*["hello", "world"])
+
+# let's play with separator:
+print("hello world", sep=",")
+
+# some more
+print("hello", "world", sep=" amazing ")
+
+
+```
