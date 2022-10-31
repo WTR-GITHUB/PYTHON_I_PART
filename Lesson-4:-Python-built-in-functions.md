@@ -98,8 +98,39 @@ print(round(1.5555, 2))
 
 What if we would like to sort values in the list or tuple
 
+sorted(iterable, key=None, reverse=False)
+| argument| meaning |
+| ------------- | ------------- |
+| iterable | A sequence (string, tuple, list) or collection (set, dictionary, frozen set) or any other iterator.  |
+| reverse| (Optional) - If True, the sorted list is reversed (or sorted in descending order). Defaults to False if not provided.  |
+| key | (Optional) - A function that serves as a key for the sort comparison. Defaults to None.  |
+
+
 Examples:
 ```python
+my_list = [45, 20, 14, 55]
+sorted_list = sorted(my_list)
 
+print(sorted_list)
+
+sorted_reverse_list = sorted(my_list, reverse=True)
+
+print(sorted_reverse_list)
 ```
+
+What about string values?
+
+```python
+my_list = ["Albert", "Nicola", "Thomas"]
+sorted_list = sorted(my_list)
+
+print(sorted_list)
+
+sorted_reverse_list = sorted(my_list, reverse=True)
+
+print(sorted_reverse_list)
+```
+
+Still works!
+
 
