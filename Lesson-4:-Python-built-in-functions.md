@@ -134,3 +134,12 @@ print(sorted_reverse_list)
 Still works!
 
 
+There are plenty more built-in functions to explore at [link](https://docs.python.org/3/library/functions.html) Some of them are yet too early for us but as we progress throughout the course we will be using more and more of them.
+
+Exercises:
+
+1. Create a list of different types of python objects, and print all the types. The one who gets the the most unique types wins respect points:
+1. print all the items separated with "|"
+1. create a list of floats with 3 decimal points, create another list with all the values rounded to 2 decimals.
+1. Create a list with student names and sort them, print the result to the terminal.
+
