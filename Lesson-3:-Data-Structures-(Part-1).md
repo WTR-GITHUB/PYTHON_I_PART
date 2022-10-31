@@ -148,5 +148,9 @@ Usually it is recommended to use Tuple on static values that do not change as it
 
 # Exercises:
 
-
-
+1. Write a python program that sums up all items in the list (all items are integers or floats in list, create a list yourself)
+1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself)
+1. Write a python program that gets maximum value from the list (all items are integers or floats in list, create a list yourself)
+1. Write a python program that concatenates all strings in the list (all items are strings, create a list yourself)
+1. Create two lists and add them together.
+1. Try doing same exercises with tuples.
