@@ -123,5 +123,14 @@ d1.update(b=200, d=400)
 print(d1)
 ```
 
+## Iterating through dictionary
+
+Example:
+```python
+d = {'a': 10, 'b': 20, 'c': 30}
+for key, value in d.items():
+    print(key, value)
+```
+
 
 
