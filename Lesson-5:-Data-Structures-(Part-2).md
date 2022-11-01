@@ -48,7 +48,7 @@ print(my_dictionary)
 ```
 
 ## More complex structures
-
+### <a name="head1234"></a>A Heading in this SO entry!
 As with the lists, we have seen that lists can contain other lists, it so happens that the dictionary can have a value of another diciotnary and we can built a complex hierarchies like that
 ```python
 user_info = {
@@ -153,3 +153,4 @@ for key, value in d.items():
 1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
 1. [link text](# More complex structures)
 
+[link](#head1234)
