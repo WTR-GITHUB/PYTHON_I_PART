@@ -47,5 +47,81 @@ del my_dictionary ["name"]
 print(my_dictionary)
 ```
 
+## More complex structures
+
+As with the lists, we have seen that lists can contain other lists, it so happens that the dictionary can have a value of another diciotnary and we can built a complex hierarchies like that
+```python
+user_info = {
+	"name": "Albert",
+	"surname": "Einstein",
+	"occupation": {
+		"role": "Professor",
+		"workplace": "University of Berlin"
+	}
+}
+```
+
+The possibilities here are unlimited, we can go deeper and deeper.
+
+
+## Dictionary to list of tuples with .items()
+
+There will be a lot of situations, mostly when we want to iterate through dictionary we will be using in-built .items() method of dictionary.
+
+```python
+d = {'a': 10, 'b': 20, 'c': 30}
+print(list(d.items()))
+```
+
+## .keys()
+
+returns us all the dictionary keys:
+
+```python
+d = {'a': 10, 'b': 20, 'c': 30}
+list(d.keys())
+```
+
+## .values()
+```python
+d = {'a': 10, 'b': 20, 'c': 30}
+list(d.values())
+```
+
+## .pop
+
+```python
+d = {'a': 10, 'b': 20, 'c': 30}
+d.pop('a')
+print(d)
+```
+
+## .update(<obj>)
+
+If <obj> is a dictionary, d.update(<obj>) merges the entries from <obj> into d. For each key in <obj>:
+If the key is not present in d, the key-value pair from <obj> is added to d.
+If the key is already present in d, the corresponding value in d for that key is updated to the value from <obj>.
+
+Examples:
+
+```python
+d1 = {'a': 10, 'b': 20, 'c': 30}
+d2 = {'b': 200, 'd': 400}
+d1.update(d2)
+print(d1)
+```
+
+```python
+d1 = {'a': 10, 'b': 20, 'c': 30}
+d1.update([('b', 200), ('d', 400)])
+print(d1)
+```
+
+```python
+d1 = {'a': 10, 'b': 20, 'c': 30}
+d1.update(b=200, d=400)
+print(d1)
+```
+
 
 
