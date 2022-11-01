@@ -62,6 +62,21 @@ user_info = {
 }
 ```
 
+let's say we wanted to print all the languages one by one, we could do something like this:
+```python
+user_info = {
+	"name": "Albert",
+	"surname": "Einstein",
+	"occupation": {
+		"role": "Professor",
+		"workplace": "University of Berlin"
+	},
+        "languages": ["German", "Latin", "Italian", "English", "French"]
+}
+
+for language in user_info["languages"]:
+    print(language)
+```
 The possibilities here are unlimited, we can go deeper and deeper.
 
 
@@ -133,5 +148,8 @@ for key, value in d.items():
     print(key, value)
 ```
 
+# Exercises
 
+1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
+1. [link text](## More complex structures)
 
