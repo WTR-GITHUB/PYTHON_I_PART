@@ -114,7 +114,13 @@ print(my_list[::-1])
 print(my_list[0:2])
 ```
 
+## Operator in with Lists
 
+If you want to check if a certain object is in the list you may do something like this:
+```python
+my_list = [1, 2, 3]
+print(1 in my_list)
+```
 # Tuple
 
 Another very similar python built-in data structure is Tuple. The main difference here is that Tuple is immutable. Meaning that we have an object that contains multiple values, they can be duplicated, almost all characteristics are similar except that the items in Tuple by design cannot be changed.
