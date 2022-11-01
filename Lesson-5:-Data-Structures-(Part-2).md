@@ -151,5 +151,5 @@ for key, value in d.items():
 # Exercises
 
 1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
-1. [link text](## More complex structures)
+1. [link text](# More complex structures)
 
