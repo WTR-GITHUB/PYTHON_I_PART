@@ -143,4 +143,3 @@ Exercises:
 1. create a list of floats with 3 decimal points, create another list with all the values rounded to 2 decimals.
 1. Create a list with student names and sort them, print the result to the terminal.
 1. write a program that allows user to write in any float number and then round it.
-
