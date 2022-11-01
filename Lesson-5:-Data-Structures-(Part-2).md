@@ -57,7 +57,8 @@ user_info = {
 	"occupation": {
 		"role": "Professor",
 		"workplace": "University of Berlin"
-	}
+	},
+        "languages": ["German", "Latin", "Italian", "English", "French"]
 }
 ```
 
