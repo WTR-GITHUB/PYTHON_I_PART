@@ -5,9 +5,14 @@
 # Dictionary
 
 a very powerful data structure which is going to be used a lot. Dictionary hold key: value pairs, with which we can access it's attributes.
+Dictionaries are: 
 
+1. mutable ✔️ (can be changed)
+1. dynamic ✔️ (can grow and shrink in size)
+1. nested ✔️ (can contain other dictionaries or other complex structures)
+
+main difference between python list is that values in dictionaries are accessed by keys.
 Creating dictionary and adding values to it
-
 Examples:
 
 ```python
@@ -25,8 +30,14 @@ print(my_dictionary["name"])
 
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
-print(f"name: {my_dictionary["name"]})"
-print(f"surname: {my_dictionary["surname"]})
+print(f"name: {my_dictionary['name']}")
+print(f"surname: {my_dictionary['surname']}")
+```
+
+If the value is non existent we shall get a KeyError as such key does not exist:
+```python
+my_dictionary = {"name": "Tom", "surname": "Edison"}
+print(f"favourite car: {my_dictionary['car']}")
 ```
 
 Similarly as with lists, dictionaries may hold anything in it's key and values. But usually keys would be string values and values could be anything at all.
@@ -151,5 +162,8 @@ for key, value in d.items():
 # Exercises
 
 1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
-1.  try creating structure like one here: [link](#complex) from an empty dictionary: `my_dict = {}`
+1. Try creating structure like one here: [link](#complex) from an empty dictionary: `my_dict = {}`
+1. 
+
+
 
