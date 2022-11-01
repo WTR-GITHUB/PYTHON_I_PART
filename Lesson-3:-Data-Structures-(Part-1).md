@@ -158,5 +158,6 @@ Usually it is recommended to use Tuple on static values that do not change as it
 1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that gets maximum value from the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that concatenates all strings in the list (all items are strings, create a list yourself)
-1. Create two lists and add them together.
+1. Create two lists and add them together, make sure it works the way you want it to.
+1. Write a python program that asks user to enter 3 intergers and find the highest value entered.
 1. Try doing same exercises with tuples.
