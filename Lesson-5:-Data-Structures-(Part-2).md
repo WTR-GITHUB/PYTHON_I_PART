@@ -11,6 +11,8 @@ Dictionaries are:
 1. dynamic ✔️ (can grow and shrink in size)
 1. nested ✔️ (can contain other dictionaries or other complex structures)
 
+A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+
 main difference between python list is that values in dictionaries are accessed by keys.
 Creating dictionary and adding values to it
 Examples:
@@ -158,13 +160,24 @@ d = {'a': 10, 'b': 20, 'c': 30}
 for key, value in d.items():
     print(key, value)
 ```
+
+## converting two lists into a dictionary
+
+Note that lists must be of the same size here:
+```python
+test_keys = ["Albert", "Tom", "Stephen"]
+test_values = [1, 4, 5]
+my_dictionary= dict(zip(test_keys, test_values))
+print(my_dictionary)
+```
+
 # Sets
 
 Sets are used to store multiple items in a single variable.
 Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are [List]
 A set is a collection which is unordered, unchangeable*, and unindexed.
 
-* Note: Set items are unchangeable, but you can remove items and add new items.
+**Note: Set items are unchangeable, but you can remove items and add new items.**
 
 Notation:
 ```python
@@ -172,11 +185,23 @@ my_set = {1, 2, 3}
 ```
 
 
+Another important property is that in sets we cannot have duplicates:
+
+```python
+my_set = {1, 2, 3, 1}
+print(my_set)
+```
+
+getting unique values from python list:
+```python
+numbers_list = [1, 2, 3, 4, 5, 5, 5, 6]
+numbers_set = set(numbers_list)
+print(numbers_set)
+```
+
 # Exercises
 
 1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
 1. Try creating structure like one here: [link](#complex) from an empty dictionary: `my_dict = {}`
-1. 
-
 
 
