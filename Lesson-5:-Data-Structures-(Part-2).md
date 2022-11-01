@@ -158,6 +158,19 @@ d = {'a': 10, 'b': 20, 'c': 30}
 for key, value in d.items():
     print(key, value)
 ```
+# Sets
+
+Sets are used to store multiple items in a single variable.
+Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are [List]
+A set is a collection which is unordered, unchangeable*, and unindexed.
+
+* Note: Set items are unchangeable, but you can remove items and add new items.
+
+Notation:
+```python
+my_set = {1, 2, 3}
+```
+
 
 # Exercises
 
