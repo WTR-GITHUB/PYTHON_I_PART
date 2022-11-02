@@ -95,7 +95,7 @@ print("A") if a > b else print("=") if a == b else print("B")
 
 We have more logical operators that allow us to combine statements into more complex logic
 
-The **and ** keyword is a logical operator, and is used to combine conditional statements:
+The **and** keyword is a logical operator, and is used to combine conditional statements:
 
 ```python
 a = 200
