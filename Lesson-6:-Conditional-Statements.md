@@ -10,6 +10,9 @@ if <test_expression>:
     statement(s)
 ```
 
+
+Flow chart:
+
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/if_else.webp)
 
 
