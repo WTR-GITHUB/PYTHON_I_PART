@@ -6,7 +6,7 @@ When executing code we usually want to make some sort of decisions according to 
 
 How it looks like:
 ```python
-if test expression:
+if <test_expression>:
     statement(s)
 ```
 
