@@ -16,3 +16,13 @@ Flow chart:
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/if_else.webp)
 
 
+For checking of the conditions, python support usual mathematical expressions:
+
+* Equals: a == b
+* Not Equals: a != b
+* Less than: a < b
+* Less than or equal to: a <= b
+* Greater than: a > b
+* Greater than or equal to: a >= b
+
+
