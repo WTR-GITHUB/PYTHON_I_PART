@@ -60,5 +60,51 @@ elif number1 == number2:
 elif...
 ```
 
-## 
+## Else
+
+The else keyword catches anything which isn't caught by the preceding conditions.
+
+```python
+number1 = 500
+number2 = 600
+if number1 < number2:
+    print("number1 is greater than number2 !")
+elif number1 == number2:
+    print("numbers are equal !")
+else:
+    print("number2 is greater than number1 !")
+```
+
+## short version of if ... else
+
+```python
+a = 200
+b = 450
+print("A") if a > b else print("B")
+```
+
+3 conditions example:
+
+```python
+a = 200
+b = 200
+print("A") if a > b else print("=") if a == b else print("B")
+```
+
+## and or
+
+We have more logical operators that allow us to combine statements into more complex logic
+
+The **and ** keyword is a logical operator, and is used to combine conditional statements:
+
+```python
+a = 200
+b = 400
+c = 500
+if c > a and c > b:
+    print("C is the greatest of them all!")
+```
+
+
+
 
