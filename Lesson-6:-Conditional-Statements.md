@@ -91,11 +91,11 @@ b = 200
 print("A") if a > b else print("=") if a == b else print("B")
 ```
 
-## and or
-
+## and
 We have more logical operators that allow us to combine statements into more complex logic
 
 The **and** keyword is a logical operator, and is used to combine conditional statements:
+Basically both conditions must be true for statement to return True:
 
 ```python
 a = 200
@@ -105,6 +105,67 @@ if c > a and c > b:
     print("C is the greatest of them all!")
 ```
 
+## or
+
+The or keyword is a logical operator, and is used to combine conditional statements:
+Basically atleast one of the conditions must be true for statement to return True:
+
+```python
+a = 200
+b = 400
+c = 500
+if b > a or b > c:
+    print("B is at least greater than one of the values !")
+```
+
+## Nested if
+
+as we have seen with lists being able to carry other lists inside them, dictionaries having nested structures as well. There is no exception for if statements.
+
+```python
+x = 15
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+```
+
+## pass
+
+If we want to have an empty if statement for some reason we can simply do `pass` and nothing will happen.
+```python
+a = 50
+b = 80
+
+if b > a:
+  pass
+```
 
 
+## If with string values
+
+We may also do logical operations on strings.
+
+```python
+name = "Tom"
+
+if name == "Tom"
+    print("Nice to see you Tom")
+else:
+    print("welcome, user")
+```
+
+What is more we can also combine this knowledge with lists as well!
+
+```python
+user = "Johnny"
+privileged_users = ["Tom", "Albert", "Stephen"]
+if user in privileged_users:
+    print(f"Welcome home {user}")
+else:
+    print("INTRUDER ALLERT. Silently calling police...")
+```
 
