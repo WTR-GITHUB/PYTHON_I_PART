@@ -25,4 +25,40 @@ For checking of the conditions, python support usual mathematical expressions:
 * Greater than: a > b
 * Greater than or equal to: a >= b
 
+Example:
+```python
+number1 = 500
+number2 = 600
+if number1 < number2:
+    print("number1 is greater than number2 !")
+```
+**It is important that the statements after the if clause and colon (":") is indented. Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.**
+
+## Elif
+What if we want to extend out program and print out something else if the statement is not true?
+
+Example:
+
+```python
+number1 = 500
+number2 = 600
+if number1 < number2:
+    print("number1 is greater than number2 !")
+elif number1 == number2:
+    print("numbers are equal !")
+```
+
+**Note. There can be as many elif statements as we want**
+
+```python
+number1 = 500
+number2 = 600
+if number1 < number2:
+    print("number1 is greater than number2 !")
+elif number1 == number2:
+    print("numbers are equal !")
+elif...
+```
+
+## 
 
