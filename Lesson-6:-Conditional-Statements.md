@@ -169,5 +169,30 @@ else:
     print("INTRUDER ALLERT. Silently calling police...")
 ```
 
+Or even dictionaries:
+```python
+my_dict = {"name": "Steven", "born": "1955-02-24", "interests": "Apples"}
+if my_dict["name"] == "Steven":
+    print("This guy does not like Windows")
+else:
+    print("No clue who this is")
+```
 
+Or even:
 
+```python
+my_dict = {"name": "Bill", "born": "1955-10-28", "interests": "small software"}
+if "Bill" in my_dict.values():
+    print("This guy hates apples")
+else:
+    print("No clue who this is")
+```
+
+Exercises:
+
+1. Let user enter name, surname and age. Print if user is allowed to enter an online casino or not. 21 is the age cap.
+1. Create a database (List of privileged users) print a specific message with a personal greeting if the user is a privileged and just "Welcome otherwise"
+1. allow user to enter two numbers, print out which one is higher than the other, or are they equal?
+1. Write a small calculator application, that allows user to enter two numbers and a symbol, given and then do the operation and print an answer.
+
+1. create a number guessing game from 1-10, with random library. (IDEA FOR LATER MAYBE)
