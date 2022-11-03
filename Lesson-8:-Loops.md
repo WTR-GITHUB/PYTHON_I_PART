@@ -31,8 +31,40 @@ This is less like the for keyword in other programming languages, and works more
 
 With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
+### loop through lists
 ```python
 names = ["Albert", "Tom", "Leonardo"]
+for name in names:
+    print(f"Greetings, {name}")
+```
+### loop through strings
+
+```python
+name = "Code Academy"
+for character in name :
+    print(character)
+```
+
+### loop through dictionaries:
+
+```python
+my_dict = {"name": "Albert", "role": "scientist"}
+
+for key, value in my_dict.items():
+    print(key, value)
+```
+
+### loop through sets, tuples:
+it is exactly the same as with the lists
+```python
+names = ("Albert", "Tom", "Leonardo")
+for name in names:
+    print(f"Greetings, {name}")
+```
+
+
+```python
+names = {"Albert", "Tom", "Leonardo"}
 for name in names:
     print(f"Greetings, {name}")
 ```
