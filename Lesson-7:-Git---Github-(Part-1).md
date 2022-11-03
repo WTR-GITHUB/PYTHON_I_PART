@@ -16,19 +16,19 @@ Patikrinti ar veikia, Windows konsolėje (Win + c, m, d + Enter) įrašius „gi
 ## Kaip nustatyti GIT?
 Windows konsolėje (Win + c, m, d + Enter):
 
-Nustatyti vardą:
+1.Nustatyti vardą:
 
 
 `git config --global user.name "Vardas Pavarde"`
 
 
-Nustatyti el. pašto adresą:
+2.Nustatyti el. pašto adresą:
 
 
 `git config --global user.email el@pastas.com`
 
 
-Patikrinti ar pasikeitė:
+3.Patikrinti ar pasikeitė:
 
 
 `git config --list`
