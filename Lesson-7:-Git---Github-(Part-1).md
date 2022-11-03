@@ -17,14 +17,20 @@ Patikrinti ar veikia, Windows konsolėje (Win + c, m, d + Enter) įrašius „gi
 Windows konsolėje (Win + c, m, d + Enter):
 
 Nustatyti vardą:
+
+
 `git config --global user.name "Vardas Pavarde"`
 
 
 Nustatyti el. pašto adresą:
+
+
 `git config --global user.email el@pastas.com`
 
 
 Patikrinti ar pasikeitė:
+
+
 `git config --list`
 
 
