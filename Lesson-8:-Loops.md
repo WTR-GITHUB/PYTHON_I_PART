@@ -31,6 +31,12 @@ This is less like the for keyword in other programming languages, and works more
 
 With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
+```python
+names = ["Albert", "Tom", "Leonardo"]
+for name in names:
+    print(f"Greetings, {name}")
+```
+
 ## break
 
 With the break statement we can stop the loop even if the while condition is true:
