@@ -18,16 +18,24 @@ Windows konsolėje (Win + c, m, d + Enter):
 
 Nustatyti vardą:
 `git config --global user.name "Vardas Pavarde"`
+
+
 Nustatyti el. pašto adresą:
 `git config --global user.email el@pastas.com`
+
+
 Patikrinti ar pasikeitė:
 `git config --list`
+
+
 Kaip susieti kompiuterį su GitHub (per SSH raktą)?
 Atidaryti programą Git Bash (Win + g, i, t, , b, a, s, h + Enter).
 
 Sugeneruoti SSH raktą paleidus šią komandą:
 
 `ssh-keygen -t rsa -b 4096 -C "el@pastas.com"`
+
+
 (galima visas užklausas patvirtinti nieko nevedant, tik spaudžiant Enter).
 
 Su bet kokiu teksto redaktoriumi atidaryti sugeneruotą rakto failą id_rsa.pub, pažymėti kodą komanda CTRL+C.
@@ -47,16 +55,28 @@ Atidarykite Windows konsolę (Win + c, m, d + Enter), atidarykite vietą, kur ku
 Norimoje vietoje sukurkite naują failą, pavyzdžiui, suvesdami komandą:
 
 `echo "# test" >> README.md`
+
+
 Sustatykite šią vietą, kaip stebimą su GIT, įvesdami komandą:
 `git init`
+
+
 Pridėkite į repozitoriją sukurtą failą, paleisdami komandą:
 `git add README.md`
+
+
 arba:
 `git add .`
+
+
 Patikrinkite, ar failas buvo pridėtas, paleisdami komandą:
 `git status`
+
+
 Užfiksuokite pakeitimus, paleisdami komandą:
 `git commit -m "pirmas commit"`
+
+
 Kaip išsaugoti pakeitimus į [www.github.com](http://www.github.com/)?
 Nustatyti nuotolinės repozitorijos, į kurią bus keliami pakeitimai, kelią, pvz.:
 `git remote add origin git@github.com:DonatasNoreika/test.git`
