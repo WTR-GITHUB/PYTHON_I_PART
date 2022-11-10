@@ -14,6 +14,7 @@ def function_name():
 ```
 A simple example - functions that prints 'Hello world':
 
+```
 def print_smth():
     print('Hello world!')
 ```
