@@ -12,3 +12,8 @@ The next thing you have to do is make sure you indent with a tab or 4 spaces, an
 def function_name():
     # What to make the function do
 ```
+A simple example - functions that prints 'Hello world':
+
+def print_smth():
+    print('Hello world!')
+```
