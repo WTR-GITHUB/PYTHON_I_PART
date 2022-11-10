@@ -27,3 +27,5 @@ def get_random_number():
 ```
 
 ### Naming, Scope
+
+#### Naming
