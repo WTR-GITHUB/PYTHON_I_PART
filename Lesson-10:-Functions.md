@@ -9,4 +9,4 @@ In Python, you define a function with the def keyword, then write the function i
 The next thing you have to do is make sure you indent with a tab or 4 spaces, and then specify what you want the function to do for you.
 
 ```def function_name():
-    `# What to make the function do```
+    # What to make the function do```
