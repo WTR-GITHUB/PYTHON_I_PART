@@ -26,7 +26,7 @@ def get_random_number():
     print(random.randit(0, 10))
 ```
 
-### Naming, Scope
+### Naming
 
 #### Naming:
 Choosing names for your variables, functions and/or classes, and so forth can be challenging. You should put a fair amount of thought into your naming choices when writing code as it will make your code more readable. The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.
