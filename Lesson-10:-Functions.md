@@ -25,3 +25,6 @@ Or prints random int number from 0 to 10:
 def get_random_number():
     print(random.randit(0, 10))
 ```
+
+
+***
