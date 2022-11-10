@@ -18,3 +18,10 @@ A simple example - functions that prints 'Hello world':
 def print_smth():
     print('Hello world!')
 ```
+
+Or prints random int number from 0 to 10:
+
+```
+def get_random_number():
+    print(random.randit(0, 10))
+```
