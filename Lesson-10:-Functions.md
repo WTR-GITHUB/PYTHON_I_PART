@@ -28,4 +28,10 @@ def get_random_number():
 
 ### Naming, Scope
 
-#### Naming
+#### Naming:
+Choosing names for your variables, functions and/or classes, and so forth can be challenging. You should put a fair amount of thought into your naming choices when writing code as it will make your code more readable. The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.
+Main rules as follows: 
+* Use only lowercase in method names.
+* An underscore should separate words in a method name.
+* Non-public method name should begin with a single underscore.
+* Use two consecutive underscores at the beginning of a method name, if it needs to be mangled.
