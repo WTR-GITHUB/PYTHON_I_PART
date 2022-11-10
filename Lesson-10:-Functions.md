@@ -35,3 +35,5 @@ Main rules as follows:
 * An underscore should separate words in a method name.
 * Non-public method name should begin with a single underscore.
 * Use two consecutive underscores at the beginning of a method name, if it needs to be mangled.
+
+A very good source of examples are here: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9)
