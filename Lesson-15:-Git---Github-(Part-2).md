@@ -13,6 +13,8 @@ command to create branch is:
 
 once you start working on it and do the first push, just do `git push` - git will throw an error but will suggest the correct command on how to set upstream (basically this means that we are mapping the branch from our computer to the one on remote - github, gitlab, bitbucket or whatever you are using)
 
+**Note: git terminal is extremely useful - it gives you suggestions whenever you are doing something wrong. So just keep an eye on terminal messages!**
+
 
 # Pull requests
 
