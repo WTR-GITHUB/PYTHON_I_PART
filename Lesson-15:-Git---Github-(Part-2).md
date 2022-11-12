@@ -70,12 +70,61 @@ This moves the entire feature branch to begin on the tip of the main branch, eff
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/rebase.svg)
 
 ## log
+
+`git log`
+
+simply allows us to see all the history, commit after commit of what happened.
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/git_log.jpg)
 
 ## restore
+if after a commit you have done some changes, but at some point decided that you want to roll back you can do:
+
+
+`git restore <file_name>`
+
+Not that commited changes cannot be restored like that
+
 ## reset 
+
+The `git reset` command is a complex and versatile tool for undoing changes. It has three primary forms of invocation. These forms correspond to command line arguments --soft, --mixed, --hard. The three arguments each correspond to Git's three internal state management mechanism's, The Commit Tree (HEAD), The Staging Index, and The Working Directory.
+
+
+### Hard
+
+This is the most direct, DANGEROUS, and frequently used option. When passed --hard The Commit History ref pointers are updated to the specified commit. Then, the Staging Index and Working Directory are reset to match that of the specified commit. Any previously pending changes to the Staging Index and the Working Directory gets reset to match the state of the Commit Tree. This means any pending work that was hanging out in the Staging Index and Working Directory will be lost.
+
+### Mixed
+
+This is the default operating mode. The ref pointers are updated. The Staging Index is reset to the state of the specified commit. Any changes that have been undone from the Staging Index are moved to the Working Directory. Let us continue.
+
+
+### Soft
+
+When the --soft argument is passed, the ref pointers are updated and the reset stops there. The Staging Index and the Working Directory are left untouched. This behavior can be hard to clearly demonstrate. Let's continue with our demo repo and prepare it for a soft reset.
+
+![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/reset.svg)
+
+
 ## diff
+
+command simply lets us see the differences in a file.
+command:
+`git diff <file_name>`
+
+
 ## tag
+
+Software as we know it comes in version - Windows 98,2000,7,8,10,11...  Python 2.7, 3.5, 3.6....
+Usually naming is as follows:
+
+![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/tag.png)
+
+command:
+
+
+`git tag -a v1.4 -m "my version 1.4"`
+
+
 ## checkout
 
 
