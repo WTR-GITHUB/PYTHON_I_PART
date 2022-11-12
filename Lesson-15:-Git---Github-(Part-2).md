@@ -1,7 +1,3 @@
-1. Git workflow (branching)
-1. Other helpful commands.
-
-
 # Branching, working within teams
 When we are working on a bigger project it is a good practice to **NOT PUSH DIRECTLY TO MAIN/MASTER**. We usually create feature branch and then work on our feature there, once the work is done we ask our colleagues to review change with Pull Request (We will see what that is shortly). Once we are given feedback and solve all the issues - we are allowed to merge our codebase with the one that is in the main branch.
 
