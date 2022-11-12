@@ -7,7 +7,9 @@ When we are working on a bigger project it is a good practice to **NOT PUSH DIRE
 
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/git_branch.svg)
 
+command to create branch is:
 
+`git checkout -b <branch_name>`
 # Pull requests
 
 # Additional git commands
