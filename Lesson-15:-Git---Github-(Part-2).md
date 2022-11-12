@@ -10,6 +10,10 @@ When we are working on a bigger project it is a good practice to **NOT PUSH DIRE
 command to create branch is:
 
 `git checkout -b <branch_name>`
+
+once you start working on it and do the first push, just do `git push` - git will throw an error but will suggest the correct command on how to set upstream (basically this means that we are mapping the branch from our computer to the one on remote - github, gitlab, bitbucket or whatever you are using)
+
+
 # Pull requests
 
 # Additional git commands
