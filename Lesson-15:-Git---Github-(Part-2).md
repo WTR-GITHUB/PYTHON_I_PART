@@ -44,8 +44,8 @@ The `git revert` command can be considered an 'undo' type command, however, it i
 command:
 `git revert <commit_hash>`
 reverting multiple commits:
-```git revert --no-commit HEAD~3..
-git commit -m "your message regarding reverting the multiple commits"```
+`git revert --no-commit HEAD~3..`
+`git commit -m "your message regarding reverting the multiple commits"`
 ## merge
 ## rebase
 ## log
