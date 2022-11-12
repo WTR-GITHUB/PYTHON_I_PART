@@ -4,12 +4,25 @@
 
 # Branching
 
+
+
 # Pull requests
 
+# Additional git commands
+## revert
+## merge
+## rebase
+## log
+## restore
+## reset 
+## diff
+## tag
 # Working in a team
 
 ## merge conflicts, how to solve them
-Hands on part
+### Hands on part
+Follow the steps in order to get the merge conflict
+
 1. split into pairs of 2people
 1. create an empty repo
 1. invite each other to collaborate
