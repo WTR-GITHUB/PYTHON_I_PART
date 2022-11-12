@@ -127,5 +127,16 @@ command:
 
 ## checkout
 
+this is a multipurpose command that allows us to do a lot of things, main things are:
+1. Jumping from one branch to another `git checkout <branch_name>`
+1. create branch `git checkout -b <branch_name>`
+1. Can jump into a certain commit hash and look around, check files etc. (This returns Detached HEAD, scenario show in picture below)
 
-##
+![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/detached.svg)
+
+
+# Excercises
+
+1. Create a Project
+1. Try playing around with all of the commands shown in this lecture
+1. if something is not clear - https://git-scm.com/doc
