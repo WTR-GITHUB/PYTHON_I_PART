@@ -69,7 +69,7 @@ This moves the entire feature branch to begin on the tip of the main branch, eff
 `git rebase <branch_name>`
 
 ## log
-![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/git log.svg)
+![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/git_log.svg)
 
 ## restore
 ## reset 
