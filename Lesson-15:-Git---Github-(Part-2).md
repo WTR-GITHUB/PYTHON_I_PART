@@ -56,14 +56,21 @@ reverting multiple commits:
 Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
 
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/merge.svg)
+command
 
+
+`git merge <branch_name>`
 
 ## rebase
 
 This moves the entire feature branch to begin on the tip of the main branch, effectively incorporating all of the new commits in main. But, instead of using a merge commit, rebasing re-writes the project history by creating brand new commits for each commit in the original branch.
 
 
+`git rebase <branch_name>`
+
 ## log
+![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/git log.svg)
+
 ## restore
 ## reset 
 ## diff
