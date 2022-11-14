@@ -29,3 +29,25 @@ The _logger_ has five standard logging levels:
 **CRITICAL** -  A serious error, indicating that the program itself may be unable to continue running.
  
 A good example of logging in _action_ with different logging levels: (Note! - The default level of logging library is **WARNING**)
+
+```
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+logging.debug('Logging the event')
+
+------ OUTCOME -------------
+DEBUG:root:Logging th event
+
+```
+
+```
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logging.debug('Logging the event')
+
+------ OUTCOME -------------
+INFO:root:Logging th event
+
+```
