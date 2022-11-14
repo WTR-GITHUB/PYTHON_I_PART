@@ -47,18 +47,18 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logging.debug('Logging the event')
 
------- OUTCOME -------------
+-------------------------CONSOLE OUTPUT------------------
 INFO:root:Logging th event
 
 ```
 We can Print the DEBUG and INFO message too by changing the basic configuration of the logger with the help of basicConfig(**kwargs)
 There are some parameters that are commonly used in this —
 
-* level: To change the root logger to a specified severity level.
-* filename: Filename where the logs going to be stored.
-* filemode: If a filename is given then this specifies the file mode in which the file will open. default is append (a )
-* format: This is the format of the log message.
-* datefmt : It specified the date and time format.
+* _**level**_: To change the root logger to a specified severity level.
+* `**filename**`: Filename where the logs going to be stored.
+* `**filemod**`e: If a filename is given then this specifies the file mode in which the file will open. default is append (a )
+* `**format**`: This is the format of the log message.
+* `**datefmt**` : It specified the date and time format.
 
 ```
 import logging
