@@ -59,3 +59,13 @@ There are some parameters that are commonly used in this —
 * filemode: If a filename is given then this specifies the file mode in which the file will open. default is append (a )
 * format: This is the format of the log message.
 * datefmt : It specified the date and time format.
+
+```
+import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+logging.debug('This is Debug Message')
+logging.info('This is an info message')
+-------------------------CONSOLE OUTPUT------------------
+12/05/2021 20:46:41 - root - DEBUG - This is Debug Message
+12/05/2021 20:46:41 - root - INFO - This is an info message
+```
