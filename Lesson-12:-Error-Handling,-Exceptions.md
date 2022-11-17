@@ -125,6 +125,7 @@ Output:
 ℹ️  - Python provides a way to raise an exception manually. It’s through `raise` keyword. `raise` keyword takes only one argument that is either an exception class (that derives from Exception class) or an exception instance. In the below example the argument is an exception instance with a string message. This string message (optional) when sent should describe the error.
 
 ```
+
 >>> raise AssertionError('Asserted statement is incorrect')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -132,11 +133,12 @@ Traceback (most recent call last):
 AssertionError: Asserted statement is incorrect
 ```
 
+
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **If your aliasing a single exception then surrounding parentheses are optional. Parentheses are mandatory if your aliasing multiple exceptions as in the above example.** ⏫  
 
 
-The simplistic boilerplate code for alias is: 
+**The simplistic boilerplate code for alias is:** 
 
 ```
 def dummy_func() -> None:
@@ -149,6 +151,7 @@ def dummy_func() -> None:
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors** 🔽 
 ```
+
 def my_func() -> Any:
   try:
     # code which might throw/raise exception
