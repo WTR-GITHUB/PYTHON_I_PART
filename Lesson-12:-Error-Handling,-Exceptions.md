@@ -107,7 +107,7 @@ except (exception_1, exception_2, ..) as <alias>:
     # exception handling here
     # you can access attributes of exception(s) being handled through it’s alias <alias>;
 ```
-Where <alias> should be replaced with an alias name.
+Where < alias > should be replaced with an alias name.
 
 Example: 
 
@@ -165,7 +165,7 @@ Output = 2.0>>> divide(20, 0)
 Cannot divide by zero
 ```
 
-#### Finally clause
+#### Finally clause:
 The `try` statement has one last clause `finally`, which is basically used for clean up actions. When used, it should follow all other clauses. `finally` clause is executed in any event irrespective of whether an exception has occurred or not. `finally` clause does not strictly need the else or except clause to be present:
 
 ```
