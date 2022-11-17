@@ -67,7 +67,9 @@ my_func()
 ### Exercises: 
 🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
+* Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
 * Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors what could occur.  
+
 
 ### 🌐  Extra reading:
 
