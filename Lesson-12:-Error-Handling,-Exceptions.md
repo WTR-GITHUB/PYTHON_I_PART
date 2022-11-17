@@ -122,7 +122,7 @@ Output:
 ('Invalid name')
 ```
 👨‍🏫  ❗ **PRO TIP** ❗ 
-**If your aliasing a single exception then surrounding parentheses are optional. Parentheses are mandatory if your aliasing multiple exceptions as in the above example.** 🔽 
+**If your aliasing a single exception then surrounding parentheses are optional. Parentheses are mandatory if your aliasing multiple exceptions as in the above example.** ⏫  
 
 
 The simplistic boilerplate code for alias is: 
