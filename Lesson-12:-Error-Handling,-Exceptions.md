@@ -69,7 +69,7 @@ my_func()
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
 * Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors what could occur.  
 
-### Extra references:
+### 🌐  Extra reading:
 
 * [Official Python Website](https://docs.python.org/3/tutorial/errors.html)
 
