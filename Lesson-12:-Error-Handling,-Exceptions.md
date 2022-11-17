@@ -12,7 +12,7 @@ It’s important we make a clear distinction between what an error is in Python,
 
 Another type of error we may observe is an Exception error. These types of errors occur when our code is syntactically correct but an unexpected event occurred during the execution of the program. They are not unconditionally fatal and can be handled at runtime
 
-### Catching and handling Exceptions
+## Catching and handling Exceptions
 To capture the exceptions we use a code block called try-except. We put the piece of code that is suspected to be a source of error inside a try block then capture and design the response inside the except block.
 
 A simple `boilerplate` code example would be: 
@@ -64,14 +64,14 @@ def my_func() -> Any:
 
 my_func()
 ```
-### Exercises: 
+## Exercises: 
 🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
 * Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
 * Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors what could occur.  
 
 
-### 🌐  Extra reading:
+## 🌐  Extra reading:
 
 * [Official Python Website](https://docs.python.org/3/tutorial/errors.html)
 
