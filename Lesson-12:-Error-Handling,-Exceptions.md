@@ -15,17 +15,12 @@ Another type of error we may observe is an Exception error. These types of error
 ### Catching and handling Exceptions
 To capture the exceptions we use a code block called try-except. We put the piece of code that is suspected to be a source of error inside a try block then capture and design the response inside the except block.
 ```
-def implementDivision(a, b):
+def my_func():
   try:
-    value = a/b
-    print(value)
-  except FileNotFoundError:
-    print("The File Cannot be Found")
-  except ZeroDivisionError:
-    print("Number Cannot be Divided by Zero")
-  except:
-    print("This is the Generic Error")
+    your_code()
+  except Exceprion as e:
+    print(f"This is the captured error: {e}")
 
-implementDivision(10, 0)
+my_func()
 
 ```
