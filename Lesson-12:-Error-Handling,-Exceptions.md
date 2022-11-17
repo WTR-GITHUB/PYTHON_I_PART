@@ -34,3 +34,23 @@ The basic schema for exception handling is here down below ⬇️
 Python consists of several built-in exceptions we may leverage in our programs: ⬇️
 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/1%20yKRseWKBjdccXRoFsjIIQw.png)
+
+### Examples
+Lets use simple function to divide 2 numbers and try to handle possible error:
+```
+def divide_two_numbers(dividend: int, divisor: int) -> None:
+    try:
+        quotient = dividend / divisor
+        print(f'Result = {quotient}')
+    except ZeroDivisionError:
+        print('Divisor is zero; Division is impossible')
+```
+Possible results: 
+```
+>>> divide(50, 2)
+Result = 25>>> divide(50, 0)
+Divisor is zero; Division is impossible
+```
+
+
+### References 
