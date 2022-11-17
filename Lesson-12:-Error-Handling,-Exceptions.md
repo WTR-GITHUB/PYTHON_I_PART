@@ -54,4 +54,8 @@ Divisor is zero; Division is impossible
 ```
 
 
-### References 
+### Extra references
+[Official Python Website](https://docs.python.org/3/tutorial/errors.html)
+[Real Phyton](https://realpython.com/python-exceptions/)
+
+
