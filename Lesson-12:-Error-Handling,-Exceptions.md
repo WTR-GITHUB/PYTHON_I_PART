@@ -20,12 +20,16 @@ A simple `boilerplate` code example would be:
 def my_func() -> Any:
   try:
     # your_code
-  except Exceprion as e:
+  except Exception as e:
     print(f"This is the captured error: {e}")
 
 my_func()
 
 ```
+Python consists of several built-in exceptions we may leverage in our programs: ⬇️
+
+![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/1%20yKRseWKBjdccXRoFsjIIQw.png)
+
 The basic schema for exception handling is here down below ⬇️ 
 
 ![ah](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/try_except_else_finally.webp)
