@@ -105,7 +105,7 @@ try:
     # try code
 except (exception_1, exception_2, ..) as <alias>:
     # exception handling here
-    # you can access attributes of exception(s) being handled through it’s alias <alias>;
+    # you can access attributes of exception(s) being handled through it’s alias < alias >;
 ```
 Where < alias > should be replaced with an alias name.
 
@@ -121,6 +121,9 @@ except (NameError, ValueError) as err:
 Output:
 ('Invalid name')
 ```
+
+ℹ️ 
+
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **If your aliasing a single exception then surrounding parentheses are optional. Parentheses are mandatory if your aliasing multiple exceptions as in the above example.** ⏫  
 
