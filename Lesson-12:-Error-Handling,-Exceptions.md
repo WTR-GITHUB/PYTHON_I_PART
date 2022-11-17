@@ -52,10 +52,10 @@ Result = 25
 >>> divide(50, 0)
 Divisor is zero; Division is impossible
 ```
-```
+
 👨‍🏫  **PRO TIP**
 **!Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors !  ** 
-```
+
 
 ### Extra references:
 
