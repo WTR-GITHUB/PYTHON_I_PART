@@ -52,7 +52,7 @@ def __get_secret():
   pass
 ```
 
-A very good source of examples are here: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9)
+A very good source of naming rule examples are here ❗ **Must be read!** ❗  : [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9)
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
