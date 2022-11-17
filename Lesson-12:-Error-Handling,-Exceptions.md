@@ -48,7 +48,8 @@ def divide_two_numbers(dividend: int, divisor: int) -> None:
 Possible results: 
 ```
 >>> divide(50, 2)
-Result = 25>>> divide(50, 0)
+Result = 25
+>>> divide(50, 0)
 Divisor is zero; Division is impossible
 ```
 
