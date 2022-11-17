@@ -74,6 +74,8 @@ my_func()
 * [Official Python Website](https://docs.python.org/3/tutorial/errors.html)
 
 * [Real Phyton](https://realpython.com/python-exceptions/)
+
+* [Dataquest](https://www.dataquest.io/blog/python-exceptions/)
 ***
 
 
