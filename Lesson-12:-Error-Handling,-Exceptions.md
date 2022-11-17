@@ -15,7 +15,7 @@ Another type of error we may observe is an Exception error. These types of error
 ### Catching and handling Exceptions
 To capture the exceptions we use a code block called try-except. We put the piece of code that is suspected to be a source of error inside a try block then capture and design the response inside the except block.
 
-A simple example would be: 
+A simple `boilerplate` code example would be: 
 ```
 def my_func() -> Any:
   try:
