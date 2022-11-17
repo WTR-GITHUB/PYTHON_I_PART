@@ -126,7 +126,7 @@ Where < alias > should be replaced with an alias name.
 
 Example: 
 
-```
+```python
 try:
     raise NameError('Undefined name')
     # raise ValueError('Invalid name')
@@ -139,7 +139,7 @@ Output:
 
 ℹ️  - Python provides a way to raise an exception manually. It’s through `raise` keyword. `raise` keyword takes only one argument that is either an exception class (that derives from Exception class) or an exception instance. In the below example the argument is an exception instance with a string message. This string message (optional) when sent should describe the error.
 
-```
+```python
 
 >>> raise AssertionError('Asserted statement is incorrect')
 Traceback (most recent call last):
@@ -155,7 +155,7 @@ AssertionError: Asserted statement is incorrect
 
 **The simplistic boilerplate code for alias is:** 
 
-```
+```python
 def dummy_func() -> None:
     try:
         # dummy full of errors code 😒 
@@ -165,7 +165,7 @@ def dummy_func() -> None:
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors** 🔽 
-```
+```python
 
 def my_func() -> Any:
   try:
@@ -178,7 +178,7 @@ my_func()
 #### Else clause: 
 `else` clause is optional and if it is present, it should always follow `except` clause. Code under `else` clause is executed only when code under `try` clause raises no exception. If an exception occurs in the `try` block then `else` block won’t be executed though the `except` clause handles it:
 
-```
+```python
 def divide(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
     try:
         return a / b
@@ -188,7 +188,7 @@ def divide(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
         print(f'Output = {output}'))
 ```
 
-```
+```python
 >>> divide(20, 10)
 Output = 2.0>>> divide(20, 0)
 Cannot divide by zero
@@ -197,7 +197,7 @@ Cannot divide by zero
 #### Finally clause:
 The `try` statement has one last clause `finally`, which is basically used for clean up actions. When used, it should follow all other clauses. `finally` clause is executed in any event irrespective of whether an exception has occurred or not. `finally` clause does not strictly need the else or except clause to be present:
 
-```
+```python
 def divide(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
     try:
         output = a / b
@@ -209,7 +209,7 @@ def divide(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
         print('Executing finally clause')
 ```
 
-```
+```python
 >>> divide(2, 1)
 Output = 2.0
 Executing finally clause>>> divide(2, 0)
