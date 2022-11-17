@@ -14,6 +14,7 @@ Another type of error we may observe is an Exception error. These types of error
 
 ### Catching and handling Exceptions
 To capture the exceptions we use a code block called try-except. We put the piece of code that is suspected to be a source of error inside a try block then capture and design the response inside the except block.
+A simple example would be: 
 ```
 def my_func():
   try:
@@ -24,6 +25,6 @@ def my_func():
 my_func()
 
 ```
-The basic schema for exception handling is here below ⬇️ 
+The basic schema for exception handling is here down below ⬇️ 
 
 ![ah](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/try_except_else_finally.webp)
