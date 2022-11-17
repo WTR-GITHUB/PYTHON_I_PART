@@ -15,7 +15,7 @@ Example:
 print(Hello World)
 ```
 
-Another type of error we may observe is an Exception error. These types of errors occur when our code is syntactically correct but an unexpected event occurred during the execution of the program. They are not unconditionally fatal and can be handled at runtime
+Another type of error we may observe is an `Exception` error. These types of errors occur when our code is syntactically correct but an unexpected event occurred during the execution of the program. They are not unconditionally fatal and can be handled at runtime.
 
 ## Catching and handling Exceptions
 To capture the exceptions we use a code block called try-except. We put the piece of code that is suspected to be a source of error inside a try block then capture and design the response inside the except block.
