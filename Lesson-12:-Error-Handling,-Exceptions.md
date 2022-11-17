@@ -18,10 +18,10 @@ To capture the exceptions we use a code block called try-except. We put the piec
 A simple `boilerplate` code example would be: 
 ```
 def my_func() -> Any:
-  try:
-    # your_code
-  except Exception as e:
-    print(f"This is the captured error: {e}")
+try:
+    # code which might throw/raise exception
+except <exception_to_handle>:
+    # code to be executed once the exception is handled.
 
 my_func()
 
