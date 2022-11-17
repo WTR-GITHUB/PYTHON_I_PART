@@ -35,7 +35,7 @@ Python consists of several built-in exceptions we may leverage in our programs: 
 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/1%20yKRseWKBjdccXRoFsjIIQw.png)
 
-### Examples
+### --- Examples ---
 #### Basic:
 Lets use simple function to divide 2 numbers and try to handle possible error:
 ```
@@ -71,7 +71,69 @@ def my_dummy_int_func(a: Union[string, float]) -> None:
     except TypeError:
         print('Type of "a" is incompatible; should either be a number or a string')
 ```
+#### Multiple exceptions in a single except clause:
+Boilerplate code : 
 
+```
+try:
+    # exception prone code here	
+except (exception_1, exception_2, .... ,exception_n):
+    # code to be executed once the exception is handled
+```
+
+And the same example as above:
+
+```
+def my_dummy_int_func(a: Union[string, float]) -> None:
+    try:
+        int_value = int(a)
+    except (ValueError, TypeError):
+        print('Error occurred. Either "a" is not an integer or type of "a" is incompatible')
+```
+
+#### Aliasing:
+Notice the following line in the code above:
+
+```
+except (exception_1, exception_2, ..) as e:
+```
+That is the exception(s) is(are) being given a name. Technically, it is called _aliasing_.
+With aliasing, we can access the exception(s) with a common name. This is useful if you want to use attributes of the exception being handled. Aliasing is done through as keyword (boilerplate code):
+
+```
+try:
+    # try code
+except (exception_1, exception_2, ..) as <alias>:
+    # exception handling here
+    # you can access attributes of exception(s) being handled through it’s alias <alias>;
+```
+Where <alias> should be replaced with an alias name.
+
+Example: 
+
+```
+try:
+    raise NameError('Undefined name')
+    # raise ValueError('Invalid name')
+except (NameError, ValueError) as err:
+    print(f'Got exception with msg {err.args})
+
+Output:
+('Invalid name')
+```
+👨‍🏫  ❗ **PRO TIP** ❗ 
+**If your aliasing a single exception then surrounding parentheses are optional. Parentheses are mandatory if your aliasing multiple exceptions as in the above example.** 🔽 
+
+
+The simplistic boilerplate code for alias is: 
+
+```
+def dummy_func() -> None:
+    try:
+        # dummy full of errors code 😒 
+    except Exceptions as e:
+        print(f'Heh, I cought another one...{e}')
+```
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors** 🔽 
