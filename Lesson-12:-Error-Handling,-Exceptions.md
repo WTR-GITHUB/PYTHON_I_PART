@@ -18,9 +18,9 @@ To capture the exceptions we use a code block called try-except. We put the piec
 A simple `boilerplate` code example would be: 
 ```
 def my_func() -> Any:
-try:
+  try:
     # code which might throw/raise exception
-except <exception_to_handle>:
+  except <exception_to_handle>:
     # code to be executed once the exception is handled.
 
 my_func()
