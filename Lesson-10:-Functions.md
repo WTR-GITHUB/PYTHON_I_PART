@@ -37,8 +37,20 @@ def compute():
   pass
 ```
 * An underscore should separate words in a method name.
+```python
+def calculate_smth():
+  pass
+```
 * Non-public method name should begin with a single underscore.
+```python
+def _get_smth():
+  pass
+```
 * Use two consecutive underscores at the beginning of a method name, if it needs to be mangled.
+```python
+def __get_secret():
+  pass
+```
 
 A very good source of examples are here: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9)
 
