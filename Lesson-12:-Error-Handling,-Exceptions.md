@@ -15,6 +15,16 @@ Example:
 print(Hello World)
 ```
 
+```
+File "test.py", line 1
+
+    print(Hello World)
+
+                ^
+
+SyntaxError: invalid syntax
+```
+
 Another type of error we may observe is an `Exception` error. These types of errors occur when our code is syntactically correct but an unexpected event occurred during the execution of the program. They are not unconditionally fatal and can be handled at runtime.
 
 ## Catching and handling Exceptions
