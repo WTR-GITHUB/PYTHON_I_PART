@@ -53,8 +53,8 @@ Result = 25
 Divisor is zero; Division is impossible
 ```
 ```
-👨‍🏫 **TIP!**
-Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors !   
+👨‍🏫  **PRO TIP**
+**!Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors !  ** 
 ```
 
 ### Extra references:
