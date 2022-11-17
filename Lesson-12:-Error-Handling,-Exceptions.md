@@ -53,7 +53,7 @@ Result = 25
 Divisor is zero; Division is impossible
 ```
 
-👨‍🏫  ** ❗ PRO TIP ❗ **
+👨‍🏫  ❗ **PRO TIP** ❗ 
 **Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors** 🔽 
 ```
 def my_func() -> Any:
