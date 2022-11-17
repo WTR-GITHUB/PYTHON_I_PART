@@ -17,7 +17,7 @@ To capture the exceptions we use a code block called try-except. We put the piec
 ```
 def my_func():
   try:
-    your_code()
+    # your_code
   except Exceprion as e:
     print(f"This is the captured error: {e}")
 
