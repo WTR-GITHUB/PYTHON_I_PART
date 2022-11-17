@@ -36,6 +36,7 @@ Python consists of several built-in exceptions we may leverage in our programs: 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/1%20yKRseWKBjdccXRoFsjIIQw.png)
 
 ### Examples
+#### Basic
 Lets use simple function to divide 2 numbers and try to handle possible error:
 ```
 def divide_two_numbers(dividend: int, divisor: int) -> None:
@@ -52,6 +53,25 @@ Result = 25
 >>> divide(50, 0)
 Divisor is zero; Division is impossible
 ```
+#### Multiple except clauses
+It is possible that your code may raise more than just one type of exception. It may be ValueError, AttributeError, KeyError etc. These are some of the built-in exceptions we already mentioned above. Lets take example of the simple statement:
+```
+>>> int_value = int(a)
+```
+This statement may raise ValueError or TypeError or may not raise any exceptions at all depending upon the type and value of variable a. Suppose a = 3.2 or a = '1200' then no exception; if a = '12k' then ValueError and if a = [1, 2] then TypeError is raised.
+
+Here is how we handle both of them:
+
+```
+def my_dummy_int_func(a: Union[string, float]) -> None:
+    try:
+        int_value = int(a)
+    except ValueError:
+        print('Value of "a" cannot be deduced to integer')
+    except TypeError:
+        print('Type of "a" is incompatible; should either be a number or a string')
+```
+
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **Try to avoid generic `except` clause, otherwise you can miss and/or mishandle potential errors** 🔽 
