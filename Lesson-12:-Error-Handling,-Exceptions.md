@@ -24,5 +24,6 @@ def my_func():
 my_func()
 
 ```
+The basic schema for exception handling is here below ⬇️ 
 
 ![ah](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/try_except_else_finally.webp)
