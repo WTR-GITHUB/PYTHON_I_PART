@@ -36,7 +36,7 @@ Python consists of several built-in exceptions we may leverage in our programs: 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/1%20yKRseWKBjdccXRoFsjIIQw.png)
 
 ### Examples
-#### Basic
+#### Basic:
 Lets use simple function to divide 2 numbers and try to handle possible error:
 ```
 def divide_two_numbers(dividend: int, divisor: int) -> None:
@@ -53,7 +53,7 @@ Result = 25
 >>> divide(50, 0)
 Divisor is zero; Division is impossible
 ```
-#### Multiple except clauses
+#### Multiple except clauses:
 It is possible that your code may raise more than just one type of exception. It may be ValueError, AttributeError, KeyError etc. These are some of the built-in exceptions we already mentioned above. Lets take example of the simple statement:
 ```
 >>> int_value = int(a)
