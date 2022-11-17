@@ -17,7 +17,7 @@ To capture the exceptions we use a code block called try-except. We put the piec
 
 A simple example would be: 
 ```
-def my_func():
+def my_func() -> Any:
   try:
     # your_code
   except Exceprion as e:
