@@ -11,7 +11,7 @@ Exceptions are the events that are triggered when the program encounters an erro
 It’s important we make a clear distinction between what an error is in Python, as there are two. One error is known as a syntax error ([or parsing error](https://rollbar.com/blog/python-syntaxerror/)). This is when our program is being parsed and detects an incorrect statement within our code. These types of errors cannot be handled.
 
 Example:
-```
+```python
 print(Hello World)
 ```
 
@@ -31,7 +31,7 @@ Another type of error we may observe is an `Exception` error. These types of err
 To capture the exceptions we use a code block called `try-except`. We put the piece of code that is suspected to be a source of error inside a `try` block then capture and design the response inside the `except` block.
 
 A simple `boilerplate` code example would be: 
-```
+```python
 def my_func() -> Any:
   try:
     # code which might throw/raise exception
@@ -53,7 +53,7 @@ Python consists of several built-in exceptions we may leverage in our programs: 
 ### --- Examples ---
 #### Basic:
 Lets use simple function to divide 2 numbers and try to handle possible error:
-```
+```python
 def divide_two_numbers(dividend: int, divisor: int) -> None:
     try:
         quotient = dividend / divisor
@@ -70,14 +70,14 @@ Divisor is zero; Division is impossible
 ```
 #### Multiple except clauses:
 It is possible that your code may raise more than just one type of exception. It may be ValueError, AttributeError, KeyError etc. These are some of the built-in exceptions we already mentioned above. Lets take example of the simple statement:
-```
+```python
 >>> int_value = int(a)
 ```
 This statement may raise ValueError or TypeError or may not raise any exceptions at all depending upon the type and value of variable a. Suppose a = 3.2 or a = '1200' then no exception; if a = '12k' then ValueError and if a = [1, 2] then TypeError is raised.
 
 Here is how we handle both of them:
 
-```
+```python
 def my_dummy_int_func(a: Union[string, float]) -> None:
     try:
         int_value = int(a)
@@ -98,7 +98,7 @@ except (exception_1, exception_2, .... ,exception_n):
 
 And the same example as above:
 
-```
+```python
 def my_dummy_int_func(a: Union[string, float]) -> None:
     try:
         int_value = int(a)
@@ -115,7 +115,7 @@ except (exception_1, exception_2, ..) as e:
 That is the exception(s) is(are) being given a name. Technically, it is called _aliasing_.
 With aliasing, we can access the exception(s) with a common name. This is useful if you want to use attributes of the exception being handled. Aliasing is done through as keyword (boilerplate code):
 
-```
+```python
 try:
     # try code
 except (exception_1, exception_2, ..) as <alias>:
