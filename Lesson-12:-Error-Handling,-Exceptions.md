@@ -92,7 +92,7 @@ def my_dummy_int_func(a: Union[string, float]) -> None:
 ```
 
 #### Aliasing:
-Notice the following line in the code above:
+Notice the following line in the code below:
 
 ```
 except (exception_1, exception_2, ..) as e:
@@ -146,6 +146,54 @@ def my_func() -> Any:
 
 my_func()
 ```
+#### Else clause: 
+`else` clause is optional and if it is present, it should always follow `except` clause. Code under `else` clause is executed only when code under `try` clause raises no exception. If an exception occurs in the `try` block then `else` block won’t be executed though the `except` clause handles it:
+
+```
+def divide(a: Union[int, float], b: Union[int, float]) -> Optional[Union[float, int]]:
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print('Cannot divide by zero')
+    else:
+        print(f'Output = {output}'))
+```
+
+```
+>>> divide(20, 10)
+Output = 2.0>>> divide(20, 0)
+Cannot divide by zero
+```
+
+#### Finally clause
+The `try` statement has one last clause `finally`, which is basically used for clean up actions. When used, it should follow all other clauses. `finally` clause is executed in any event irrespective of whether an exception has occurred or not. `finally` clause does not strictly need the else or except clause to be present:
+
+```
+def divide(a: Union[int, float], b: Union[int, float]) -> Optional[Union[float, int]]:
+    try:
+        output = a / b
+    except ZeroDivisionError:
+	    print('Cannot divide by zero')
+    else:
+        print(f'Output = {output}'))
+    finally:
+        print('Executing finally clause')
+```
+
+```
+>>> divide(2, 1)
+Output = 2.0
+Executing finally clause>>> divide(2, 0)
+Cannot divide by zero
+Executing finally clause>>> divide("2", "1")
+Executing finally clause
+Traceback (most recent call last):
+ File "<stdin>", line 1, in <module>
+ File "<stdin>", line 3, in divide
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+```
+A finally clause is always executed before leaving the [try](https://docs.python.org/3/reference/compound_stmts.html#try) statement, whether an exception has occurred or not. When an exception has occurred in the try clause and has not been handled by an [except](https://docs.python.org/3/reference/compound_stmts.html#except) clause (or it has occurred in an except or else clause), it is re-raised (see the third call to divide function above) after the [finally](https://docs.python.org/3/reference/compound_stmts.html#finally) clause has been executed. The finally clause is also executed “on the way out” when any other clause of the try statement is left via a [break](https://docs.python.org/3/reference/simple_stmts.html#break), [continue](https://docs.python.org/3/reference/simple_stmts.html#continue) or [return](https://docs.python.org/3/reference/simple_stmts.html#return) statement.
+
 ## Exercises: 
 🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
