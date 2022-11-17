@@ -65,9 +65,9 @@ def my_func() -> Any:
 my_func()
 ```
 ### Exercises: 
-🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish the task.
+🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
-* Create a mini python program which would take two numbers as input and would return their sum, subtraction, division, multiplication. Handle all possible errors what could occur.  
+* Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors what could occur.  
 
 ### Extra references:
 
