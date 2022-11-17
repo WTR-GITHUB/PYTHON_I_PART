@@ -24,3 +24,5 @@ def my_func():
 my_func()
 
 ```
+
+![ah](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/try_except_else_finally.webp)
