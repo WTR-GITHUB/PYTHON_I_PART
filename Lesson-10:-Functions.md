@@ -67,8 +67,42 @@ Syntax:
 ```
 return [expression]
 ```
+### Some Examples:
+
+```python
+def find_sum(num1, num2):
+    '''Returns the sum of num1 and num2.'''
+    sum_nums = num1 + num2  # Finds the sum of num1 and num2
+    return sum_nums  # Returns the sum of the numbers
+```
+
+```python
+def even_odd(num):
+
+    '''
+    Returns "even" if num is even, and "odd" if num is odd.    
+    Parameters:
+        num (int): Any integer    Returns:
+        type (string): "even" if num is even; "odd" if num is odd
+    '''
+
+    if num % 2 == 0:  # Checks if num/2 has a remainder of 0
+        return "even"  # If it has a remainder of 0, return "even"
+    else:
+        return "odd"  # If it doesn't, return "odd"
+```
+
+
 👨‍🏫  ❗ **ATTENTION** ❗ 
-**If [expression] is left empty, a None type object will be returned while exiting the function**
+**If [expression] is left empty, a [`None`](https://realpython.com/null-in-python/) type object will be returned while exiting the function**
+
+```python
+def check_if_exist(a):
+  if a:
+    return a
+  return
+    
+```
 
 
 ## ℹ️ Short Intro to Type Hints
