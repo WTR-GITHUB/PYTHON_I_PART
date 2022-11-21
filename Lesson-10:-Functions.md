@@ -122,6 +122,7 @@ This implementation has changed with version 3.10: Optional can now be written a
 As previous example, we saw how to add type hints to return type, arguments . Now more complex example:
 ```python
 from typing import Tuple, Optional
+
 def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None) -> str:
    return 'You called the_func with ' + str(x) + str(y) + str(z)
 ```
