@@ -53,6 +53,20 @@ def __get_secret():
 
 A very good source of naming rules and examples are here: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9) ❗ **Must be read!** ❗
 
+## ℹ️ Short Intro to Type Hints
+Type hints, also known as `type annotations`, are completely optional in Python. Yet, there are huge benefits of using them in your code.
+The type term used in Python refers to the object type. Objects are mainly things containing data and the functions act on that data. As an example; an integer object in python can store integer values and you can perform some tasks with that object, such as doing arithmetic calculations.
+
+Objects have strict types. You cannot store a string value in an integer object type as this is not allowed in that specific type. But names we use in our code can point to any object type. You have to spend some time reviewing the code to understand how a specific name can be used if object types are not clearly annotated. This will be a more obvious problem if you have a complex code base.
+
+Type hints are introduced with Python 3.5 to address this difficulty.
+A simple example of the function which add two numbers (without `type hints`):
+
+```python
+def add_two_numbers(a,b):
+  return a + b
+```
+
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
