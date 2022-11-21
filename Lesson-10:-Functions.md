@@ -78,6 +78,56 @@ def add_two_int_numbers(a: int, b: int) -> int:
 * You need to consider using type hints to help others and yourself. Type hints increase the readability with self-explanatory code.
 * Type hints also help you to build and maintain a cleaner code architecture as you need to consider types when annotating them in your code.
 
+#### Some _easy-to-follow_ examples:
+
+**Variable Annotations**:
+To annotate types of variables, you start with the variable name and continue with the : finally, you provide the data type of the variable.
+
+```python
+type_annotation_int: int = 43
+type_annotation_float: float = 2.54
+type_annotation_string: str = 'efe'
+type_annotation_bool: bool = True
+```
+You can also annotate more complex built-in data types like dicts, lists, and tuples. Before doing this, you need to import (we will learn in another lecture) the typing module.
+
+```python
+from typing import List, Tuple, Dicttype_annotation_tuple: Tuple[str] = ('1','2','3')
+type_annotation_list: List[str] = ['a', 'b', 'c']
+type_annotation_dict: Dict[str, int] = {'a': 1, 'b': 2}
+```
+**Combining Datatypes**:
+If your variable or return type can have one of several different types, you can use Union for type annotation.
+
+Pre-Python 3.10 implementation looks like this:
+
+```python
+from typing import List, Dict, Uniontype_annotation_list: List[Union[float,int]] = [1.23, 3.32, 1, 3]
+type_annotation_dict: Dict[str, Union[float,int]] = {'a': 1, 'b': 2}
+```
+The annotation List[Union[float,int]] means that type_annotation_list variable should be a list where each element is either a floating-point or an integer.
+
+With Python 3.10, you can replace Union with the new union operator | and you don't need to import anything from typing module:
+```python
+type_annotation_list: List[float | int]= [1.23, 3.32, 1, 3]
+```
+**Optional Operator**:
+Optional[???] is short version of Union[???, None], which basically tells that either an object of the specific type is required, or None is required.
+```python
+type_annotation_list: List[Optional[int]] = [1, 3]
+```
+This implementation has changed with version 3.10: Optional can now be written as List [int | None]
+
+**Function Annotations**:
+As previous example, we saw how to add type hints to return type, arguments . Now more complex example:
+```python
+from typing import Tuple, Optional
+def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None) -> str:
+   return 'You called the_func with ' + str(x) + str(y) + str(z)
+```
+This example shows you that the_func() takes three arguments, x, y, and, z that x can be either an integer or float, y should be tuple storing strings and the z can be either none or float. The return type is str, which you specify using the -> after the ending parentheses but before the colon.
+ℹ️ 
+
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
