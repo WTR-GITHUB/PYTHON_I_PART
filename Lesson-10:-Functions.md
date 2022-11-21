@@ -1,7 +1,3 @@
-1. Calls & Definition, First Function 
-1. Arguments, Intro to Types.
-1. Return statement
-
 ## Introduction 
 What is a function?
 Functions are **a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time**. Also functions are a key way to define interfaces so programmers can share their code.
@@ -104,6 +100,33 @@ def check_if_exist(a=None):
     
 ```
 
+## Parameters in Functions:
+Parameters, or arguments, are values that you can pass to a function that will determine how a function will get executed. There are different ways on how we can pass the parameters.
+
+Positional Parameters:
+The most common type of passing parameters is by calling a function and passing the parameters in the same position as in the definition of the function. Let’s take an example of a division function:
+
+```python
+def integer_division(num_one, num_two):
+    return num_one // num_two
+
+integer_division(10, 2)
+
+----OUTPUT----
+>>>> 5
+```
+Keyword Parameters:
+We can also pass the parameters in a key=value format when calling a function. This means we don’t require to keep the sequence in mind. Consider the same function as above:
+
+```python
+def integer_division(num_one=10, num_two=2):
+    return num_one // num_two
+
+integer_division(10, 2)
+
+----OUTPUT----
+>>>> 5
+```
 
 ## ℹ️ Short Intro to Type Hints
 Type hints, also known as `type annotations`, are completely optional in Python. Yet, there are huge benefits of using them in your code.
