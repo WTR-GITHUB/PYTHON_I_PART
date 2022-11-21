@@ -97,7 +97,7 @@ def even_odd(num):
 **If [expression] is left empty, a [`None`](https://realpython.com/null-in-python/) type object will be returned while exiting the function**
 
 ```python
-def check_if_exist(a):
+def check_if_exist(a=None):
   if a:
     return a
   return
