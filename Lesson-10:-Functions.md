@@ -25,6 +25,14 @@ Or prints random `int` number from 0 to 10:
 def get_random_number():
     print(random.randit(0, 10))
 ```
+Just like built-in functions, user-defined functions **are called using the function name followed by parenthesis** : 
+
+```python
+get_random_number() 
+print_smth()
+# and so on....
+
+```
 
 ## Naming
 
@@ -52,6 +60,16 @@ def __get_secret():
 ```
 
 A very good source of naming rules and examples are here: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9) ❗ **Must be read!** ❗
+
+## Return statement 
+Return statements are used to end a function while returning an expression that can be used later on. However, they are not mandatory and can be left out when unneeded.
+Syntax:
+```
+return [expression]
+```
+👨‍🏫  ❗ **ATTENTION** ❗ 
+**If [expression] is left empty, a None type object will be returned while exiting the function**
+
 
 ## ℹ️ Short Intro to Type Hints
 Type hints, also known as `type annotations`, are completely optional in Python. Yet, there are huge benefits of using them in your code.
