@@ -63,7 +63,14 @@ Type hints are introduced with Python 3.5 to address this difficulty.
 A simple example of the function which add two numbers (without `type hints`):
 
 ```python
-def add_two_numbers(a,b):
+def add_two_int_numbers(a,b):
+  return a + b
+```
+
+And with `type hints`: 
+
+```python
+def add_two_int_numbers(a: int,b: int) -> int:
   return a + b
 ```
 
