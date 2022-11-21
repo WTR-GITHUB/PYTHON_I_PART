@@ -149,7 +149,7 @@ AssertionError: Asserted statement is incorrect
 ```
 
 
-👨‍🏫  ❗ **PRO TIP** ❗ 
+👨‍🏫  ❗ **ATTENTION** ❗ 
 **If your aliasing a single exception then surrounding parentheses are optional. Parentheses are mandatory if your aliasing multiple exceptions as in the above example.** ⏫  
 
 
