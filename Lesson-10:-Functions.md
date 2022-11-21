@@ -139,9 +139,9 @@ This example shows you that the_func() takes three arguments, x, y, and, z that 
 
 ## 🌐  Extra reading:
 
-* [Official Python Website](https://docs.python.org/3/tutorial/errors.html)
+* [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
 
-* [Real Phyton](https://realpython.com/python-exceptions/)
+* [Real Phyton](https://realpython.com/defining-your-own-python-function/)
 
-* [Dataquest](https://www.dataquest.io/blog/python-exceptions/)
+* [Real Python Youtube](https://www.youtube.com/watch?v=Q93bwyZoXk0)
 ***
