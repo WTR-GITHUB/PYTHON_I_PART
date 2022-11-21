@@ -70,9 +70,13 @@ def add_two_int_numbers(a,b):
 And with `type hints`: 
 
 ```python
-def add_two_int_numbers(a: int,b: int) -> int:
+def add_two_int_numbers(a: int, b: int) -> int:
   return a + b
 ```
+### Why do you need to use type hints? 
+*     Statically typed languages require you to define the types of objects and they can catch errors before run-time. Python is a dynamically typed language and does not force you to do this. This flexibility comes at a cost. When your code base increased, it can be cumbersome to solve runtime TypeErrors if you don’t define the types with type hints.
+*     You need to consider using type hints to help others and yourself. Type hints increase the readability with self-explanatory code.
+*     Type hints also help you to build and maintain a cleaner code architecture as you need to consider types when annotating them in your code.
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
