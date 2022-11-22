@@ -167,7 +167,8 @@ type_annotation_bool: bool = True
 You can also annotate more complex built-in data types like dicts, lists, and tuples. Before doing this, you need to import (we will learn in another lecture) the typing module.
 
 ```python
-from typing import List, Tuple, Dicttype_annotation_tuple: Tuple[str] = ('1','2','3')
+from typing import List, Tuple
+Dicttype_annotation_tuple: Tuple[str] = ('1','2','3')
 type_annotation_list: List[str] = ['a', 'b', 'c']
 type_annotation_dict: Dict[str, int] = {'a': 1, 'b': 2}
 ```
@@ -177,7 +178,8 @@ If your variable or return type can have one of several different types, you can
 Pre-Python 3.10 implementation looks like this:
 
 ```python
-from typing import List, Dict, Uniontype_annotation_list: List[Union[float,int]] = [1.23, 3.32, 1, 3]
+from typing import List, Dict
+uniontype_annotation_list: List[Union[float,int]] = [1.23, 3.32, 1, 3]
 type_annotation_dict: Dict[str, Union[float,int]] = {'a': 1, 'b': 2}
 ```
 The annotation List[Union[float,int]] means that type_annotation_list variable should be a list where each element is either a floating-point or an integer.
