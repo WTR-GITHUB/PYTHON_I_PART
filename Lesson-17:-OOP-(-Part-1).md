@@ -94,7 +94,10 @@ class House:
 
 ## **self** keyword
 The self is used to represent the instance of the class.
-With this keyword, you can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
+With this keyword, you can access the attributes and methods of the class in python. **It binds the attributes with the given arguments**.
+
+👨‍🏫  ❗ **GOOD TO KNOW** ❗ 
+** `Self` is nothing more than a convention: the name `self` has absolutely no special meaning to Python. Note, however, that by not following the convention your code may be less readable to other Python programmers.**
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
