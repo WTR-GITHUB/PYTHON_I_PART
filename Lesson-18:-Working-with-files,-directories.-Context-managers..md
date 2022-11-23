@@ -14,7 +14,7 @@ The main operations you will be performing on files are:
 * Update
 * Delete
 
-In programming jargon -** CRUD** operations.
+In programming jargon - **CRUD** operations.
 However, do note that there are many other operations that can be performed with the files as well. Such as, copying a file or changing the properties of the file and filter.
 All of these operations are important to manipulate the file. This manipulation ensures that the file operations can be performed as per the exact requirement of the user working on the file.
 
