@@ -29,6 +29,15 @@ class Employee:
   def greet(self) -> None:
       print('Hello')
 ```
+We saw that the class object could be used to access different attributes.
+It can also be used to create new object instances (instantiation) of that class. The procedure to create an object is similar to a function call.
+
+```python
+emp_obj = Employee()
+```
+This will create a new object instance named `emp_obj`. We can access the attributes of objects using the object name prefix.
+Attributes may be data or method. Methods of an object are corresponding functions of that class.
+This means to say, since **employee.greet** is a function object (_**attribute of class**_), employee.greet will be a method object.
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
