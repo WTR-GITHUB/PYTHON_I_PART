@@ -70,10 +70,7 @@ But the code looks a little fussy if we always do this when open a file. Actuall
 with open('test_file.txt', 'r') as f:
     print(f.read())
 ```
-ℹ️  - **Context Managers:**
-
-ℹ️ 
-
+Thus, `with` statement helps avoiding bugs and leaks by ensuring that a resource is properly released when the code using the resource is completely executed.
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
