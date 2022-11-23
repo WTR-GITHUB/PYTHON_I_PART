@@ -167,7 +167,7 @@ class House:
 'The house age is: 12.5'
 
 >>> house.get_house_colour('Blue')
-'The house age is: Blue'
+'The house colour is: Blue'
 
 >>> another_house = Dog()
 
@@ -178,12 +178,12 @@ class House:
 'The house age is: 10.5'
 
 >>> house.get_house_colour()
-'The house age is: White'
+'The house colour is: White'
 ```
 
 ## Exercises: 
-🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
-* Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
+🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
+* Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
 * Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
 * Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
 * Update previous task with possible `raise` exception.
@@ -191,9 +191,7 @@ class House:
 
 ## 🌐  Extra reading:
 
-* [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
 
-* [Real Phyton](https://realpython.com/defining-your-own-python-function/)
-
-* [Real Python Youtube](https://www.youtube.com/watch?v=Q93bwyZoXk0)
+* [Full OOP course - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
+* [Corey Schafer: Python OOP Tutorial (multiple videos)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
 ***
