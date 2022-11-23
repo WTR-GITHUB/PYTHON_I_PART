@@ -132,7 +132,7 @@ Lets initiate the class and call some methods:
 
 ```
 👨‍🏫  ❗ **PRO TIP** ❗ 
-**As per normal functions, you can pass default arguments to self parameters and instant method arguments**
+**As per normal functions, you can assign default arguments to self parameters and instant method arguments**
 ```python
 class House:
     # Class attribute
@@ -150,6 +150,11 @@ class House:
     def get_age(self) -> float:
         return f"The house age is:{self.age}"
 
+    # Yet another instance method
+    def get_house_colour(self, colour: string = 'White') -> string:
+        return f"The house colour is:{self.age}"
+
+
 ```
 
 ```python
@@ -161,6 +166,9 @@ class House:
 >>> house.get_age()
 'The house age is: 12.5'
 
+>>> house.get_house_colour('Blue')
+'The house age is: Blue'
+
 >>> another_house = Dog()
 
 >>> another_house.get_cost()
@@ -169,6 +177,8 @@ class House:
 >>> another_house.get_age()
 'The house age is: 10.5'
 
+>>> house.get_house_colour()
+'The house age is: White'
 ```
 
 ## Exercises: 
