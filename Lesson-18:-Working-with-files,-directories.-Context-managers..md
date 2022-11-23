@@ -36,7 +36,21 @@ If the file doesn’t exist, there will be a `FileNotFoundError` .
 
 The file must be closed after use, because the file object will occupy the resources of the operating system, and the number of files that the operating system can open at the same time is also limited.
 
-```f.close()```python
+```python
+f.close()
+```
+#### Types of access modes
+* **r** mode: If we mention this mode, the file will be open in reading format only. The cursor will be at the start of the file.
+* **w** mode: If we mention this mode, the file will be open in write format only to overwrite the file content. If the file is not in the working location, then it will create the file first and write the content in it.
+* **r+** mode: In this mode, the file will be open in both read and write mode.
+* **w+** mode: In this mode, it opens the file and overwrites the content.
+* **wb** mode: File opens in writing mode with the binary format.
+* **a** mode: This mode is for appending the content in the file. The cursor is at the last end of the content to add something to the file.
+* **x** mode: This mode will create a file, returns an error if the file exist
+
+
+👨‍🏫  ❗ **PRO TIP** ❗ 
+** To create a new file in Python, use the open() method, with one of the following parameters: `x`, `a`, `w`.**
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
