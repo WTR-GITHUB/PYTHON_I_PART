@@ -50,7 +50,7 @@ f.close()
 
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
-** To create a new file in Python, use the open() method, with one of the following parameters: `x`, `a`, `w`.**
+**To create a new file in Python, use the open() method, with one of the following parameters: `x`, `a`, `w`.**
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
