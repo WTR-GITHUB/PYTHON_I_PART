@@ -189,7 +189,7 @@ class House:
 * Update previous task with possible `raise` exception.
 
 
-## 🌐  Extra reading:
+## 🌐  Extra reading (or watching 📺 ):
 
 
 * [Full OOP course - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
