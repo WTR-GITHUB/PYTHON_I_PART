@@ -45,7 +45,7 @@ If the file doesn’t exist, there will be a `FileNotFoundError` .
 
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
-**To create a new file in Python, use the open() method, with one of the following parameters: `x`, `a`, `w`.**
+**To create a new file in Python, use the same `open()` method, with one of the following parameters: `x`, `a`, `w`.**
 
 The file must be closed after use, because the file object will occupy the resources of the operating system, and the number of files that the operating system can open at the same time is also limited.
 
