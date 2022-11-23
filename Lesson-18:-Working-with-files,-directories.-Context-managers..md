@@ -58,6 +58,8 @@ f.close()
 try:
     f = open('test_file.txt', 'r')
     print(f.read())
+except Exception as e:
+  # log the error
 finally:
     if f:
         f.close()
