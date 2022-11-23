@@ -1,8 +1,3 @@
-1. Python is all about the objects
-1. Class definition & initiation. 
-1. ‘self ’ explained
-1. First method.
-
 ## Introduction 
 Object-oriented programming (OOP) is a method of structuring a program by bundling related properties and behaviors into individual objects. 
 Conceptually, objects are like the components of a system. Think of a program as a factory assembly line of sorts. At each step of the assembly line a system component processes some material, ultimately transforming raw material into a finished product.
@@ -92,12 +87,50 @@ class House:
 ```
 
 
-## **self** keyword
+## **Self** keyword
 The self is used to represent the instance of the class.
 With this keyword, you can access the attributes and methods of the class in python. **It binds the attributes with the given arguments**.
 
 👨‍🏫  ❗ **GOOD TO KNOW** ❗ 
 ** `Self` is nothing more than a convention: the name `self` has absolutely no special meaning to Python. Note, however, that by not following the convention your code may be less readable to other Python programmers.**
+
+## Instance methods
+**Instance methods** are functions that are defined inside a class and can only be called from an instance of that class. Just like ```.__init__()```, an instance method’s first parameter is always `self`:
+
+```python
+class House:
+    # Class attribute
+    location: str = "Somewhere near Trump Tower"
+
+    def __init__(self, cost: int, age: float):
+        self.cost: int = cost
+        self.age: float = age
+    
+    # Instance method
+    def get_cost(self) -> int:
+        return f"The house cost is:{self.cost}"
+
+    # Another instance method
+    def get_age(self) -> float:
+        return f"The house age is:{self.age}"
+
+```
+This House class has **two instance methods**:
+
+* get_cost() -  returns an `int` displaying the `cost` of the house.
+* get_age() -  returns a `float` displaying the `age` of the house.
+
+Lets initiate the class and call some methods:
+```python
+>>> house = Dog(100000, 12.5)
+
+>>> house.get_cost()
+'The house cost is: 100000'
+
+>>> house.get_age()
+'The house age is: 12.5'
+
+```
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
