@@ -68,8 +68,8 @@ Notice that the ```.__init__()``` method’s signature is indented four spaces. 
 
 In the body of ```.__init__()```, there are two statements using the self variable:
 
-    self.cost = name creates an attribute called `cost` and assigns to it the value of the `cost` parameter.
-    self.age = age creates an attribute called `age` and assigns to it the value of the `age` parameter.
+self.cost = name creates an attribute called `cost` and assigns to it the value of the `cost` parameter.
+self.age = age creates an attribute called `age` and assigns to it the value of the `age` parameter.
 
 Attributes created in ```.__init__()``` are called** instance attributes**. An instance attribute’s **value is specific to a particular instance of the class**. All House objects have a cost and an age, but the values for the cost and age attributes will vary depending on the **House instance**.
 
