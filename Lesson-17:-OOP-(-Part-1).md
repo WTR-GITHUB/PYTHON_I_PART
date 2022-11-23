@@ -131,6 +131,45 @@ Lets initiate the class and call some methods:
 'The house age is: 12.5'
 
 ```
+👨‍🏫  ❗ **PRO TIP** ❗ 
+**As per normal functions, you can pass default arguments to self parameters and instant method arguments**
+```python
+class House:
+    # Class attribute
+    location: str = "Somewhere near Trump Tower"
+
+    def __init__(self, cost: int = 50000, age: float= 10.5):
+        self.cost: int = cost
+        self.age: float = age
+    
+    # Instance method
+    def get_cost(self) -> int:
+        return f"The house cost is:{self.cost}"
+
+    # Another instance method
+    def get_age(self) -> float:
+        return f"The house age is:{self.age}"
+
+```
+
+```python
+>>> house = Dog(100000, 12.5)
+
+>>> house.get_cost()
+'The house cost is: 100000'
+
+>>> house.get_age()
+'The house age is: 12.5'
+
+>>> another_house = Dog()
+
+>>> another_house.get_cost()
+'The house cost is: 50000'
+
+>>> another_house.get_age()
+'The house age is: 10.5'
+
+```
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
