@@ -77,6 +77,10 @@ The `open()` function return a file object. A Python file object has 3 reading m
 * **read()** : read the entire file and save the contents to a Python string variable. Sometimes a file is larger than the available memory, in order to be safe, we can use the parameter n to read n characters each time: read(n). The default value of n is -1, which means read the whole file.
 * **readlines()** is also to read entire file, but it will automatically analyses the file contents and convert them into a list of lines, which makes it convenient to deal with the contents as a list of strings.
 * **readline()** reads only one line of the file contents each time.
+
+```python
+
+```
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
