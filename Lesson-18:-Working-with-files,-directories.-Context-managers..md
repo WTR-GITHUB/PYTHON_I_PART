@@ -39,6 +39,26 @@ The file must be closed after use, because the file object will occupy the resou
 ```python
 f.close()
 ```
+👨‍🏫  ❗ **ATTENTION** ❗ 
+**Sometimes we could forget to close a file after use and could cause unexpected bugs. Therefore, we can use `try..finally` block :**
+```python
+try:
+    f = open('test_file.txt', 'r')
+    print(f.read())
+finally:
+    if f:
+        f.close()
+```
+But the code looks a little fussy if we always do this when open a file. Actually, the best way to open a file in Python is to use `with` statement:
+
+```python
+with open('test_file.txt', 'r') as f:
+    print(f.read())
+```
+ℹ️  - **Context Managers:**
+
+ℹ️ 
+
 #### Types of access modes
 * **r** mode: If we mention this mode, the file will be open in reading format only. The cursor will be at the start of the file.
 * **w** mode: If we mention this mode, the file will be open in write format only to overwrite the file content. If the file is not in the working location, then it will create the file first and write the content in it.
