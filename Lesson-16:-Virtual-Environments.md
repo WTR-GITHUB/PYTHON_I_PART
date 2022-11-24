@@ -124,6 +124,58 @@ So if you or someone else wanted to create a virtual environment and use the sam
 pip install -r requirements.txt
 ```
 
+## Pipenv
+Using `pipenv` has several advantages compared to using `pip` and `venv`. These are the main ones:
+* You no longer need to use pip and venv separately. Instead, you have one tool that does it all — and more!
+* `pipenv` separates your top-level dependencies from the last tested combination (e.g., _the output of pip freeze_). This makes dependency management more user-friendly for you as a developer.
+* `pipenv` encourages the use of the latest versions of dependencies to minimize security risks. It can even scan your dependencies for known vulnerabilities.
+* `pipenv` gives insight into your dependency graph with `pipenv graph`.
+*  `pipenv` [hashes](https://www.educative.io/answers/what-is-hashing) all dependencies. It will detect packages that have been tampered with after you initially included them as a dependency.
+* `pipenv` can work with `requirements.txt` files too. If there is one, it will automatically detect it and convert it into a `Pipfile`.
+
+#### Workflow 
+Pipenv is a third-party package, so first you’ll need to _install it_:
+
+```python
+pip install pipenv
+```
+Then you can change into your product directory (or create a new directory if you’re starting a new project, as I’m doing here), and _instantiate_ `pipenv` there:
+
+```python
+mkdir ~/dev/projects/my-new-project && cd ~/dev/projects/my-new-project
+pipenv install
+```
+This will create two new files, a Pipfile and a Pipfile.lock.
+
+To _enable_ virtual environment:
+
+```python
+$ pipenv shell
+```
+To _install packages_ with `pipenv`:
+
+
+```python
+pipenv install <package name>
+```
+
+_Listing packages_ in your environment:
+
+```python
+pipenv lock -r
+```
+To _show which packages you have installed (and the dependencies of those dependencies)_ you can run:
+
+```python
+pipenv graph
+```
+
+_Uninstalling Packages:_
+
+```python
+pipenv uninstall <package name>
+```
+
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
