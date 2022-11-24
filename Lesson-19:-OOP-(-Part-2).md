@@ -77,7 +77,7 @@ AttributeError: 'employee' object has no attribute '__sal'
 ```
 
 ##  Four pillars of OOP
-###Inheritance
+### Inheritance
 `Inheritance` is the process by which one class inherits the properties of another class. This newly formed class is called a child class and the other class is called a parent class. It provides code reusability because we are using an existing class to increase the properties of a new class. A child class can access all the data members and functions of the parent class.
 
 In Python, to inherit a class, we use `ChildClass(ParentClass)` at the time of defining the class: 🔽 
@@ -133,6 +133,9 @@ obj = Employee('Garry',35,10,50000)
 obj.debug()                                                         ## AttributeError: 'Employee' object has no attribute 'debug' , A parent can not access a child class
 '''
 ```
+At first, we have a parent class `Employee` that has some basic information: name, age, exp (experience), and salary. Employee class has a constructor that contains all the instance attributes. Lastly, we also have a method named show that only has a print statement and is used for printing the information.
+Engineer and Designer both are the child classes of the parent class Employee.
+The** `super()` method** helps a child class to access the members of the parent class. Engineers class accesses name, age, exp, and salary information from the parent class.
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
