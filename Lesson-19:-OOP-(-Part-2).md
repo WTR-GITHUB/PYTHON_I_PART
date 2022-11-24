@@ -1,7 +1,3 @@
-1. OOP principles: Polymorphism
-1. OOP principles: Encapsulation and Abstraction Explained.
-1. Static method.
-
 ## Introduction 
 As we already know, Python is an Object-Oriented Programming language. Everything in Python is an object. Like other Object-Oriented languages, when creating objects using classes, there are 4 basic principles for writing clean and concise code. These principles are called the **four pillars of object-oriented programming (OOP)**. These four pillars are:  **Inheritance, Polymorphism, Encapsulation and Abstraction.** 
 
