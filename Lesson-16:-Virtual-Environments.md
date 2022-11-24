@@ -33,8 +33,46 @@ The definition above is simple enough to understand that a `virtual environment`
 You can simply create a virtual environment for every project that you work on.
 We will discuss two very popular virtual environment managers: [venv](https://docs.python.org/3/library/venv.html) and [Pipenv](https://pipenv.pypa.io/en/latest/)
 
+## venv
+A common way people used to create virtual environments was with a python package known as [virtualenv](https://virtualenv.pypa.io/en/latest/), but as of python version `3.3`, parts of `virtualenv` actually got built into python under the module name `venv`. You can now create a virtual environment with the following command:
+
+```python
+python3 -m venv <name_of_your_choice>
+```
+What’s going on here?
+
+* Well, python3 is your installation of python. If the version of python you installed is called python, python3.7or python3.9 or anything else, then use that;
+* `-m venv` is an argument that tells python to run the virtual environment module, `venv`;
+*  The last `<name_of_your_choice>` is the name of your virtual environment folder. Some people like to use another name (e.g. env or .env), however, this is completely up to you.
+
+
 👨‍🏫  ❗ **PRO TIP** ❗ 
-**As per normal functions, you can assign default arguments to self parameters and instant method arguments**
+** if you use `git`, you will want to add `venv/` to a new line of a `.gitignore` file to make sure you don’t version control your virtual environment. If you forget this step, _you can clog up_ your git repository with hundreds of additional version controlled files**
+
+Once you have created your virtual environment, you won’t need to do this again.
+You will now be able to use your environment, as per the below steps:
+### Activate
+To use a virtual environment, you need to “activate” that environment with the following command:
+(**on MacOS and Linux**)
+```python
+source <name_of_your_choice>/bin/activate
+```
+or (**Windows**)
+```python
+<name_of_your_choice>\Scripts\activate
+```
+What the above commands did was change the commands python and pip (pythons package manager) to refer to those located in the `venv` folder. A helpful indicator should appear that shows you are using your virtual environment like the following:
+
+```python
+(<name_of_your_choice>) $
+```
+This means that when you install a package with pip, e.g. with:
+```python
+pip install numpy
+```
+You will now install it in the virtual environment contained within your <name_of_your_choice> folder. If you like, you should be able to view the files of the packages you install in <name_of_your_choice>/lib/python3.9/site-packages . You will have to substitute python3.9 (or whatever version you use) for your version if this is different.
+Example: 
+![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/venv.gif)
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
