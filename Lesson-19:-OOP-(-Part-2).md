@@ -68,6 +68,47 @@ class Employee:
 AttributeError: 'employee' object has no attribute '__sal'
 
 ```
+ℹ️ 
+There are **private and protected methods** too. The working mechanism of access modifiers applies the same as for the class attributes:
+A private method can be only called inside the particular class, a protected method inside the particular class and by its child classes.
+
+_Private method_
+```python
+class Example:
+  def __init__(self):
+    self.__a = "This is a private variable"  def __can_not_run(self):
+    print("Can't be executed outside of this class")
+
+>>> ex = Example()
+>>> print(ex.__a)
+
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AttributeError: 'Example' object has no attribute '__a'>>> ex.__can_not_run()
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AttributeError: 'Example' object has no attribute '__can_not_run'
+```
+_Protected method_
+```python
+class User:
+    def __init__(self,username) -> None:
+        self.username = username
+    
+    def _check_account_existence(self):
+        print(f"Checking if {self.username} has signed up already.")
+
+---- OUTPUT ----
+>>> user = User("cowboy")
+>>> user._check_account_existence()
+Checking if cowboy has signed up already.
+```
+💁 **Reminder**: 
+* Protected methods use **one underscore** as their prefix, while private methods use **two underscores** as their prefix.
+* We can call protected methods outside the class directly by using their method names. However, calling private methods requires [name mangling](https://www.geeksforgeeks.org/name-mangling-in-python/).
+
+Besides these two obvious differences between protected and private methods, the major difference between these two kinds of methods_ pertains to their accessibility within their subclasses_. That is, protected methods are accessible within the subclasses, while private methods are not accessible within the subclasses (although the reason is also due to name mangling). 
+ℹ️ 
 
 ##  Four pillars of OOP
 ### Inheritance
