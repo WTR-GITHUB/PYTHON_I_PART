@@ -82,8 +82,47 @@ pip install numpy
 ```
 
 You will now install it in the virtual environment contained within your <name_of_your_choice> folder. If you like, you should be able to view the files of the packages you install in <name_of_your_choice>/lib/python3.9/site-packages . You will have to substitute python3.9 (or whatever version you use) for your version if this is different.
-Example: 
+
+Example:
+ 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/venv.gif)
+
+Continuing with this example, if you now start python in interactive mode, you will be able to access these packages using the following commands:
+
+```python
+python
+import numpy as np
+print(np.sqrt(5))
+```
+If everything went correctly, you should have seen something similar to the following:
+
+![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/venv2.gif)
+
+You should also be able to access any packages you install when using python to run your python files. For example if you wanted to use the python contained within your virtual environment to run a file called “main.py”, you could do that with the following command:
+
+```python
+python main.py
+```
+
+When you are done with your virtual environment, you can close the terminal or, alternatively, deactivate the environment with the command as follows:
+```python
+deactivate
+```
+This will also now let you activate a different virtual environment for another one of your projects if you need to.
+
+#### Reproducing your environment
+You can reproduce a python virtual environment (e.g. on another machine), you will commonly want to save the packages you install to a file. This will let anyone with your file, install the same version of packages that you used when developing your project. You will however likely still want to tell them what version of python you are using. Commonly people like to use a file called `requirements.txt` for this purpose.
+
+If you have activated your python virtual environment, you can automatically generate a requirements.txt file with the following:
+
+```python
+pip freeze > requirements.txt
+```
+So if you or someone else wanted to create a virtual environment and use the same packages as you did, they can follow along with the above commands to create and activate a virtual environment and then, install your requirements. Installation of requirements is possible using the -r method of pip as follows:
+
+```python
+pip install -r requirements.txt
+```
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
