@@ -9,6 +9,7 @@ To check your pip version you can do:
 python3 -m pip --version
 ```
 You can install a package by using the install command in pip:
+
 ```python
 python -m pip install <package-name>
 ```
@@ -46,30 +47,40 @@ What’s going on here?
 *  The last `<name_of_your_choice>` is the name of your virtual environment folder. Some people like to use another name (e.g. env or .env), however, this is completely up to you.
 
 
+
 👨‍🏫  ❗ **PRO TIP** ❗ 
 ** if you use `git`, you will want to add `venv/` to a new line of a `.gitignore` file to make sure you don’t version control your virtual environment. If you forget this step, _you can clog up_ your git repository with hundreds of additional version controlled files**
 
+
 Once you have created your virtual environment, you won’t need to do this again.
-You will now be able to use your environment, as per the below steps:
-### Activate
+
+#### Workflow
 To use a virtual environment, you need to “activate” that environment with the following command:
+
 (**on MacOS and Linux**)
+
 ```python
 source <name_of_your_choice>/bin/activate
 ```
+
 or (**Windows**)
+
 ```python
 <name_of_your_choice>\Scripts\activate
 ```
+
 What the above commands did was change the commands python and pip (pythons package manager) to refer to those located in the `venv` folder. A helpful indicator should appear that shows you are using your virtual environment like the following:
 
 ```python
 (<name_of_your_choice>) $
 ```
+
 This means that when you install a package with pip, e.g. with:
+
 ```python
 pip install numpy
 ```
+
 You will now install it in the virtual environment contained within your <name_of_your_choice> folder. If you like, you should be able to view the files of the packages you install in <name_of_your_choice>/lib/python3.9/site-packages . You will have to substitute python3.9 (or whatever version you use) for your version if this is different.
 Example: 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/venv.gif)
