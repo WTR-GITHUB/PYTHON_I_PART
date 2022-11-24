@@ -39,6 +39,9 @@ class Employee:
 >>> emp.sal
 999000
 ```
+👨‍🏫  ❗ **Attention** ❗ 
+**By default, all the variables and member functions of a class are public in a python program.**
+
 _Protected_
 ```python
 # defining a class Employee
@@ -53,6 +56,9 @@ class Employee:
 >>> emp.sal
 10000
 ```
+👨‍🏫  ❗ **Good To Know** ❗ 
+**Despite the fact that usage of  protected attributes are  limited 'on paper', soon you will see, that you can (but DONT!) use those as `public` attributes **
+
 _Private_
 ```python
 # defining a class Employee
@@ -69,10 +75,6 @@ class Employee:
 AttributeError: 'employee' object has no attribute '__sal'
 
 ```
-
-
-👨‍🏫  ❗ **Attention** ❗ 
-**By default, all the variables and member functions of a class are public in a python program.**
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
