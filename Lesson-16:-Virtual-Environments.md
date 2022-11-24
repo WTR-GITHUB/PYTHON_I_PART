@@ -23,10 +23,14 @@ Even if your multiple projects are using the same python version, a case may ari
 
 Since by default every project on your system will write and consume 3rd party packages from the same directory this poses a challenge as it **can break the functionality for either of your projects**.
 
+## Virtual Environments 
+The official documentation from [Python](https://docs.python.org/) says:
 
-👨‍🏫  ❗ **GOOD TO KNOW** ❗ 
-** `Self` is nothing more than a convention: the name `self` has absolutely no special meaning to Python. Note, however, that by not following the convention your code may be less readable to other Python programmers.**
+_A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system._
 
+The definition above is simple enough to understand that a `virtual environment` is just offering you an isolated place for managing dependencies of a project such that they **do not interfere with libraries installed in any other virtual environment or installed on your system**.
+
+You can simply create a virtual environment for every project that you work on.
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **As per normal functions, you can assign default arguments to self parameters and instant method arguments**
