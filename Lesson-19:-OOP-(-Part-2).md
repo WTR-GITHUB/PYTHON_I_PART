@@ -12,6 +12,13 @@ A few to name:
 * Provides a modular structure.
 * It is easy to debug.
 
+## Access modifiers
+In most of the object-oriented languages access modifiers are used to limit the access to the variables and functions of a class. Most of the languages use three types of access modifiers, they are - private, public and protected.
+
+Just like any other [object oriented programming language](https://en.wikipedia.org/wiki/List_of_object-oriented_programming_languages), access to variables or functions can also be limited in python using the access modifiers. Python makes the use of `underscores` to specify the access modifier for a specific data member and member function in a class.
+
+Access modifiers play an **important role to protect the data from unauthorized access as well as protecting it from getting manipulated**. When inheritance (look at the following chapter ⬇️ ) is implemented there is a huge risk for the data to get destroyed(manipulated) due to transfer of unwanted data from the parent class to the child class. Therefore, it is very important to provide the right access modifiers for different data members and member functions depending upon the requirements.
+
 ```
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **As per normal functions, you can assign default arguments to self parameters and instant method arguments**
