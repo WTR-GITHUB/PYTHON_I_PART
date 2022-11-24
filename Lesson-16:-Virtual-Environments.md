@@ -31,6 +31,7 @@ _A virtual environment is a Python environment such that the Python interpreter,
 The definition above is simple enough to understand that a `virtual environment` is just offering you an isolated place for managing dependencies of a project such that they **do not interfere with libraries installed in any other virtual environment or installed on your system**.
 
 You can simply create a virtual environment for every project that you work on.
+We will discuss two very popular virtual environment managers: [venv](https://docs.python.org/3/library/venv.html) and [Pipenv](https://pipenv.pypa.io/en/latest/)
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
 **As per normal functions, you can assign default arguments to self parameters and instant method arguments**
