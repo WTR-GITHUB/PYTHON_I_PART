@@ -31,17 +31,44 @@ _Public_
 class Employee:
     # constructor
     def __init__(self, name: str, sal: int):
-        self.name = name;
-        self.sal = sal;
+        self.name = name #Public attribute
+        self.sal = sal
 
 ---- OUTPUT ----
 >>> emp = Employee("Ironman", 999000);
->>> emp.sal;
+>>> emp.sal
 999000
 ```
+_Protected_
+```python
+# defining a class Employee
+class Employee:
+    # constructor
+    def __init__(self, name: str, sal: int):
+        self._name = name #Protected attribute
+        self._sal = sal #Protected attribute
 
-
+---- OUTPUT ----
+>>> emp = Employee("Captain", 10000);
+>>> emp.sal
+10000
 ```
+_Private_
+```python
+# defining a class Employee
+class Employee:
+    # constructor
+    def __init__(self, name: str, sal: int):
+        self.__name = name #Private attribute
+        self.__sal = sal #Private attribute
+
+---- OUTPUT ----
+>>> emp = Employee("Captain", 10000);
+>>> emp.sal
+10000
+```
+
+
 👨‍🏫  ❗ **Attention** ❗ 
 **By default, all the variables and member functions of a class are public in a python program.**
 
