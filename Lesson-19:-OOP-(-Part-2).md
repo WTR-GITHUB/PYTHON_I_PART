@@ -31,7 +31,7 @@ _Public_
 class Employee:
     # constructor
     def __init__(self, name: str, sal: int):
-        self.name = name #Public attribute
+        self.name = name # Public attribute
         self.sal = sal
 
 ---- OUTPUT ----
@@ -45,8 +45,8 @@ _Protected_
 class Employee:
     # constructor
     def __init__(self, name: str, sal: int):
-        self._name = name #Protected attribute
-        self._sal = sal #Protected attribute
+        self._name = name # Protected attribute
+        self._sal = sal # Protected attribute
 
 ---- OUTPUT ----
 >>> emp = Employee("Captain", 10000);
@@ -59,13 +59,15 @@ _Private_
 class Employee:
     # constructor
     def __init__(self, name: str, sal: int):
-        self.__name = name #Private attribute
-        self.__sal = sal #Private attribute
+        self.__name = name # Private attribute
+        self.__sal = sal # Private attribute
 
 ---- OUTPUT ----
->>> emp = Employee("Captain", 10000);
->>> emp.sal
-10000
+>>> emp = Employee("Bill", 10000);
+>>> emp.__sal;
+
+AttributeError: 'employee' object has no attribute '__sal'
+
 ```
 
 
