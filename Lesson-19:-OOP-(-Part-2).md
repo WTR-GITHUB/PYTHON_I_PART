@@ -18,10 +18,32 @@ In most of the object-oriented languages access modifiers are used to limit the 
 Just like any other [object oriented programming language](https://en.wikipedia.org/wiki/List_of_object-oriented_programming_languages), access to variables or functions can also be limited in python using the access modifiers. Python makes the use of `underscores` to specify the access modifier for a specific data member and member function in a class.
 
 Access modifiers play an **important role to protect the data from unauthorized access as well as protecting it from getting manipulated**. When inheritance (look at the following chapter ⬇️ ) is implemented there is a huge risk for the data to get destroyed(manipulated) due to transfer of unwanted data from the parent class to the child class. Therefore, it is very important to provide the right access modifiers for different data members and member functions depending upon the requirements.
+There are 3 types of access modifiers for a class in Python. These access modifiers define how the members of the class can be accessed. 
+These are:
+
+* Public - the members declared as Public are accessible from outside the Class through an object of the class.
+* Protected - the members declared as Protected are accessible from outside the class but only in a class derived from it that is in the child or subclass.
+* Private - these members are only accessible from within the class. No outside Access is allowed.
+
+_Public_
+```python
+# defining a class Employee
+class Employee:
+    # constructor
+    def __init__(self, name: str, sal: int):
+        self.name = name;
+        self.sal = sal;
+
+---- OUTPUT ----
+>>> emp = Employee("Ironman", 999000);
+>>> emp.sal;
+999000
+```
+
 
 ```
-👨‍🏫  ❗ **PRO TIP** ❗ 
-**As per normal functions, you can assign default arguments to self parameters and instant method arguments**
+👨‍🏫  ❗ **Attention** ❗ 
+**By default, all the variables and member functions of a class are public in a python program.**
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
