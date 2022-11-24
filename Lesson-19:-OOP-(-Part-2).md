@@ -202,6 +202,7 @@ In the above code, `area()` is performing two tasks in different instances of th
 **Abstraction** is used to hide the internal functionality of the function from the users. By applying abstraction, each object is only exposed to a high-level mechanism for using it. A method that only has a declaration and not a definition is called an abstract method. An abstract method doesn’t have anything inside the body. A class that has an abstract method is called an abstract class.
 
 Python by default does not support abstract classes, but there is a module named abc that allows Python to create abstract methods and classes.
+More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.com/python-interface/)
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
