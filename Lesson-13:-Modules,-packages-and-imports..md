@@ -18,13 +18,16 @@ Joining the smaller subtasks together forms an application; In Python, we refer 
 When we have several modules then the collection is called a package. A package can be thought of as a folder that contains modules and possibly other folders that contain modules [and so on]. Thus, a package is simply a name used to bind all of the modules inside it together so we can reference it in the future when we want to use that code in another program.
 
 Some benefits of modular programming are:
-* Simplicity - When we divide our programs into modules, we are able to focus on smaller portions of the greater problem. This means we can put greater emphasis on ensuring the code we write works before we integrate it into the larger program. In other words, we can write tests that are more detailed and strict to test functionality that does less when we write modular code.
+* **Simplicity** - When we divide our programs into modules, we are able to focus on smaller portions of the greater problem. This means we can put greater emphasis on ensuring the code we write works before we integrate it into the larger program. In other words, we can write tests that are more detailed and strict to test functionality that does less when we write modular code.
 Also, the code is much easier to follow and read when it’s separated into parts that deal with specific parts of the functionality. If we used monolithic code instead, finding specific parts would become increasingly challenging as the number of lines we write grows — talk less of the size of the file.
 
-* Maintainability - Large programs are usually built by multiple programmers who bring their skills together; When each module serves as a single source of truth for its functionality, we reduce the number of places bugs can arise in a program. This is because whenever we come across a bug in our code or a specific piece of functionality must be updated, changes only need to be done at the modular level rather than to the whole program — given we’ve checked the inter dependability criteria.
+*** Maintainability** - Large programs are usually built by multiple programmers who bring their skills together; When each module serves as a single source of truth for its functionality, we reduce the number of places bugs can arise in a program. This is because whenever we come across a bug in our code or a specific piece of functionality must be updated, changes only need to be done at the modular level rather than to the whole program — given we’ve checked the inter dependability criteria.
 Not only does this make it easier to spot and rapidly fix these bugs, but it also encourages collaboration among teams. For example, responsibility for specific modules can be assigned to various members of the team, and though we’d still be nervous, there’s greater confidence that changes or updates we make won’t break the overall system.
 
-* Reusability - the main gist is that we often reuse code in software development. Instead of copying and pasting that code, a better solution is to pull in the code required from a single source which is what modularity allows us to do.
+* **Reusability** - the main gist is that we often reuse code in software development. Instead of copying and pasting that code, a better solution is to pull in the code required from a single source which is what modularity allows us to do.
+
+## Modules
+
 
 
 👨‍🏫  ❗ **PRO TIP** ❗ 
