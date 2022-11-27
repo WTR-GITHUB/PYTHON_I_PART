@@ -188,7 +188,7 @@ else:
     print("No clue who this is")
 ```
 
-Exercises:
+## 🧠 Exercises:
 
 1. Let user enter name, surname and age. Print if user is allowed to enter an online casino or not. 21 is the age cap.
 1. Create a database (List of privileged users) print a specific message with a personal greeting if the user is a privileged and just "Welcome otherwise"
@@ -196,3 +196,7 @@ Exercises:
 1. Write a small calculator application, that allows user to enter two numbers and a symbol, given and then do the operation and print an answer.
 
 1. create a number guessing game from 1-10, with random library. (IDEA FOR LATER MAYBE)
+
+
+## 🌐  Extra reading:
+[realpython - super nice website on python](https://realpython.com/python-conditional-statements/)
