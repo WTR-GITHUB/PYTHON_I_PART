@@ -1,7 +1,3 @@
-1. Sets
-1. Dictionary
-
-
 # Dictionary
 
 a very powerful data structure which is going to be used a lot. Dictionary hold key: value pairs, with which we can access it's attributes.
@@ -199,9 +195,14 @@ numbers_set = set(numbers_list)
 print(numbers_set)
 ```
 
-# Exercises
+## 🧠Exercises
 
 1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
 1. Try creating structure like one here: [link](#complex) from an empty dictionary: `my_dict = {}`
 
+
+## 🌐  Extra reading:
+* [More on Python Data structures](https://corporatefinanceinstitute.com/resources/data-science/python-data-structures/)
+
+* [even more](https://www.edureka.co/blog/data-structures-in-python/)
 
