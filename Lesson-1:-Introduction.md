@@ -38,4 +38,5 @@ Congratulations you now speak Python!
 
 ## 🌐 Extra Reading:
 
+[what is python](https://www.python.org/doc/essays/blurb/)
 [motivation](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20is%20a%20very%20popular,as%20the%20top%20programming%20language.)
