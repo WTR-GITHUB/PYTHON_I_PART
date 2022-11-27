@@ -152,7 +152,7 @@ Now it seems that Lists are much better than tuples, but in programming everythi
 Usually it is recommended to use Tuple on static values that do not change as it is a bit faster in python than lists. And we should be using lists whenever we have values that are going to be changing, or the list itself will grow or shrink in size.
 
 
-# 🧠 Exercises:
+## 🧠 Exercises:
 
 1. Write a python program that sums up all items in the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself)
@@ -166,3 +166,4 @@ Usually it is recommended to use Tuple on static values that do not change as it
 ## 🌐  Extra reading:
 
 * [w3schools](https://www.w3schools.com/python/python_lists.asp)
+* [more material](https://www.programiz.com/python-programming/list)
