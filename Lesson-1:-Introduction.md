@@ -71,7 +71,7 @@ Let's try them out:
 ```python
 5 ** 3
 ```
-
+Are the results understandable? If not raise discussion in class.
 
 ## Excercise:
 🧠 
