@@ -38,12 +38,13 @@ Operators are simply actions similar to actions in you everyday calculator.
 
 | Operator  | Name | Example |
 | ------------- | ------------- | ------------- |
-| +  | Content Cell  | Content Cell  |
-| -  | Content Cell  | Content Cell  |
-| *  | Content Cell  | Content Cell  |
-| /  | Content Cell  | Content Cell  |
-| %  | Content Cell  | Content Cell  |
-| // | Content Cell  | Content Cell  |
+| +  | Addition  | x + y  |
+| -  | Subtraction  | x - y  |
+| *  | Multiplication  | x * y  |
+| /  | Division  | x / y  |
+| %  | Modulus  | x % y  |
+| ** | Exponentiation | x ** y  |
+| // | Floor Division| x  y  |
 
 ## 🌐 Extra Reading:
 
