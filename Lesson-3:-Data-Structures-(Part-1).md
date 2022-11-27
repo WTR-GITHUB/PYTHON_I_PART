@@ -165,4 +165,4 @@ Usually it is recommended to use Tuple on static values that do not change as it
 
 ## 🌐  Extra reading:
 
-
+* [w3schools](https://www.w3schools.com/python/python_lists.asp)
