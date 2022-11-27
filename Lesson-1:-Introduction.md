@@ -29,12 +29,21 @@ Traditionally first program every programmer writes is printing out "Hello, Worl
 code:
 ```print("Hello, World")```
 
-Congratulations you now speak Python!
+Congratulations you now speak Python! But we are not stopping here now are we? (Hope not...)
 
-1. IDE Setup
-1. First Program
-1. Operators and expressions
+## Python operators
 
+Python has a lot of tools that are already in place for you to use. Today we will review Operators.
+Operators are simply actions similar to actions in you everyday calculator.
+
+| Operator  | Name | Example |
+| ------------- | ------------- | ------------- |
+| +  | Content Cell  | Content Cell  |
+| -  | Content Cell  | Content Cell  |
+| *  | Content Cell  | Content Cell  |
+| /  | Content Cell  | Content Cell  |
+| %  | Content Cell  | Content Cell  |
+| // | Content Cell  | Content Cell  |
 
 ## 🌐 Extra Reading:
 
