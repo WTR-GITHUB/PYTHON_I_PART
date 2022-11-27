@@ -1,61 +1,74 @@
-## Kas tai yra?
-Versijų valdymo sistemos (angl. Version Control System arba VCS) seka bendrų projektų, kuriamų grupės žmonių, pokyčių istoriją
+# Version control systems (git, gitlab, github, bitbucket...)
 
-Naudosime vieną populiariausių versijų valdymo sistemą GIT – [www.github.com](http://www.github.com/) (dar yra GitLab, Bitbucket)
+## What are they?
+Put simply it is software that allows you to version your software while working on it with as many people as you wish.
 
-## Ką leidžia VCS (GIT)?
-Saugoti visus kodo pakeitimus ir nesunkiai gražinti kodą į norimą, prieš tai buvusią padėtį
-Su tuo pačiu kodu lygiagrečiai dirbti (keisti) daugeliui žmonių
-Lengvai dalintis, rodyti, leisti peržiūrėti kolegoms parašytą kodą per specialią svetainę (pvz. [www.github.com](http://www.github.com/))
-Nuolat išsaugoti paskutinius pakeitimus ne tik lokaliai, bet ir serveryje
-Lengviau pateikti kodą į produkciją (pvz., publikuoti sukurtą svetainę internete, skelbti pakeitimus)
-## Kaip įdiegti GIT Windows sistemoje?
-Užsiregistruoti svetainėje [www.github.com](http://www.github.com/).
-Įdiegti GIT programą iš https://git-scm.com/downloads (diegiant visuomet spausti „Next“).
-Patikrinti ar veikia, Windows konsolėje (Win + c, m, d + Enter) įrašius „git“ (jei išmeta pagalbos informaciją apie git, reiškia veikia).
-## Kaip nustatyti GIT?
-Windows konsolėje (Win + c, m, d + Enter):
+During the course we will be using the most popular Github– [www.github.com](http://www.github.com/). So if you do not have an account yet - register.
 
-1.Nustatyti vardą:
+Download git bash: [link](https://git-scm.com/downloads)
 
+## What can we achieve with git?
 
-`git config --global user.name "Vardas Pavarde"`
+So what does the versioning mean? Well with git we save each an every change everyone is doing and at any given time we can go back into any version of our project, we can revert it into any stage if we want. What is more we can also easily work within a team, you do not have to email chunks of code to each other etc. All the information is beautifully stored on [github](http://www.github.com/) Also modern VSC systems like github or gitlab allow us to also seemlesly deploy, test and do other fantastic things with out codebase.
+
+## setting up git?
+
+open git bash if you are using windows or any terminal on other OS:
+
+1.Setup your name:
 
 
-2.Nustatyti el. pašto adresą:
+`git config --global user.name "name surname"`
 
 
-`git config --global user.email el@pastas.com`
+2.setup email:
 
 
-3.Patikrinti ar pasikeitė:
+`git config --global user.email full@email.com`
+
+
+3.Check settings:
 
 
 `git config --list`
 
 
-Kaip susieti kompiuterį su GitHub (per SSH raktą)?
-Atidaryti programą Git Bash (Win + g, i, t, , b, a, s, h + Enter).
+Connecting with ssh key
 
-Sugeneruoti SSH raktą paleidus šią komandą:
+Open git bash terminal
 
-`ssh-keygen -t rsa -b 4096 -C "el@pastas.com"`
+generate ssh key:
+
+`ssh-keygen -t rsa -b 4096 -C "email@email.com"`
 
 
-(galima visas užklausas patvirtinti nieko nevedant, tik spaudžiant Enter).
+open file id_rsa.pub with any text editor and copy it.
 
-Su bet kokiu teksto redaktoriumi atidaryti sugeneruotą rakto failą id_rsa.pub, pažymėti kodą komanda CTRL+C.
+Go to[www.github.com](http://www.github.com/) on top right click on your profile -> settings -> SSH and GPG keys -> New SSH key.
 
-Svetainėje [www.github.com](http://www.github.com/) spausti ant vartotojo ikonos viršutiniame dešiniajame kampe, pasirinkti Settings, tuomet SSH and GPG keys. Tada spausti mygtuką New SSH key.
+Give the key a name of your choice and paste the key. Click Add SSH Key
 
-Laukelyje Title įrašyti norimą pavadinimą, pvz. Namų kompiuteris, pele pažymėti lauką key ir paspausti CTRL+V (bus įklijuotas 3 žingsnyje nukopijuotas SSH kodas), galiausiai spausti Add SSH Key.
 
-## Kaip sukurti tuščią GitHub projektą (repozitoriją)?
-Pagrindiniame [www.github.com](http://www.github.com/) puslapyje (prisijungę savo vardu ir slaptažodžiu) spauskite Start a project.
+## Creating an empty project?
+Open [www.github.com](http://www.github.com/) Login and hit Start a project.
 
-Laukelyje Repository name įrašykite norimą projekto pavadinimą (be tarpų) ir spauskite mygtuką Create repository. Atsidariusiame lange pamatysite komandas, reikalingas pridėti failus į repozitoriją
+Give it a name and click create repository
 
-## Kaip pridėti failą į Git repozitoriją?
+## How to start working with git?
+
+There are couple of ways to move from here and immediately github will describe opportunities to you if you open your newly created project.
+
+### first scenario
+
+open up terminal:
+
+`git clone repository`
+
+create a file
+
+`git add <filename>`
+
+
 Atidarykite Windows konsolę (Win + c, m, d + Enter), atidarykite vietą, kur kursite projekto failus (norėdami dirbti Windows darbastalyje, konsolėje įveskite cd Desktop ir spauskite Enter).
 
 Norimoje vietoje sukurkite naują failą, pavyzdžiui, suvesdami komandą:
