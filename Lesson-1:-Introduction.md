@@ -28,7 +28,8 @@ Traditionally first program every programmer writes is printing out "Hello, Worl
 
 code:
 ```python
-print("Hello, World")```
+print("Hello, World")
+```
 
 Congratulations you now speak Python! But we are not stopping here now are we? (Hope not...)
 
