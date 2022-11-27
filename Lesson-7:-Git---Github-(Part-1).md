@@ -64,9 +64,32 @@ open up terminal:
 
 `git clone repository`
 
-create a file
+create a file and check what can git say about the file:
+
+
+`git status`
+
+tell git to start tracking changes within the file:
 
 `git add <filename>`
+
+check status once again
+`git status`
+
+What is different this time? Now we need to create a commit, which is simply a point in history of your project showing what was changed and who and when did the change
+Let's create it!
+
+`git commit -m "firstcommit"`
+
+check status once again
+`git status`
+
+We are ready to push now:
+
+`git push`
+
+congratulations you have now successfully tracked the changes!
+
 
 
 Atidarykite Windows konsolę (Win + c, m, d + Enter), atidarykite vietą, kur kursite projekto failus (norėdami dirbti Windows darbastalyje, konsolėje įveskite cd Desktop ir spauskite Enter).
