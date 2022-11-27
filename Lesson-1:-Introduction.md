@@ -7,11 +7,11 @@ Python is a dynamically typed language. What is dynamic? We don't have to declar
 Python don't have any problem even if we don't declare the type of variable. It states the kind of variable in the runtime of the program. So, Python is a dynamically typed language. Let's see one example.
 
 
-# ⬇️ Download Python
+## ⬇️ Download Python
 
 https://www.python.org/downloads/
 
-# ⬇️ Download VSCode
+## ⬇️ Download VSCode
 
 https://code.visualstudio.com/download
 
@@ -36,6 +36,6 @@ Congratulations you now speak Python!
 1. Operators and expressions
 
 
-# 🌐 Extra Reading:
+## 🌐 Extra Reading:
 
 [motivation](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20is%20a%20very%20popular,as%20the%20top%20programming%20language.)
