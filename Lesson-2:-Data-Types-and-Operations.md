@@ -1,6 +1,3 @@
-1. Integers, Floats
-1. Strings, Boolean Type
-
 # Integers
 
 Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
@@ -285,7 +282,7 @@ Variables cannot be called as Python built in functions or special words like:
 
 
 
-# Excercises
+# Excercises 🧠 
 1
 * Create a program that allows user to Enter his/her name and Age
 * Calculate the year in which user was born
@@ -301,3 +298,4 @@ Variables cannot be called as Python built in functions or special words like:
 * Create a program that expects user to enter two numbers
 * multiply those numbers and print the answer
 * Create similar programs with other signs.
+
