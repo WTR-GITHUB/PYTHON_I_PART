@@ -41,3 +41,5 @@ Congratulations you now speak Python!
 * [what is python](https://www.python.org/doc/essays/blurb/)
 
 * [motivation](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20is%20a%20very%20popular,as%20the%20top%20programming%20language.)
+
+* [useful tutorials](https://www.w3schools.com/python/python_intro.asp)
