@@ -27,7 +27,8 @@ Things to do:
 Traditionally first program every programmer writes is printing out "Hello, World" in the terminal. Let's do the same thing.
 
 code:
-```print("Hello, World")```
+```python
+print("Hello, World")```
 
 Congratulations you now speak Python! But we are not stopping here now are we? (Hope not...)
 
@@ -44,7 +45,40 @@ Operators are simply actions similar to actions in you everyday calculator.
 | /  | Division  | x / y  |
 | %  | Modulus  | x % y  |
 | ** | Exponentiation | x ** y  |
-| // | Floor Division| x  y  |
+| // | Floor Division| x // y  |
+
+Let's try them out:
+
+```python
+10 + 10
+```
+
+```python
+10 - 5
+```
+
+```python
+10 % 3
+```
+
+
+```python
+5 ** 3
+```
+
+
+```python
+5 ** 3
+```
+
+
+## Excercise:
+🧠 
+* Try the operations yourself.
+* Make sure you have the IDE setup.
+* Try chaining operations
+
+
 
 ## 🌐 Extra Reading:
 
