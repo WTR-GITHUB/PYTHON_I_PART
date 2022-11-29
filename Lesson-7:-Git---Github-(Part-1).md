@@ -14,7 +14,6 @@ So what does the versioning mean? Well with git we save each an every change eve
 ## setting up git?
 
 open git bash if you are using windows or any terminal on other OS:
-
 1.Setup your name:
 
 
@@ -33,9 +32,7 @@ open git bash if you are using windows or any terminal on other OS:
 `git config --list`
 
 
-Connecting with ssh key
-
-Open git bash terminal
+Connecting with ssh key. Open git bash terminal
 
 generate ssh key:
 
@@ -45,14 +42,11 @@ generate ssh key:
 open file id_rsa.pub with any text editor and copy it.
 
 Go to[www.github.com](http://www.github.com/) on top right click on your profile -> settings -> SSH and GPG keys -> New SSH key.
-
 Give the key a name of your choice and paste the key. Click Add SSH Key
 
 
 ## Creating an empty project?
-Open [www.github.com](http://www.github.com/) Login and hit Start a project.
-
-Give it a name and click create repository
+Open [www.github.com](http://www.github.com/) Login and hit Start a project. Give it a name and click create repository
 
 ## How to start working with git?
 
@@ -76,10 +70,9 @@ tell git to start tracking changes within the file:
 check status once again
 `git status`
 
-What is different this time? Now we need to create a commit, which is simply a point in history of your project showing what was changed and who and when did the change
-Let's create it!
+What is different this time? Now we need to create a commit, which is simply a point in history of your project showing what was changed and who and when did the change. Let's create it!
 
-`git commit -m "firstcommit"`
+`git commit -m "first commit"`
 
 check status once again
 `git status`
@@ -93,9 +86,9 @@ congratulations you have now successfully tracked the changes and they are also 
 
 ### Second scenario
 
-What if you already had a codebase and now suddenly you want to start tracking it? Not a problem
-
+What if you already had a codebase and now suddenly you want to start tracking it? Not a problem.
 initiate git project in the directory of your choice.
+
 
 `git init`
 
