@@ -131,7 +131,7 @@ this is a multipurpose command that allows us to do a lot of things, main things
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/detached.svg)
 
 
-# Excercises
+## 🧠  Excercises
 
 1. Create a Project
 1. Try playing around with all of the commands shown in this lecture
