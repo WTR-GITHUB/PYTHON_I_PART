@@ -187,7 +187,7 @@ if "Bill" in my_dict.values():
 else:
     print("No clue who this is")
 ```
-## shorter version of ifs ❗ 
+## 🤔  shorter version of ifs ❗❗❗ 
 
 in Python we like to do things easier to read, shorter, lighter. To make it more ZEN. For example if we want to check that user has entered a name at all . Instead of doing this:
 ```python
@@ -207,6 +207,14 @@ Do this:
 ```python
 if not name:
   print("Name was not entered")
+```
+
+same applied to other data structures as well
+
+```python
+my_list = []
+if not my_list:
+  print("oh no, list is empty")
 ```
 
 ## 🧠 Exercises:
