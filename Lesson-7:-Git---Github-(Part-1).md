@@ -1,3 +1,6 @@
+gitignore
+
+
 # Version control systems (git, gitlab, github, bitbucket...)
 
 ## What are they?
@@ -88,73 +91,56 @@ We are ready to push now:
 
 `git push`
 
-congratulations you have now successfully tracked the changes!
+congratulations you have now successfully tracked the changes and they are also visible on gitub! Check them out.
 
 
+## Second scenario
 
-Atidarykite Windows konsolę (Win + c, m, d + Enter), atidarykite vietą, kur kursite projekto failus (norėdami dirbti Windows darbastalyje, konsolėje įveskite cd Desktop ir spauskite Enter).
+What if you already had a codebase and now suddenly you want to start tracking it? Not a problem
 
-Norimoje vietoje sukurkite naują failą, pavyzdžiui, suvesdami komandą:
+initiate git project in the directory of your choice.
 
-`echo "# test" >> README.md`
-
-
-Sustatykite šią vietą, kaip stebimą su GIT, įvesdami komandą:
 `git init`
 
+now you can check git status once again:
 
-Pridėkite į repozitoriją sukurtą failą, paleisdami komandą:
-`git add README.md`
-
-
-arba:
-`git add .`
-
-
-Patikrinkite, ar failas buvo pridėtas, paleisdami komandą:
 `git status`
 
+to start tracking all files simply:
 
-Užfiksuokite pakeitimus, paleisdami komandą:
-`git commit -m "pirmas commit"`
+```
+git add .
+git commit -m "initial commit"
+```
+
+And just like that you now have a repo that is being tracked. But how do we share this with our colleagues? It is not yet connected to GitHub
+So for this project create a new GitHubproject. Now all you have to do is to grab origin link which you can find on GitHub project you have created.
 
 
-Kaip išsaugoti pakeitimus į [www.github.com](http://www.github.com/)?
-Nustatyti nuotolinės repozitorijos, į kurią bus keliami pakeitimai, kelią, pvz.:
-`git remote add origin git@github.com:DonatasNoreika/test.git`
-(kelią rasite užėję į norimą projektą [www.github.com](http://www.github.com/) svetainėje).
+`git remote add origin https://github.com/vychiokas/test.git`
 
-Užfiksuokite pakeitimus, paleidę komandą:
-git push -u origin master
-(į klausimą are you sure you want to continue connecting (yes/no)?, atsakykite įvesdami yes ir spausdami Enter)
+now we have to 'push' it to remote:
 
-## Kaip pridėti failą į GIT repozitoriją?
-Projekto kataloge sukurkite naują failą, pvz. paleisdami komandą:
-`echo "# naujas" >> failas2.txt`
-Pridėkite į repozitoriją sukurtą failą, paleisdami komandą:
-`git add failas.txt`
-arba:
-`git add .`
-Užfiksuokite pakeitimus, paleisdami komandą:
-git commit -m "pridetas antras failas"
-Užfiksuokite pakeitimus į GitHub, paleidę komandą:
-git push -u origin master.
-Padarę vieno iš repozitorijos failo pakeitimą ir pakartoję 2-4 žingsnius, galite taip pat užfiksuoti šiuos pakeitimus į GitHub.
 
-## Kaip panaikinti paskutinius pakeitimus?
-Paredaguokite norimą failą, pvz. failas2.txt. Įvedę šią komandą matysite, kuriame faile buvo atlikti pakeitimai:
-`git status`
-Atšaukite paskutinius pakeitimus, įvedę komandą:
-`git checkout failas2.txt`
-Patikrinkite, ar pakeitimai buvo atlikti, įvedę:
-`git status`
-## Kaip sukurti GitHub repozitorijos kopiją kompiuteryje?
-Atidarykite Windows konsolę (Win + c, m, d + Enter), atidarykite vietą, kur kursite projekto failus (norėdami dirbti Windows darbastalyje, konsolėje įveskite cd Desktop ir spauskite Enter).
+`git push`
 
-Padarykite nutolusios repozitorijos kopiją, paleisdami komandą:
 
-`git clone git@github.com:DonatasNoreika/test.git`
-(norimos repozitorijos adresą galite rasti nuėję į jos puslapį [www.github.com](http://www.github.com/) ir paspaudę mygtuką Clone or download).
+
+## Start working on existing project
+
+So far we've seen how to create a project but how do we join an already existing one?
+it's simple go to projects github page. Click on green button saying **Code** choose the way you want to acquire a copy -> ssh/ hhtp
+open up the terminal, go to the place where you want to clone the project and then clone it:
+
+`git clone <link_to_project>`
+
+
+Now you have acquired a copy of codebase to your computer. Be careful, because it does nto update automatically, to grab latest changes we need to do:
+
+`git pull`
+
+this simply tells git to 'pull' latest changes from remote(github), note that the command is similar to `git push` but does the exact opposite - it updates the local copy of codebase.
+
 
 Užduotys
 Savarankiškai išbandyti visus GIT veiksmus, aprašytus šios pamokos skaidrėse
