@@ -1,6 +1,3 @@
-gitignore
-
-
 # Version control systems (git, gitlab, github, bitbucket...)
 
 ## What are they?
@@ -94,7 +91,7 @@ We are ready to push now:
 congratulations you have now successfully tracked the changes and they are also visible on gitub! Check them out.
 
 
-## Second scenario
+### Second scenario
 
 What if you already had a codebase and now suddenly you want to start tracking it? Not a problem
 
@@ -141,7 +138,27 @@ Now you have acquired a copy of codebase to your computer. Be careful, because i
 
 this simply tells git to 'pull' latest changes from remote(github), note that the command is similar to `git push` but does the exact opposite - it updates the local copy of codebase.
 
+## .gitignore
 
-Užduotys
-Savarankiškai išbandyti visus GIT veiksmus, aprašytus šios pamokos skaidrėse
-Sukurti programą, fiksuojant visus kodo pakeitimus GitHub (galima kurti norimą programą arba panaudoti bet kurią iš buvusių paskaitų)
+Sometimes there are files that we do not want to be tracked - files with credential information, data, huge files etc...
+Git is only supposed to track changes in code, not to expose your passwords to the world.
+
+so in the root directory of your project you may add file called .gitignore and in the file you may list files/ folders/ patterns of the files that you do not want to track, and git will not even show the changes or those files at all in `git status`. Try it yourself!
+
+
+## readme.md
+
+This is the frontpage information on your project. Please feel free to add explanations about your project here, how to launch it, what is it all about. Why did you even create it etc...
+There is also a whole syntax of how to write these pages, more info in the additional links at the end of the lesson.
+
+
+🧠 Exercises:
+* Create the project that you are going to use for our lessons, add already existing notes in order not to lose them.
+* Go once again through todays lecture on your own, if anything is not clear - let us know
+
+## 🌐 Extra reading:
+
+* [readme.md syntax](https://www.markdownguide.org/basic-syntax/)
+* [more on getting started with git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+
+
