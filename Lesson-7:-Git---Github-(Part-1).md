@@ -1,17 +1,17 @@
-# Version control systems (git, gitlab, github, bitbucket...)
+# Version control systems (git, GitLab, GitHub, bitbucket...)
 
 ## What are they?
 Put simply it is software that allows you to version your software while working on it with as many people as you wish.
 
-During the course we will be using the most popular Github– [www.github.com](http://www.github.com/). So if you do not have an account yet - register.
+During the course we will be using the most popular GitHub– [www.github.com](http://www.github.com/). So if you do not have an account yet - register.
 
 Download git bash: [link](https://git-scm.com/downloads)
 
 ## What can we achieve with git?
 
-So what does the versioning mean? Well with git we save each an every change everyone is doing and at any given time we can go back into any version of our project, we can revert it into any stage if we want. What is more we can also easily work within a team, you do not have to email chunks of code to each other etc. All the information is beautifully stored on [github](http://www.github.com/) Also modern VSC systems like github or gitlab allow us to also seemlesly deploy, test and do other fantastic things with out codebase.
+So what does the versioning mean? Well with git we save each an every change everyone is doing and at any given time we can go back into any version of our project, we can revert it into any stage if we want. What is more we can also easily work within a team, you do not have to email chunks of code to each other etc. All the information is beautifully stored on [github](http://www.github.com/) Also modern VSC systems like github or gitlab allow us to also seamlessly deploy, test and do other fantastic things with out codebase.
 
-## setting up git?
+## Setting up git
 
 open git bash if you are using windows or any terminal on other OS:
 1.Setup your name:
@@ -139,7 +139,7 @@ Git is only supposed to track changes in code, not to expose your passwords to t
 so in the root directory of your project you may add file called .gitignore and in the file you may list files/ folders/ patterns of the files that you do not want to track, and git will not even show the changes or those files at all in `git status`. Try it yourself!
 
 
-## readme.md
+## Readme.md
 
 This is the frontpage information on your project. Please feel free to add explanations about your project here, how to launch it, what is it all about. Why did you even create it etc...
 There is also a whole syntax of how to write these pages, more info in the additional links at the end of the lesson.
