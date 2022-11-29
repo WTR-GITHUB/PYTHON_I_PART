@@ -152,7 +152,7 @@ This is the frontpage information on your project. Please feel free to add expla
 There is also a whole syntax of how to write these pages, more info in the additional links at the end of the lesson.
 
 
-🧠 Exercises:
+## 🧠 Exercises:
 * Create the project that you are going to use for our lessons, add already existing notes in order not to lose them.
 * Go once again through todays lecture on your own, if anything is not clear - let us know
 
