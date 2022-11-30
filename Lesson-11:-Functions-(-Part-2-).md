@@ -48,6 +48,19 @@ welcome
 1. **keyword arguments**
 1. ****kwargs**
 
+```python
+def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
+    print (a, b)
+    print (type(args), args)
+    print (c, d)
+    print (type(kwargs), kwargs)
+
+>>> my_func(1, 2, 3, 4, 5, e=6, f = 7)
+1, 2
+<class 'tuple'> (3, 4, 5)
+5, 9
+<class 'dict'> {'e': 6, 'f': 7}
+```
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
 * Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
