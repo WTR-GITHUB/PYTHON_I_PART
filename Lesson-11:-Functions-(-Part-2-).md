@@ -68,6 +68,39 @@ def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
 * Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
 * Update previous task with possible `raise` exception.
 
+## Lambda function
+**Lambda Functions** are _anonymous_ function in Python. Lambda functions are similar to regular functions. The difference between regular function and lambda function is that they can be **defined without a name** but the normal functions are defined with `def` keyword.
+**_lambda_** keyword is used to define an anonymous or lambda function.
+If we could compare a lambda function with normal function:
+
+* A `lambda` function can take any number of arguments, but can only have one expression while regular function have exact number of arguments that we declare at the time of defining.
+* `Lambda` functions are one line functions. its body contain expression in the same line in which it is defined. In normal functions, functions contains body blocks in which some statements are defined to execute.
+* As `lambda` is a single line function so it can be invoke instantly but normal function needs to call itself and take time to call.
+
+The simple multiplication function: 
+
+```python
+def multiply(x: int,y: int) -> int:
+    return x * y
+
+print(multiply(2,3))
+>>> 6
+```
+we can re-write as a `lambda` function:
+
+```python
+multiplication =  lambda  x,y :  x * y
+print(multiplication(2,3))
+>>> 6
+```
+We can pass the arguments to function by surrounding the function and its argument with parentheses:
+
+```python
+multiplication = (lambda  x,y :  x * y)(2,3)
+print(multiplication)
+>>> 6
+```
+
 
 ## 🌐  Extra reading:
 
