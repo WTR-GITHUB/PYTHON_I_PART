@@ -101,6 +101,18 @@ print(multiplication)
 >>> 6
 ```
 
+### Usage
+The Lambda function is preferred:
+
+* When you want one-time usage of the function.
+* When there is a single expression in the function definition.
+* When you want to write clear syntax with a few lines of code.
+
+However, it is not suitable:
+
+* When you need to reuse the function again and again.
+* When there are many or complex expressions in the function definition.
+
 
 ## 🌐  Extra reading:
 
