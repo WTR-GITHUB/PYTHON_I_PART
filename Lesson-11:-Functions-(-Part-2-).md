@@ -1,8 +1,3 @@
-1. *args, **kwargs (positional, keyword args)
-1. Default arguments
-1. private function.  
-1. Lambda function.
-
 ## Continue
 One of the powerful yet less popular feature of Python are the *args and the **kwargs arguments, lambda function.
 
@@ -44,6 +39,14 @@ welcome
 ```
 👨‍🏫  ❗ **GOOD TO KNOW** ❗ 
 ** `args` and `kwargs` is simple a naming convention. Above example would work just fine if we called them `*parms` and `**argv` or anything for that matter. Actual syntax is just the asterisk (*) or double asterisk (**).**
+
+👨‍🏫  ❗ **ATTENTION!** ❗ 
+** While using `*args` or `**kwargs` with other parameters or using them together, we should keep in mind that the arguments should follow the given order ⬇️ .**
+
+1. Formal arguments
+1. *args
+1. keyword arguments
+1. **kwargs
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
