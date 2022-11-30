@@ -43,10 +43,10 @@ welcome
 👨‍🏫  ❗ **ATTENTION!** ❗ 
 ** While using `*args` or `**kwargs` with other parameters or using them together, we should keep in mind that the arguments should follow the given order ⬇️ .**
 
-1. Formal arguments
-1. *args
-1. keyword arguments
-1. **kwargs
+1. **Formal arguments**
+1. ***args**
+1. **keyword arguments**
+1. ****kwargs**
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
