@@ -1,2 +1,3 @@
 1. List, tuple, dict comprehensions 
-1. Math expressions
+1. zip method
+3 Enumerators
