@@ -1,11 +1,3 @@
-1. List, tuple, dict comprehensions 
-
-1. zip method
-
-3 Enumerators
-
-
-
 # Data Structure: Special methods
 
 In this lecture we will review some additional functionalities of python built-in data structures. And also review **`math`** library
@@ -239,9 +231,16 @@ There are many more things in math library as said before, here we reviewed just
 
 ## 🌐  Extra reading:
 
-* [Real Phyton comprehensions](https://realpython.com/list-comprehension-python/)
+* [Real Pyhton comprehensions](https://realpython.com/list-comprehension-python/)
 
 * [Real Python math](https://realpython.com/python-math-module/)
 ***
 
 
+## Exercises 🧠 :
+
+1. Find all of the numbers from 1-1000 that are divisible by 6.
+1. Find all number from 1-1000 that have 9 in them.
+1. Given string: `text = 'In this lecture we will review some additional functionalities of python built-in data structures.'` calculate how many words have letter 'e' in it.
+1. Given the same string as in previous exercise: calculate count of letters that have more than 5 characters.
+1. Write a program that checks if given number is a perfect square.
