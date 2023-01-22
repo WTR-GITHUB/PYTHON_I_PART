@@ -5,7 +5,7 @@ In this section we will cover another Python Data Structure - List or what in ot
 Lists can contain no values whatsoever, be empty, or as many objects as RAM allows us to hold. What is more, it so happens that in Python lists can hold any types of values,  it could be other objects, functions, strings, integers, your own data types or even other lists. What is also important to mention is that we can change values within the list, lists are mutable python objects.
 
 ## Notation
-the notation of the list is simply these brackets: [ ] two brackets with values in between separated by commas.
+the notation of the list is simply these brackets: **`[ ]`** two brackets with values in between separated by commas.
 
 ## Creating an empty list in python:
 ```python
@@ -127,7 +127,7 @@ Another very similar python built-in data structure is Tuple. The main differenc
 
 ## Notation
 
-Tuple notation in python is ( ) - two parentheses with values in between separated by commas.
+Tuple notation in python is `**( )**` - two parentheses with values in between separated by commas.
 
 ### Creating tuples
 ```python
@@ -154,6 +154,7 @@ Usually it is recommended to use Tuple on static values that do not change as it
 
 ## 🧠 Exercises:
 
+**`all answers must be printed in terminal`**
 1. Write a python program that sums up all items in the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that gets maximum value from the list (all items are integers or floats in list, create a list yourself)
