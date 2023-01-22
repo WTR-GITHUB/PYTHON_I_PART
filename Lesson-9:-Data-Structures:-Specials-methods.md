@@ -237,5 +237,11 @@ print (math.sqrt(9))
 There are many more things in math library as said before, here we reviewed just a tiny bit. But bottom line is that if you ahve something to do with math, logarithms, working with angles, trigonometry etc.
 
 
-#
+## 🌐  Extra reading:
+
+* [Real Phyton comprehensions](https://realpython.com/list-comprehension-python/)
+
+* [Real Python math](https://realpython.com/python-math-module/)
+***
+
 
