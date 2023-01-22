@@ -28,14 +28,14 @@ print(my_list)
 
 Since there can be dublicated values within the list this function allows us to calculate the frequency of the item within the list
 ```python
-my_list = [1, 1 ,2 ,3 ,4 ,5]
+my_list = [1, 1, 2 ,3 ,4 ,5]
 print(my_list.count(1)) # 2
 ```
 
 ### .insert()
 as we have seen append always adds the value to the lists end, .insert() allows us to add the value to which ever index we want:
 ```python
-my_list = [1, 1 ,2 ,3 ,4 ,5]
+my_list = [1, 1, 2 ,3 ,4 ,5]
 my_list.insert(1, 50)
 print(my_list) # [1, 50, 1, 2, 3, 4, 5]
 ```
@@ -43,13 +43,13 @@ print(my_list) # [1, 50, 1, 2, 3, 4, 5]
 ### .remove()
 Name speaks for itself. with this method we will simply drop a particular value from the list:
 ```python
-my_list = [1, 1 ,2 ,3 ,4 ,5]
+my_list = [1, 1, 2 ,3 ,4 ,5]
 my_list.remove(1)
 print(my_list)
 ```
 The function will remove the first occurence of the object found. If you want to remove particular item from the list, you can do that with slicing mechanism:
 ```python
-my_list = [1, 1 ,2 ,3 ,4 ,5]
+my_list = [1, 1, 2 ,3 ,4 ,5]
 my_list.remove(my_list[-1]) # removing last item from the list
 print(my_list) [1, 1, 2, 3, 4]
 ```
