@@ -207,7 +207,7 @@ completed_greeting = greeting + " " + name
 print(completed_greeting)
 ```
 
-Wow! "+" operator does work on strings too! All it does is just concatenation, unfortunately "-" in the case of string does not make any particular sense so this method is not allowed on string type.
+Wow! "+" operator does work on strings too! All it does is concatenation. Such trick has a term _Operator overloading_ we will learn some tricks how to apply what certain operators can do to our classes. Unfortunately "-" in the case of string does not make any particular sense so this method is not allowed on string type.
 
 # Conversion of types
 What is more important to mention are methods allowing to transform data from one type to another:
