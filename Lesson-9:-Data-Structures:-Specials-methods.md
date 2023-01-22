@@ -117,6 +117,7 @@ it is a simple nice loop, that does all it has to. Now imagine you also want to 
 You could do something like this:
 
 ```python
+values = ["a", "b", "c"]
 index = 0
 
 for value in values:
@@ -128,6 +129,7 @@ So here we have an integer that increments with each iteration and it also works
 
 
 ```python
+values = ["a", "b", "c"]
 for count, value in enumerate(values):
     print(count, value)
 ```
@@ -135,6 +137,7 @@ for count, value in enumerate(values):
 If we wanted to change the start count:
 
 ```python
+values = ["a", "b", "c"]
 for count, value in enumerate(values, start=1):
     print(count, value)
 ```
@@ -146,4 +149,12 @@ def even_items(numbers: list):
     return [v for i, v in enumerate(numbers, start=1) if not i % 2]
 
 seq = list(range(1, 11))
+
+print(even_items(seq))
 ```
+
+Go through this once yourself, operate small things out and combine them together once again.
+
+**NOTE** enumerate returns an iterator so if you want to look what's inside you can either loop through it or convert it to list.
+
+
