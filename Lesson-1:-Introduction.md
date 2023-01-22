@@ -4,7 +4,7 @@ Python is a computer programming language often used to build websites and softw
 
 Python is a dynamically typed language. What is dynamic? We don't have to declare the type of variable while assigning a value to a variable in Python. Other languages like C, C++, Java, etc.., there is a strict declaration of variables before assigning values to them.
 
-Python don't have any problem even if we don't declare the type of variable. It states the kind of variable in the runtime of the program. So, Python is a dynamically typed language. Let's see one example.
+Python doesn't have any problem even if we don't declare the type of variable. It states the kind of variable in the runtime of the program. So, Python is a dynamically typed language.
 
 
 ## ⬇️ Download Python
