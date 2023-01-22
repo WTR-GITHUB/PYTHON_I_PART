@@ -21,7 +21,7 @@ my_list = []
 
 name = "Tom"
 my_list.append(name)
-print(my_list) # ['asdf']
+print(my_list)
 ```
 
 ### .count(obj)
