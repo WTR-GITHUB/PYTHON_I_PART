@@ -158,3 +158,84 @@ Go through this once yourself, operate small things out and combine them togethe
 **NOTE** enumerate returns an iterator so if you want to look what's inside you can either loop through it or convert it to list.
 
 
+## math library
+
+for many math specifics you can use math library in python. It is a built in library simply just:
+```python
+import math
+```
+
+and you are good to go.
+
+For example if you wanted to calculate a circle area:
+
+```python
+import math
+area = 5 * 5 * math.pi
+```
+
+math.pi here is a constact which we can you straight out of the box.
+
+There are plenty more functions we could spend all day reviewing this library cause it's huge, but let's look into couple of more functions.
+
+### factorial
+
+For example if we wanted to calculate factorial: `7! = 7 * 6 * 5 * 4 * 3 * 2 * 1`
+
+We could write a function ourselves, but actually it is already available to us:
+
+```python
+import math
+math.factorial(7)
+```
+
+What is more it is actually quite optimised as well.
+
+
+### ceil() and floor()
+
+All there functions do is that if you have a float value, it can literaly get "floor" or "ceiling" of it. Examples:
+
+
+```python
+import math
+
+
+print(math.ceil(6.1))
+
+print(math.floor(-11.1))
+```
+
+Is this clear?
+
+
+### power functions
+
+
+Let's say you want to have a number raised by the power of n: 5^5 = 5 * 5 * 5 * 5 * 5 = 3125
+
+Do this without math.
+
+with math:
+
+
+```python
+import math
+
+print(math.pow(5, 5))
+```
+
+
+### square root
+
+
+```python
+import math
+print (math.sqrt(9))
+```
+
+There are many more things in math library as said before, here we reviewed just a tiny bit. But bottom line is that if you ahve something to do with math, logarithms, working with angles, trigonometry etc.
+
+
+#
+
