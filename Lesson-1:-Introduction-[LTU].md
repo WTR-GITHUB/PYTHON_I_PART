@@ -50,25 +50,25 @@ Operatoriai yra tiesiog veiksmai, panašūs į veiksmus, kuriuos atliekate kasdi
 
 Išbandykime juos:
 
-````python
+```python
 10 + 10
 ```
 
-````python
+```python
 10 - 5
 ```
 
-````python
+```python
 10 % 3
 ```
 
 
-````python
+```python
 5 ** 3
 ```
 
 
-````python
+```python
 5 ** 3
 ```
 Ar rezultatai suprantami? Jei ne, pakelkite diskusiją klasėje.
