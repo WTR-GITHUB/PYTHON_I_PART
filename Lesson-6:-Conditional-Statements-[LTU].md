@@ -204,7 +204,7 @@ if len(name) == 0:
   print("Name was not entered")
 ...
 ```
-Do this:
+Darykit taip:
 ```python
 if not name:
   print("Name was not entered")
