@@ -275,10 +275,13 @@ pavardė = "Einstein"
 Vardas = "Albert"
 First_Name = "Albert"
 FIRST_NAME = "Alb
+```
 
-"Python" supras tokią sąvoką, bet jūsų kolegos jūsų už tai nekenčia, todėl laikykitės pavadinimų konvencijos, kad visiems būtų lengviau.
 
-Kintamieji negali būti vadinami kaip "Python" sukurtos funkcijos arba specialūs žodžiai, pvz:
+"Python" supras tokią tokį užrašymą, bet jūsų kolegos jūsų už tai nekęs, kadangi bus sunku suprasti kas per kintamieji pas jus naudojami, tad vardan visų - naudokit teisingas naming konvencijas.
+
+Kintamieji negali būti vadinami kaip "Python" built-in funkcijos arba specialūs žodžiai, pvz:
+
 "False", "None", "True", "and", "as", "assert", "async", "await", "break", "class", "continue", "def", "del", "elif", "else", "except", "finally", "for", "from", "global", "if", "import", "in", "is", "lambda", "nonlocal", "not", "or", "pass", "raise", "return", "try", "while", "with", "yield
 
 
