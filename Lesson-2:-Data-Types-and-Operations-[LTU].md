@@ -1,10 +1,10 @@
-# Integers
+# sveikieji skaičiai
 
 Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
 
-How to instantiate a variable as an integer in Python
+Kaip instancuoti kintamąjį kaip sveikąjį skaičių Pythone
 
-```python
+````python
 a = 5
 print(a)
 
@@ -12,19 +12,19 @@ b = 25
 print(b)
 ```
 
-# Integer Operations
-Possible operations:
-| Operation| Result |
+# Operacijos su sveikaisiais skaičiais
+Galimos operacijos:
+| Operacija| Rezultatas |
 | ------------- | ------------- |
-| x + y  | sum of x and y  |
-| x - y  | difference of x and y  |
-| x * y  | product of x and y  |
-| x / y  | quotient of x and y  |
-| x // y  | floored quotient of x and y  |
-| x % y  | remainder of x / y  |
-| x ** y | x to the power y |
+| x + y | x ir y suma |
+| x - y | x ir y skirtumas |
+| x * y | x ir y sandauga |
+| x / y | x ir y sandauga |
+| x // y | x ir y sandauga |
+| x % y | x / y likutis |
+| x ** y | x iki galybės y |
 
-```python
+````python
 a = 5
 b = 25
 
@@ -52,32 +52,32 @@ print(c)
 ```
 :check
 
-# Float type
+# Float tipas
 
 Z = {..., -2.5 , ..., -2.0, ... , -1.0, ... , 0, ... , 1.0, ... , 2.0, ... , 2.5, ...}
 
-### Note that there can be endless number possibilities between two floats.
+#### Atkreipkite dėmesį, kad tarp dviejų kintamųjų gali būti begalė skaičių galimybių.
 
-# Integer Operations
-Same operations/ mathematical expressions apply to the float numbers
+# Operacijos su sveikaisiais skaičiais
+Tie patys veiksmai ir (arba) matematinės išraiškos taikomos ir kintamiesiems skaičiams
 
-Possible operations:
-| Operation| Result |
+Galimos operacijos:
+| Operacija| Rezultatas |
 | ------------- | ------------- |
-| x + y  | sum of x and y  |
-| x - y  | difference of x and y  |
-| x * y  | product of x and y  |
-| x / y  | quotient of x and y  |
-| x // y  | floored quotient of x and y  |
-| x % y  | remainder of x / y  |
-| x ** y | x to the power y |
+| x + y | x ir y suma |
+| x - y | x ir y skirtumas |
+| x * y | x ir y sandauga |
+| x / y | x ir y sandauga |
+| x // y | x ir y sandauga |
+| x % y | x / y likutis |
+| x ** y | x iki galybės y |
 
-```python
+````python
 a = 5
 b = 25
 
 c = a + b 
-print(c) # prints 20
+print(c) # atspausdina 20
 
 c = a - b
 print(c)
@@ -99,22 +99,22 @@ c = a ** b
 print(c)
 ```
 
-# String
+# Stygos
 
-String is simply a piece of text, it could be a single letter or the while word or an entire sentence:
+Stygos - tai tiesiog teksto dalis, kuri gali būti viena raidė, žodis while arba visas sakinys:
 ```python
-letter = "a"
-name = "Code Academy"
-sentence = "I really enjoy learning python !"
+raidė = "a"
+pavadinimas = "Code Academy"
+sakinys = "Man labai patinka mokytis python !"
 ```
 
 
-# String operations
-Strings have plenty of useful in-built functionality in Python, more information [here](https://www.w3schools.com/python/python_ref_string.asp)
+# Operacijos su eilutėmis
+Į eilutes "Python" įdiegta daug naudingų funkcijų, daugiau informacijos [čia](https://www.w3schools.com/python/python_ref_string.asp)
 
-What is more with strings we can select certain characters from the word. In python it works:
+Be to, su eilutėmis galime išrinkti tam tikrus žodžio simbolius. Pythone tai veikia:
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/string_ops.png)
-```python
+````python
 name = "Code Academy"
 print(name[5])
 
@@ -126,19 +126,19 @@ print(name[-2])
 
 print(name[5:12])
 
-# Academy
+# Akademija
 
 print(name[5:])
 
-# Academy
+# Akademija
 
 print(name[:4])
 
-# Code
+# Kodas
 
 print(name[5:12:1])
 
-# Academy
+# Akademija
 
 print(name[5::2])
 
@@ -150,7 +150,7 @@ print(name[::-1])
 
 print(name.split())
 
-# ['Code', 'Academy']
+# ["Kodas", "Akademija"]
 
 print(name.upper())
 
@@ -158,19 +158,19 @@ print(name.upper())
 
 print(name.replace('c', 'k'))
 
-# Code Akademy
+# Kodas Akademy
 
 print(name.replace('Code', 'Music'))
 
 ```
 
-It is also possible to get the last or second to last character from string:
-```python
+Taip pat galima gauti paskutinį arba priešpaskutinį eilutės simbolį:
+````python
 print(name[-1])
 print(name[-2])
 ```
 
-You can also do slicing of string:
+Taip pat galite atlikti eilutės pjaustymą:
 ```python
 name = "Code Academy"
 print(name[:4])
@@ -178,53 +178,53 @@ print(name[:4])
 print(name[5:12])
 ```
 
-Try doing any of the methods that are described in the link above:
+Pabandykite atlikti bet kurį iš aukščiau pateiktoje nuorodoje aprašytų metodų:
 ```python
 name = "Code Academy"
 print(name.upper())
 
 print(name.replace('c', 'k'))
 ```
-Or any other as you wish.
+Arba bet kuris kitas, kaip norite.
 
-# Combining of string
-You may also combine various string together to make other variables:
+# Jungiant eilutę
+Taip pat galite sujungti įvairias eilutes, kad sudarytumėte kitus kintamuosius:
 
 ```python
-greeting = "Hello, my name is"
-name = "Tom"
+pasisveikinimas = "Sveiki, mano vardas yra"
+vardas = "Tomas"
 
-completed_greeting = f"{greeting} {name}"
-print(completed_greeting)
+completed_greeting = f"{greeting} {vardas}"
+print(completed_greeteting)
 ```
-Or:
+Arba:
 
 ```python
-greeting = "Hello, my name is"
-name = "Tom"
+sveikinimas = "Sveiki, mano vardas yra"
+vardas = "Tom"
 
-completed_greeting = greeting + " " + name
-print(completed_greeting)
+completed_greeteting = greeting + " " + name
+print(completed_greeteting)
 ```
 
-Wow! "+" operator does work on strings too! All it does is concatenation. Such trick has a term _Operator overloading_ we will learn some tricks how to apply what certain operators can do to our classes. Unfortunately "-" in the case of string does not make any particular sense so this method is not allowed on string type.
+Wow! "+" operatorius veikia ir su eilutėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operatoriaus perkrovimas_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" eilutės atveju neturi jokios ypatingos prasmės, todėl šis metodas eilutės tipui neleidžiamas.
 
-# Conversion of types
-What is more important to mention are methods allowing to transform data from one type to another:
-```python
+# Tipų konvertavimas
+Dar svarbiau paminėti metodus, leidžiančius paversti duomenis iš vieno tipo į kitą:
+Tipai: ````python
 str()
 int()
 float()
 ```
 
-What is important to mention here is not all data types are compatible for such operations. For example:
+Svarbu paminėti, kad ne visi duomenų tipai yra suderinami su tokiomis operacijomis. Pavyzdžiui:
 ```python
 a = "Hello"
 b = int(a)
 ```
-This will simply throw an error because it does not even make sense how the alhapnumeric value can suddenly become an integer
+Tai paprasčiausiai išmes klaidą, nes net nėra prasmės, kaip alhapnumerinė reikšmė staiga gali tapti sveikuoju skaičiumi
 
-Rule of thumb is that all integers, floats can be translated to string, but only numeric strings can be transformed to int() or float():
+Pagrindinė taisyklė yra ta, kad visus sveikuosius skaičius, kintamuosius skaičius galima išversti į eilutę, bet tik skaitines eilutes galima paversti int() arba float():
 
 ```python
 ✅ 
@@ -237,70 +237,72 @@ b = str(a)
 c = float(a)
 
 🛑 
-a = "Hello"
+a = "Sveiki"
 b = int(a)
 
 c = float(a)
 
 ```
 
-# User input
+# Vartotojo įvestis
 
-You program may ask user to enter something and use it for the further operations:
+Programa gali paprašyti vartotojo ką nors įvesti ir naudoti tai tolesnėms operacijoms:
 
 ```python
-name = input("Enter you name: ")
-age = input("Enter your age: ")
+name = input("Įveskite savo vardą: ")
+age = input("Įveskite savo amžių: ")
 
-print(f"Your name is {name}, you are {age} years old"
+print(f "Jūsų vardas yra {vardas}, jums yra {vaikas} metų"
 ```
 
 
-# Variable naming conventions
+# Kintamųjų pavadinimų suteikimo taisyklės
 
-As per PEP8 https://peps.python.org/pep-0008/ there are some guidelines to follow when naming your variables. In Python simple variables as we have seen today should be named with snake_case style. What is more constants should be all capital letter, and hidden variables or functions should start with "_".
+Pagal PEP8 https://peps.python.org/pep-0008/ yra tam tikros gairės, kurių reikia laikytis suteikiant kintamųjų pavadinimus. Pythone paprasti kintamieji, kaip šiandien matėme, turėtų būti pavadinti gyvatės_case stiliumi. Be to, konstantos turėtų būti rašomos visomis didžiosiomis raidėmis, o paslėpti kintamieji arba funkcijos turėtų prasidėti raide "_".
 
 ✅ 
-```python
+````python
 _hidden_variable = "secret"
-PI = 3.14
-first_name = "Albert"
-last_name = "Einstein"
+PI = 3,14
+vardas = "Albert"
+pavardė = "Einstein"
 ```
 ⛔ 
-possible but does not comply with PEP8:
+įmanoma, bet neatitinka PEP8:
 ```python
-FirstName = "Albert"
+Vardas = "Albert"
 First_Name = "Albert"
-FIRST_NAME = "Albert"
-```
+FIRST_NAME = "Alb
 
-Python will understand such notion but your colleagues will hate you for this, so please following the naming conventions to make life easy to everyone.
+"Python" supras tokią sąvoką, bet jūsų kolegos jūsų už tai nekenčia, todėl laikykitės pavadinimų konvencijos, kad visiems būtų lengviau.
 
-Variables cannot be called as Python built in functions or special words like:
-'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
-
+Kintamieji negali būti vadinami kaip "Python" sukurtos funkcijos arba specialūs žodžiai, pvz:
+"False", "None", "True", "and", "as", "assert", "async", "await", "break", "class", "continue", "def", "del", "elif", "else", "except", "finally", "for", "from", "global", "if", "import", "in", "is", "lambda", "nonlocal", "not", "or", "pass", "raise", "return", "try", "while", "with", "yield
 
 
-# Excercises 🧠 
+
+# Pratimai 🧠 
 1
-* Create a program that allows user to Enter his/her name and Age
-* Calculate the year in which user was born
-* Print the answer to the Terminal
+* Sukurkite programą, leidžiančią vartotojui įvesti savo vardą ir amžių
+* Apskaičiuoti metus, kuriais vartotojas gimė
+* Išspausdinti atsakymą į terminalą
 
 
 2
-* Create a program that allows user to enter a full sentence
-* print the sentence backwards
-* print every second letter in the sentence
+* Sukurti programą, leidžiančią vartotojui įvesti visą sakinį
+* išspausdinti sakinį atbuline tvarka
+* spausdinti kas antrą sakinio raidę
 
 3
-* Create a program that expects user to enter two numbers
-* multiply those numbers and print the answer
-* Create similar programs with other signs.
+* Sukurkite programą, kuri tikisi, kad naudotojas įves du skaičius
+* padauginkite šiuos skaičius ir išspausdinkite atsakymą
+* Sukurkite panašias programas su kitais ženklais.
 
-## 🌐  Extra reading:
+## 🌐 Papildomas skaitymas:
 
-* [other material](https://pythonhumanities.com/lesson-04-python-integers-and-floats/#:~:text=Numbers%20in%20Python%20exist%20in,from%20and%20exported%20to%20Excel.)
-* [string operations](https://www.w3schools.com/python/python_ref_string.asp)
+* [kita medžiaga](https://pythonhumanities.com/lesson-04-python-integers-and-floats/#:~:text=Numeriai%20in%20Python%20egzistuoja%20in,iš%20ir%20eksportuojami%20į%20Excel).
+* [operacijos su eilutėmis](https://www.w3schools.com/python/python_ref_string.asp)
 
+
+
+Translated with www.DeepL.com/Translator (free version)
