@@ -127,7 +127,7 @@ print(my_list[0:2])
 
 Jei norite patikrinti, ar tam tikras objektas yra sąraše, galite daryti taip:
 
-````python
+```python
 my_list = [1, 2, 3]
 print(1 in my_list)
 ```
@@ -141,7 +141,7 @@ Tuple užrašas python'e yra `**( )**` - du skliausteliai, tarp kurių vertės a
 
 ### Tuple kūrimas
 
-````python
+```python
 empty_tuple = ()
 tuple_single_item = (1,)
 another_tuple = (1, 2, 3)
