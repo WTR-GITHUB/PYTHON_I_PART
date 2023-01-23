@@ -98,7 +98,7 @@ for item in my_list:
 ```
 arba galime atlikti keletą operacijų pakeliui!
 
-````python
+```python
 my_list = [1, 2, 3]
 for item in my_list:
     print(item + 20)
