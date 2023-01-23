@@ -106,7 +106,7 @@ for item in my_list:
 
 ## Esamos reikšmės keitimas sąraše
 
-````python
+```python
 my_list = [1, 2, 3]
 my_list[2] = 5
 print(my_list)
