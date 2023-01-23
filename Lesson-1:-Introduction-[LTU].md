@@ -27,7 +27,7 @@ Ką reikia padaryti:
 Tradiciškai pirmoji programa, kurią rašo kiekvienas programuotojas, yra terminale išspausdinti "Hello, World". Padarykime tą patį.
 
 kodą:
-````python
+```python
 print("Hello, World")
 ```
 
