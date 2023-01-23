@@ -220,6 +220,13 @@ if not my_list:
 
 ## 🧠 Pratimai:
 
-1. Leiskite naudotojui įvesti vardą, pavardę ir amžių. Spausdinkite, ar naudotojui leidžiama įeiti į internetinį kazino, ar ne. 21 metai yra amžiaus riba.
+1. Leiskite naudotojui įvesti vardą, pavardę ir amžių. Išspausdinkite, ar naudotojas gali įeiti į internetinį kazino, ar ne. 21 metai yra amžiaus riba.
 1. Sukurkite duomenų bazę (privilegijuotų naudotojų sąrašas) išspausdinkite konkretų pranešimą su asmeniniu pasveikinimu, jei naudotojas yra privilegijuotas, ir tik "Sveiki atvykęs kitu atveju".
-1. Leiskite naudotojui įvesti du skaičius, išspausdinkite, kuris iš jų yra didesnis už kitą, o
+1. Leiskite naudotojui įvesti du skaičius, išspausdinkite, kuris iš jų didesnis už kitą, ar jie lygūs?
+1. Parašykite nedidelę skaičiuotuvo programą, kuri leistų naudotojui įvesti du skaičius ir simbolį, duotą ir tada atlikti operaciją bei išspausdinti atsakymą.
+
+1. Sukurkite skaičių nuo 1 iki 10 spėjimo žaidimą su atsitiktinių skaičių biblioteka. (GALBŪT IDĖJA VĖLESNIAM LAIKUI)
+
+
+## 🌐 Papildomas skaitymas:
+[realpython - super graži svetainė apie pitoną] (https://realpython.com/python-conditional-statements/)
