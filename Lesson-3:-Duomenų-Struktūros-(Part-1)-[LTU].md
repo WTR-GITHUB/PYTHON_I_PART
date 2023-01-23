@@ -114,7 +114,7 @@ print(my_list)
 ## Skirstymas dalimis
 Kaip ir eilutės atveju, taip ir sąrašo elementus galime `pjaustyti` griežinėliais. kiekvienas sąrašo elementas turi indeksą, prasidedantį nuo 0. Taigi galime atlikti tokio paties tipo pjaustymą:
 
-````python
+```python
 my_list = ["first", "second", "third"]
 print(my_list[-1])
 print(my_list[:1])
