@@ -101,18 +101,18 @@ print(c)
 
 # Stygos
 
-Stygos - tai tiesiog teksto dalis, kuri gali būti viena raidė, žodis while arba visas sakinys:
+String- tai tiesiog teksto dalis, kuri gali būti viena raidė arba visas sakinys:
 ```python
-raidė = "a"
-pavadinimas = "Code Academy"
-sakinys = "Man labai patinka mokytis python !"
+letter = "a"
+name = "Code Academy"
+sentence = "I really enjoy learning python !"
 ```
 
 
-# Operacijos su eilutėmis
-Į eilutes "Python" įdiegta daug naudingų funkcijų, daugiau informacijos [čia](https://www.w3schools.com/python/python_ref_string.asp)
+# String operacijos
+Stringai Pythone turi begalę funkcijų kurias galime naudoti, daugiau informacijos [čia](https://www.w3schools.com/python/python_ref_string.asp)
 
-Be to, su eilutėmis galime išrinkti tam tikrus žodžio simbolius. Pythone tai veikia:
+Be to, su string galime išrinkti tam tikrus žodžio simbolius. Štai kaip tai veikia:
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/string_ops.png)
 ```python
 name = "Code Academy"
@@ -164,13 +164,13 @@ print(name.replace('Code', 'Music'))
 
 ```
 
-Taip pat galima gauti paskutinį arba priešpaskutinį eilutės simbolį:
+Taip pat galima gauti paskutinį arba priešpaskutinį string'o simbolį:
 ```python
 print(name[-1])
 print(name[-2])
 ```
 
-Taip pat galite atlikti eilutės pjaustymą:
+Taip pat galite atlikti string'o pjaustymą:
 ```python
 name = "Code Academy"
 print(name[:4])
@@ -187,8 +187,8 @@ print(name.replace('c', 'k'))
 ```
 Arba bet kuris kitas, kaip norite.
 
-# Jungiant eilutę
-Taip pat galite sujungti įvairias eilutes, kad sudarytumėte kitus kintamuosius:
+# String apjungimas
+Taip pat galite sujungti įvairias string, kad sudarytumėte kitus kintamuosius:
 
 ```python
 pasisveikinimas = "Sveiki, mano vardas yra"
@@ -207,7 +207,7 @@ completed_greeteting = greeting + " " + name
 print(completed_greeteting)
 ```
 
-Wow! "+" operatorius veikia ir su eilutėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operatoriaus perkrovimas_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" eilutės atveju neturi jokios ypatingos prasmės, todėl šis metodas eilutės tipui neleidžiamas.
+Wow! "+" operatorius veikia ir su string reikšmėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operatoriaus perkrovimas_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" stringo atveju neturi jokios ypatingos prasmės, todėl šis metodas string tipui neleidžiamas.
 
 # Tipų konvertavimas
 Dar svarbiau paminėti metodus, leidžiančius paversti duomenis iš vieno tipo į kitą:
@@ -226,7 +226,7 @@ b = int(a)
 ```
 Tai paprasčiausiai išmes klaidą, nes net nėra prasmės, kaip alhapnumerinė reikšmė staiga gali tapti sveikuoju skaičiumi
 
-Pagrindinė taisyklė yra ta, kad visus sveikuosius skaičius, kintamuosius skaičius galima išversti į eilutę, bet tik skaitines eilutes galima paversti int() arba float():
+Pagrindinė taisyklė yra ta, kad visus sveikuosius skaičius, float skaičius galima išversti į string, bet ne visus string galima paversti į int() arba float():
 
 ```python
 ✅ 
@@ -303,8 +303,5 @@ Kintamieji negali būti vadinami kaip "Python" sukurtos funkcijos arba specialū
 ## 🌐 Papildomas skaitymas:
 
 * [kita medžiaga](https://pythonhumanities.com/lesson-04-python-integers-and-floats/#:~:text=Numeriai%20in%20Python%20egzistuoja%20in,iš%20ir%20eksportuojami%20į%20Excel).
-* [operacijos su eilutėmis](https://www.w3schools.com/python/python_ref_string.asp)
+* [operacijos su string reikšmėm](https://www.w3schools.com/python/python_ref_string.asp)
 
-
-
-Translated with www.DeepL.com/Translator (free version)
