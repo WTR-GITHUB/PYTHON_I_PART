@@ -7,7 +7,7 @@ So, what are the `*args` and `**kwargs` arguments? On a high level, they allow f
 A simple example : 🔽 
 
 ```python
-def check_arguments(mandatory: any, *args, **kwargs) -> None:
+def check_arguments(mandatory: Any, *args, **kwargs) -> None:
     print (mandatory)
     if args:
         print (args)
