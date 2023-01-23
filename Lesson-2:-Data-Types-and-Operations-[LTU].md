@@ -4,7 +4,7 @@ Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
 
 Kaip instancuoti kintamąjį kaip sveikąjį skaičių Pythone
 
-````python
+```python
 a = 5
 print(a)
 
@@ -24,7 +24,7 @@ Galimos operacijos:
 | x % y | x / y likutis |
 | x ** y | x iki galybės y |
 
-````python
+```python
 a = 5
 b = 25
 
@@ -72,7 +72,7 @@ Galimos operacijos:
 | x % y | x / y likutis |
 | x ** y | x iki galybės y |
 
-````python
+```python
 a = 5
 b = 25
 
@@ -114,7 +114,7 @@ sakinys = "Man labai patinka mokytis python !"
 
 Be to, su eilutėmis galime išrinkti tam tikrus žodžio simbolius. Pythone tai veikia:
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/string_ops.png)
-````python
+```python
 name = "Code Academy"
 print(name[5])
 
@@ -165,7 +165,7 @@ print(name.replace('Code', 'Music'))
 ```
 
 Taip pat galima gauti paskutinį arba priešpaskutinį eilutės simbolį:
-````python
+```python
 print(name[-1])
 print(name[-2])
 ```
@@ -211,7 +211,9 @@ Wow! "+" operatorius veikia ir su eilutėmis! Viskas, ką jis daro, yra sujungim
 
 # Tipų konvertavimas
 Dar svarbiau paminėti metodus, leidžiančius paversti duomenis iš vieno tipo į kitą:
-Tipai: ````python
+Tipai: 
+
+```python
 str()
 int()
 float()
@@ -261,7 +263,7 @@ print(f "Jūsų vardas yra {vardas}, jums yra {vaikas} metų"
 Pagal PEP8 https://peps.python.org/pep-0008/ yra tam tikros gairės, kurių reikia laikytis suteikiant kintamųjų pavadinimus. Pythone paprasti kintamieji, kaip šiandien matėme, turėtų būti pavadinti gyvatės_case stiliumi. Be to, konstantos turėtų būti rašomos visomis didžiosiomis raidėmis, o paslėpti kintamieji arba funkcijos turėtų prasidėti raide "_".
 
 ✅ 
-````python
+```python
 _hidden_variable = "secret"
 PI = 3,14
 vardas = "Albert"
