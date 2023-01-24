@@ -204,3 +204,13 @@ def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None
 ```
 Šis pavyzdys rodo, kad the_func() priima tris argumentus, x, y ir z, kad x gali būti sveikasis skaičius arba kintamasis, y turi būti tuple, kuriame saugomos eilutės, o z gali būti none arba kintamasis. Grąžinimo tipas yra str, kurį nurodote naudodami -> po baigiamųjų skliaustų, bet prieš dvitaškį.
 ℹ️ 
+
+## 🌐 Papildomas skaitymas:
+
+* [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
+
+* [Real Phyton](https://realpython.com/defining-your-own-python-function/)
+
+* [Real Python Youtube](https://www.youtube.com/watch?v=Q93bwyZoXk0)
+***
+ℹ️ 
