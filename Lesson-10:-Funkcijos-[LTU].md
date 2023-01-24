@@ -30,3 +30,38 @@ print_smth()
 # ir taip toliau....
 
 ```
+
+## Pavadinimų suteikimas
+
+Pasirinkti kintamųjų, funkcijų ir (arba) klasių pavadinimus ir pan. gali būti sudėtinga. Rašydami kodą turėtumėte gerai apgalvoti pavadinimų pasirinkimą, nes taip jūsų kodas bus lengviau skaitomas. Geriausias būdas pavadinti objektus Python programoje - naudoti aprašomuosius pavadinimus, kad būtų aišku, ką objektas simbolizuoja.
+
+Pagrindinės taisyklės tokios: 
+
+* Metodų pavadinimuose naudokite tik mažąsias raides.
+
+```python
+def compute():
+  pass
+```
+
+* Metodo pavadinime žodžius reikia atskirti pabraukimu.
+
+```python
+def apskaičiuoti_smth():
+  pass
+```
+
+* Neviešo metodo pavadinimas turi prasidėti vienu pabraukimu.
+
+```python
+def _get_smth():
+  perduoti
+```
+
+* Jei metodo vardą reikia iškraipyti, metodo vardo pradžioje naudokite du iš eilės einančius pabraukimus.
+
+```python
+def __get_secret():
+  pass
+```
+
