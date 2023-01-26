@@ -141,5 +141,17 @@ todėl projekto šakniniame kataloge galite pridėti failą, pavadintą .gitigno
 
 ## Readme.md 📑 
 
-Tai yra titulinio puslapio informacija apie jūsų projektą, pagrindinis dokumentas, kurį mato lankytojas, apsilankęs jūsų projekte, paprastai iš jo gana aiškiai matyti, ar net projekto savininkui jis rūpi, nes paprastai norime, kad kuo daugiau žmonių susidomėtų ir skleistų gerą žinią apie mūsų darbą.  Nedvejodami pridėkite čia paaiškinimus apie savo projektą, kaip jį paleisti, kas tai yra
+Tai yra pirmojo puslapio informacija apie jūsų projektą, pagrindinis dokumentas, kurį mato lankytojas, apsilankęs jūsų projekte, paprastai iš jo būna gana aišku, ar net projekto savininkui jis rūpi, nes paprastai norime, kad kuo daugiau žmonių susidomėtų ir skleistų gerą žinią apie mūsų darbą.  Kviečiame čia pridėti paaiškinimus apie savo projektą, kaip jį paleisti, apie ką jis yra. Kodėl apskritai jį sukūrėte ir pan...
+Taip pat yra visa sintaksė, kaip rašyti šiuos puslapius, daugiau informacijos rasite pamokos pabaigoje esančiose papildomose nuorodose.
 
+
+## 🧠 Pratimai:
+* Sukurkite projektą, kurį naudosite mūsų pamokose, pridėkite jau esamus užrašus, kad jų neprarastumėte.
+* Dar kartą savarankiškai peržvelkite šiandienos paskaitą, jei kas nors neaišku - kelkit diskusiją.
+
+## 🌐 Papildomas skaitymas:
+
+* [readme.md sintaksė](https://www.markdownguide.org/basic-syntax/)
+* [daugiau apie pradžią naudojant git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+
+Translated with www.DeepL.com/Translator (free version)
