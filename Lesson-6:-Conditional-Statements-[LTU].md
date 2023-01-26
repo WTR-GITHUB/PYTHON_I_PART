@@ -32,10 +32,10 @@ number2 = 600
 if number1 < number2:
     print("number1 is greater than number2 !")
 ```
-**Svarbu, kad teiginiai po if sąlygos ir dvitaškio (":") būtų įterpti. Python remiasi įtraukomis (baltaisiais tarpais string pradžioje), kad apibrėžtų kodo apimtį. Kitose programavimo kalbose šiam tikslui dažnai naudojami lenktieji skliaustai**.
+**Svarbu, kad po sąlygos aprašymo būtų pateikta instrukcija ką daryti tam tikrai sąlygai pasitvirtinus. Python remiasi indentacija, kad apibrėžtų kodo apimtį, t.y. kur prasideda ir užsibaigia if bloko logika. Kitose programavimo kalbose šiam tikslui dažnai naudojami lenktieji skliaustai**.
 
 ## Elif
-Ką daryti, jei norime išplėsti programą ir išspausdinti ką nors kita, jei teiginys nėra teisingas?
+Ką daryti, jei norime išplėsti programą ir išspausdinti ką nors kitą tikrinant kitą sąlygą?
 
 Pavyzdys:
 
@@ -48,7 +48,7 @@ elif number1 == number2:
     print("numbers are equal !")
 ```
 
-**Pastaba. Gali būti tiek elif teiginių, kiek norime**
+**Pastaba. Gali būti tiek elif teiginių, kiek tik norime**
 
 ```python
 number1 = 500
@@ -94,7 +94,7 @@ print("A") if a > b else print("=") if a == b else print("B")
 ## and
 Turime daugiau loginių operatorių, kurie leidžia sujungti teiginius į sudėtingesnę logiką
 
-Raktažodis **ir** yra loginis operatorius ir naudojamas sąlyginių teiginių sujungimui:
+Raktažodis **and** yra loginis operatorius ir naudojamas sąlyginių teiginių sujungimui:
 Iš esmės abi sąlygos turi būti teisingos, kad teiginys grąžintų True:
 
 ```python
@@ -158,7 +158,7 @@ else:
     print("Sveiki atvykę, vartotojas")
 ```
 
-Be to, šias žinias galime sujungti ir su sąrašais!
+Be to, šias žinias galime panaudoti kartu su sąrašais!
 
 ```python
 user = "Johnny"
@@ -170,7 +170,7 @@ else:
 ```
 
 
-Arba net žodynai:
+Arba net žodynais:
 ```python
 my_dict = {"name": "Steven", "born": "1955-02-24", "interests": "Apples"}
 if my_dict["name"] == "Steven":
@@ -204,7 +204,7 @@ if len(name) == 0:
   print("Name was not entered")
 ...
 ```
-Darykit taip:
+Darykim taip:
 ```python
 if not name:
   print("Name was not entered")
@@ -221,7 +221,7 @@ if not my_list:
 ## 🧠 Pratimai:
 
 1. Leiskite naudotojui įvesti vardą, pavardę ir amžių. Išspausdinkite, ar naudotojas gali įeiti į internetinį kazino, ar ne. 21 metai yra amžiaus riba.
-1. Sukurkite duomenų bazę (privilegijuotų naudotojų sąrašas) išspausdinkite konkretų pranešimą su asmeniniu pasveikinimu, jei naudotojas yra privilegijuotas, ir tik "Sveiki atvykęs kitu atveju".
+1. Sukurkite duomenų bazę (privilegijuotų naudotojų sąrašas) išspausdinkite konkretų pranešimą su asmeniniu pasveikinimu, jei naudotojas yra privilegijuotas, tik "Sveiki atvykę" kitu atveju.
 1. Leiskite naudotojui įvesti du skaičius, išspausdinkite, kuris iš jų didesnis už kitą, ar jie lygūs?
 1. Parašykite nedidelę skaičiuotuvo programą, kuri leistų naudotojui įvesti du skaičius ir simbolį, duotą ir tada atlikti operaciją bei išspausdinti atsakymą.
 
