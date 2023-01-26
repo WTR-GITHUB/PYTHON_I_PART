@@ -61,12 +61,6 @@ def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
 5, 9
 <class 'dict'> {'e': 6, 'f': 7}
 ```
-## Exercises: 
-🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
-* Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
-* Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
-* Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
-* Update previous task with possible `raise` exception.
 
 ## Lambda function
 **Lambda Functions** are _anonymous_ function in Python. Lambda functions are similar to regular functions. The difference between regular function and lambda function is that they can be **defined without a name** but the normal functions are defined with `def` keyword.
@@ -113,6 +107,12 @@ However, it is not suitable:
 * When you need to reuse the function again and again.
 * When there are many or complex expressions in the function definition.
 
+## Exercises: 
+🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
+* Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
+* Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
+* Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
+* Update previous task with possible `raise` exception.
 
 ## 🌐  Extra reading:
 
