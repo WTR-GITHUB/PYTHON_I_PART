@@ -2,7 +2,7 @@
 
 ## print()
 
-Kaip matėme anksčiau, jau porą kartų naudojome `print` ir su ja susipažinome. Pačios funkcijos nekūrėme, nes ji pateikiama iškart po python įdiegimo. Svarbu paminėti, kad ši funkcija nėra tokia nuobodi, kaip gali pasirodyti iš pirmo žvilgsnio, iš tikrųjų ji gana universali.
+Kaip matėme ankščiau, jau porą kartų naudojome `print` ir su ja susipažinome. Pačios funkcijos nekūrėme, nes ji pateikiama iškart po python įdiegimo. Svarbu paminėti, kad ši funkcija nėra tokia nuobodi, kaip gali pasirodyti iš pirmo žvilgsnio, iš tikrųjų ji gana universali.
 
 print(object(s), sep=separator, end=end, file=file, flush=flush)
 
@@ -132,15 +132,15 @@ print(sorted_reverse_list)
 Vis dar veikia!
 
 
-Daugybę kitų integruotų funkcijų galite ištirti [nuoroda](https://docs.python.org/3/library/functions.html) Kai kurios iš jų mums dar per ankstyvos, tačiau, tobulėjant kursui, naudosime vis daugiau ir daugiau jų.
+Daugybę kitų integruotų funkcijų galite ištirti [nuoroda](https://docs.python.org/3/library/functions.html) Kai kurios iš jų mums dar per ankstyvos, tačiau, einant šį kursą, naudosime vis daugiau ir daugiau jų.
 
 ## 🧠 Pratimai:
 
-1. Sukurkite įvairių tipų Python objektų list ir išspausdinkite visus tipus. Tas, kuris surinks daugiausiai unikalių tipų, laimi pagarbos taškų:
-1. Atspausdinkite visus elementus, atskirtus "|"
-1. Sukurkite kintamųjų skaičių list su 3 ženklais po kablelio, sukurkite kitą list su visomis reikšmėmis, suapvalintomis iki 2 ženklų po kablelio.
+1. Sukurkite Python listą su visokiais skirtingais objektais, juo daugiau tuo geriau. Išspausdinkite visus tipus. Tas, kuris surinks daugiausiai unikalių tipų, laimi pagarbos taškų:
+1. Atspausdinkite visus elementus iš pirmo pratimo, atskirtus "|"
+1. Sukurkit listą  su floatais, turinčius 3 skaitmenis po kablelio, sukurkite kitą list su visomis reikšmėmis, suapvalintomis iki 2 ženklų po kablelio. atspausdinkit abudu listus.
 1. Sukurkite list su mokinių vardais ir juos surūšiuokite, rezultatą išspausdinkite į terminalą.
-1. Parašykite programą, kuri leistų vartotojui įrašyti bet kokį kintamąjį skaičių ir jį suapvalinti.
+1. Parašykite programą, kuri leistų vartotojui įrašyti bet kokį kintamąjį skaičių ir jį suapvalinti iki tam tikro skaičiaus po kablelio.
 
 
 ## 🌐 Papildomas skaitymas:
