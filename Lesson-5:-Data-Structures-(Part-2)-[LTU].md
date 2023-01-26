@@ -1,13 +1,13 @@
 # Žodynas
 
-labai galinga duomenų struktūra, kuri bus dažnai naudojama. Žodyne saugomos rakto ir vertės poros, kuriomis galime pasiekti jo atributus.
+labai galinga duomenų struktūra, kuri bus dažnai naudojama. Žodyne saugomos rakto ir vertės poros, naudodami raktą - gausite vertę {key: value}.
 Žodynai yra: 
 
 1. keičiami ✔️ (gali būti keičiami)
 1. dinaminiai ✔️ (gali didėti ir mažėti)
 1. įterptiniai ✔️ (gali apimti kitus žodynus arba kitas sudėtingas struktūras)
 
-Žodynas - tai rinkinys, kuris yra tvarkingas, keičiamas ir neleidžia dubliuotis.
+Žodynas - tai rinkinys, kuris yra rūšiuotas, keičiamas ir neleidžia dubliuotis rakto reikšmėm.
 
 Pagrindinis skirtumas tarp python sąrašų yra tas, kad žodynų reikšmės pasiekiamos pagal raktus.
 Žodyno sukūrimas ir verčių į jį įtraukimas
@@ -28,7 +28,7 @@ print(my_dictionary["name"]])
 
 ```python
 my_dictionary = {"name": "Tom", "pavardė": "Tom", "Tom", "Edison"}
-print(f "vardas: {my_dictionary['name']}")
+print(f"vardas: {my_dictionary['name']}")
 print(f"surname: {my_dictionary['surname']}")
 ```
 
@@ -168,11 +168,11 @@ my_dictionary= dict(zip(test_keys, test_values))
 print(my_dictionary)
 ```
 
-# Rinkiniai
+# Set
 
-Rinkiniai naudojami keliems elementams saugoti viename kintamajame.
-Rinkinys yra vienas iš 4 Pythono duomenų tipų, naudojamų duomenų rinkiniams saugoti, kiti trys yra [List].
-Rinkinys - tai kolekcija, kuri yra nesurašyta, nekeičiama* ir neindeksuojama.
+Set naudojami keliems elementams saugoti viename kintamajame.
+Set yra vienas iš 4 Pythono duomenų tipų, naudojamų duomenų rinkiniams saugoti, kiti trys yra [List].
+Set - tai kolekcija, kuri yra nerūriuota, nekeičiama* ir neindeksuojama.
 
 **Pastaba: aibės elementai yra nekeičiami, tačiau galite pašalinti elementus ir pridėti naujų elementų**.
 
