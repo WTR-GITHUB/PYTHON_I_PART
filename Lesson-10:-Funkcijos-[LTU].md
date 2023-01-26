@@ -205,6 +205,15 @@ def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None
 Šis pavyzdys rodo, kad the_func() priima tris argumentus, x, y ir z, kad x gali būti sveikasis skaičius arba kintamasis, y turi būti tuple, kuriame saugomos eilutės, o z gali būti none arba kintamasis. Grąžinimo tipas yra str, kurį nurodote naudodami -> po baigiamųjų skliaustų, bet prieš dvitaškį.
 ℹ️ 
 
+## Užduotys
+
+❗ Visose užduotyse turi būti nurodyti tipai ❗ 
+* Patys sukurkite bent 5 skirtingas funkcijas ir jas išbandykite.
+* Sukurkite funkciją, kuri prie kiekvieno sąrašo nario prideda eilutės galūnę.
+* Sukurkite mini python programą, kuri kaip įvestį paimtų du skaičius ir grąžintų jų sumą, atimtį, dalybą, daugybą.
+* Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias eilutes.
+
+
 ## 🌐 Papildomas skaitymas:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
