@@ -8,7 +8,7 @@ Python turi dvi primityvias ciklo komandas:
 
 ## While ciklas
 
-Naudodami while cilką galime vykdyti teiginių rinkinį tol, kol sąlyga yra teisinga.
+Naudodami while ciklą galime vykdyti logiką tol, kol sąlyga yra teisinga.
 
 ```python
 i = 0
@@ -34,10 +34,10 @@ print(f "Jūs įvedėte {user_input }")
 For ciklas naudojamas iteruojant seką (sąrašą, tuple, žodyną, rinkinį arba eilutę).
 
 
-Tai ne tiek panašu į kitų programavimo kalbų raktinį žodį for, kur į iteratoriaus metodą, naudojamą kitose į objektus orientuotose programavimo kalbose.
+Pythone šis ciklas kiek skiriasi nuo kitų kalbų, pagal tai kaip aprašomos sąlygos, tačiau esminė logika išlieka ta pati - iteruoti per tam tikrą rinkinį objektų. 
 
 
-Naudodami for ciklą galime atlikti keletą teiginių, vieną kartą kiekvienam sąrašo, tuple, aibės ir t. t. elementui.
+Naudodami for ciklą galime atlikti keletą veiksmų, po vieną kartą kiekvienam sąrašo, tuple, aibės ir t. t. elementui.
 
 #### ciklas per sąrašus
 ```python
@@ -53,7 +53,7 @@ for character in name :
     print(character)
 ```
 
-#### Perkelkite ciklą per žodynus:
+#### prasukime ciklą per žodynus:
 
 ```python
 my_dict = {"name": "Albert", "role": "Albert": "Albert", "Albert", "Albert", "Albert", "Albert", "Albert".}
@@ -62,7 +62,7 @@ for key, value in my_dict.items():
     print(key, value)
 ```
 
-#### ciklas per rinkinius, tuples:
+#### ciklas per setus, tuples:
 Tai lygiai tas pats, kaip ir su sąrašais
 ```python
 names = ("Albert", "Tom", "Leonardo")
@@ -129,21 +129,17 @@ i = 0
 while i < 6:
   i += 1
   if i == 3:
-    tęsti
+    continue
   print(i)
 ```
 
 ## 🧠 Pratimai
 
-1. Sukurkite kintamuosius, kuriuose būtų vartotojo vardo ir slaptažodžio eilutės. Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį. Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
+1. Sukurkite kintamuosius, kuriuose būtų vartotojo vardo ir slaptažodžio stringai. Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį. Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
 1. Leiskite naudotojui įvesti 10 sveikųjų skaičių, tada spausdinkite šių įvestų skaičių sumą ir vidurkį.
 1. Sugeneruokite 10 raktų žodyną: 1,2,3...10. Kiekviename iš jų turėtų būti įrašyta atsitiktinio sveikojo skaičiaus vertė nuo 1 iki 100.
 1. Sukurkite PIN kodo nulaužimo programą. Tarkime, PIN kodą sudaro 4 atsitiktiniai skaitmenys. Reikšmę galite saugoti kintamajame. Tada sukurkite ciklą, einantį per visas galimas kombinacijas, kol rasite tą, kurią įvedėte.
 
 ## 🌐 Papildomas skaitymas:
 
-* [išplėstiniai ciklų dalykai] (https://www.dataquest.io/blog/tutorial-advanced-for-loops-python-pandas/)
-
-
-
-Translated with www.DeepL.com/Translator (free version)
+* [daugiau apie ciklus] (https://www.dataquest.io/blog/tutorial-advanced-for-loops-python-pandas/)
