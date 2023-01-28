@@ -177,14 +177,15 @@ pipenv uninstall <package name>
 ```
 
 ## Exercises: 
-🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
-* Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
 
+* Create a virtual environment using python `venv` and install at least one package from Pip repositories.
+* Create a virtual environment using python `pipenv` and install at least one package from Pip repositories.
+* Use any of virtual environment option , install `random-word` package and create shot python script which would print out 5 random word (names must be all capital letter and sorted.)
 
 ## 🌐  Extra reading (or watching 📺 ):
 
 
-* [Full OOP course - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
-* [Corey Schafer: Python OOP Tutorial (multiple videos)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
-* [Datacamp](https://www.datacamp.com/tutorial/python-oop-tutorial)
+* [Pipenv official](https://pipenv.pypa.io/en/latest/)
+* [Corey Schafer: Pipenv](https://www.youtube.com/watch?v=zDYL22QNiWk&t)
+* [python venv](https://www.datacamp.com/tutorial/python-oop-tutorial)
 ***
