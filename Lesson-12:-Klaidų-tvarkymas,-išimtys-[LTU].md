@@ -31,7 +31,7 @@ Kitas klaidų tipas, kurį galime pastebėti, yra `Išimties` klaida. Tokio tipo
 Išimtims gaudyti naudojame kodo bloką, vadinamą `try-except`. Kodo dalį, kuri, kaip įtariama, yra klaidos šaltinis, įdedame į `try` bloką, tada atsakymą fiksuojame ir projektuojame `except` bloke.
 
 Paprastas `boilerplate` kodo pavyzdys būtų toks: 
-````python
+```python
 def my_func() -> Any:
   funkcija: try:
     # kodas, kuris gali išmesti/išskirti išimtį
