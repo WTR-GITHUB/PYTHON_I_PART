@@ -184,7 +184,37 @@ class House:
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
+* Create the instance attributes fullname and email in the Employee class. Given a person's first and last names:
+   - Form the fullname by simply joining the first and last name together, separated by a space.
+   - Form the email by joining the first and last name together with a . in between, and follow it with @company.com at the end. Make sure the entire 
+     email is in lowercase.
 
+* Create a Book class that has two attributes:
+    - title
+    - author
+
+  and two methods:
+
+    - A method named .get_title() that returns: "Title: " + the instance title.
+    - A method named .get_author() that returns: "Author: " + the instance author.
+
+  and instantiate this class by creating 3 new books:
+
+    - Pride and Prejudice - Jane Austen (PP)
+    - Hamlet - William Shakespeare (H)
+    - War and Peace - Leo Tolstoy (WP)
+
+  The name of the new instances should be PP, H, and WP, respectively. For instance, if I instantiated the following book using this Book class:
+
+    - Harry Potter - J.K. Rowling (HP)
+
+  I would get the following attributes and methods:
+  ```python
+  HP.title ➞ "Harry Potter"
+  HP.author ➞ "J.K. Rowling"
+  HP.get_title() ➞ "Title: Harry Potter"
+  HP.get_author() ➞ "Author: J.K. Rowling"
+  ```
 
 ## 🌐  Extra reading (or watching 📺 ):
 
