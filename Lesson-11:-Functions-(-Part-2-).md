@@ -44,9 +44,9 @@ welcome
 ** While using `*args` or `**kwargs` with other parameters or using them together, we should keep in mind that the arguments should follow the given order ⬇️ .**
 
 1. **Formal arguments**
-1. ***args**
-1. **keyword arguments**
-1. ****kwargs**
+2. ***args**
+3. **keyword arguments**
+4. ****kwargs**
 
 ```python
 def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
@@ -151,6 +151,7 @@ However, it is not suitable:
   can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
   can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]) ➞ False
   ```
+* Reimplement some previous solutions using the lambda function. 
 ## 🌐  Extra reading:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
