@@ -16,7 +16,7 @@ python -m pip install <package-name>
 `pip` always installs the **latest version of any package** by default (until a specific version of that package is provided) and will also **install any dependencies** that the required package has.
 
 ## The Catch
-Lets say, you develope a project `Project A` which runs on python 3.5 [version](https://www.python.org/doc/versions/) ,and you also start working on another python project `Project B` which requires on python 3.9 .
+Lets say, you develop a project `Project A` which runs on python 3.5 [version](https://www.python.org/doc/versions/) ,and you also start working on another python project `Project B` which requires on python 3.9 .
 
 Both `Project A` and `Project B` might need a library `lib A` to achieve their goals but `Project A` which is running on python 3.5 might be compatible with a different version of `lib A` while `Project B` (python 3.9) might be compatible with some other version (example: [Flask](https://pypi.org/project/Flask/#history)).
 
