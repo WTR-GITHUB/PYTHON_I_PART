@@ -48,7 +48,7 @@ welcome
 3. **reikšminiai argumentai**
 4. ****kwargs**
 
-````python
+```python
 def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
     print (a, b)
     print (type(args), args)
