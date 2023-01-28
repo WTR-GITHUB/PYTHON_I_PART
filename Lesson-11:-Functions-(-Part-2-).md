@@ -109,11 +109,48 @@ However, it is not suitable:
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
-* Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
-* Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
-* Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
-* Update previous task with possible `raise` exception.
+* Write a function that takes two lists and adds the first element in the first list with the first element in the second list, the second element in the 
+  first list with the second element in the second list, etc, etc. Return True if all element combinations add up to the same number. Otherwise, return  
+  False.
+  Example: 
 
+  ```python
+  puzzle_pieces([1, 2, 3, 4], [4, 3, 2, 1]) ➞ True
+  # 1 + 4 = 5;  2 + 3 = 5;  3 + 2 = 5;  4 + 1 = 5
+  # Both lists sum to [5, 5, 5, 5]
+  puzzle_pieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]) ➞ True
+  puzzle_pieces([1, 2], [-1, -1]) ➞ False
+  puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
+  ```
+
+* There's a great war between the even and odd numbers. Many numbers already lost their lives in this war and it's your task to end this. You have to 
+  determine which group sums larger: the evens or the odds. The larger group wins.
+
+  Create a function that takes a list of integers, sums the even and odd numbers separately, then returns the difference between the sums of the even and 
+  odd numbers.
+
+  Example: 
+  ```python
+  war_of_numbers([2, 8, 7, 5]) ➞ 2
+  # 2 + 8 = 10
+  # 7 + 5 = 12
+  # 12 is larger than 10
+  # So we return 12 - 10 = 2
+  war_of_numbers([12, 90, 75]) ➞ 27
+  war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
+  ```
+
+* You are given an input array of bigrams, and an array of words. Write a function that returns True if every single bigram from this array can be found 
+  at least once in an array of words.
+   
+  Example:
+  ```python
+  can_find(["at", "be", "th", "au"], ["beautiful", "the", "hat"]) ➞ True
+  can_find(["ay", "be", "ta", "cu"], ["maybe", "beta", "abet", "course"]) ➞ False
+  # "cu" does not exist in any of the words.
+  can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
+  can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]) ➞ False
+  ```
 ## 🌐  Extra reading:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
