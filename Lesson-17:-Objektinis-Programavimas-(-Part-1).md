@@ -234,13 +234,13 @@ class House:
   Taip pat sukurkite metodą, kuris palygintų šalies gyventojų tankį su kitos šalies objektu. Grąžinkite tokio formato eilutę:
   
   ```python
-  {šalis} turi {mažesnį / didesnį} gyventojų tankį nei {kita_šalis}
+  {country} has a {smaller / larger} population density than {other_country}
   ```
   Pavyzdys:
   
   ```python
-  australia = Šalis("Australija", 23545500, 7692024)
-  andora = Šalis("Andora", 76098, 468)
+  australia = Country("Australija", 23545500, 7692024)
+  andora = Country("Andora", 76098, 468)
 
   australia.is_big ➞ True
   andorra.is_big ➞ False
