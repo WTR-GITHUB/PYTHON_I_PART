@@ -68,7 +68,7 @@ arba (**Windows**)
 
 Pirmiau pateiktos komandos pakeitė komandas python ir pip (python paketų tvarkyklė), kad jos būtų nukreiptos į tuos, kurie yra `venv` aplanke. Turėtų pasirodyti naudingas indikatorius, rodantis, kad naudojate virtualią aplinką, pvz:
 
-````python
+```python
 (<name_of_your_choice>) $
 ```
 
