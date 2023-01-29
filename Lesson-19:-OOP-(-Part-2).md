@@ -248,6 +248,33 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a few examples of yourself where you show four pillars of OOP in action.
+* A stack machine processes instructions by pushing and popping values to an internal stack.
+  A simple example of this is a calculator.
+
+  The argument passed to `run(instructions)` will always be a string containing a series of instructions.
+  The instruction set of the calculator will be this:
+
+   - +: Pop the last 2 values from the stack, add them, and push the result onto the stack.
+   - -: Pop the last 2 values from the stack, subtract the lower one from the topmost one, and push the result.
+   - *: Pop the last 2 values, multiply, and push the result.
+   - /: Pop the last 2 values, divide the topmost one by the lower one, and push the result.
+   - DUP: Duplicate (not double) the top value on the stack.
+   - POP: Pop the last value from the stack and discard it.
+   - PSH: Performed whenever a number appears as an instruction. Push the number to the stack.
+   - Any other instruction (for example, a letter) should result in the value "Invalid instruction: [instruction]"
+
+ Examples:
+ ```python
+ "" ➞ 0
+
+ "5 6 +" ➞ 11
+
+ "3 DUP +" ➞ 6
+
+ "6 5 5 7 * - /" ➞ 5
+
+ "x y +" ➞ Invalid instruction: x
+ ```
 * Write a class called `CoffeeShop`, which has three instance variables:
 
   - name : a string (basically, of the shop)
@@ -297,6 +324,7 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
   ```
   Notes: Round off due amount up to two decimal places.
 
+* Update previous task's solution using four pillars paradigm of OOP. (Minimum Encapsulation, Inheritance)
 
 
 ## 🌐  Extra reading (or watching 📺 ):
