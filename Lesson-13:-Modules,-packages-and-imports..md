@@ -90,6 +90,34 @@ help('modules')
 ```
 
 ## `if __name__ == "__main__"` magic
+For most practical purposes, you can think of the conditional block that you open with `if __name__ == "__main__"` as a way to store code that should only run when your file is executed as a script.
+
+Example:
+```python
+# echo.py
+
+def echo(text: str, repetitions: int = 3) -> str:
+    """Imitate a real-world echo."""
+    echoed_text = ""
+    for i in range(repetitions, 0, -1):
+        echoed_text += f"{text[-i:]}\n"
+    return f"{echoed_text.lower()}."
+
+
+if __name__ == "__main__":
+
+    text = input("Yell something at a mountain: ")
+    print(echo(text))
+```
+In this example, you define a function, echo(), that mimics a real-world echo by gradually printing fewer and fewer of the final letters of the input text.
+When you run the file as a script by passing the file object to your Python interpreter, the expression `__name__ == "__main__"` returns `True`. The code block under if then runs, so Python collects user input and calls `echo()`.
+
+**Remember:**
+Nesting code under `if __name__ == "__main__"` allows you to cater to different use cases:
+ * Script: When run as a script, your code prompts the user for input, calls echo(), and prints the result.
+ * Module: When you import echo as a module, then echo() gets defined, but no code executes. You provide echo() to the main code session without any side 
+   effects.
+
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
