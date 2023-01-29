@@ -127,7 +127,7 @@ Nesting code under `if __name__ == "__main__"` allows you to cater to different 
   - second, basic tasks with lists.
   - third, basic tasks with numbers
 
- Import them as modules to the `main.py` module and show calculations.
+  Import them as modules to the `main.py` module and show calculations.
 
 * Create a module and import any PIP package of your choice. Then create a function that would use it.
   Import that function to the `main.py` module and use it.
