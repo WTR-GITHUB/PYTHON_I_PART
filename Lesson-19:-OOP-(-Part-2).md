@@ -237,7 +237,7 @@ for data in (rec, squ):
 200
 100
 ```
-In the above code, `area()` is performing two tasks in different instances of the program. On one side it is calculating the area of the rectangle, and on the other side it is calculating the area of the square in the same program.
+In the code above, `area()` is performing two tasks in different instances of the program. On one side it is calculating the area of the rectangle, and on the other side it is calculating the area of the square in the same program.
 
 ### Abstraction
 **Abstraction** is used to hide the internal functionality of the function from the users. By applying abstraction, each object is only exposed to a high-level mechanism for using it. A method that only has a declaration and not a definition is called an abstract method. An abstract method doesn’t have anything inside the body. A class that has an abstract method is called an abstract class.
