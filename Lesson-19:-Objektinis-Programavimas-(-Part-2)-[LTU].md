@@ -194,78 +194,9 @@ obj = Child()                                      ## creating the object
 print(obj.mobilenumber)                            ## AttributeError: 'Child' object has no attribute 'mobilenumber'
 print(obj._mobilenumber)                           ## Prints mobilenumber, explicitly allowing the access to protected member
 ```
-`_mobilenumber` is a protected member of the class that can only be accessed by the class members and object after giving explicit permission to the object.
-
-###  Polymorphism
-**Polymorphism** means having different forms. It refers to the ability of a function with the same name to carry a different functionality altogether. One of the best examples of inbuild polymorphism is the `len()` function. When we use it for a list, it returns the count of number elements in the list. When we use it with a dictionary, it returns the count of keys. When we use it with a string, it returns the number of characters in the string. Let’s see an example of polymorphism.
-Simple example: ⏬ 
-```python
-def add(x: int, y: int, z: int = 0) -> int:
-    return x+y+z
-
-print(add(5, 6))
-print(add(5, 7, 4)) 
-----------OUTPUT--------------
-11
-16
-```
-The above code shows how a single function can be used to perform two number and three number addition at the same time.
-Now let’s see polymorphism in a class method:
-```python
-class Rectangle:
-    def __init__(self, l, b):
-        self.l = l
-        self.b = b
-
-    def area(self):
-        return self.l * self.b
-
-class Square:
-    def __init__(self, side):
-        self.s = side
-
-    def area(self):
-        return self.s ** 2
-
-rec = Rectangle(10, 20)
-squ = Square(10)
-for data in (rec, squ):
-    print(data.area())    
-    
------------------------------OUTPUT----------------------------
-200
-100
-```
-
-Iš pradžių turime pagrindinę klasę `Employee`, kuri turi pagrindinę informaciją: vardą, amžių, patirtį ir atlyginimą. Darbuotojo klasė turi konstruktorių, kuriame yra visi egzemplioriaus atributai. Galiausiai taip pat turime metodą, pavadintą show, kuris turi tik spausdinimo teiginį ir naudojamas informacijai spausdinti.
-Inžinierius ir konstruktorius yra patronuojančios klasės Darbuotojas antrinės klasės.
-Metodas** `super()` padeda antrinei klasei pasiekti patronuojančios klasės narius. Inžinierių klasė gauna prieigą prie vardo, amžiaus, exp ir atlyginimo informacijos iš tėvinės klasės.
-
-#### Įkapsuliavimas
-**Kapsuliavimas** - tai duomenų paslėpimo procesas, suteikiantis duomenims saugumą, paverčiant kintamąjį apsaugotu. Saugomą narį gali pasiekti tik klasės narys. Jei bandysite jį pasiekti už klasės ribų įprastai, sukurdami objektą, bus padaryta klaida. Norėdami pasiekti saugomą narį, turite naudoti `object._protectedmember`.
-
-Pythone, norėdami sukurti apsaugotą narį, naudojame konvenciją, pagal kurią prieš nario pavadinimą rašome vieną pabraukimą, pvz., _name.
-
-Inkapsuliavimas apsaugo objektą nuo nepageidaujamos klientų prieigos. Tai sumažina žmogiškųjų klaidų tikimybę ir supaprastina programos priežiūrą. Inkapsuliavimas leidžia pasiekti lygį neatskleidžiant detalių: 🔽 
-
-```python
-class Parent:                                      ## Creating a class name Parent
-    def __init__(self):                            ## Constructor of parent class
-
-        # protected member
-        self._mobilenumber = 5555551234            ## Protected member of the class Parent 
-
-class Child(Parent):                               ## Child class inhering properties from the Parent class
-    def __init__(self):                            ## Constructor of the class name 
-        Parent.__init__(self)                      ## accessing members of the Parent class, another way is to used super()
-        print("Calling Protected Member") 
-        print(self._mobilenumber)                  ## accessing protected member using the class member
-
-obj = Child()                                      ## creating the object 
-print(obj.mobilenumber)                            ## AttributeError: 'Child' object has no attribute 'mobilenumber'
-print(obj._mobilenumber)                           ## Prints mobilenumber, explicitly allowing the access to protected member
-```
 `_mobilenumber` yra apsaugotas klasės narys, kurį klasės nariai ir objektas gali pasiekti tik gavę aiškų leidimą.
+
+
 ###  Polymorphism
 Polimorfizmas - tai skirtingų formų turėjimas. Tai reiškia, kad funkcija, turinti tą patį pavadinimą, gali atlikti visai kitą funkciją. Vienas geriausių polimorfizmo pavyzdžių yra funkcija len(). Kai ją naudojame sąrašui, ji grąžina sąrašo elementų skaičių. Kai ją naudojame žodynui, ji grąžina raktų skaičių. Kai ją naudojame su eilute, ji grąžina eilutės simbolių skaičių. Pažiūrėkime polimorfizmo pavyzdį. Paprastas pavyzdys: ⏬
 ```python
@@ -394,5 +325,12 @@ Daugiau apie abstrakciją: 📖 [Real Phyton : Python Interfaces](https://realpy
     tcs.food_only() ➞ ["tuna sandwich", "ham and cheese sandwich", "bacon and egg", "steak", "hamburger", "cinnamon roll"]
     ```
 
+* Atnaujinkite ankstesnės užduoties sprendimą, naudodami keturių ramsčių paradigmą OOP. (Minimalus įkapsuliavimas, paveldimumas)
+
+## 🌐 Papildomas skaitymas (arba žiūrėjimas 📺 ):
 
 
+* [Visas OOP kursas - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
+* [Corey Schafer: Python OOP Tutorial (keli vaizdo įrašai)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
+* [Datacamp](https://www.datacamp.com/tutorial/python-oop-tutorial)
+***
