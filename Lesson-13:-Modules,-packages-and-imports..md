@@ -89,7 +89,7 @@ To get the list of all the modules in python, you can write the following comman
 help('modules')
 ```
 
-## if __name__ == "__main__" magic
+## `if __name__ == "__main__"` magic
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
