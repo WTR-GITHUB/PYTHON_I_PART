@@ -1,7 +1,3 @@
-1. Modules, libraries
-1. Imports, Path parameter.
-1. If __name__ == `__main__` magic.
-
 ## Introduction
 While you learn to program in Python, it may make sense to write all of your code in Python’s Integrated Development and Learning Environment (IDLE). After a while this becomes impractical. The most natural upgrade from there is to begin creating your own Python source files that are used to save your code — Python source files are stored with the .py extension.
 
@@ -28,10 +24,72 @@ Not only does this make it easier to spot and rapidly fix these bugs, but it als
 
 ## Modules
 
+### Create
 
+Creating a module in python is similar to writing a simple python script using the `.py` extension. For the example bellow, lets try to make a module for the various operations:
 
-👨‍🏫  ❗ **PRO TIP** ❗ 
-**As per normal functions, you can assign default arguments to self parameters and instant method arguments**
+```python
+def add(x: int,y: int) -> int:
+     return x + y
+ 
+def sub(x: int,y: int) -> int:
+     return x - y
+ 
+def prod(x: int,y: int) -> int:
+    return x * y
+ 
+def div(x: int,y: int) -> int:
+    return x // y
+```
+Save the above code in a file `calc.py` (you can name it the way you want). _This is how we create a module in python_. We have created different functions in this module. We can use these modules in our main file.
+
+### Usuage
+We will use the **import** keyword to incorporate the module into our program, from keyword is used to get only a few or specific methods or functions from a module. Let us see what are different methods to use a module in your program. Let us say we have our file with a name main.py :
+
+```python
+import calc as calculator
+a = 10
+b = 20
+ 
+addition = calculator.add(a,b)
+print(addition)
+
+# Output: 30
+```
+
+In the above code, we have created an alias using the **as** keyword. The output of the above code will be the addition of the two numbers a and b using the logic specified in the add function in the **calc.py** module.
+
+Let us take a look at another approach. In the code below, we have **imported all the functions** using the asterisk and we can simply mention the function name to get the results.
+
+```python
+from calc import *
+a = 20
+b = 30
+ 
+print(add(a,b))
+
+# Output: 50
+```
+### Python Module Path
+When we import a module, the interpreter looks for the module in the build-in modules directories in sys.path and if not found, it will look for the module in the following order:
+
+```python
+import sys 
+print(sys.path)
+```
+When you run the above code, you will get the list of directories. You can make changes in the list to create your own path.
+
+Built-in modules are written in C and integrated with python interpreter. Each built-in module contains resources for certain specific functionalities like Operating system management, disk input/output etc.
+
+The standard library also has many python scripts containing useful utilities. There are several built-in modules in python at our disposal that we can use whenever we want.
+
+To get the list of all the modules in python, you can write the following command in the python console:
+
+```python
+help('modules')
+```
+
+## if __name__ == "__main__" magic
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
