@@ -263,18 +263,18 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
    - PSH: Performed whenever a number appears as an instruction. Push the number to the stack.
    - Any other instruction (for example, a letter) should result in the value "Invalid instruction: [instruction]"
 
- Examples:
- ```python
- "" ➞ 0
+  Examples:
+   ```python
+   "" ➞ 0
 
- "5 6 +" ➞ 11
+   "5 6 +" ➞ 11
 
- "3 DUP +" ➞ 6
+   "3 DUP +" ➞ 6
 
- "6 5 5 7 * - /" ➞ 5
+   "6 5 5 7 * - /" ➞ 5
 
- "x y +" ➞ Invalid instruction: x
- ```
+   "x y +" ➞ Invalid instruction: x
+   ```
 * Write a class called `CoffeeShop`, which has three instance variables:
 
   - name : a string (basically, of the shop)
