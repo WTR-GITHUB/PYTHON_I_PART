@@ -123,9 +123,9 @@ Nesting code under `if __name__ == "__main__"` allows you to cater to different 
 
 * Create a simple calculus program as a script and as module.
 * Create a program with 3 different modules: 
- - first, to do basic tasks with strings
- - second, basic tasks with lists.
- - third, basic tasks with numbers
+  - first, to do basic tasks with strings
+  - second, basic tasks with lists.
+  - third, basic tasks with numbers
  Import them as modules to the `main.py` module and show calculations.
 
 * Create a module and import any PIP package of your choice. Then create a function that would use it.
