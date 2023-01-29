@@ -265,11 +265,9 @@ obj = Child()                                      ## creating the object
 print(obj.mobilenumber)                            ## AttributeError: 'Child' object has no attribute 'mobilenumber'
 print(obj._mobilenumber)                           ## Prints mobilenumber, explicitly allowing the access to protected member
 ```
-`_mobilenumber` is a protected member of the class that can only be accessed by the class members and object after giving explicit permission to the object.
-
+`_mobilenumber` yra apsaugotas klasės narys, kurį klasės nariai ir objektas gali pasiekti tik gavę aiškų leidimą.
 ###  Polymorphism
-**Polymorphism** means having different forms. It refers to the ability of a function with the same name to carry a different functionality altogether. One of the best examples of inbuild polymorphism is the `len()` function. When we use it for a list, it returns the count of number elements in the list. When we use it with a dictionary, it returns the count of keys. When we use it with a string, it returns the number of characters in the string. Let’s see an example of polymorphism.
-Simple example: ⏬ 
+Polimorfizmas - tai skirtingų formų turėjimas. Tai reiškia, kad funkcija, turinti tą patį pavadinimą, gali atlikti visai kitą funkciją. Vienas geriausių polimorfizmo pavyzdžių yra funkcija len(). Kai ją naudojame sąrašui, ji grąžina sąrašo elementų skaičių. Kai ją naudojame žodynui, ji grąžina raktų skaičių. Kai ją naudojame su eilute, ji grąžina eilutės simbolių skaičių. Pažiūrėkime polimorfizmo pavyzdį. Paprastas pavyzdys: ⏬
 ```python
 def add(x: int, y: int, z: int = 0) -> int:
     return x+y+z
