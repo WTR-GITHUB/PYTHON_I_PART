@@ -120,14 +120,21 @@ Nesting code under `if __name__ == "__main__"` allows you to cater to different 
 
 
 ## Exercises: 
-🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
-* Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
+
+* Create a simple calculus program as a script and as module.
+* Create a program with 3 different modules: 
+ - first, to do basic tasks with strings
+ - second, basic tasks with lists.
+ - third, basic tasks with numbers
+ Import them as modules to the `main.py` module and show calculations.
+
+* Create a module and import any PIP package of your choice. Then create a function that would use it.
+  Import that function to the `main.py` module and use it.
 
 
 ## 🌐  Extra reading (or watching 📺 ):
 
+* [Python Official](https://docs.python.org/3/tutorial/modules.html)
+* [Medium](https://medium.com/python-features/understanding-if-name-main-in-python-a37a3d4ab0c3)
 
-* [Full OOP course - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
-* [Corey Schafer: Python OOP Tutorial (multiple videos)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
-* [Datacamp](https://www.datacamp.com/tutorial/python-oop-tutorial)
 ***
