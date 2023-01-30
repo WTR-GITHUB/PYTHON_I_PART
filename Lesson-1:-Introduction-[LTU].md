@@ -10,6 +10,7 @@ Pythone nekyla jokių problemų, net jei nedeklaruojame kintamojo tipo. Jis nuro
 ## ⬇️ Atsisiųsti Python
 
 https://www.python.org/downloads/
+
 ❗ Šiame kurse bus naudojama **3.9.16** "Phyton" versija. 
 
 ## ⬇️ Atsisiųsti VSCode
