@@ -10,6 +10,7 @@ Python doesn't have any problem even if we don't declare the type of variable. I
 ## ⬇️ Download Python
 
 https://www.python.org/downloads/
+
 ❗   The `Phyton version` of **3.9.16** will be used throughout this course 
 
 ## ⬇️ Download VSCode
