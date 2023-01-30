@@ -1,42 +1,41 @@
 # Kas yra Python? 🐍 
 
-Python yra kompiuterių programavimo kalba, dažnai naudojama svetainėms ir programinei įrangai kurti, užduotims automatizuoti ir duomenų analizei atlikti. Python yra bendrosios paskirties kalba, t. y. ja galima kurti įvairias programas ir ji nėra specializuota kokiems nors konkretiems uždaviniams spręsti.
+Python - programavimo kalba, dažnai naudojama kurti svetainėms, programinei įrangai, užduotims automatizuoti ir duomenų analizei atlikti. Python yra _bendrosios paskirties kalba_, t. y. su ja galima kurti įvairias programas ir ji nėra _specializuota_ kokiems nors konkretiems uždaviniams spręsti.
 
-Python yra dinamiškai tipizuota kalba. Kas yra dinamiškas? Priskirdami reikšmę kintamajam Python programoje neturime deklaruoti kintamojo tipo. Kitose kalbose, pavyzdžiui, C, C++, Java ir kt., prieš priskiriant kintamiesiems reikšmes, jos griežtai deklaruojamos.
+Python yra dinamiškai rašoma ( `dynamically typed` ) kalba. Kas yra dinamiškas? _Priskirdami reikšmę kintamajam Python programoje neturime deklaruoti kintamojo tipo_. Kitose kalbose, pavyzdžiui, C, C++, Java ir kt., prieš priskiriant kintamiesiems reikšmes, jos griežtai yra deklaruojamos.
 
-Pythone nekyla jokių problemų, net jei nedeklaruojame kintamojo tipo. Jis nurodo kintamojo rūšį programos vykdymo metu. Taigi Python yra dinamiškai tipizuota kalba.
+Pythone nekyla jokių problemų, net jei nedeklaruojame kintamojo tipo. Jis nurodo kintamojo rūšį programos vykdymo metu. Taigi Python yra dinamiškai rašoma kalba.
 
 
 ## ⬇️ Atsisiųsti Python
 
 https://www.python.org/downloads/
+❗ Šiame kurse bus naudojama **3.9.16** "Phyton" versija. 
 
 ## ⬇️ Atsisiųsti VSCode
 
 https://code.visualstudio.com/download
 
-Šiame kurse mokytojai naudos VScode, galite naudoti bet kokius jums patinkančius įrankius, kūrėjas pats sprendžia, kokius įrankius naudoti, ypač IDE. Tačiau pradedantiesiems griežtai rekomenduojame naudoti tą pačią sąranką.
+Šiame kurse mokytojai naudos VScode integruota kūrimo aplinka (`IDE - Integrated development environment`). Jūs galite naudoti bet kokius jums patinkančius įrankius, kūrėjas pats sprendžia, kokius įrankius naudoti, ypač IDE. Tačiau pradedantiesiems** griežtai rekomenduojame** naudoti tuos pačius įrankius kaip ir dėstytojai.
 
 Ką reikia padaryti:
-* nustatykite Python su VSCode
-* nustatykite linter
+* Įsidiekite `Python` su `VSCode` IDE.
 
 
 # 💻 Pirmoji programa
 
-Tradiciškai pirmoji programa, kurią rašo kiekvienas programuotojas, yra terminale išspausdinti "Hello, World". Padarykime tą patį.
+Tradiciškai pirmoji programa, kurią rašo kiekvienas programuotojas, yra "Hello, World" programa išspausdinama terminale. Padarykime tą patį:
 
-kodą:
 ```python
 print("Hello, World")
 ```
 
-Sveikiname, dabar jūs kalbate Python kalba! Bet mes čia nesustosime, ar ne? (Tikiuosi, kad ne...)
+Sveikiname, dabar jūs _kalbate _Python kalba! Pradėkime:
 
 ## Python operatoriai
 
-Python turi daugybę įrankių, kuriais jau galite naudotis. Šiandien apžvelgsime operatorius.
-Operatoriai yra tiesiog veiksmai, panašūs į veiksmus, kuriuos atliekate kasdieniame skaičiuotuve.
+Python turi daugybę įrankių, kuriais jau galite naudotis. Šiandien apžvelgsime `operatorius`.
+`Operatoriai` yra instrukcijos skirtos nurodyti Python interpretatoriui, ką daryti su pateiktais elementais.Geras atitikmuo yra operacijos, kurias atliekate su skaičiuotuvu:
 
 | Operatorius | Pavadinimas | Pavyzdys |
 | ------------- | ------------- | ------------- |
@@ -52,41 +51,37 @@ Išbandykime juos:
 
 ```python
 10 + 10
+# Output : 20
 ```
 
 ```python
 10 - 5
+# Output : 5
 ```
 
 ```python
 10 % 3
+# Output : 1
 ```
 
 
 ```python
-5 ** 3
+20 // 4
+# Output : 5
 ```
 
-
-```python
-5 ** 3
-```
-Ar rezultatai suprantami? Jei ne, pakelkite diskusiją klasėje.
-
-## Pratimas:
+## Pratimai:
 🧠 
 * Išbandykite operacijas patys.
 * Įsitikinkite, kad esate nustatę IDE.
-* Pabandykite jungti operacijas grandininiu būdu.
-
 
 
 ## 🌐 Papildomas skaitymas:
 
-* [kas yra python](https://www.python.org/doc/essays/blurb/)
+* [What is python](https://www.python.org/doc/essays/blurb/)
 
-* [motyvacija](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20yra%20labai%20populiari,kaip%20pagrindinė%20programavimo%20kalba).
+* [Motivation](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20yra%20labai%20populiari,kaip%20pagrindinė%20programavimo%20kalba).
 
-* [naudingos pamokos](https://www.w3schools.com/python/python_intro.asp)
+* [Useful tutorials](https://www.w3schools.com/python/python_intro.asp)
 
 * [Zen of python](https://peps.python.org/pep-0020/)
