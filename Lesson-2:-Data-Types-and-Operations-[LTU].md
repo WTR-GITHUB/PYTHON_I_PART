@@ -2,7 +2,7 @@
 
 Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
 
-Kaip instancuoti kintamąjį kaip sveikąjį skaičių Pythone
+Kaip instancijuoti kintamąjį kaip sveikąjį skaičių Pythone
 
 ```python
 a = 5
@@ -19,10 +19,10 @@ Galimos operacijos:
 | x + y | x ir y suma |
 | x - y | x ir y skirtumas |
 | x * y | x ir y sandauga |
-| x / y | x ir y sandauga |
-| x // y | x ir y sandauga |
+| x / y | x ir y dalyba |
+| x // y | x ir y dalyba paliekant sveikojo skaičiau dalį|
 | x % y | x / y likutis |
-| x ** y | x iki galybės y |
+| x ** y | x keliamas y laipsniu |
 
 ```python
 a = 5
@@ -50,13 +50,12 @@ print(c)
 c = a ** b
 print(c)
 ```
-:check
 
 # Float tipas
 
 Z = {..., -2.5 , ..., -2.0, ... , -1.0, ... , 0, ... , 1.0, ... , 2.0, ... , 2.5, ...}
 
-#### Atkreipkite dėmesį, kad tarp dviejų kintamųjų gali būti begalė skaičių galimybių.
+#### Atkreipkite dėmesį, kad tarp dviejų skaičių yra begalybė float reikšmių.
 
 # Operacijos su sveikaisiais skaičiais
 Tie patys veiksmai ir (arba) matematinės išraiškos taikomos ir kintamiesiems skaičiams
@@ -67,10 +66,10 @@ Galimos operacijos:
 | x + y | x ir y suma |
 | x - y | x ir y skirtumas |
 | x * y | x ir y sandauga |
-| x / y | x ir y sandauga |
-| x // y | x ir y sandauga |
+| x / y | x ir y dalyba |
+| x // y | x ir y dalyba paliekant sveikojo skaičiau dalį|
 | x % y | x / y likutis |
-| x ** y | x iki galybės y |
+| x ** y | x keliamas y laipsniu |
 
 ```python
 a = 5
@@ -99,9 +98,9 @@ c = a ** b
 print(c)
 ```
 
-# Stygos
+# string
 
-String- tai tiesiog teksto dalis, kuri gali būti viena raidė arba visas sakinys:
+String- tai tiesiog tekstas, gali būti viena raidė, gali būti pilnas rišlus sakinys:
 ```python
 letter = "a"
 name = "Code Academy"
@@ -170,7 +169,7 @@ print(name[-1])
 print(name[-2])
 ```
 
-Taip pat galite atlikti string'o pjaustymą:
+Taip pat galite atlikti string'o pjaustymą (slicing):
 ```python
 name = "Code Academy"
 print(name[:4])
@@ -191,23 +190,23 @@ Arba bet kuris kitas, kaip norite.
 Taip pat galite sujungti įvairias string, kad sudarytumėte kitus kintamuosius:
 
 ```python
-pasisveikinimas = "Sveiki, mano vardas yra"
-vardas = "Tomas"
+greeting = "Hello, my name is"
+name = "Tom"
 
-completed_greeting = f"{greeting} {vardas}"
-print(completed_greeteting)
+completed_greeting = f"{greeting} {name}"
+print(completed_greeting)
 ```
 Arba:
 
 ```python
-sveikinimas = "Sveiki, mano vardas yra"
-vardas = "Tom"
+greeting = "Hello, my name is"
+name = "Tom"
 
-completed_greeteting = greeting + " " + name
-print(completed_greeteting)
+completed_greeting = greeting + " " + name
+print(completed_greeting)
 ```
 
-Wow! "+" operatorius veikia ir su string reikšmėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operatoriaus perkrovimas_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" stringo atveju neturi jokios ypatingos prasmės, todėl šis metodas string tipui neleidžiamas.
+Wow! "+" operatorius veikia ir su string reikšmėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operator overloading_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" stringo atveju neturi jokios ypatingos prasmės, todėl šis metodas string tipui neleidžiamas.
 
 # Tipų konvertavimas
 Dar svarbiau paminėti metodus, leidžiančius paversti duomenis iš vieno tipo į kitą:
@@ -224,7 +223,7 @@ Svarbu paminėti, kad ne visi duomenų tipai yra suderinami su tokiomis operacij
 a = "Hello"
 b = int(a)
 ```
-Tai paprasčiausiai išmes klaidą, nes net nėra prasmės, kaip alhapnumerinė reikšmė staiga gali tapti sveikuoju skaičiumi
+Tai paprasčiausiai išmes klaidą, tai būtų kažkokia nesamonė, kaip string'as iš raidžių gali būti paverstas skaitine išraiška?
 
 Pagrindinė taisyklė yra ta, kad visus sveikuosius skaičius, float skaičius galima išversti į string, bet ne visus string galima paversti į int() arba float():
 
@@ -251,14 +250,14 @@ c = float(a)
 Programa gali paprašyti vartotojo ką nors įvesti ir naudoti tai tolesnėms operacijoms:
 
 ```python
-name = input("Įveskite savo vardą: ")
-age = input("Įveskite savo amžių: ")
+name = input("Enter you name: ")
+age = input("Enter your age: ")
 
-print(f "Jūsų vardas yra {vardas}, jums yra {vaikas} metų"
+print(f"Your name is {name}, you are {age} years old"
 ```
 
 
-# Kintamųjų pavadinimų suteikimo taisyklės
+# Taisyklingas kintamųjų vadinimas
 
 Pagal PEP8 https://peps.python.org/pep-0008/ yra tam tikros gairės, kurių reikia laikytis suteikiant kintamųjų pavadinimus. Pythone paprasti kintamieji, kaip šiandien matėme, turėtų būti pavadinti gyvatės_case stiliumi. Be to, konstantos turėtų būti rašomos visomis didžiosiomis raidėmis, o paslėpti kintamieji arba funkcijos turėtų prasidėti raide "_".
 
