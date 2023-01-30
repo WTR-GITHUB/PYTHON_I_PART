@@ -4,7 +4,7 @@ Python - programavimo kalba, dažnai naudojama kurti svetainėms, programinei į
 
 Python yra dinamiškai rašoma ( `dynamically typed` ) kalba. Kas yra dinamiškas? _Priskirdami reikšmę kintamajam Python programoje neturime deklaruoti kintamojo tipo_. Kitose kalbose, pavyzdžiui, C, C++, Java ir kt., prieš priskiriant kintamiesiems reikšmes, jos griežtai yra deklaruojamos.
 
-Pythone nekyla jokių problemų, net jei nedeklaruojame kintamojo tipo. Jis nurodo kintamojo rūšį programos vykdymo metu. Taigi Python yra dinamiškai rašoma kalba.
+Python kalboje nekyla jokių problemų, net jei nedeklaruojame kintamojo tipo. Jis nurodo kintamojo rūšį programos vykdymo metu. Taigi Python yra dinamiškai rašoma kalba.
 
 
 ## ⬇️ Atsisiųsti Python
