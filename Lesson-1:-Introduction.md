@@ -17,11 +17,10 @@ https://www.python.org/downloads/
 
 https://code.visualstudio.com/download
 
-In this course teachers will be using VScode , you can use whatever tooling you like, it is up to developer to decide what tools to use especially for IDE. However for beginners we strictly recommend to use the same setup.
+In this course teachers will be using `VScode` , you can use whatever tooling you like, it is up to developer to decide what tools to use especially for IDE. However for beginners we **strictly recommend** to use the same setup.
 
 Things to do:
 * setup python with VSCode
-* setup linter
 
 
 # 💻 First program
@@ -29,16 +28,17 @@ Things to do:
 Traditionally first program every programmer writes is printing out "Hello, World" in the terminal. Let's do the same thing.
 
 code:
+
 ```python
 print("Hello, World")
 ```
 
-Congratulations you now speak Python! But we are not stopping here now are we? (Hope not...)
+Congratulations you now _speak_ Python! Lets dive in!
 
 ## Python operators
 
-Python has a lot of tools that are already in place for you to use. Today we will review Operators.
-Operators are simply actions similar to actions in you everyday calculator.
+Python has a lot of tools that are already in place for you to use. Today we will start with `Operators`.
+`Operators` are simply actions similar to actions in you everyday calculator.
 
 | Operator  | Name | Example |
 | ------------- | ------------- | ------------- |
@@ -54,24 +54,29 @@ Let's try them out:
 
 ```python
 10 + 10
+# Output : 20
 ```
 
 ```python
 10 - 5
+# Output : 5
 ```
 
 ```python
 10 % 3
+# Output : 1
 ```
 
 
 ```python
 5 ** 3
+# Output : 125
 ```
 
 
 ```python
-5 ** 3
+20 // 4
+# Output : 5
 ```
 Are the results understandable? If not raise discussion in class.
 
@@ -79,16 +84,14 @@ Are the results understandable? If not raise discussion in class.
 🧠 
 * Try the operations yourself.
 * Make sure you have the IDE setup.
-* Try chaining operations
-
 
 
 ## 🌐 Extra Reading:
 
-* [what is python](https://www.python.org/doc/essays/blurb/)
+* [What is python](https://www.python.org/doc/essays/blurb/)
 
-* [motivation](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20is%20a%20very%20popular,as%20the%20top%20programming%20language.)
+* [Motivation](https://www.simplilearn.com/tutorials/python-tutorial/why-learn-python#:~:text=Python%20is%20a%20very%20popular,as%20the%20top%20programming%20language.)
 
-* [useful tutorials](https://www.w3schools.com/python/python_intro.asp)
+* [Useful tutorials](https://www.w3schools.com/python/python_intro.asp)
 
 * [Zen of python](https://peps.python.org/pep-0020/)
