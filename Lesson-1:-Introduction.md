@@ -11,13 +11,13 @@ Python doesn't have any problem even if we don't declare the type of variable. I
 
 https://www.python.org/downloads/
 
-❗   The `Phyton version` of **3.9.16** will be used throughout this course 
+❗   The `Phyton version` of **3.9.16** will be used throughout this course. 
 
 ## ⬇️ Download VSCode
 
 https://code.visualstudio.com/download
 
-In this course teachers will be using VScode, you can use whatever tooling you like, it is up to developer to decide what tools to use especially for IDE. However for beginners we strictly recommend to use the same setup.
+In this course teachers will be using VScode , you can use whatever tooling you like, it is up to developer to decide what tools to use especially for IDE. However for beginners we strictly recommend to use the same setup.
 
 Things to do:
 * setup python with VSCode
