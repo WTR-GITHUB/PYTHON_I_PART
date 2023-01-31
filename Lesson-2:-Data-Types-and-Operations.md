@@ -299,6 +299,11 @@ Variables cannot be called as Python built in functions or special words like:
 * multiply those numbers and print the answer
 * Create similar programs with other signs.
 
+4
+* Create program that allows user to enter text
+* Convert that text to Leet speak [1337](https://simple.wikipedia.org/wiki/Leet)
+
+
 ## 🌐  Extra reading:
 
 * [other material](https://pythonhumanities.com/lesson-04-python-integers-and-floats/#:~:text=Numbers%20in%20Python%20exist%20in,from%20and%20exported%20to%20Excel.)
