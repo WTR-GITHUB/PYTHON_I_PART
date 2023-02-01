@@ -1,5 +1,3 @@
-Print, type, len, ..etc.
-
 
 # 🐍 Built-in functions
 
@@ -37,7 +35,7 @@ print("hello", "world", sep=" amazing ")
 
 ## type()
 
-Another useful function for us to understand what we are dealing with in python is type. often it helps us to understand what instance of the object are we dealing with. Basically it tells us what kind of object we are dealing with.
+Another useful function for us to understand what we are dealing with in python is `type`. Often it helps us to understand what instance of the object are we dealing with. Basically it tells us what kind of object we are dealing with.
 
 Examples:
 ```python
@@ -56,7 +54,8 @@ print(type(my_list[0]))
 This becomes really helpful later on when dealing with more complex programs.
 
 ## len()
-We have already seen this function before with list, so we are also a bit familiar with in. As you remember it returns the length of the list or tuple.
+
+We have already seen this function before with list, so we are also a bit familiar with in. As you remember _it returns the length_ of the list or tuple.
 Nevertheless it still works with strings as well. 
 
 Examples:
