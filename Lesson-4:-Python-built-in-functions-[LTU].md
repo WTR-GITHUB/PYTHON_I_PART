@@ -59,10 +59,10 @@ Nepaisant to, ji vis dar veikia ir su string'u.
 
 Pavyzdžiai:
 ```python
-word = "kažkas"
+word = "word"
 length = len(word)
 
-print(f "Žodžio {žodis} ilgis yra: {ilgis}")
+print(f "Word {word} length is : {length}")
 ```
 
 Primename, kaip tai veikia su list:
