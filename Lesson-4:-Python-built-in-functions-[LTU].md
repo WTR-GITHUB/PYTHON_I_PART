@@ -2,19 +2,20 @@
 
 ## print()
 
-Kaip matėme ankščiau, jau porą kartų naudojome `print` ir su ja susipažinome. Pačios funkcijos nekūrėme, nes ji pateikiama iškart po python įdiegimo. Svarbu paminėti, kad ši funkcija nėra tokia nuobodi, kaip gali pasirodyti iš pirmo žvilgsnio, iš tikrųjų ji gana universali.
+Kaip matėme ankščiau, jau porą kartų naudojome `print` ir su ja susipažinome. Svarbu paminėti, kad ši funkcija nėra tokia nuobodi, kaip gali pasirodyti iš pirmo žvilgsnio, iš tikrųjų ji gana universali:
 
 print(object(s), sep=separator, end=end, file=file, flush=flush)
 
 | argumentas| reikšmė |
 | ------------- | ------------- |
-| object(s) | Bet koks objektas ir tiek, kiek norite. Prieš spausdinant bus konvertuotas į string'ą |
+| object(s) | Bet koks objektas. |
 | sep='separatorius' | Neprivaloma. Nurodykite, kaip atskirti objektus, jei jų yra daugiau nei vienas. Numatytoji reikšmė yra ' '  |
 | end='end' | Neprivaloma. Nurodykite, ką spausdinti pabaigoje. Numatytoji reikšmė yra "\n" (string'o padavimas) |
 | file | Neprivaloma. Objektas su rašymo metodu. Numatytoji reikšmė yra sys.stdout |
 | flush | Neprivaloma. Loginis reikšmė, nurodanti, ar išvestis išplaunama (True), ar buferizuojama (False). Numatytoji reikšmė yra False |
 
 Keletas pavyzdžių:
+
 ```python
 # Paprastas spausdinimas
 print("hello world")
@@ -34,7 +35,7 @@ print("hello", "world", sep=" amazing ")
 
 ## type()
 
-Kita naudinga funkcija, padedanti suprasti, su kuo susiduriame "Python", yra type. dažnai ji padeda suprasti, su kokiu objektu susiduriame. Iš esmės ji pasako, su kokios rūšies objektu turime reikalą.
+Kita naudinga funkcija yra `type`. Dažnai ji padeda suprasti, su kokiu objektu susiduriame:
 
 
 Pavyzdžiai:
@@ -54,8 +55,9 @@ print(type(my_list[0]))
 Vėliau tai labai pravers dirbant su sudėtingesnėmis programomis.
 
 ## len()
-Šią funkciją jau matėme anksčiau su list, todėl esame šiek tiek susipažinę ir su in. Kaip pamenate, ji grąžina list arba tuple ilgį.
-Nepaisant to, ji vis dar veikia ir su string'u. 
+
+Šią funkciją jau matėme anksčiau su `list`, todėl esame šiek tiek susipažinę ir su `len`. Kaip pamenate, ji grąžina `list` arba `tuple` ilgį.
+Nepaisant to, ji vis dar veikia ir su `string`. 
 
 Pavyzdžiai:
 ```python
@@ -65,23 +67,24 @@ length = len(word)
 print(f "Word {word} length is : {length}")
 ```
 
-Primename, kaip tai veikia su list:
+Primename, kaip tai veikia su `list`:
 
 ```python
 my_list = [1, 2, 3]
 
-print(f "list {my_list} ilgis yra: {len(my_list)}")
+print(f "list {my_list} length is: {len(my_list)}")
 ```
 
 ## round()
 
-Funkcija leidžia suapvalinti kintamąjį skaičių iki tam tikro dešimtainio taško. Ji taip pat gana naudinga.
+Funkcija leidžia suapvalinti skaičių iki tam tikro dešimtainio laipsnio:
 
-round(skaičius, ndigits=None)
+round(number, ndigits=None)
+
 | argumentas| reikšmė |
 | ------------- | ------------- |
-| skaičius | skaičius, kurį reikia apvalinti |
-| ndigits | dešimtųjų skaitmenų, pagal numatytuosius nustatymus - None, o tai reiškia, kad bus apvalinama iki sveikojo skaičiaus vertės |
+| number| skaičius, kurį reikia apvalinti |
+| ndigits | dešimtųjų skaitmenų, pagal numatytuosius nustatymus - `None`, o tai reiškia, kad bus apvalinama iki **sveikojo skaičiaus vertės** |
 
 
 Pavyzdžiai:
@@ -92,9 +95,9 @@ print(round(1.999))
 print(round(1.5555, 2))
 ```
 
-## rūšiuota
+## sorted
 
-Ką daryti, jei norėtume surūšiuoti list arba tuple reikšmes
+Ką daryti, jei norėtume surūšiuoti `list` arba `tuple` reikšmes:
 
 sorted(iterable, key=None, reverse=False)
 | argumentas| reikšmė |
@@ -116,7 +119,7 @@ sorted_reverse_list = sorted(my_list, reverse=True)
 print(sorted_reverse_list)
 ```
 
-Kaip elgtis su string reikšmėmis?
+Kaip elgtis su `string` reikšmėmis?
 
 ```python
 my_list = ["Albert", "Nicola", "Thomas"]
@@ -129,19 +132,17 @@ sorted_reverse_list = sorted(my_list, reverse=True)
 print(sorted_reverse_list)
 ```
 
-Vis dar veikia!
 
-
-Daugybę kitų integruotų funkcijų galite ištirti [nuoroda](https://docs.python.org/3/library/functions.html) Kai kurios iš jų mums dar per ankstyvos, tačiau, einant šį kursą, naudosime vis daugiau ir daugiau jų.
+Kitas integruotas funkcijas galite pamatyti čia: [nuoroda](https://docs.python.org/3/library/functions.html) Kai kurios iš jų mums dar per ankstyvos, tačiau, einant šį kursą, naudosime vis daugiau ir daugiau jų.
 
 ## 🧠 Pratimai:
 
-1. Sukurkite Python listą su visokiais skirtingais objektais, juo daugiau tuo geriau. Išspausdinkite visus tipus. Tas, kuris surinks daugiausiai unikalių tipų, laimi pagarbos taškų:
+1. Sukurkite Python listą su įvairiausiais  objektais, juo daugiau tuo geriau. Išspausdinkite visus **tipus**. Tas, kuris surinks daugiausiai unikalių tipų, laimi pagarbos taškų:
 1. Atspausdinkite visus elementus iš pirmo pratimo, atskirtus "|"
-1. Sukurkit listą  su floatais, turinčius 3 skaitmenis po kablelio, sukurkite kitą list su visomis reikšmėmis, suapvalintomis iki 2 ženklų po kablelio. atspausdinkit abudu listus.
-1. Sukurkite list su mokinių vardais ir juos surūšiuokite, rezultatą išspausdinkite į terminalą.
+1. Sukurkit `list` su floatais, turinčius 3 skaitmenis po kablelio, sukurkite kitą list su visomis reikšmėmis, suapvalintomis iki 2 ženklų po kablelio. atspausdinkit abudu listus.
+1. Sukurkite `list` su mokinių vardais ir juos surūšiuokite, rezultatą išspausdinkite į terminalą.
 1. Parašykite programą, kuri leistų vartotojui įrašyti bet kokį kintamąjį skaičių ir jį suapvalinti iki tam tikro skaičiaus po kablelio.
 
 
 ## 🌐 Papildomas skaitymas:
-[visi integruoti dalykai] (https://www.programiz.com/python-programming/methods/built-in)
+[Integruotos funkcijos] (https://www.programiz.com/python-programming/methods/built-in)
