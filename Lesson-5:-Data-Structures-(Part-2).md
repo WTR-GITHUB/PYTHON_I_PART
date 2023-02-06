@@ -1,17 +1,17 @@
 # Dictionary
 
-a very powerful data structure which is going to be used a lot. Dictionary hold key: value pairs, with which we can access it's attributes.
+A very powerful _data structure_ which is going to be used a lot. `Dictionary` hold **key: value** pairs, with which we can access it's attributes.
 Dictionaries are: 
 
-1. mutable ✔️ (can be changed)
-1. dynamic ✔️ (can grow and shrink in size)
-1. nested ✔️ (can contain other dictionaries or other complex structures)
+1. mutable ✔️ (**can be changed**)
+1. dynamic ✔️ (**can grow and shrink in size**)
+1. nested ✔️ (**can contain other dictionaries or other complex structures**)
 
-A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+A `dictionary` is a _collection_ which is **ordered, changeable and do not allow duplicates**.
 
-main difference between python list is that values in dictionaries are accessed by keys.
-Creating dictionary and adding values to it
-Examples:
+Main difference between python `list` and `dictionary` is that **values** in dictionaries **are accessed by keys**.
+
+Creating a dictionary and adding values to it is as simple as: 
 
 ```python
 my_dictionary = {}
@@ -32,7 +32,8 @@ print(f"name: {my_dictionary['name']}")
 print(f"surname: {my_dictionary['surname']}")
 ```
 
-If the value is non existent we shall get a KeyError as such key does not exist:
+If the value is `non existent` we shall get a `KeyError` as such key does not exist:
+
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
 print(f"favourite car: {my_dictionary['car']}")
