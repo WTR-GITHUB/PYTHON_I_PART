@@ -45,7 +45,7 @@ Panašiai kaip ir sąrašų atveju, žodynų raktai ir reikšmės gali būti bet
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
 my_dictionary["name"] = "Charles"
-print(f"name: {my_dictionary["name"]})
+print(f"name: {my_dictionary["name"]}")
 ```
 
 ## Rakto pašalinimas iš žodyno
