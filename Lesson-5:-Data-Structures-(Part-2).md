@@ -45,7 +45,7 @@ Similarly as with lists, dictionaries may hold anything in it's key and values. 
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
 my_dictionary["name"] = "Charles"
-print(f"name: {my_dictionary["name"]})
+print(f"name: {my_dictionary["name"]}")
 ```
 
 ## Droping key from dictionary
