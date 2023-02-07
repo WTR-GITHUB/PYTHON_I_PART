@@ -152,7 +152,7 @@ We may also do logical operations on strings.
 ```python
 name = "Tom"
 
-if name == "Tom"
+if name == "Tom":
     print("Nice to see you Tom")
 else:
     print("welcome, user")
