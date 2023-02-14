@@ -20,7 +20,7 @@ Arba atspausdina atsitiktinį `int` skaičių nuo 0 iki 10:
 
 ```python
 def get_random_number():
-    print(random.randit(0, 10))
+    print(random.randint(0, 10))
 ```
 Kaip ir integruotosios funkcijos, vartotojo apibrėžtos funkcijos **kviečiamos naudojant funkcijos pavadinimą, po kurio pateikiami skliaustai** : 
 
