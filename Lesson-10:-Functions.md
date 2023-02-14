@@ -19,7 +19,7 @@ Or prints random `int` number from 0 to 10:
 
 ```python
 def get_random_number():
-    print(random.randit(0, 10))
+    print(random.randint(0, 10))
 ```
 Just like built-in functions, user-defined functions **are called using the function name followed by parenthesis** : 
 
