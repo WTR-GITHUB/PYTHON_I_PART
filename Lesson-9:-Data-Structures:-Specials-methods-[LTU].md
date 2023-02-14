@@ -13,7 +13,7 @@ Tarkime, norite programos, kuri gautų pirmuosius 10 tobulų kvadratų, kaip tai
 ```python
 squares = []
 for number in range(10):
-    squares.append(number * i)
+    squares.append(number * number)
 print(squares)
 ```
 
