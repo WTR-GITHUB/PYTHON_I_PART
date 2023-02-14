@@ -178,7 +178,7 @@ If your variable or return type can have one of several different types, you can
 Pre-Python 3.10 implementation looks like this:
 
 ```python
-from typing import List, Dict
+from typing import List, Dict, Union
 uniontype_annotation_list: List[Union[float,int]] = [1.23, 3.32, 1, 3]
 type_annotation_dict: Dict[str, Union[float,int]] = {'a': 1, 'b': 2}
 ```
