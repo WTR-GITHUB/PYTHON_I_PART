@@ -13,7 +13,7 @@ Let's say you want a program that gets first 10 perfect squares, how do you do i
 ```python
 squares = []
 for number in range(10):
-    squares.append(number * i)
+    squares.append(number * number)
 print(squares)
 ```
 
