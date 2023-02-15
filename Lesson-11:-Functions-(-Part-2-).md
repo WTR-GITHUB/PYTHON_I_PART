@@ -8,11 +8,11 @@ A simple example : 🔽
 
 ```python
 def check_arguments(mandatory: Any, *args, **kwargs) -> None:
-    print (mandatory)
+    print(mandatory)
     if args:
-        print (args)
+        print(args)
     if kwargs:
-        print (kwargs)
+        print(kwargs)
 ```
 
 Above function `check_arguments` requires at least one argument called “mandatory” but it can accept extra positional and keyword arguments as well.
