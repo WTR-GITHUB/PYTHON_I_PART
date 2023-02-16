@@ -9,67 +9,32 @@ The [logging module](https://docs.python.org/3/library/logging.html) in Python i
 ### Import the library:
 `import logging`
 
-### Severity levels
-The _logger_ has five standard logging levels:
+### Logging vs Print Statement
+`Logging` and `Print` both can be used to debug the code but still, there are reasons for you to choose `log` over `print()`.
 
-*     DEBUG
-*     INFO
-*     WARNING
-*     ERROR
-*     CRITICAL
+A `Log file` contains a log message with other information such as line number, module name, date, time, etc. On the other hand, a `print` statement only has a log message.
 
-**DEBUG** -  Detailed information, typically of interest only when diagnosing problems.
+A `Log file` will save the records of the application even after it is closed but a print statement will lose out all the records and log message just after the execution stops.
 
-**INFO** -  Confirmation that things are working as expected.
+The only time when you should consider using a `print()` statement over a `log` is when you need to display a help statement on the command line.
 
-**WARNING** -  An indication that something unexpected happened, or indicative of some problem in the near future (e.g. ‘disk space low’). The software is still working as expected.
+### Logging
+There are five ways we can display a log message in python with setting log levels: **DEBUG**, **INFO**, **WARNING**, **ERROR**, and **CRITICAL**.
 
-**ERROR** -  Due to a more serious problem, the software has not been able to perform some function.
-
-**CRITICAL** -  A serious error, indicating that the program itself may be unable to continue running.
- 
-A good example of logging in _action_ with different logging levels: (Note! - The default level of logging library is **WARNING**)
-
-```
+```python
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
-logging.debug('Logging the event')
-
------- OUTCOME -------------
-DEBUG:root:Logging th event
-
-```
-
-```
-import logging
-
-logging.basicConfig(level=logging.INFO)
-logging.debug('Logging the event')
-
--------------------------CONSOLE OUTPUT------------------
-INFO:root:Logging th event
-
-```
-We can Print the DEBUG and INFO message too by changing the basic configuration of the logger with the help of basicConfig(**kwargs)
-There are some parameters that are commonly used in this —
-
-* _**level**_: To change the root logger to a specified severity level.
-* `**filename**`: Filename where the logs going to be stored.
-* `**filemod**`e: If a filename is given then this specifies the file mode in which the file will open. default is append (a )
-* `**format**`: This is the format of the log message.
-* `**datefmt**` : It specified the date and time format.
-
-```
-import logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
-logging.debug('This is Debug Message')
+logging.debug('This is a debug message')
 logging.info('This is an info message')
--------------------------CONSOLE OUTPUT------------------
-12/05/2021 20:46:41 - root - DEBUG - This is Debug Message
-12/05/2021 20:46:41 - root - INFO - This is an info message
-```
+logging.warning('This is a warning message')
+logging.error('This is an error message')
+logging.critical('This is a critical message')
 
+-------------------OUTPUT---------------------
+WARNING:root:This is a warning message
+ERROR:root:This is an error message
+CRITICAL:root:This is a critical message
+```
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
