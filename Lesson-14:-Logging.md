@@ -87,6 +87,25 @@ logging.info(f"{name} has logged in successfully !!")
 12/05/2021 21:03:27 - root - INFO - Rahul has logged in successfully !!
 ```
 
+### Logging Exception
+The `logging module` can also able to trace and showcase _full exceptional errors_ that occur during the execution of the program. With the help of `exc_info` with set argument as `True`:
+
+```python
+import logging
+a = 10
+b = 0
+try:
+  c = a / b
+except Exception as e:
+  logging.error("Exception Occurred", exc_info=True)  ## At default it is True
+  
+ ----------------------------------CONSOLE OUTPUT------------------------
+ERROR:root:Exception Occurred        ## If exc_info=False then only this message will print
+Traceback (most recent call last):
+  File "C:\Users\minde\Desktop\ds\python\advance_concepts\logging_code.py", line 5, in <module>
+    c = a / b
+ZeroDivisionError: division by zero
+```
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
