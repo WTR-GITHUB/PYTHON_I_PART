@@ -107,13 +107,30 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 ## Exercises: 
-🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
-* Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
+
+* Create a simple program that would log all inputs from the terminal. Configs must show all additional data (time, date, level etc.)
+* Write a function that moves all elements of one type to the end of the list:
+  ```python
+  move_to_end([1, 3, 2, 4, 4, 1], 1) ➞ [3, 2, 4, 4, 1, 1]
+  # Move all the 1s to the end of the array.
+  ```
+  Log out inputs and results in a file.
+
+* Create 3 functions, that are related to each other (one is being called in another), and test all logger severity levels by your own design. 
+  Function examples:
+  ```python
+  def check_engine() -> None:
+    pass
+   
+  def start_car() -> None:
+    check_engine()...
+  .......
+    
+  ```
 
 
 ## 🌐  Extra reading (or watching 📺 ):
 
-* [Full OOP course - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
-* [Corey Schafer: Python OOP Tutorial (multiple videos)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
-* [Datacamp](https://www.datacamp.com/tutorial/python-oop-tutorial)
+* [Real Python](https://realpython.com/python-logging/)
+* [Corey Schafer: Logging (multiple videos)](https://www.youtube.com/watch?v=-ARI4Cz-awo)
 ***
