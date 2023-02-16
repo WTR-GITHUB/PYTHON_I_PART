@@ -69,6 +69,24 @@ logging.info('This is an info message')
 12/05/2021 20:46:41 - root - DEBUG - This is Debug Message
 12/05/2021 20:46:41 - root - INFO - This is an info message
 ```
+### Logging to file
+Similarly, for logging the result** in a file** you can add filename and file mode to `basicConfig`:
+
+```python
+logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='w')
+```
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG,filename='data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+name = input("Enter Your Name:\n")
+logging.info(f"{name} has logged in successfully !!")
+
+-----------------data.log file output-------------
+12/05/2021 21:01:37 - root - INFO - Tom has logged in successfully !!
+12/05/2021 21:02:47 - root - INFO - Karl has logged in successfully !!
+12/05/2021 21:03:27 - root - INFO - Rahul has logged in successfully !!
+```
+
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
