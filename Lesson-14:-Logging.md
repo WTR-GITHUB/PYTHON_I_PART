@@ -117,6 +117,7 @@ ZeroDivisionError: division by zero
   Log out inputs and results in a file.
 
 * Create 3 functions, that are related to each other (one is being called in another), and test all logger severity levels by your own design. 
+  
   Function examples:
   ```python
   def check_engine() -> None:
@@ -128,6 +129,10 @@ ZeroDivisionError: division by zero
     
   ```
 
+* Create a program that takes 4 data types/structures: strings, numbers, list, dict. Iterate 10 times with inputs and log what data type/structure and how many times was entered. Handle all possible errors and log it.
+
+
+* Setup accounting software , that would take annual income , expenses , VAT rate (all values must be floats) and calculate profit, paid taxes in 4 different currencies (USD, EU, JPY, CNY). All calculations and results should be printed on screen. All data and possible errors must be logged to a file. 
 
 ## 🌐  Extra reading (or watching 📺 ):
 
