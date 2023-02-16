@@ -47,7 +47,28 @@ In the code output above, there are two things to notice:
  - **ERROR**: It is due to a more serious problem than a warning. It can be due to some inbuilt error Like syntax or logical error. The severity level is 40.
  - **CRITICAL**: It occurs when the program execution stops and it can not run itself anymore. The severity level is 50.
 
+### basicConfig
 
+We can print the `DEBUG` and `INFO` messages too by **changing the basic configuration of the logger** with the help of `basicConfig(**kwargs)`.
+There are some parameters that are commonly used in this:
+
+ - **level**: To change the root logger to a specified severity level.
+ - **filename**: Filename where the logs going to be stored.
+ - **filemode**: If a filename is given then this specifies the file mode in which the file will open. default is append (a )
+ - **format**: This is the format of the log message.
+ - **datefmt** : It specified the date and time format.
+
+Simple example:
+
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+logging.debug('This is Debug Message')
+logging.info('This is an info message')
+-------------------------CONSOLE OUTPUT------------------
+12/05/2021 20:46:41 - root - DEBUG - This is Debug Message
+12/05/2021 20:46:41 - root - INFO - This is an info message
+```
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
