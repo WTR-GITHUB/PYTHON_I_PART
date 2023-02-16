@@ -35,13 +35,25 @@ WARNING:root:This is a warning message
 ERROR:root:This is an error message
 CRITICAL:root:This is a critical message
 ```
+In the code output above, there are two things to notice:
+
+- The **root** is the default logger for all the logs.
+- There are only three log messages printed. The reason behind this is the **severity level of log messages** and messages higher than or equal to the severity level of `WARNING` will only get printed.
+
+### The Five Levels of Logging
+    - **DEBUG**: It is used for diagnosing the problem. It gives a piece of detailed information about the problem. The severity level is 10.
+    - **INFO**: It gives the confirmation message of the successful execution of the program. The severity level is 20.
+    - **WARNING**: The message is for when an unexpected situation occurs. The severity level is 30.
+    - **ERROR**: It is due to a more serious problem than a warning. It can be due to some inbuilt error Like syntax or logical error. The severity level is 40.
+    - **CRITICAL**: It occurs when the program execution stops and it can not run itself anymore. The severity level is 50.
+
+
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 * Create a `Calculator` class with main functionality: add, divide, multiply, subtract , etc.. Initiate class and show up some calculations.
 
 
 ## 🌐  Extra reading (or watching 📺 ):
-
 
 * [Full OOP course - Youtube](https://www.youtube.com/watch?v=Ej_02ICOIgs)
 * [Corey Schafer: Python OOP Tutorial (multiple videos)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
