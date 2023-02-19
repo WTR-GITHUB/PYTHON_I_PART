@@ -72,8 +72,8 @@ Galimos operacijos:
 | x ** y | x keliamas y laipsniu |
 
 ```python
-a = 5
-b = 25
+a = 5.5
+b = 25.3
 
 c = a + b 
 print(c)
@@ -125,19 +125,19 @@ print(name[-2])
 
 print(name[5:12])
 
-# Akademija
+# Academy
 
 print(name[5:])
 
-# Akademija
+# Academy
 
 print(name[:4])
 
-# Kodas
+# Code
 
 print(name[5:12:1])
 
-# Akademija
+# Academy
 
 print(name[5::2])
 
@@ -149,7 +149,7 @@ print(name[::-1])
 
 print(name.split())
 
-# ["Kodas", "Akademija"]
+# ['Code', 'Academy']
 
 print(name.upper())
 
@@ -157,11 +157,12 @@ print(name.upper())
 
 print(name.replace('c', 'k'))
 
-# Kodas Akademy
+# Code Akademy
 
 print(name.replace('Code', 'Music'))
 
 ```
+
 
 Taip pat galima gauti paskutinį arba priešpaskutinį string'o simbolį:
 ```python
@@ -184,10 +185,10 @@ print(name.upper())
 
 print(name.replace('c', 'k'))
 ```
-Arba bet kuris kitas, kaip norite.
+Arba bet kurį kitą, ką norite.
 
 # String apjungimas
-Taip pat galite sujungti įvairias string, kad sudarytumėte kitus kintamuosius:
+Taip pat galite sujungti įvairius string'us, kad sudarytumėte kitus kintamuosius:
 
 ```python
 greeting = "Hello, my name is"
@@ -206,7 +207,7 @@ completed_greeting = greeting + " " + name
 print(completed_greeting)
 ```
 
-Wow! "+" operatorius veikia ir su string reikšmėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operator overloading_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" stringo atveju neturi jokios ypatingos prasmės, todėl šis metodas string tipui neleidžiamas.
+Oho! "+" operatorius veikia ir su string reikšmėmis! Viskas, ką jis daro, yra sujungimas. Tokia gudrybė turi terminą _Operator overloading_ mes išmoksime keletą gudrybių, kaip pritaikyti tam tikrus operatorius mūsų klasėms. Deja, "-" stringo atveju neturi jokios ypatingos prasmės, todėl šis metodas string tipui neleidžiamas.
 
 # Tipų konvertavimas
 Dar svarbiau paminėti metodus, leidžiančius paversti duomenis iš vieno tipo į kitą:
