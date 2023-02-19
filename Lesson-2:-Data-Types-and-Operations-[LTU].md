@@ -57,7 +57,7 @@ Z = {..., -2.5 , ..., -2.0, ... , -1.0, ... , 0, ... , 1.0, ... , 2.0, ... , 2.5
 
 #### Atkreipkite dėmesį, kad tarp dviejų skaičių yra begalybė float reikšmių.
 
-# Operacijos su sveikaisiais skaičiais
+# Operacijos su float skaičiais
 Tie patys veiksmai ir (arba) matematinės išraiškos taikomos ir kintamiesiems skaičiams
 
 Galimos operacijos:
