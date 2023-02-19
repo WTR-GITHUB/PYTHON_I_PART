@@ -38,10 +38,10 @@ c = a * b
 print(c)
 
 c = b / a
-print(a)
+print(c)
 
 c = b // a
-print(a)
+print(c)
 
 
 c = a % b
@@ -76,7 +76,7 @@ a = 5
 b = 25
 
 c = a + b 
-print(c) # atspausdina 20
+print(c)
 
 c = a - b
 print(c)
