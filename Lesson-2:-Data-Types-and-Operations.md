@@ -72,8 +72,8 @@ Possible operations:
 | x ** y | x to the power y |
 
 ```python
-a = 5
-b = 25
+a = 5.5
+b = 25.3
 
 c = a + b 
 print(c)
