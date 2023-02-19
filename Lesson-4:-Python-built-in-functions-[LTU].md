@@ -4,7 +4,7 @@
 
 Kaip matėme ankščiau, jau porą kartų naudojome `print` ir su ja susipažinome. Svarbu paminėti, kad ši funkcija nėra tokia nuobodi, kaip gali pasirodyti iš pirmo žvilgsnio, iš tikrųjų ji gana universali:
 
-print(object(s), sep=separator, end=end, file=file, flush=flush)
+`print(object(s), sep=separator, end=end, file=file, flush=flush)`
 
 | argumentas| reikšmė |
 | ------------- | ------------- |
