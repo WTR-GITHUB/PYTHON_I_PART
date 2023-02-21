@@ -56,10 +56,10 @@ Python sudaro kelios integruotos išimtys, kurias galime panaudoti savo programo
 Naudokime paprastą funkciją 2 skaičiams padalyti ir pabandykime išspręsti galimą klaidą:
 ```python
 def divide_two_numbers(dividend: int, divisor: int) -> None:
-    Išbandykite:
+    try:
         Kotientas = dividendas / daliklis
         print(f'Rezultatas = {koeficientas}')
-    išskyrus ZeroDivisionError:
+    except ZeroDivisionError:
         Daliklis lygus nuliui; dalmuo neįmanomas')
 ```
 Galimi rezultatai: 
@@ -81,11 +81,11 @@ Gali būti, kad jūsų kodas gali sukelti daugiau nei vieno tipo išimtis. Tai g
 
 ```python
 def my_dummy_int_func(a: Union[string, float]) -> None:
-    bandykite:
+    try:
         int_value = int(a)
-    išskyrus ValueError:
+    exceptValueError:
         Vertė "a" negali būti išvesta į sveiką skaičių')
-    išskyrus TypeError:
+    except TypeError:
         Spausdinti("Tipas "a" nesuderinamas; turėtų būti arba skaičius, arba eilutė")
 ```
 #### Kelios išimtys vienoje išimties sąlygoje:
@@ -102,7 +102,7 @@ Ir tas pats pavyzdys, kaip pirmiau:
 
 ```python
 def my_dummy_int_func(a: Union[string, float]) -> None:
-    bandykite:
+    try:
         int_value = int(a)
     except (ValueError, TypeError):
         print('Įvyko klaida. Arba "a" nėra sveikasis skaičius, arba "a" tipas yra nesuderinamas")
@@ -158,7 +158,7 @@ AssertionError: Asserted statement is incorrect
 
 ```python
 def dummy_func() -> None:
-    bandykite:
+    try:
         # dummy pilnas klaidų kodas 😒 
     except Exceptions as e:
         print(f'Heh, I cought another one...{e}')
@@ -169,7 +169,7 @@ def dummy_func() -> None:
 ```python
 
 def my_func() -> Any:
-  bandykite:
+  try:
     # kodas, kuris gali išmesti/išskirti išimtį
   except:
     print('Ups! Kažkas nutiko ne taip!')
@@ -201,7 +201,7 @@ Paskutinė sąlyga: `try` teiginys turi paskutinę sąlygą `finally`, kuri iš 
 
 ```python
 def divide(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
-    bandykite:
+    try:
         išvestis = a / b
     except ZeroDivisionError:
 	    print('Negalima dalinti iš nulio')
