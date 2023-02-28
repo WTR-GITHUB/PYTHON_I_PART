@@ -228,7 +228,7 @@ class House:
 
   Šalies klasę papildykite taip, kad joje būtų atributas is_big. Nustatykite jį į True, jei tenkinamas kuris nors iš šių kriterijų:
 
-   - Gyventojų skaičius yra didesnis nei 250 mln.
+   - Gyventojų skaičius yra didesnis nei 20 mln.
    - Plotas didesnis nei 3 mln. km².
 
   Taip pat sukurkite metodą, kuris palygintų šalies gyventojų tankį su kitos šalies objektu. Grąžinkite tokio formato eilutę:
