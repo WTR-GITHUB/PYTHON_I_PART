@@ -223,7 +223,7 @@ class House:
 
   Add to the Country class so that it contains the attribute is_big. Set it to True if either criterea are met:
 
-   - Population is greater than 250 million.
+   - Population is greater than 20 million.
    - Area is larger than 3 million square km.
 
   Also, create a method which compares a country's population density to another country object. Return a string in the following format:
