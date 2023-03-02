@@ -172,7 +172,7 @@ print(my_dictionary)
 
 Set naudojami keliems elementams saugoti viename kintamajame.
 Set yra vienas iš 4 Pythono duomenų tipų, naudojamų duomenų rinkiniams saugoti, kiti trys yra [List].
-Set - tai kolekcija, kuri yra nerūriuota, nekeičiama* ir neindeksuojama.
+Set - tai kolekcija, kuri yra nerūšiuota, nekeičiama* ir neindeksuojama.
 
 **Pastaba: aibės elementai yra nekeičiami, tačiau galite pašalinti elementus ir pridėti naujų elementų**.
 
