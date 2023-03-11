@@ -163,7 +163,7 @@ Usually it is recommended to u**se Tuple on static values** that do not change a
 
 ## 🧠 Exercises:
 
-**`all answers must be printed in terminal`**
+**`All answers must be printed in terminal`**
 1. Write a python program that sums up all items in the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself)
 1. Write a python program that gets maximum value from the list (all items are integers or floats in list, create a list yourself)
