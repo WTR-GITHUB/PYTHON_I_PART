@@ -1,8 +1,12 @@
-# sveikieji skaičiai
+## Įvadas
+
+Python `Duomenų tipai` naudojami kintamojo tipui apibrėžti. Jis apibrėžia, kokio **tipo duomenis** ketiname saugoti kintamajame. Duomenys, saugomi atmintyje, gali būti **daugelio tipų**. Pavyzdžiui, asmens amžius saugomas kaip skaitinė reikšmė, o jo adresas - kaip raidiniai skaitmeniniai simboliai.
+
+# Sveikieji skaičiai
 
 Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
 
-Kaip instancijuoti kintamąjį kaip sveikąjį skaičių Pythone
+Kaip instancijuoti kintamąjį kaip sveikąjį skaičių Pythone:
 
 ```python
 a = 5
@@ -12,7 +16,7 @@ b = 25
 print(b)
 ```
 
-# Operacijos su sveikaisiais skaičiais
+# Operacijos su sveikaisiais skaičiais:
 Galimos operacijos:
 | Operacija| Rezultatas |
 | ------------- | ------------- |
@@ -260,7 +264,7 @@ print(f"Your name is {name}, you are {age} years old"
 
 # Taisyklingas kintamųjų vadinimas
 
-Pagal PEP8 https://peps.python.org/pep-0008/ yra tam tikros gairės, kurių reikia laikytis suteikiant kintamųjų pavadinimus. Pythone paprasti kintamieji, kaip šiandien matėme, turėtų būti pavadinti gyvatės_case stiliumi. Be to, konstantos turėtų būti rašomos visomis didžiosiomis raidėmis, o paslėpti kintamieji arba funkcijos turėtų prasidėti raide "_".
+Pagal PEP8 https://peps.python.org/pep-0008/ yra tam tikros gairės, kurių reikia laikytis suteikiant kintamųjų pavadinimus. Pythone paprasti kintamieji, kaip šiandien matėme, turėtų būti pavadinti `snake_case` stiliumi. Be to, konstantos visada turėtų būti rašomos didžiosiomis raidėmis, o paslėpti kintamieji arba funkcijos turėtų prasidėti raide "_".
 
 ✅ 
 ```python
@@ -272,13 +276,13 @@ pavardė = "Einstein"
 ⛔ 
 įmanoma, bet neatitinka PEP8:
 ```python
-Vardas = "Albert"
+Name = "Albert"
 First_Name = "Albert"
 FIRST_NAME = "Alb
 ```
 
 
-"Python" supras tokią tokį užrašymą, bet jūsų kolegos jūsų už tai nekęs, kadangi bus sunku suprasti kas per kintamieji pas jus naudojami, tad vardan visų - naudokit teisingas naming konvencijas.
+"Python" supras tokią tokį užrašymą, bet jūsų kolegoms bus sunku suprasti kokie kintamieji pas jus naudojami, tad vardan visų - naudokit teisingas `naming` konvencijas.
 
 Kintamieji negali būti vadinami kaip "Python" built-in funkcijos arba specialūs žodžiai, pvz:
 
