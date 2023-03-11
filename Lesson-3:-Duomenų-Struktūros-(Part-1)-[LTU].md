@@ -1,9 +1,8 @@
 ## SĄRAŠAI
 
-Šiame skyriuje apžvelgsime vieną Python duomenų struktūrą - `sąrašą` arba tai, kas kitose programavimo kalbose vadinama `masyvu`.
+Šiame skyriuje apžvelgsime pirmąją Python duomenų struktūrą - `sąrašą` arba tai, kas kitose programavimo kalbose vadinama `masyvu`.
 
-`Sąrašuose` gali nebūti jokių reikšmių, jie gali būti tušti arba juose gali būti tiek objektų, kiek leidžia operatyvioji atmintis. Be to, taip jau atsitiko, kad Python programoje `sąrašuose` galima laikyti _bet kokio tipo reikšmes_, tai gali būti kiti objektai, funkcijos, eilutės, sveikieji skaičiai, jūsų pačių duomenų tipai ar net kiti sąrašai. Svarbu paminėti ir tai, kad sąraše galime keisti reikšmes, sąrašai yra keičiami Python objektai.
-
+`Sąrašuose` gali nebūti jokių reikšmių, jie gali būti tušti arba juose gali būti tiek objektų, kiek leidžia operatyvioji atmintis. Be to, taip jau atsitiko, kad Python programoje `sąrašuose` galima laikyti _bet kokio tipo reikšmes_, tai gali būti kiti **objektai, funkcijos, eilutės, sveikieji skaičiai, jūsų pačių duomenų tipai ar net kiti sąrašai**. Svarbu paminėti ir tai, kad sąraše easnčios objektų reikšmės galime keisti.
 
 ## Žymėjimas
 
@@ -17,7 +16,7 @@ my_list = [] # Instantiating empty list
 ## Specialūs python sąrašų metodai
 
 ### .append()
-Yra metodas .append(), kuriuo galima įterpti elementą į sąrašą: append(<objektas>)
+Su metodu `.append()`, galima įterpti elementą į sąrašą: `append(<objektas>)`
 
 ```python
 my_list = []
@@ -112,7 +111,7 @@ my_list[2] = 5
 print(my_list)
 ```
 ## Skirstymas dalimis
-Kaip ir eilutės atveju, taip ir sąrašo elementus galime `pjaustyti` griežinėliais. kiekvienas sąrašo elementas turi indeksą, prasidedantį nuo 0. Taigi galime atlikti tokio paties tipo pjaustymą:
+Kaip ir eilutės atveju, taip ir sąrašo elementus galime `pjaustyti` griežinėliais.** Kiekvienas sąrašo elementas turi indeksą, prasidedantį nuo 0**. Taigi galime atlikti tokio paties tipo pjaustymą:
 
 ```python
 my_list = ["first", "second", "third"]
@@ -133,7 +132,7 @@ print(1 in my_list)
 ```
 # Tuple
 
-Dar viena labai panaši python integruota duomenų struktūra yra `Tuple`. Pagrindinis skirtumas yra tas, kad `Tuple` yra nekeičiama. Tai reiškia, kad turime objektą, kuriame yra kelios reikšmės, jos gali būti dubliuojamos, beveik visos savybės yra panašios, išskyrus tai, kad `Tuple` elementų pagal konstrukciją negalima keisti.
+Dar viena labai panaši python integruota duomenų struktūra yra `Tuple`. Pagrindinis skirtumas yra tas, kad `Tuple` objektų reikšmės yra nekeičiamos. Tai reiškia, kad turime objektą, kuriame yra kelios reikšmės, jos gali būti dubliuojamos, beveik visos savybės yra panašios, išskyrus tai, kad `Tuple` elementų negalima keisti.
 
 ## Žymėjimas
 
@@ -158,14 +157,14 @@ my_tuple = (1, 2, 3)
 my_tuple[0] = 500 # TypeError: 'tuple' object does not support item assignment
 ```
 
-# `Tuple` ir sąrašų santykis
+# `Tuple` ir sąrašų palyginimas
 
 Dabar atrodo, kad `sąrašai` yra daug geresni už `tuples`, tačiau programavime ne visada viskas yra vienpusiška, tai priklauso nuo tam tikrų situacijų.
-Paprastai statinėms reikšmėms, kurios nesikeičia, rekomenduojama naudoti `Tuple`, nes pythone jis yra šiek tiek greitesnis nei `sąrašai`. O `sąrašus` turėtume naudoti visada, kai turime reikšmių, kurios keisis, arba kai pats sąrašas didės arba mažės.
+Paprastai **statinėms reikšmėms, kurios nesikeičia, rekomenduojama naudoti** `Tuple`, nes python kalboje jis yra šiek tiek greitesnis nei `sąrašai`. O `sąrašus` turėtume naudoti visada, kai turime reikšmių, kurios keisis, arba kai pats sąrašas didės arba mažės.
 
 ## 🧠 Užduotys:
 
-**`visus atsakymus reikia spausdinti terminale`**
+**`Visus atsakymus reikia spausdinti terminale`**
 1. Parašykite python programą, kuri susumuoja visus sąrašo elementus (visi sąrašo elementai yra sveikieji arba kintamieji skaičiai, sąrašą sukurkite patys).
 2. Parašykite python programą, kuri padaugina visus sąrašo elementus (visi sąrašo elementai yra sveikieji skaičiai arba slankiosios vertės, sąrašą sukurkite patys)
 3. Parašykite python programą, kuri iš sąrašo gauna didžiausią vertę (visi sąrašo elementai yra sveikieji skaičiai arba plaukiojantieji dydžiai, patys sukurkite sąrašą)
