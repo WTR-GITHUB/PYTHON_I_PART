@@ -9,15 +9,15 @@ Python kalboje nekyla jokių problemų, net jei nedeklaruojame kintamojo tipo. J
 
 ## ⬇️ Atsisiųsti Python
 
-https://www.python.org/downloads/
+https://www.python.org/downloads/release/python-3913/
 
-❗ Šiame kurse bus naudojama **3.9.16** "Phyton" versija. 
+❗ Šiame kurse bus naudojama **3.9.13** "Phyton" versija. 
 
 ## ⬇️ Atsisiųsti VSCode
 
 https://code.visualstudio.com/download
 
-Šiame kurse mokytojai naudos VScode integruota kūrimo aplinka (`IDE - Integrated development environment`). Jūs galite naudoti bet kokius jums patinkančius įrankius, kūrėjas pats sprendžia, kokius įrankius naudoti, ypač IDE. Tačiau pradedantiesiems** griežtai rekomenduojame** naudoti tuos pačius įrankius kaip ir dėstytojai.
+Šiame kurse mokytojai naudos `VScode` integruota kūrimo aplinka (`IDE - Integrated development environment`). Jūs galite naudoti bet kokius jums patinkančius įrankius, kūrėjas pats sprendžia, kokius įrankius naudoti, ypač IDE. Tačiau pradedantiesiems** griežtai rekomenduojame** naudoti tuos pačius įrankius kaip ir dėstytojai.
 
 Ką reikia padaryti:
 * Įsidiekite `Python` su `VSCode` IDE.
@@ -25,7 +25,7 @@ Ką reikia padaryti:
 
 # 💻 Pirmoji programa
 
-Tradiciškai pirmoji programa, kurią rašo kiekvienas programuotojas, yra "Hello, World" programa išspausdinama terminale. Padarykime tą patį:
+Tradiciškai pirmoji programa, kurią rašo kiekvienas programuotojas, yra `Hello, World` programa išspausdinama terminale. Padarykime tą patį:
 
 ```python
 print("Hello, World")
@@ -73,8 +73,8 @@ Išbandykime juos:
 
 ## Pratimai:
 🧠 
-* Išbandykite operacijas patys.
-* Įsitikinkite, kad esate nustatę IDE.
+* Išbandykite visas  operacijas patys.
+* Įsitikinkite, kad esate įsidiegę IDE.
 
 
 ## 🌐 Papildomas skaitymas:
