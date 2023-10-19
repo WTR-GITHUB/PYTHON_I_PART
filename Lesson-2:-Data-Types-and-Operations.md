@@ -55,13 +55,13 @@ c = a ** b
 print(c)
 ```
 
-# Float type
+## Float type
 
 Z = {..., -2.5 , ..., -2.0, ... , -1.0, ... , 0, ... , 1.0, ... , 2.0, ... , 2.5, ...}
 
-### Note that there can be endless number possibilities between two floats.
+#### Note that there can be endless number possibilities between two floats.
 
-# Float Operations
+### Float Operations
 Same operations/ mathematical expressions apply to the float numbers
 
 Possible operations:
