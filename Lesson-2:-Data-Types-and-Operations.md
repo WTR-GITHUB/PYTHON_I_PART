@@ -287,25 +287,25 @@ Variables cannot be called as Python built in functions or special words like:
 
 # Excercises 🧠 
 1
-* Create a program that allows user to Enter his/her name and Age
-* Calculate the year in which user was born
-* Print the answer to the Terminal
+* Create a program that allows user to enter his/her `name` and `age`
+* Calculate the year user was born
+* Print the answer to the terminal
 
 
 2
 * Create a program that allows user to enter a full sentence
-* print the sentence backwards
-* print every second letter in the sentence
+* Print the sentence backwards, then all capital letters.
+* Print every second letter in the sentence
 
 3
-* Create a program that expects user to enter two numbers
-* multiply those numbers and print the answer
+* Create a program that expects a user to enter two numbers
+* Multiply those numbers and print the answer
 * Create similar programs with other signs.
 
 4
 * Create program that allows user to enter text
-* Convert that text to Leet speak [1337](https://simple.wikipedia.org/wiki/Leet)
-* print outcome
+* Convert that text to `Leet` speak [1337](https://simple.wikipedia.org/wiki/Leet)
+* Print outcome
 
 ## 🌐  Extra reading:
 
