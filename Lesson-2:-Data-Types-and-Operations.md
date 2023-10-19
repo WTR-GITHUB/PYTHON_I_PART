@@ -2,7 +2,7 @@
 
 Python `Data Types` are used to define the type of a variable. It defines what **type of data** we are going to store in a variable. The data stored in memory can be of **many types**. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters.
 
-# Integers
+## Integers
 
 Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
 
@@ -16,7 +16,7 @@ b = 25
 print(b)
 ```
 
-# Integer Operations
+### Integer Operations
 Possible operations:
 | Operation| Result |
 | ------------- | ------------- |
@@ -102,7 +102,7 @@ c = a ** b
 print(c)
 ```
 
-# String
+## String
 
 String is simply a piece of text, it could be a single letter or the while word or an entire sentence:
 ```python
@@ -112,7 +112,7 @@ sentence = "I really enjoy learning python !"
 ```
 
 
-# String operations
+### String operations
 Strings have plenty of useful in-built functionality in Python, more information [here](https://www.w3schools.com/python/python_ref_string.asp)
 
 What is more with strings we can select certain characters from the word. In python it works:
@@ -190,7 +190,7 @@ print(name.replace('c', 'k'))
 ```
 Or any other as you wish.
 
-# Combining of string
+### Combining of string
 You may also combine various string together to make other variables:
 
 ```python
@@ -212,7 +212,7 @@ print(completed_greeting)
 
 Wow! "+" operator does work on strings too! All it does is concatenation. Such trick has a term _Operator overloading_ we will learn some tricks how to apply what certain operators can do to our classes. Unfortunately "-" in the case of string does not make any particular sense so this method is not allowed on string type.
 
-# Conversion of types
+## Conversion of types
 What is more important to mention are methods allowing to transform data from one type to another:
 ```python
 str()
@@ -247,7 +247,7 @@ c = float(a)
 
 ```
 
-# User input
+## User input
 
 You program may ask user to enter something and use it for the further operations:
 
@@ -259,7 +259,7 @@ print(f"Your name is {name}, you are {age} years old"
 ```
 
 
-# Variable naming conventions
+## Variable naming conventions
 
 As per PEP8 https://peps.python.org/pep-0008/ there are some guidelines to follow when naming your variables. In Python simple variables as we have seen today should be named with snake_case style. What is more constants should be all capital letter, and hidden variables or functions should start with "_".
 
