@@ -17,7 +17,7 @@ https://www.python.org/downloads/release/python-3913/
 
 https://code.visualstudio.com/download
 
-Šiame kurse mokytojai naudos `VScode` integruota kūrimo aplinka (`IDE - Integrated development environment`). Jūs galite naudoti bet kokius jums patinkančius įrankius, kūrėjas pats sprendžia, kokius įrankius naudoti, ypač IDE. Tačiau pradedantiesiems** griežtai rekomenduojame** naudoti tuos pačius įrankius kaip ir dėstytojai.
+Šiame kurse mokytojai naudos `VScode` (arba `PyCharm`) integruota kūrimo aplinka (`IDE - Integrated development environment`). Jūs galite naudoti bet kokius jums patinkančius įrankius, kūrėjas pats sprendžia, kokius įrankius naudoti, ypač IDE. Tačiau pradedantiesiems **griežtai rekomenduojame** naudoti tuos pačius įrankius, kaip ir dėstytojai.
 
 Ką reikia padaryti:
 * Įsidiekite `Python` su `VSCode` IDE.
@@ -31,7 +31,8 @@ Tradiciškai pirmoji programa, kurią rašo kiekvienas programuotojas, yra `Hell
 print("Hello, World")
 ```
 
-Sveikiname, dabar jūs _kalbate _Python kalba! Pradėkime:
+Sveikiname, dabar jūs _kalbate_ `Python` kalba! 
+Pradėkime:
 
 ## Python operatoriai
 
