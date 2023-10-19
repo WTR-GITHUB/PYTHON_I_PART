@@ -1,12 +1,12 @@
 ## Įvadas
 
-Python `Duomenų tipai` naudojami kintamojo tipui apibrėžti. Jis apibrėžia, kokio **tipo duomenis** ketiname saugoti kintamajame. Duomenys, saugomi atmintyje, gali būti **daugelio tipų**. Pavyzdžiui, asmens amžius saugomas kaip skaitinė reikšmė, o jo adresas - kaip raidiniai skaitmeniniai simboliai.
+Python `duomenų tipai` naudojami **kintamojo tipui** apibrėžti. Jis apibrėžia, kokio **tipo duomenis** ketiname priskirti kintamajam. Duomenys, saugomi atmintyje, gali būti **daugelio tipų**. Pavyzdžiui, asmens amžius saugomas kaip `skaitinė reikšmė`, o jo adresas - kaip `raidiniai skaitmeniniai simboliai`.
 
-# Sveikieji skaičiai
+## Sveikieji skaičiai
 
 Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
 
-Kaip instancijuoti kintamąjį kaip sveikąjį skaičių Pythone:
+Kaip sukurti sveikojo skaičiaus (`interger`) tipo kintamąjį Python kalboje:
 
 ```python
 a = 5
@@ -16,8 +16,8 @@ b = 25
 print(b)
 ```
 
-# Operacijos su sveikaisiais skaičiais:
-Galimos operacijos:
+### Operacijos su sveikaisiais skaičiais:
+#### Galimos operacijos:
 | Operacija| Rezultatas |
 | ------------- | ------------- |
 | x + y | x ir y suma |
@@ -26,7 +26,7 @@ Galimos operacijos:
 | x / y | x ir y dalyba |
 | x // y | x ir y dalyba paliekant sveikojo skaičiau dalį|
 | x % y | x / y likutis |
-| x ** y | x keliamas y laipsniu |
+| x ** y | x kėlimas y laipsniu |
 
 ```python
 a = 5
@@ -55,16 +55,15 @@ c = a ** b
 print(c)
 ```
 
-# Float tipas
+## `Float` (racionalieji skaičiai) tipas
 
 Z = {..., -2.5 , ..., -2.0, ... , -1.0, ... , 0, ... , 1.0, ... , 2.0, ... , 2.5, ...}
 
-#### Atkreipkite dėmesį, kad tarp dviejų skaičių yra begalybė float reikšmių.
 
-# Operacijos su float skaičiais
-Tie patys veiksmai ir (arba) matematinės išraiškos taikomos ir kintamiesiems skaičiams
+### Operacijos su `float` tipo skaičiais
+Tie patys veiksmai ir (arba) matematinės išraiškos taikomos ir `flaot` tipo skaičiams:
 
-Galimos operacijos:
+#### Galimos operacijos:
 | Operacija| Rezultatas |
 | ------------- | ------------- |
 | x + y | x ir y suma |
@@ -73,7 +72,7 @@ Galimos operacijos:
 | x / y | x ir y dalyba |
 | x // y | x ir y dalyba paliekant sveikojo skaičiau dalį|
 | x % y | x / y likutis |
-| x ** y | x keliamas y laipsniu |
+| x ** y | x kėlimas y laipsniu |
 
 ```python
 a = 5.5
@@ -102,13 +101,14 @@ c = a ** b
 print(c)
 ```
 
-# string
+## `String` tipas
 
-String- tai tiesiog tekstas, gali būti viena raidė, gali būti pilnas rišlus sakinys:
+`String` tipas - tai duomenys išreikšti teksto pavidalu: gali būti ir viena raidė, gali būti pilnas rišlus sakinys ir/arba skaičiai/simboliai `apgaubti` kabutėmis:
 ```python
 letter = "a"
 name = "Code Academy"
 sentence = "I really enjoy learning python !"
+some_chars = "123@}{}" 
 ```
 
 
