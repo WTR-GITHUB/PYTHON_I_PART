@@ -162,7 +162,7 @@ AssertionError: Asserted statement is incorrect
 def dummy_func() -> None:
     try:
         # dummy full of errors code 😒 
-    except Exceptions as e:
+    except Exception as e:
         print(f'Heh, I cought another one...{e}')
 ```
 
