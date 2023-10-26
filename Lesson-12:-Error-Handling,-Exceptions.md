@@ -78,7 +78,10 @@ This statement may raise ValueError or TypeError or may not raise any exceptions
 Here is how we handle both of them:
 
 ```python
-def my_dummy_int_func(a: Union[string, float]) -> None:
+from typing import Union
+
+
+def my_dummy_int_func(a: Union[str, float]) -> None:
     try:
         int_value = int(a)
     except ValueError:
