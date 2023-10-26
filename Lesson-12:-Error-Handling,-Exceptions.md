@@ -184,7 +184,7 @@ my_func()
 ```python
 def divide(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
     try:
-        return a / b
+        output = a / b
     except ZeroDivisionError:
         print('Cannot divide by zero')
     else:
