@@ -32,7 +32,7 @@ if number_one < number_two :
 ```
 **It is important that the statements after the `if clause` and colon (`:`) is indented. Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.**
 
-### Elif
+### `elif`
 What if we want to extend out program and print out something else if the statement is not true?
 
 Example:
@@ -58,7 +58,7 @@ elif number_one == number_two :
 elif...
 ```
 
-### Else
+### `else`
 
 The else keyword catches anything which isn't caught by the preceding conditions:
 
@@ -102,7 +102,7 @@ if c > a and c > b:
     print("C is the greatest of them all!")
 ```
 
-### or
+### `or`
 
 The or keyword is a logical operator, and is used to combine conditional statements.
 Basically at least one of the conditions must be true for statement to return `True`:
@@ -130,7 +130,7 @@ if x > 10:
     print("Above 10 but bellow 20!.")
 ```
 
-### pass
+### `pass`
 
 If we want to have an empty `if` statement for some reason we can simply do `pass` and nothing will happen.
 ```python
@@ -142,7 +142,7 @@ if b > a:
 ```
 
 
-### `If` with string values
+### `If` with `string` values
 
 We may also do logical operations on strings.
 
