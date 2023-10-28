@@ -119,7 +119,7 @@ d = {'a': 10, 'b': 20, 'c': 30}
 list(d.values())
 ```
 
-## .pop
+###  `.pop`
 Šitas metodas išmeta `key value` porą, bet gražina tos poros `value`:
 
 ```python
