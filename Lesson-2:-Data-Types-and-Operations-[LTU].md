@@ -113,9 +113,9 @@ some_chars = "123@}{}"
 
 
 ### String operacijos
-`Strings` Pythone turi begalę funkcijų kurias galime naudoti, daugiau informacijos [čia](https://www.w3schools.com/python/python_ref_string.asp)
+`String` Python kalboje turi begalę funkcijų kurias galime naudoti, daugiau informacijos [čia](https://www.w3schools.com/python/python_ref_string.asp)
 
-Be to, su string galime išrinkti tam tikrus žodžio simbolius. Štai kaip tai veikia:
+Be to, su `string` galime išrinkti tam tikrus žodžio simbolius. Štai kaip tai veikia:
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/string_ops.png)
 ```python
 name = "Code Academy"
@@ -308,6 +308,6 @@ Kintamieji negali būti vadinami "Python" built-in funkcijų vardais arba specia
 
 ## 🌐 Papildomas skaitymas:
 
-* [kita medžiaga](https://pythonhumanities.com/lesson-04-python-integers-and-floats/#:~:text=Numeriai%20in%20Python%20egzistuoja%20in,iš%20ir%20eksportuojami%20į%20Excel).
-* [operacijos su string reikšmėm](https://www.w3schools.com/python/python_ref_string.asp)
+* [Papildomi skaitiniai](https://pythonhumanities.com/lesson-04-python-integers-and-floats/#:~:text=Numeriai%20in%20Python%20egzistuoja%20in,iš%20ir%20eksportuojami%20į%20Excel).
+* [Operacijos su string reikšmėm](https://www.w3schools.com/python/python_ref_string.asp)
 
