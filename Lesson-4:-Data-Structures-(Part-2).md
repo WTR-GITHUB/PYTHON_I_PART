@@ -154,7 +154,7 @@ print(dict_one )
 ```python
 dict_one = {'a': 10, 'b': 20, 'c': 30}
 dict_one .update(b=200, d=400)
-print(d1)
+print(dict_one )
 ```
 
 ### Iterating through `dictionary`
