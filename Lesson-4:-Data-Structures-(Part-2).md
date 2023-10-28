@@ -1,4 +1,4 @@
-# Dictionary
+## Dictionary
 
 A very powerful _data structure_ which is going to be used a lot. `Dictionary` hold **key: value** pairs, with which we can access it's attributes.
 Dictionaries are: 
@@ -24,7 +24,7 @@ my_dictionary = {"name": "Tom"}
 print(my_dictionary["name"])
 ```
 
-## Access dictionary values
+### Access dictionary values
 
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
@@ -32,15 +32,15 @@ print(f"name: {my_dictionary['name']}")
 print(f"surname: {my_dictionary['surname']}")
 ```
 
-If the value is `non existent` we shall get a `KeyError` as such key does not exist:
+If the value is `non existent` we shall get a `KeyError` as such `key` does not exist:
 
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
 print(f"favourite car: {my_dictionary['car']}")
+# KeyError: 'car'
 ```
 
-Similarly as with lists, dictionaries may hold anything in it's key and values. But usually keys would be string values and values could be anything at all.
-
+Dictionaries may use any immutable type as it's key (so no `list` as for example) and any type as its values:
 ## Changing values in dictionary
 
 ```python
@@ -49,7 +49,7 @@ my_dictionary["name"] = "Charles"
 print(f"name: {my_dictionary["name"]}")
 ```
 
-## Droping key from dictionary
+### Droping `key` from `dictionary`
 
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
@@ -58,8 +58,9 @@ print(my_dictionary)
 ```
 
 
-## <a name="complex"></a>More complex structures!
-As with the lists, we have seen that lists can contain other lists, it so happens that the dictionary can have a value of another diciotnary and we can built a complex hierarchies like that
+### More complex, `nested` structures 
+As with the `lists`, we have seen that lists can contain other `lists`, it so happens that the dictionary can have a value of another `diciotnary` and we can built a complex hierarchies like that:
+
 ```python
 user_info = {
 	"name": "Albert",
@@ -72,7 +73,8 @@ user_info = {
 }
 ```
 
-let's say we wanted to print all the languages one by one, we could do something like this:
+Let's say we wanted to print all the languages one by one, we could do something like this:
+
 ```python
 user_info = {
 	"name": "Albert",
@@ -87,34 +89,39 @@ user_info = {
 for language in user_info["languages"]:
     print(language)
 ```
-The possibilities here are unlimited, we can go deeper and deeper.
+The possibilities are almost endless, we can go deeper and deeper.
 
 
-## Dictionary to list of tuples with .items()
+### `.items()`
 
-There will be a lot of situations, mostly when we want to iterate through dictionary we will be using in-built .items() method of dictionary.
+There will be many of situations, that we will want to iterate through `dictionary`. We will be using in-built `.items()` method for `dictionaries`.
 
 ```python
 d = {'a': 10, 'b': 20, 'c': 30}
 print(list(d.items()))
 ```
 
-## .keys()
+### `.keys()`
 
-returns us all the dictionary keys:
+This method returns dictionary keys:
 
 ```python
 d = {'a': 10, 'b': 20, 'c': 30}
 list(d.keys())
 ```
 
-## .values()
+### `.values()`
+This method returns dictionary values:
+
 ```python
 d = {'a': 10, 'b': 20, 'c': 30}
 list(d.values())
 ```
 
-## .pop
+### `.pop`
+
+This method pops the `key value` pair based on `key`:
+
 
 ```python
 d = {'a': 10, 'b': 20, 'c': 30}
@@ -122,34 +129,34 @@ d.pop('a')
 print(d)
 ```
 
-## .update(<obj>)
+### `.update(obj)`
 
-If <obj> is a dictionary, d.update(<obj>) merges the entries from <obj> into d. For each key in <obj>:
-If the key is not present in d, the key-value pair from <obj> is added to d.
-If the key is already present in d, the corresponding value in d for that key is updated to the value from <obj>.
+If `obj` is a `dictionary`, `my_dictionary.update(obj)` merges the entries from `obj` into `dictionary my_dictionary`.
+If the `key` **is not present** in a `dictionary` `my_dictionary`, the `key-value` pair from `obj` is added to `my_dictionary`,
+otherwise, the corresponding value in `my_dictionary` for that `key` **is updated** with the `value` from `obj`.
 
 Examples:
 
 ```python
-d1 = {'a': 10, 'b': 20, 'c': 30}
-d2 = {'b': 200, 'd': 400}
-d1.update(d2)
-print(d1)
+dict_one = {'a': 10, 'b': 20, 'c': 30}
+dict_two = {'b': 200, 'd': 400}
+dict_one .update(dict_two )
+print(dict_one )
 ```
 
 ```python
-d1 = {'a': 10, 'b': 20, 'c': 30}
-d1.update([('b', 200), ('d', 400)])
-print(d1)
+dict_one = {'a': 10, 'b': 20, 'c': 30}
+dict_one .update([('b', 200), ('d', 400)])
+print(dict_one )
 ```
 
 ```python
-d1 = {'a': 10, 'b': 20, 'c': 30}
-d1.update(b=200, d=400)
+dict_one = {'a': 10, 'b': 20, 'c': 30}
+dict_one .update(b=200, d=400)
 print(d1)
 ```
 
-## Iterating through dictionary
+### Iterating through `dictionary`
 
 Example:
 ```python
@@ -158,9 +165,10 @@ for key, value in d.items():
     print(key, value)
 ```
 
-## converting two lists into a dictionary
+### Converting two `lists` into a `dictionary`
 
-Note that lists must be of the same size here:
+Note that `lists` must be of the same size here:
+
 ```python
 test_keys = ["Albert", "Tom", "Stephen"]
 test_values = [1, 4, 5]
@@ -168,28 +176,29 @@ my_dictionary= dict(zip(test_keys, test_values))
 print(my_dictionary)
 ```
 
-# Sets
+## Sets
 
-Sets are used to store multiple items in a single variable.
-Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are [List]
-A set is a collection which is unordered, unchangeable*, and unindexed.
+`Sets` are used to store multiple items in a single `variable`.
+A `set` is a collection which is **unordered**, **unchangeable**, and **unindexed**.
 
 **Note: Set items are unchangeable, but you can remove items and add new items.**
 
 Notation:
+
 ```python
 my_set = {1, 2, 3}
 ```
 
 
-Another important property is that in sets we cannot have duplicates:
+Another important property is that in `sets` we can't store duplicates values:
 
 ```python
 my_set = {1, 2, 3, 1}
 print(my_set)
+# {1, 2, 3}
 ```
 
-getting unique values from python list:
+For example, getting unique values from python `list`:
 ```python
 numbers_list = [1, 2, 3, 4, 5, 5, 5, 6]
 numbers_set = set(numbers_list)
@@ -198,12 +207,14 @@ print(numbers_set)
 
 ## 🧠Exercises
 
-1. Write python program that asks user to enter name, surname, age. Put these values into a dictionary and print dictionary
-1. Try creating structure like one here: [link](#complex) from an empty dictionary: `my_dict = {}`
+1. Write python program that asks user to enter `name`, `surname`, `age`. Put these values into a dictionary and print it.
+2. Try creating structure like one here: [link](#complex) from an empty `dictionary`: `my_dict = {}`.
+3. Create a program, that would take a few sentences from the `input` and create a `dictionary` where they `keys` represents `letters` and `values`
+   the frequency those letters appeared in those sentence. The program must demand that user should enter `3` or more sentences. 
 
 
 ## 🌐  Extra reading:
 * [More on Python Data structures](https://corporatefinanceinstitute.com/resources/data-science/python-data-structures/)
 
-* [even more](https://www.edureka.co/blog/data-structures-in-python/)
+* [Edureka](https://www.edureka.co/blog/data-structures-in-python/)
 
