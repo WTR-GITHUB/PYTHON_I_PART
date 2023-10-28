@@ -235,4 +235,4 @@ if not my_list:
 
 
 ## 🌐 Papildomas skaitymas:
-[RealPython - super gera svetainė apie python'ą] (https://realpython.com/python-conditional-statements/)
+[RealPython] (https://realpython.com/python-conditional-statements/)
