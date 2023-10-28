@@ -120,7 +120,7 @@ list(d.values())
 
 ### `.pop`
 
-This method pops the `key value` pair based on `key`:
+This method pops the `key value` pair based on `key` and returns its `value`:
 
 
 ```python
