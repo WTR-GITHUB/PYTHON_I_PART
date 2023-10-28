@@ -209,8 +209,8 @@ print(numbers_set)
 ## 🧠Exercises
 
 1. Write python program that asks user to enter `name`, `surname`, `age`. Put these values into a dictionary and print it.
-2. Try creating structure like one here: [link](#complex) from an empty `dictionary`: `my_dict = {}`.
-3. Create a program, that would take a few sentences from the `input` and create a `dictionary` where they `keys` represents `letters` and `values`
+2. Try creating `nested` `dict` structure which would use all data types and structures you already know.
+3. Create a program, that would take sentences from the `input` and create a `dictionary` where they `keys` represents `letters` and `values`
    the frequency those letters appeared in those sentence. The program must demand that user should enter `3` or more sentences. 
 
 
