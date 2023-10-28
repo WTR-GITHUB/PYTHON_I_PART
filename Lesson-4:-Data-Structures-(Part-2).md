@@ -40,7 +40,7 @@ print(f"favourite car: {my_dictionary['car']}")
 # KeyError: 'car'
 ```
 
-Dictionaries may use any immutable type as it's key (so no `list` as for example) and any type as its values:
+Dictionaries may use any `immutable type` as it's `key` (so no `list` as for example) and any type as its `values`:
 ## Changing values in dictionary
 
 ```python
