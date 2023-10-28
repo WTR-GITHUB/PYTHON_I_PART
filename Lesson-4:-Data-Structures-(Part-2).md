@@ -41,7 +41,7 @@ print(f"favourite car: {my_dictionary['car']}")
 ```
 
 Dictionaries may use any `immutable type` as it's `key` (so no `list` as for example) and any type as its `values`:
-## Changing values in dictionary
+### Changing `values` in `dictionary`
 
 ```python
 my_dictionary = {"name": "Tom", "surname": "Edison"}
