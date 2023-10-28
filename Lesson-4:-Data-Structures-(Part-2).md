@@ -125,7 +125,8 @@ This method pops the `key value` pair based on `key` and returns its `value`:
 
 ```python
 d = {'a': 10, 'b': 20, 'c': 30}
-d.pop('a')
+result = d.pop('a')
+print(result)
 print(d)
 ```
 
