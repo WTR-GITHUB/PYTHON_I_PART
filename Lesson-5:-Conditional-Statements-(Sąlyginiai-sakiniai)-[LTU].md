@@ -1,7 +1,7 @@
 
 
 ## Python sąlyginiai sakiniai (`if` conditional statement)
-❗ Kurso metu bus naudojami EN atitikmuo: `conditional statement`.  
+❗ Kurso metu bus naudojamas `EN` atitikmuo: `conditional statement`.  
 
 `If` _conditional statement_ dažnai naudojamas jei norim implementuoti tam tikrą loginę seką su turimais kintamaisiai ir reikiamomis aplinkybėmis: 
 
