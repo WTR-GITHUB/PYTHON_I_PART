@@ -34,7 +34,7 @@ print(my_list.count(1)) # 2
 ```
 
 ### .insert()
-As we have seen `append` always adds the value to the lists end, `.insert()` allows us to add the value to which ever index we want:
+As we have seen `append` always adds the value to the end of the list, `.insert()` allows us to add the value to which ever index we want:
 
 ```python
 my_list = [1, 1, 2 ,3 ,4 ,5]
@@ -43,7 +43,7 @@ print(my_list) # [1, 50, 1, 2, 3, 4, 5]
 ```
 
 ### .remove()
-Name speaks for itself. with this method we will simply drop a particular value from the list:
+Name speaks for itself. With this method we will simply drop a particular value from the list:
 ```python
 my_list = [1, 1, 2 ,3 ,4 ,5]
 my_list.remove(1)
@@ -58,7 +58,7 @@ print(my_list) [1, 1, 2, 3, 4]
 ```
 
 ## Python built-in `List` functions
-As we have already seen such functions as print and probably a few others along the way, Python lists also make use of quite a few of them so we do not have to reinvent the wheel each and every time.
+As we have already seen such functions as `print` and probably a few others along the way, Python `lists` also make use of quite a few of them so we do not have to reinvent the wheel each and every time.
 
 ### len()
 Note that we do not have the "." symbol now, meaning that there are standalone functions that do not belong to a particular data type.
@@ -70,24 +70,24 @@ my_list = ["name", 123, None, True]
 print(len(my_list)) # 4
 ```
 
-### max
-If you have list of int, float values you may find out maximum value with this function:
+### max()
+If you have list of `int`, `float` values you **may find out maximum value** with this function:
 
 ```python
 my_list = [50, 99, 1, -50]
 print(max(my_list))
 ```
 
-### min
-If you have list of int, float values you may find out minimum value with this function:
+### min()
+If you have list of `int`, `float` type values you may **find out minimum value** with this function:
 ```python
 my_list = [50, 99, 1, -50]
 print(min(my_list))
 ```
 
-## Iterating over elements within the list
+## Iterating over elements within the `list`
 
-The biggest strength within the lists is that we can have a list of certain actions, objects that we want to do one after another, we can iterate over them and do some actions. 
+The biggest strength within the lists is that we can have a list of certain actions, objects that we want to do one after another, we can _iterate_ over them and do some actions. 
 
 ```python
 my_list = [1, 2, 3]
@@ -110,7 +110,7 @@ my_list[2] = 5
 print(my_list)
 ```
 ## Slicing
-As with the string we can also be slicing items withing the list as well. each and every item in the list contains an index starting at 0. So we can perform same type of slicing:
+As with the string we can also be slicing items withing the list as well. Each and every item in the list **contains an index** starting at `0`. So we can perform same type of slicing:
 
 ```python
 my_list = ["first", "second", "third"]
@@ -135,7 +135,7 @@ Another very similar python built-in data structure is `Tuple`. The main differe
 
 ## Notation
 
-Tuple notation in python is `**( )**` - two parentheses with values in between separated by commas.
+Tuple notation in python is `( )` - two parentheses with values in between separated by commas.
 
 ### Creating tuples
 
@@ -164,10 +164,10 @@ Usually it is recommended to u**se Tuple on static values** that do not change a
 ## 🧠 Exercises:
 
 **`All answers must be printed in terminal`**
-1. Write a python program that sums up all items in the list (all items are integers or floats in list, create a list yourself)
-1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself)
-1. Write a python program that gets maximum value from the list (all items are integers or floats in list, create a list yourself)
-1. Write a python program that concatenates all strings in the list (all items are strings, create a list yourself)
+1. Write a python program that sums up all items in the list (all items are integers or floats in list, create a list yourself).
+1. Write a python program that multiplies all items in the list (all items are integers or floats in list, create a list yourself).
+1. Write a python program that gets maximum value from the list (all items are integers or floats in list, create a list yourself).
+1. Write a python program that concatenates all strings in the list (all items are strings, create a list yourself).
 1. Create two lists and add them together, make sure it works the way you want it to.
 1. Write a python program that asks user to enter 3 integers and find the highest value entered.
 1. Try doing same exercises with tuples.
