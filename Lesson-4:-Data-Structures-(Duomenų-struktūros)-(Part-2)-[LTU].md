@@ -9,7 +9,7 @@ Tai labai pravarti duomenų struktūra, kuri bus dažnai naudojama kodo struktū
 1. dynamic ✔️ (gali didėti ir mažėti)
 1. nested ✔️ (gali apimti kitus žodynus arba kitas sudėtingesnes struktūras)
 
-`Dictionary` - tai duomenų rinkinys, kuris yra rūšiuotas (`ordered`),gali būti keičiamas ('changeable'), bet neleidžia dubliuotis rakto (`keys`) reikšmėm. `Dictionary` reikšmės pasiekiamos pagal jų `keys`.
+`Dictionary` - tai duomenų rinkinys, kuris yra rūšiuotas (`ordered`),gali būti keičiamas (`changeable`), bet neleidžia dubliuotis rakto (`keys`) reikšmėm. `Dictionary` reikšmės pasiekiamos pagal jų `keys`.
 
 `Dictionary` sukūrimas:
 
