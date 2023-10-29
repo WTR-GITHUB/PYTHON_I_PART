@@ -182,6 +182,7 @@ My Simple Project is a basic web application that demonstrates a few key feature
 
 ## 🧠 Exercises:
 * Create a new `github` repository and upload dummy code. Test all the commands you have learned today.   
+* We advice with every new lecture create a new `github` repository and store code there. 
 
 ## 🌐 Extra reading:
 
