@@ -34,7 +34,9 @@ Open git bash terminal to generate `ssh` key:
 `ssh-keygen -t rsa -b 4096 -C "email@email.com"`
 
 Open file `id_rsa.pub` with any text editor and copy it.
+
 Go to[www.github.com](http://www.github.com/) on top right click on your `profile -> settings -> SSH and GPG keys -> New SSH key`.
+
 Give the key a name of your choice and paste the key. Click `Add SSH Key`.
 
 
