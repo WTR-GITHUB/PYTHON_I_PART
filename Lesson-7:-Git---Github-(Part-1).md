@@ -3,7 +3,7 @@
 ## What are they?
 Put it simply - it is software that allows you to version your code while working on it with as many people as you wish.
 
-During the course we will be using the most popular - `GitHub`[www.github.com](http://www.github.com/). 
+During the course we will be using the most popular - [`GitHub`](http://www.github.com/). 
 Download `git bash`: [link](https://git-scm.com/downloads)
 
 ## What can we achieve with `git`? 🗺️ 
