@@ -161,6 +161,24 @@ __pycache__/
 
 A `README.md` file is a plain text or markdown file commonly found in software projects and repositories. Its primary purpose is to provide essential information about the project, making it easier for users, collaborators, or visitors to understand and use the project. It often serves as the project's documentation, giving an overview of what the project is, how to use it, and other relevant details.
 
+Example:
+
+```text
+# My Simple Project
+
+## Overview
+
+My Simple Project is a basic web application that demonstrates a few key features.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/simple-project.git
+
+```
+
 
 ## 🧠 Exercises:
 * Create the project that you are going to use for our lessons, add already existing notes in order not to lose them.
