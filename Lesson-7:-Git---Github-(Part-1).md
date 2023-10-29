@@ -181,8 +181,7 @@ My Simple Project is a basic web application that demonstrates a few key feature
 
 
 ## 🧠 Exercises:
-* Create the project that you are going to use for our lessons, add already existing notes in order not to lose them.
-* Go once again through todays lecture on your own, if anything is not clear - let us know
+* Create a new `github` repository and upload dummy code. Test all the commands you have learned today.   
 
 ## 🌐 Extra reading:
 
