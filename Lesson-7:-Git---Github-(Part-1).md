@@ -1,148 +1,96 @@
-# Version control systems (git, GitLab, GitHub, bitbucket...)
+# Version control systems 
 
 ## What are they?
-Put simply it is software that allows you to version your software while working on it with as many people as you wish.
+Put it simply - it is software that allows you to version your code while working on it with as many people as you wish.
 
-During the course we will be using the most popular GitHub– [www.github.com](http://www.github.com/). So if you do not have an account yet - register.
+During the course we will be using the most popular - `GitHub` – [www.github.com](http://www.github.com/). 
+Download `git bash`: [link](https://git-scm.com/downloads)
 
-Download git bash: [link](https://git-scm.com/downloads)
+## What can we achieve with `git`? 🗺️ 
 
-## What can we achieve with git? 🗺️ 
+So what does the versioning mean? At any given time we can save current state of our code base, upload it,  go back to any previous version of our project, we can revert it into any stage and download any changes made by our colleagues. All the information is beautifully stored on [github](http://www.github.com/). Also modern VSC systems like `Github` or `Gitlab` (and others) allow us to also seamlessly deploy, test and do other important things with our codebase.
 
-So what does the versioning mean? Well with git we save each an every change everyone is doing and at any given time we can go back into any version of our project, we can revert it into any stage if we want. What is more we can also easily work within a team, you do not have to email chunks of code to each other etc. All the information is beautifully stored on [github](http://www.github.com/) Also modern VSC systems like github or gitlab allow us to also seamlessly deploy, test and do other fantastic things with out codebase.
+### Setting up `git` 🧰 
 
-## Setting up git 🧰 
+Open git bash if you are using windows or any terminal on other OS:
 
-open git bash if you are using windows or any terminal on other OS:
-1.Setup your name:
-
+#### Setup your name:
 
 `git config --global user.name "name surname"`
 
-
-2.setup email:
-
+#### Setup email:
 
 `git config --global user.email full@email.com`
 
-
-3.Check settings:
-
+#### Check settings:
 
 `git config --list`
 
 
-Connecting with ssh key. Open git bash terminal
+#### Connecting with `ssh` key. 
 
-generate ssh key:
-
-`ssh-keygen -t rsa -b 4096 -C "email@email.com"`
-
-
-open file id_rsa.pub with any text editor and copy it.
-
-Go to[www.github.com](http://www.github.com/) on top right click on your profile -> settings -> SSH and GPG keys -> New SSH key.
-Give the key a name of your choice and paste the key. Click Add SSH Key
+Open git bash terminal to generate `ssh` key: `ssh-keygen -t rsa -b 4096 -C "email@email.com"`
+Open file `id_rsa.pub` with any text editor and copy it.
+Go to[www.github.com](http://www.github.com/) on top right click on your `profile -> settings -> SSH and GPG keys -> New SSH key`.
+Give the key a name of your choice and paste the key. Click `Add SSH Key`.
 
 
-## Creating an empty project? 📃 
-Open [www.github.com](http://www.github.com/) Login and hit Start a project. Give it a name and click create repository
+### Creating an empty project? 📃 
+Open [www.github.com](http://www.github.com/). Login and hit `Start a project`. Give it a name and click `create repository`.
 
-## How to start working with git?
-
-There are couple of ways to move from here and immediately github will describe opportunities to you if you open your newly created project.
-
-### first scenario
-
-open up terminal:
-
-`git clone repository`
-
-create a file and check what can git say about the file:
+### How to start working with git?
 
 
-`git status`
+Open up terminal: `git clone repository`.
+Create a file and check what can git say about the file: `git status`.
+Tell git to start tracking changes within the file: `git add <filename>`.
+Check status once again: `git status`.
 
-tell git to start tracking changes within the file:
+What is different this time? Now we need to create a commit, which is simply a **point in history** of your project showing what was changed and who and when did the change. Let's create it:
+`git commit -m "first commit"`.
 
-`git add <filename>`
+Check status once again: `git status`.
+We are ready to `push` now: `git push` or better `git push origin <branch_name>`
 
-check status once again
-`git status`
-
-What is different this time? Now we need to create a commit, which is simply a point in history of your project showing what was changed and who and when did the change. Let's create it!
-
-`git commit -m "first commit"`
-
-check status once again
-`git status`
-
-We are ready to push now:
-
-`git push`
-
-congratulations you have now successfully tracked the changes and they are also visible on gitub! Check them out.
+Congratulations you have now successfully tracked the changes and they are also visible on `Github`! Check them out!
 
 
 ### Second scenario
 
 What if you already had a codebase and now suddenly you want to start tracking it? Not a problem.
-initiate git project in the directory of your choice.
+Initiate git project in the directory of your choice: `git init`.
+Now you can check git status once again: `git status`.
 
-
-`git init`
-
-now you can check git status once again:
-
-`git status`
-
-to start tracking all files simply:
-
+To start tracking all files simply:
 ```
 git add .
 git commit -m "initial commit"
 ```
 
-And just like that you now have a repo that is being tracked. But how do we share this with our colleagues? It is not yet connected to GitHub
-So for this project create a new GitHubproject. Now all you have to do is to grab origin link which you can find on GitHub project you have created.
+And just like that you now have a `repository` that is being tracked. But how do we share this with our colleagues?
 
+Now we have to 'push' it to remote: `git push origin <branch_name>`
 
-`git remote add origin https://github.com/vychiokas/test.git`
+### Start working on existing project
 
-now we have to 'push' it to remote:
-
-
-`git push`
-
-
-
-## Start working on existing project
-
-So far we've seen how to create a project but how do we join an already existing one?
-it's simple go to projects github page. Click on green button saying **Code** choose the way you want to acquire a copy -> ssh/ hhtp
-open up the terminal, go to the place where you want to clone the project and then clone it:
-
+So far we've seen how to create a project but how do we join an already existing one.
+It's simple go to projects `Github` page. Click on green button saying **Code** choose the way you want to acquire a copy -> `ssh/ hhtp`.
+Open up the terminal, go to the place where you want to clone the project and then clone it:
 `git clone <link_to_project>`
 
 
-Now you have acquired a copy of codebase to your computer. Be careful, because it does nto update automatically, to grab latest changes we need to do:
+Now you have acquired a copy of codebase to your computer. Be careful, because is not being updated automatically. To grab the latest changes we need to do:  `git pull` .
+This simply tells `git` to `pull` latest changes from remote repository (`Github`). Note that the command is similar to `git push` but does the exact opposite - it updates the local copy of codebase.
 
-`git pull`
+###  `.gitignore`
 
-this simply tells git to 'pull' latest changes from remote(github), note that the command is similar to `git push` but does the exact opposite - it updates the local copy of codebase.
+`.gitignore` is a configuration file used in `Git` to specify which files and directories **should be ignored** by the version control system. This is useful for **excluding** files that don't belong in the repository, such as compiled binaries, temporary files, or sensitive information like **passwords**.
 
-## .gitignore
-
-Sometimes there are files that we do not want to be tracked - files with credential information, data, huge files etc...
-Git is only supposed to track changes in code, not to expose your passwords to the world.
-
-so in the root directory of your project you may add file called .gitignore and in the file you may list files/ folders/ patterns of the files that you do not want to track, and git will not even show the changes or those files at all in `git status`. Try it yourself!
-
+The file is named `.gitignore`, and it should be placed in the `root` directory of your `Git` repository.
 
 ## Readme.md 📑 
 
-This is the frontpage information on your project, the main document visitor sees when visiting your project, usually it is quite clear from this one if even the owner of the project cares about it, because we usually want more people to be interested and spread good word about our work.  Please feel free to add explanations about your project here, how to launch it, what is it all about. Why did you even create it etc...
-There is also a whole syntax of how to write these pages, more info in the additional links at the end of the lesson.
+A `README.md` file is a plain text or markdown file commonly found in software projects and repositories. Its primary purpose is to provide essential information about the project, making it easier for users, collaborators, or visitors to understand and use the project. It often serves as the project's documentation, giving an overview of what the project is, how to use it, and other relevant details.
 
 
 ## 🧠 Exercises:
@@ -151,7 +99,7 @@ There is also a whole syntax of how to write these pages, more info in the addit
 
 ## 🌐 Extra reading:
 
-* [readme.md syntax](https://www.markdownguide.org/basic-syntax/)
-* [more on getting started with git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+* [README syntax](https://www.markdownguide.org/basic-syntax/)
+* [Getting started with git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 
