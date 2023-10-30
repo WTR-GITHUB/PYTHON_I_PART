@@ -43,7 +43,7 @@ def div(x: int,y: int) -> int:
 ```
 Save the above code in a file `calc.py` (you can name it the way you want). _This is how we create a module in python_. We have created different functions in this module. We can use these modules in our main file.
 
-### Usuage
+### Usage
 We will use the **import** keyword to incorporate the module into our program, from keyword is used to get only a few or specific methods or functions from a module. Let us see what are different methods to use a module in your program. Let us say we have our file with a name main.py :
 
 ```python
