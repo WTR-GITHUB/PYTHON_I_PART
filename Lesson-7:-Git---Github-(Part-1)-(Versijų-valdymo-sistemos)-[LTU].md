@@ -197,5 +197,3 @@ My Simple Project is a basic web application that demonstrates a few key feature
 
 * [readme.md sintaksė](https://www.markdownguide.org/basic-syntax/)
 * [Git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-
-Translated with www.DeepL.com/Translator (free version)
