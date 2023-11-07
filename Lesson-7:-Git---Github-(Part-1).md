@@ -97,7 +97,7 @@ git add .
 git commit -m "initial commit"
 ```
 
-And just like that you now have a `repository` that is being tracked. But how do we share this with our colleagues?
+And just like that you now have a `repository` that is being tracked.
 
 Now we have to 'push' it to remote:
 
