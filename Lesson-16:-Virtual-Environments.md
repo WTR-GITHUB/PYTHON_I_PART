@@ -66,7 +66,7 @@ source <name_of_your_choice>/bin/activate
 or (**Windows**)
 
 ```python
-<name_of_your_choice>\Scripts\activate
+source <name_of_your_choice>/Scripts/activate
 ```
 
 What the above commands did was change the commands python and pip (pythons package manager) to refer to those located in the `venv` folder. A helpful indicator should appear that shows you are using your virtual environment like the following:
