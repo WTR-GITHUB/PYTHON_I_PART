@@ -1,9 +1,9 @@
 
-# 🐍 Built-in functions
+## 🐍 Built-in functions
 
-## print()
+### `print()`
 
-As we have seen before we used `print` couple of times already and made ourselves familiar with it. We did not create the function itself as it comes out of the box right after installing python. It is important to mention that this function is not as dull as it may seem from the first glance, in fact it's quite versatile.
+As we have seen before, we used `print` couple of times already and made ourselves familiar with it. We did not create the function itself as it comes out of the box right after installing python. It is important to mention that this function is not as dull as it may seem from the first glance, in fact it's quite versatile:
 
 `print(object(s), sep=separator, end=end, file=file, flush=flush)`
 
@@ -33,9 +33,9 @@ print("hello world", sep=",")
 print("hello", "world", sep=" amazing ")
 ```
 
-## type()
+### `type()`
 
-Another useful function for us to understand what we are dealing with in python is `type`. Often it helps us to understand what instance of the object are we dealing with. Basically it tells us what kind of object we are dealing with.
+Another useful function for us to understand what we are dealing with in python is `type`. Often it helps us to understand what is the type of instance of the object are we dealing with:
 
 Examples:
 ```python
@@ -51,11 +51,11 @@ print(type(my_list))
 print(type(my_list[0]))
 ```
 
-This becomes really helpful later on when dealing with more complex programs.
+This becomes really helpful later dealing with more complex programs.
 
-## len()
+### `len()`
 
-We have already seen this function before with list, so we are also a bit familiar with in. As you remember _it returns the length_ of the list or tuple.
+We have already seen this function before with `list`. As you remember _it does return the length_ of the list or tuple as for example.
 Nevertheless it still works with strings as well. 
 
 Examples:
@@ -66,17 +66,15 @@ length = len(word)
 print(f"length of the word {word} is: {length}")
 ```
 
-Reminder how it works with lists:
-
 ```python
 my_list = [1, 2, 3]
 
 print(f"length of the list {my_list} is: {len(my_list)}")
 ```
 
-## round()
+### `round()`
 
-Function allows to round float to a certain decimal point. It is also quite useful.
+Function allows to round float to a certain decimal point:
 
 round(number, ndigits=None)
 | argument| meaning |
@@ -93,7 +91,7 @@ print(round(1.999))
 print(round(1.5555, 2))
 ```
 
-## sorted
+### `sorted()`
 
 What if we would like to sort values in the list or tuple
 
@@ -137,12 +135,12 @@ There are plenty more built-in functions to explore at [link](https://docs.pytho
 
 ## 🧠 Exercises:
 
-1. Create a list of different types of python objects, and print all the types. The one who gets the the most unique types wins respect points:
-1. print all the items separated with "|"
-1. create a list of floats with 3 decimal points, create another list with all the values rounded to 2 decimals.
-1. Create a list with student names and sort them, print the result to the terminal.
-1. write a program that allows user to write in any float number and then round it.
+1. Create a list of different types of python objects, and print all the types.
+2. Print all the items (from previous) separated with "|"
+3. Create a `list` of `floats` with 3 decimal points, create another `list` with all the values rounded to 2 decimals.
+4. Create a `list` with student names and sort them, print the result to the terminal.
+5. Write a program that allows user to write in any float number and then round it.
 
 
 ## 🌐  Extra reading:
-[all built in stuff](https://www.programiz.com/python-programming/methods/built-in)
+[Built in methods](https://www.programiz.com/python-programming/methods/built-in)
