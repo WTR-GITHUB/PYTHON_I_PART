@@ -1,14 +1,14 @@
-# Python ciklai
+## Python `ciklai`
 
-Python turi dvi primityvias ciklo komandas:
+Python kalboje turim du primityvius ciklus:
 
-* while ciklai
-* for ciklai
+* `while` ciklas
+* `for` ciklas
 
 
-## While ciklas
+### `while` ciklas
 
-Naudodami while ciklą galime vykdyti logiką tol, kol sąlyga yra teisinga.
+Naudodami `while` ciklą, galime vykdyti logiką tol, kol sąlyga yra teisinga:
 
 ```python
 i = 0
@@ -16,36 +16,38 @@ while i < 10:
   print(i)
   i += 1
 ```
-**Pastaba: nepamirškite padidinti i, kitaip ciklas tęsis amžinai**.
+**Pastaba: nepamirškite padidinti `i`, kitaip ciklas tęsis amžinai**.
 
-#### nesibaigiančios ciklai (infinite loop)
+#### Nesibaigiantys ciklai (`infinite loop`)
 
-Šis ciklas neleis naudotojui kaip argumentą perduoti tuščios vietos, visada lauks, kol bus kas nors įvesta.
+Šis ciklas neleis naudotojui kaip argumentą perduoti tuščios vietos, visada lauks, kol bus kas nors įvesta:
+
 ```python
 while True:
-    user_input = input("Įveskite savo vardą: ")
+    user_input = input("Enter your name: ")
     if len(user_input) != 0:
         break
-print(f "Jūs įvedėte {user_input }")
+print(f"You entered {user_input }")
 ```
 
-## For ciklai
+### `for` ciklas
 
-For ciklas naudojamas iteruojant seką (sąrašą, tuple, žodyną, rinkinį arba eilutę).
-
-
-Pythone šis ciklas kiek skiriasi nuo kitų kalbų, pagal tai kaip aprašomos sąlygos, tačiau esminė logika išlieka ta pati - iteruoti per tam tikrą rinkinį objektų. 
+`for` ciklas naudojamas iteruojant seką (`list`, `tuple`, 'dict' ir t.t).
 
 
-Naudodami for ciklą galime atlikti keletą veiksmų, po vieną kartą kiekvienam sąrašo, tuple, aibės ir t. t. elementui.
+Python kalboje šis ciklas kiek skiriasi nuo kitų kalbų, pagal tai kaip aprašomos sąlygos, tačiau esminė logika išlieka ta pati - iteruoti per tam tikrą rinkinį objektų. 
 
-#### ciklas per sąrašus
+
+Naudodami `for` ciklą galime atlikti keletą veiksmų, kiekvienam `list`, `tuple`, 'set' ir t.t elementui.
+
+#### `for` su `list`
+
 ```python
 names = ["Albert", "Tom", "Leonardo"]
 for name in names:
-    print(f "Sveiki, {pavadinimas}")
+    print(f"Greetings, {name}")
 ```
-#### ciklas per eilutes
+#### `for` su `strings`
 
 ```python
 name = "Code Academy"
@@ -53,33 +55,33 @@ for character in name :
     print(character)
 ```
 
-#### prasukime ciklą per žodynus:
+#### `for` su `dict`:
 
 ```python
-my_dict = {"name": "Albert", "role": "Albert": "Albert", "Albert", "Albert", "Albert", "Albert", "Albert".}
+my_dict = {"name": "Albert", "role": "scientist"}
 
 for key, value in my_dict.items():
     print(key, value)
 ```
 
-#### ciklas per setus, tuples:
-Tai lygiai tas pats, kaip ir su sąrašais
+#### `for` su  `sets`, `tuples`:
+
 ```python
 names = ("Albert", "Tom", "Leonardo")
 for name in names:
-    print(f "Sveiki atvykę, {pavadinimas}")
+    print(f"Greetings, {name}")
 ```
 
 
 ```python
 names = {"Albert", "Tom", "Leonardo"}
 for name in names:
-    print(f "Sveiki atvykę, {pavadinimas}")
+    print(f"Greetings, {name}")
 ```
 
-## range() funkcija
+### `range()` funkcija
 
-Funkcija range() grąžina skaičių seką, kuri pagal numatytuosius nustatymus prasideda nuo 0, didėja 1 (pagal numatytuosius nustatymus) ir sustoja prieš nurodytą skaičių.
+Funkcija `range()` grąžina skaičių seką, kuri pagal numatytuosius nustatymus prasideda nuo 0, didėja 1 (pagal numatytuosius nustatymus) ir sustoja prieš nurodytą skaičių.
 
 
 #### Sintaksė
