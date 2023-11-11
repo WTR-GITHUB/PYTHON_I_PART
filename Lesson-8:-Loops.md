@@ -121,7 +121,7 @@ while i < 6:
   i += 1
 ```
 
-### continue
+### `continue`
 
 With the `continue` statement we can stop the current iteration, and continue with the next:
 
