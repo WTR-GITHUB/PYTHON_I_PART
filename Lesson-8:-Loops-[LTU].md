@@ -81,11 +81,11 @@ for name in names:
 
 ### `range()` funkcija
 
-Funkcija `range()` grąžina skaičių seką, kuri pagal numatytuosius nustatymus prasideda nuo 0, didėja 1 (pagal numatytuosius nustatymus) ir sustoja prieš nurodytą skaičių.
+Funkcija `range()` grąžina skaičių seką, kuri pagal numatytuosius parametrus prasideda nuo 0, didėja per 1 (arba pagal numatytą parametrą) ir sustoja prieš nurodytą skaičių.
 
 
 #### Sintaksė
-range(start, stop, step)
+`range(start, stop, step)`
 
 | argumentas| reikšmė |
 | ------------- | ------------- |
@@ -106,11 +106,11 @@ for n in range(10):
 ```
 
 
-## break
+### `break`
 
-Naudodami break sakinį galime sustabdyti ciklą, net jei while sąlyga yra teisinga:
+Naudodami `break` komandą, galime sustabdyti ciklą, net jei tarkim, `while` sąlyga yra teisinga:
 
-Šiame pavyzdyje turime apibrėžti indeksuojantį kintamąjį i, kurį nustatome į 0.
+Šiame pavyzdyje turime apibrėžti indeksuojantį kintamąjį `i`, kurio pradinė reikšmė `0`.
 
 ```python
 i = 1
@@ -121,9 +121,9 @@ while i < 6:
   i += 1
 ```
 
-## tęsti
+### `continue`
 
-Naudodami teiginį continue galime sustabdyti dabartinę iteraciją ir tęsti kitą:
+Naudodami `continue` galime sustabdyti dabartinę iteraciją ir pradėti kitą:
 
 
 ```python
@@ -137,11 +137,11 @@ while i < 6:
 
 ## 🧠 Pratimai
 
-1. Sukurkite kintamuosius, kuriuose būtų vartotojo vardo ir slaptažodžio stringai. Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį. Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
-1. Leiskite naudotojui įvesti 10 sveikųjų skaičių, tada spausdinkite šių įvestų skaičių sumą ir vidurkį.
-1. Sugeneruokite 10 raktų žodyną: 1,2,3...10. Kiekviename iš jų turėtų būti įrašyta atsitiktinio sveikojo skaičiaus vertė nuo 1 iki 100.
-1. Sukurkite PIN kodo nulaužimo programą. Tarkime, PIN kodą sudaro 4 atsitiktiniai skaitmenys. Reikšmę galite saugoti kintamajame. Tada sukurkite ciklą, einantį per visas galimas kombinacijas, kol rasite tą, kurią įvedėte.
+1. Sukurkite kintamuosius, kuriuose reprezentuotų vartotojo vardą ir slaptažodį. Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį. Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
+2. Leiskite naudotojui įvesti 10 sveikųjų skaičių, tada spausdinkite šių įvestų skaičių sumą ir vidurkį.
+3. Sugeneruokite `dict` iš 10 skaitmenų (`keys`): 1,2,3...10. Kiekvienam `key` turėtų būti priskirta atsitiktinio sveikojo skaičiaus vertė nuo 1 iki 100.
+4. Sukurkite PIN kodo nulaužimo programą. Tarkime, PIN kodą sudaro 4 atsitiktiniai skaitmenys. Reikšmę galite saugoti kintamajame. Tada sukurkite ciklą, einantį per visas galimas kombinacijas, kol rasite tą, kurią įvedėte.
 
 ## 🌐 Papildomas skaitymas:
 
-* [daugiau apie ciklus] (https://www.dataquest.io/blog/tutorial-advanced-for-loops-python-pandas/)
+* [Ciklai] (https://www.dataquest.io/blog/tutorial-advanced-for-loops-python-pandas/)
