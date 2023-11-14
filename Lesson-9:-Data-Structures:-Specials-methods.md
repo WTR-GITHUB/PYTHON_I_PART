@@ -1,14 +1,14 @@
-# Data Structure: Special methods
+## Data Structure: Special methods
 
 In this lecture we will review some additional functionalities of python built-in data structures. And also review **`math`** library
 
-## List comprehensions
+### `List comprehensions`
 
-It is a very useful way of making your loops more compact/ readable/ understandable. 
+It is a very useful way of making your `loops` more compact/ readable/ understandable. 
 
 Example:
 
-Let's say you want a program that gets first 10 perfect squares, how do you do it?
+Let's say you want a program that gets first 10 perfect squares:
 
 ```python
 squares = []
@@ -24,27 +24,23 @@ squares = [number * number for number in range(10)]
 print(squares)
 ```
 
-Neat isn't it? All it does is the following:
+All it does is the following:
 
-1. creates squares as a list.
-1. inside of the list it says that we are looping all the numbers in `range(10)`
-1. each object in the list is going to be that number in the loop multiplied by the number: `number * number`
+1. Creates squares as a `list`.
+2. Inside of the `list` it says that we are looping all the numbers in `range(10)`
+3. Each object in the `list` is going to be that number in the `loop` multiplied by the number: `number * number`
 
 
-What is more, what if we wanted to have all the perfect squares except 25? Try writing this one down without list comprehension.
-
-The implementation with list comprehension:
+What is more, what if we wanted to have all the perfect squares except `25`? Try writing this one down without `list` comprehension:
 
 ```python
 squares = [number * number for number in range(10) if number != 5]
 print(squares)
 ```
 
-**Boom**, simple yet efficient and still super human readable. 
+Simple, yet efficient and still super human readable. 
 
-Now trying writing down a list comprehension yourself that would only return perfect square of even numbers:
-
-
+Now lets try to write down a `list` comprehension that would only return perfect `square` of `even numbers`:
 
 
 Answer
@@ -53,9 +49,8 @@ squares = [number * number for number in range(10) if number % 2 == 0]
 print(squares)
 ```
 
-Alright for now we have seen such numbers with only integers, but can we work with strings too? Ofcourse!
 
-let's say you have list of names and want to filter our only the ones starting with certain letter:
+Let's say you have `list` of names and want to filter our only the ones starting with certain letter:
 
 ```python
 names = ["Albert", "Alma", "Joseph", "Zoro"]
@@ -69,18 +64,17 @@ names = ["Albert", "Alma", "Joseph", "Zoro"]
 print([name for name in names if name.startswith("A") or "e" in name])
 ```
 
-As you can see you can chain as much logic as you want to here. But it is best to keep there list comprehensions as short as possible because if you have too much logic here, it might become impossible to understand even for you after couple of days...
+As we see you can chain as much logic as you want to here. But it is best to keep there list comprehensions as short as possible because if you have too much logic here, it might become impossible to understand.
 
-### **Note** ❗ The list, set, tuple comprehensions work exactly the same except that outer brackets are different, everything else stays the same.
+### **Note** ❗ The `list`, `set`, `tuple` comprehensions work exactly the same except that outer brackets are different, everything else stays the same.
 
 
-## Dictionary comprehensions
+### `Dictionary comprehensions`
 
-Dictionaries also have this fancy one liner comprehension functionality:
+`Dictionaries` also have this fancy one liner comprehension functionality:
 
 Let's say we have the same problem of perfect squares but we want to have _number: percect_square_ structure like this: **`{1: 1, 2: 4, 3: 9}`**
 Try writing this without dictionary comprehension yourself.
-
 
 Dictionary comprehension example:
 
@@ -90,12 +84,12 @@ print(squares)
 ```
 
 Try doing both exercises done with lists:
-1. program without perfect square of 5.
-1. only odd numbers.
+1. Program without perfect square of 5.
+2. Only odd numbers.
 
-## Enumerate
+### `Enumerate`
 
-Let's imagine we have a python loops over some items in the list:
+Let's imagine we iterate over some items in the `list`:
 
 ```python
 values = ["a", "b", "c"]
@@ -104,9 +98,7 @@ for value in values:
     print(value)
 ```
 
-it is a simple nice loop, that does all it has to. Now imagine you also want to get the corresponding index of the item. How would you do it?
-
-You could do something like this:
+it is a simple nice `loop`, that does all it has to. Now imagine you also want to get the corresponding index of the item:
 
 ```python
 values = ["a", "b", "c"]
@@ -117,7 +109,7 @@ for value in values:
     index += 1
 ```
 
-So here we have an integer that increments with each iteration and it also works. But too keep our code simpler we may use python build int function **`enumerate()`**
+So here we have an `integer` that increments with each iteration and it also works. But too keep our code simpler we may use python build in function **`enumerate()`**
 
 
 ```python
@@ -137,7 +129,7 @@ for count, value in enumerate(values, start=1):
 
 If we go a bit crazy we can combine two things we learned today:
 ```python
-def even_items(numbers: list):
+def even_items(numbers: list) -> list:
     return [v for i, v in enumerate(numbers, start=1) if not i % 2]
 
 seq = list(range(1, 11))
@@ -147,17 +139,15 @@ print(even_items(seq))
 
 Go through this once yourself, operate small things out and combine them together once again.
 
-**NOTE** enumerate returns an iterator so if you want to look what's inside you can either loop through it or convert it to list.
+**NOTE** `enumerate` returns an iterator so if you want to look what's inside you can either loop through it or convert it to `list`.
 
 
-## math library
+### `mat` library
 
-for many math specifics you can use math library in python. It is a built in library simply just:
+For most math specific calculations you can use `math` library in `python`:
 ```python
 import math
 ```
-
-and you are good to go.
 
 For example if you wanted to calculate a circle area:
 
@@ -166,11 +156,11 @@ import math
 area = 5 * 5 * math.pi
 ```
 
-math.pi here is a constact which we can you straight out of the box.
+`math.pi` here is a constant which we can you straight out of the box.
 
-There are plenty more functions we could spend all day reviewing this library cause it's huge, but let's look into couple of more functions.
+Some more functionality:
 
-### factorial
+### `factorial`
 
 For example if we wanted to calculate factorial: `7! = 7 * 6 * 5 * 4 * 3 * 2 * 1`
 
@@ -181,12 +171,12 @@ import math
 math.factorial(7)
 ```
 
-What is more it is actually quite optimised as well.
+What is more it is actually quite optimized as well.
 
 
-### ceil() and floor()
+#### `ceil()` and `floor()`
 
-All there functions do is that if you have a float value, it can literaly get "floor" or "ceiling" of it. Examples:
+All there functions do is that if you have a `float` value, it can literally get `floor` or `ceiling` of it. Examples:
 
 
 ```python
@@ -201,14 +191,10 @@ print(math.floor(-11.1))
 Is this clear?
 
 
-### power functions
+#### `power function`
 
 
-Let's say you want to have a number raised by the power of n: 5^5 = 5 * 5 * 5 * 5 * 5 = 3125
-
-Do this without math.
-
-with math:
+Let's say you want to have a number raised by the power of `n: 5^5 = 5 * 5 * 5 * 5 * 5 = 3125`
 
 
 ```python
@@ -218,7 +204,7 @@ print(math.pow(5, 5))
 ```
 
 
-### square root
+#### square root
 
 
 ```python
@@ -226,15 +212,8 @@ import math
 print (math.sqrt(9))
 ```
 
-There are many more things in math library as said before, here we reviewed just a tiny bit. But bottom line is that if you ahve something to do with math, logarithms, working with angles, trigonometry etc.
+There is more functionality in math library as said before, here we reviewed just a tiny bit
 
-
-## 🌐  Extra reading:
-
-* [Real Pyhton comprehensions](https://realpython.com/list-comprehension-python/)
-
-* [Real Python math](https://realpython.com/python-math-module/)
-***
 
 
 ## Exercises 🧠 :
@@ -245,3 +224,10 @@ There are many more things in math library as said before, here we reviewed just
 1. Given the same string as in previous exercise: calculate count of words that have more than 5 characters.
 1. Given the same string calculate the occurrence of each letter in the string. (HINT: store everything in dictionary)
 1. Write a program that checks if given number is a perfect square.
+
+## 🌐  Extra reading:
+
+* [Real Pyhton comprehensions](https://realpython.com/list-comprehension-python/)
+
+* [Real Python math](https://realpython.com/python-math-module/)
+***
