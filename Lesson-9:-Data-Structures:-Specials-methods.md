@@ -204,7 +204,7 @@ print(math.pow(5, 5))
 ```
 
 
-#### square root
+#### `square root`
 
 
 ```python
