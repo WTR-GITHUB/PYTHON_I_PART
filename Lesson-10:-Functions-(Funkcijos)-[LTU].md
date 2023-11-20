@@ -128,13 +128,14 @@ integer_division(10, 2)
 ```
 
 ## ℹ️ Trumpas įvadas į tipo anotacijas
-`tipo anotacijomis`, Python kalboje yra visiškai neprivalomos. Vis dėlto jų naudojimas jūsų kode yra labai naudingas.
-Pythone vartojamas tipo terminas reiškia objekto **tipą**. Objektai daugiausia yra daiktai, kuriuose yra duomenų, o funkcijos veikia tuos duomenis. Pavyzdžiui; Python objektas "integer" gali saugoti sveikojo skaičiaus reikšmes ir su juo galima atlikti tam tikras užduotis, pavyzdžiui, atlikti aritmetinius skaičiavimus.
+`Tipo anotacijomis`, Python kalboje yra visiškai neprivalomos. Vis dėlto jų naudojimas jūsų kode yra labai naudingas.
+Pythone vartojamas tipo terminas reiškia objekto **tipą**. Objektai Python kalboje daužniausia yra struktūra, kuriuose yra duomenų, o funkcijos atlieka 
+ veiksmus su tais duomenimis. Pavyzdžiui; Python objektas "integer" gali saugoti sveikojo skaičiaus reikšmes ir su juo galima atlikti tam tikras užduotis, pavyzdžiui, atlikti aritmetinius skaičiavimus.
 
-Objektai turi griežtus tipus. Negalite saugoti eilutės reikšmės sveikojo skaičiaus objekto tipe, nes tai neleidžiama šiame konkrečiame tipe. Tačiau vardai, kuriuos naudojame savo kode, gali nurodyti į bet kurį objekto tipą. Turite skirti šiek tiek laiko kodo peržiūrai, kad suprastumėte, kaip galima naudoti konkretų vardą, jei objektų tipai nėra aiškiai anotuoti. Tai bus akivaizdesnė problema, jei turite sudėtingą kodo bazę.
+Objektai turi apibrėžtus tipus. Negalite saugoti eilutės reikšmės sveikojo skaičiaus objekto tipe, nes tai neleidžiama šiame konkrečiame tipe. Tačiau vardai, kuriuos naudojame savo kode, gali nurodyti į bet kurį objekto tipą. Turite skirti šiek tiek laiko kodo peržiūrai, kad suprastumėte, kaip galima naudoti konkretų vardą, jei objektų tipai nėra aiškiai anotuoti. Tai bus akivaizdesnė problema, jei turite sudėtingą kodo bazę.
 
-Šiam sunkumui spręsti "Python 3.5" įdiegtos tipų užuominos.
-Paprastas funkcijos, kuri sudeda du skaičius, pavyzdys (be `tipų užuominų`):
+Šiam sunkumui spręsti "Python 3.5" įdiegtos `tipų anotacijos`.
+Paprastas funkcijos, kuri sudeda du skaičius, pavyzdys (be `tipų anotacijų`):
 
 ```python
 def add_two_int_numbers(a,b):
@@ -149,9 +150,9 @@ def add_two_int_numbers(a: int, b: int) -> int:
 ```
 
 #### Kodėl reikia naudoti tipo anotacijas? 
-* Statiškai tipinės kalbos reikalauja, kad apibrėžtumėte objektų tipus, ir jos gali pagauti klaidas prieš paleidimo laiką. Python yra dinamiškai tipizuota kalba ir neverčia jūsų to daryti. Šis lankstumas turi savo kainą. Padidėjus jūsų kodo bazei, gali būti sudėtinga spręsti paleidimo metu atsirandančias TypeErrors klaidas, jei neapibrėšite tipų su tipų užuominomis.
+* Statiškai tipinės kalbos reikalauja, kad apibrėžtumėte objektų tipus, ir jos gali pagauti klaidas prieš paleidimo laiką. Python yra dinamiškai tipais apibrėžiama kalba ir neverčia jūsų to daryti. Šis lankstumas turi savo kainą. Padidėjus jūsų kodo bazei, gali būti sudėtinga spręsti paleidimo metu atsirandančias `TypeErrors` klaidas, jei neapibrėšite tipų su tipų anotacijomis.
 * Turite apsvarstyti galimybę naudoti tipų užuominas, kad padėtumėte kitiems ir sau. Tipų užuominos padidina kodo skaitomumą, kai kodas yra savaime suprantamas.
-* Tipų užuominos taip pat padeda kurti ir palaikyti švaresnę kodo architektūrą, nes į tipus reikia atsižvelgti juos anotuojant savo kode.
+* Tipų anotacijos taip pat padeda kurti ir palaikyti švaresnę kodo architektūrą, nes į tipus reikia atsižvelgti juos anotuojant savo kode.
 
 #### Keletas pavyzdžių, kuriuos lengva sekti:
 
@@ -164,7 +165,7 @@ type_annotation_float: float = 2,54
 type_annotation_string: str = 'efe'
 type_annotation_bool: bool = True
 ```
-Taip pat galite anotuoti sudėtingesnius integruotus duomenų tipus, pavyzdžiui, diksus, sąrašus ir tuples. Prieš tai reikia importuoti (apie tai sužinosime kitoje paskaitoje) tipavimo modulį.
+Taip pat galite anotuoti sudėtingesnius integruotus duomenų tipus, pavyzdžiui, `dict`, `list` ir `tuple`. Prieš tai reikia importuoti (apie tai sužinosime kitoje paskaitoje) anotacijų modulį.
 
 ```python
 from typing import List, Tuple
@@ -173,7 +174,7 @@ type_annotation_list: List[str] = ['a', 'b', 'c']
 type_annotation_dict: Dict[str, int] = {'a': 1, 'b': 2}
 ```
 **Duomenų tipų derinimas**:
-Jei jūsų kintamasis arba grąžinamas tipas gali būti kelių skirtingų tipų, galite naudoti Union tipo anotaciją.
+Jei jūsų kintamasis arba grąžinamas tipas gali būti kelių skirtingų tipų, galite naudoti `Union` tipo anotaciją.
 
 Iki "Python 3.10" įdiegimas atrodo taip:
 
@@ -182,37 +183,38 @@ from typing import List, Dict
 uniontype_annotation_list: List[Union[float,int]] = [1.23, 3.32, 1, 3]
 type_annotation_dict: Dict[str, Union[float,int]] = {'a': 1, 'b': 2}
 ```
-Anotacija List[Union[float[float,int]]] reiškia, kad kintamasis type_annotation_list turėtų būti sąrašas, kurio kiekvienas elementas yra arba slankiojo kablelio, arba sveikasis skaičius.
+Anotacija `List[Union[float[float,int]]]` reiškia, kad kintamasis `type_annotation_list` turėtų būti `list`, kurio kiekvienas elementas yra arba `float`, arba `int`.
 
 Python 3.10 versijoje Union galima pakeisti naujuoju union operatoriumi | ir jums nereikia nieko importuoti iš rašymo modulio:
 ```python
 type_annotation_list: Sąrašas[float | int]= [1.23, 3.32, 1, 3]
 ```
-**Neprivalomas operatorius**:
-Pasirenkamasis[???] - tai sutrumpintas Union[???, None] variantas, kuris iš esmės nurodo, kad reikalingas arba konkretaus tipo objektas, arba None.
+**Optional operatorius**:
+
+Optional[???] - tai sutrumpintas Union[???, None] variantas, kuris iš esmės nurodo, kad reikalingas arba konkretaus tipo objektas, arba `None`.
 ```python
 type_annotation_list: List[Optional[int]] = [1, 3]
 ```
-Šis įgyvendinimas pasikeitė su 3.10 versija: dabar Optional galima užrašyti kaip List [int | None]
+Šis įgyvendinimas pasikeitė su 3.10 versija: dabar `Optional` galima užrašyti kaip List [int | None]
 
 **Funkcijų anotacijos**:
-Ankstesniame pavyzdyje matėme, kaip pridėti tipo užuominas prie grąžinimo tipo, argumentų . Dabar sudėtingesnis pavyzdys:
+Ankstesniame pavyzdyje matėme, kaip pridėti tipo anotacijas prie grąžinimo tipo, argumentų . Dabar sudėtingesnis pavyzdys:
 ```python
-from typing import Tuple, Optional
+from typing import Tuple, Optional, Union
 
 def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None) -> str:
-   return 'Jūs iškvietėte the_func su ' + str(x) + str(y) + str(z)
+   return 'You called the_func with ' + str(x) + str(y) + str(z)
 ```
-Šis pavyzdys rodo, kad the_func() priima tris argumentus, x, y ir z, kad x gali būti sveikasis skaičius arba kintamasis, y turi būti tuple, kuriame saugomos eilutės, o z gali būti none arba kintamasis. Grąžinimo tipas yra str, kurį nurodote naudodami -> po baigiamųjų skliaustų, bet prieš dvitaškį.
+Šis pavyzdys rodo, kad `the_func()` priima tris argumentus, `x`, `y` ir `z`, kad `x` gali būti `int` arba `float`, `y` turi būti `tuple`, kuriame saugomi `string`, o `z` gali būti `none` arba `float`. Grąžinimo tipas yra `str`, kurį nurodote naudodami `->` po baigiamųjų skliaustų, bet prieš dvitaškį.
 ℹ️ 
 
 ## Užduotys
 
-❗ Visose užduotyse turi būti nurodyti tipai ❗ 
+❗ Visose užduotyse turi būti nurodyti tipų anotacijos❗ 
 * Patys sukurkite bent 5 skirtingas funkcijas ir jas išbandykite.
-* Sukurkite funkciją, kuri prie kiekvieno sąrašo nario prideda eilutės galūnę.
-* Sukurkite mini python programą, kuri kaip įvestį paimtų du skaičius ir grąžintų jų sumą, atimtį, dalybą, daugybą.
-* Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias eilutes.
+* Sukurkite funkciją, kuri prie kiekvieno `list` nario prideda `string` galūnę.
+* Sukurkite mini python programą, kuri kaip įvestį paimtų du skaičius ir grąžintų jų `sumą`, `atimtį`, `dalybą`, `daugybą`.
+* Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias `string` reikšmes.
 
 
 ## 🌐 Papildomas skaitymas:
