@@ -1,6 +1,7 @@
 ## Įvadas 
-Kas yra funkcija?
-Funkcijos yra patogus būdas suskirstyti kodą į naudingus blokus, leidžiantis sutvarkyti kodą, padaryti jį skaitomesnį, pakartotinai naudoti ir sutaupyti šiek tiek laiko. Be to, funkcijos yra pagrindinis būdas apibrėžti sąsajas, kad programuotojai galėtų dalytis savo kodu.
+
+**Kas yra funkcija**?
+Funkcijos yra patogus būdas suskirstyti kodą į naudingus blokus, leidžiantis sutvarkyti kodą, padaryti jį skaitomesnį, pakartotinai naudoti ir sutaupyti šiek tiek laiko. Be to, funkcijos yra pagrindinis būdas apibrėžti **sąsajas**, kad programuotojai galėtų dalytis savo kodu.
 Pythone funkciją apibrėžiate raktiniu žodžiu _**def**_, tada rašote funkcijos identifikatorių (pavadinimą), po kurio seka skliaustai ir dvitaškis.
 Kitas dalykas, kurį turite padaryti, tai įsitikinti, kad įterpėte skirtuką arba 4 tarpus, o tada nurodykite, ką norite, kad funkcija jums atliktų.
 
@@ -16,7 +17,7 @@ def print_smth():
     print('Hello world!')
 ```
 
-Arba atspausdina atsitiktinį `int` skaičių nuo 0 iki 10:
+Arba atspausdina atsitiktinį `int` skaičių nuo `0` iki `10`:
 
 ```python
 def get_random_number():
@@ -31,9 +32,9 @@ print_smth()
 
 ```
 
-## Pavadinimų suteikimas
+### Pavadinimų suteikimas (`naming`)
 
-Pasirinkti kintamųjų, funkcijų ir (arba) klasių pavadinimus ir pan. gali būti sudėtinga. Rašydami kodą turėtumėte gerai apgalvoti pavadinimų pasirinkimą, nes taip jūsų kodas bus lengviau skaitomas. Geriausias būdas pavadinti objektus Python programoje - naudoti aprašomuosius pavadinimus, kad būtų aišku, ką objektas simbolizuoja.
+Pasirinkti kintamųjų, funkcijų ir (arba) klasių pavadinimus ir pan. gali būti sudėtinga. Rašydami kodą turėtumėte gerai apgalvoti pavadinimų pasirinkimą, nes taip jūsų kodas bus lengviau skaitomas. Geriausias būdas pavadinti `objektus` Python programoje - naudoti aprašomuosius pavadinimus, kad būtų aišku, ką objektas simbolizuoja.
 
 Pagrindinės taisyklės tokios: 
 
@@ -58,7 +59,7 @@ def _get_smth():
   perduoti
 ```
 
-* Jei metodo vardą reikia iškraipyti, metodo vardo pradžioje naudokite du iš eilės einančius pabraukimus.
+* Privataus metodo vardo pradžioje naudokite du iš eilės einančius pabraukimus.
 
 ```python
 def __get_secret():
@@ -67,35 +68,35 @@ def __get_secret():
 
 Labai geras pavadinimų suteikimo taisyklių ir pavyzdžių šaltinis yra čia: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9) ❗ **Turite perskaityti!** ❗
 
-## Grąžinimo teiginys 
-Grąžinimo teiginiai naudojami funkcijai užbaigti ir grąžinti išraišką, kurią galima naudoti vėliau. Tačiau jos nėra privalomos ir gali būti nenaudojamos, jei jų nereikia.
+## `return` teiginys 
+`return` teiginiai naudojami funkcijai užbaigti ir grąžinti išraišką, kurią galima naudoti vėliau. Tačiau jos nėra privalomos ir gali būti nenaudojamos, jei jų nereikia.
 Sintaksė:
 ```
-return [išraiška]
+return [expression]
 ```
-#### Keletas pavyzdžių:
+### Keletas pavyzdžių:
 
 ```python
 def find_sum(num1, num2):
-    '''Grąžina num1 ir num2 sumą.''''
-    sum_nums = num1 + num2 # Suranda num1 ir num2 sumą
-    return sum_nums # Grąžina skaičių sumą
+    '''Returns the sum of num1 and num2.'''
+    sum_nums = num1 + num2  # Finds the sum of num1 and num2
+    return sum_nums  # Returns the sum of the numbers
 ```
 
 ```python
 def even_odd(num):
 
     '''
-    Grąžina "lyginis", jei num yra lyginis, ir "nelyginis", jei num yra nelyginis.    
-    Parametrai:
-        (int): Grąžinama:
-        type (eilutė): "lyginis", jei num yra lyginis; "nelyginis", jei num yra nelyginis
+    Returns "even" if num is even, and "odd" if num is odd.    
+    Parameters:
+        num (int): Any integer    Returns:
+        type (string): "even" if num is even; "odd" if num is odd
     '''
 
-    if num % 2 == 0: # Patikrina, ar num/2 turi likutį 0
-        return "lyginis" # Jei likutis lygus 0, grąžinama "lyginis"
+    if num % 2 == 0:  # Checks if num/2 has a remainder of 0
+        return "even"  # If it has a remainder of 0, return "even"
     else:
-        # Jei neturi, grąžinama "nelyginis".
+        return "odd"  # If it doesn't, return "odd"
 ```
 
 
@@ -110,15 +111,15 @@ def check_if_exist(a=None):
     
 ```
 
-## Funkcijų parametrai:
+## Funkcijų parametrai (argumentai):
 Parametrai, arba argumentai, yra reikšmės, kurias galite perduoti funkcijai ir nuo kurių priklauso, kaip bus vykdoma funkcija. Yra įvairių būdų, kaip galime perduoti parametrus.
 
-Poziciniai parametrai:
+### Poziciniai parametrai:
 Dažniausiai parametrai perduodami iškviečiant funkciją ir perduodant parametrus toje pačioje pozicijoje, kaip ir funkcijos apibrėžime. Paimkime dalijimo funkcijos pavyzdį:
 
 ```python
 def integer_division(num_one, num_two):
-    // num_vienas // num_dvi
+    return num_one // num_two
 
 integer_division(10, 2)
 
@@ -126,9 +127,9 @@ integer_division(10, 2)
 >>>> 5
 ```
 
-## ℹ️ Trumpas įvadas į tipo užuominas
-Tipo užuominos, dar vadinamos `tipo anotacijomis`, Pythone yra visiškai neprivalomos. Vis dėlto jų naudojimas jūsų kode yra labai naudingas.
-Pythone vartojamas tipo terminas reiškia objekto tipą. Objektai daugiausia yra daiktai, kuriuose yra duomenų, o funkcijos veikia tuos duomenis. Pavyzdžiui; Python objektas "integer" gali saugoti sveikojo skaičiaus reikšmes ir su juo galima atlikti tam tikras užduotis, pavyzdžiui, atlikti aritmetinius skaičiavimus.
+## ℹ️ Trumpas įvadas į tipo anotacijas
+`tipo anotacijomis`, Python kalboje yra visiškai neprivalomos. Vis dėlto jų naudojimas jūsų kode yra labai naudingas.
+Pythone vartojamas tipo terminas reiškia objekto **tipą**. Objektai daugiausia yra daiktai, kuriuose yra duomenų, o funkcijos veikia tuos duomenis. Pavyzdžiui; Python objektas "integer" gali saugoti sveikojo skaičiaus reikšmes ir su juo galima atlikti tam tikras užduotis, pavyzdžiui, atlikti aritmetinius skaičiavimus.
 
 Objektai turi griežtus tipus. Negalite saugoti eilutės reikšmės sveikojo skaičiaus objekto tipe, nes tai neleidžiama šiame konkrečiame tipe. Tačiau vardai, kuriuos naudojame savo kode, gali nurodyti į bet kurį objekto tipą. Turite skirti šiek tiek laiko kodo peržiūrai, kad suprastumėte, kaip galima naudoti konkretų vardą, jei objektų tipai nėra aiškiai anotuoti. Tai bus akivaizdesnė problema, jei turite sudėtingą kodo bazę.
 
@@ -137,17 +138,17 @@ Paprastas funkcijos, kuri sudeda du skaičius, pavyzdys (be `tipų užuominų`):
 
 ```python
 def add_two_int_numbers(a,b):
-  grąžinti a + b
+  return a + b
 ```
 
-Ir su `tipo užuominomis`: 
+Ir su `tipo anotacijomis`: 
 
 ```python
 def add_two_int_numbers(a: int, b: int) -> int:
   return a + b
 ```
 
-#### Kodėl reikia naudoti tipo užuominas? 
+#### Kodėl reikia naudoti tipo anotacijas? 
 * Statiškai tipinės kalbos reikalauja, kad apibrėžtumėte objektų tipus, ir jos gali pagauti klaidas prieš paleidimo laiką. Python yra dinamiškai tipizuota kalba ir neverčia jūsų to daryti. Šis lankstumas turi savo kainą. Padidėjus jūsų kodo bazei, gali būti sudėtinga spręsti paleidimo metu atsirandančias TypeErrors klaidas, jei neapibrėšite tipų su tipų užuominomis.
 * Turite apsvarstyti galimybę naudoti tipų užuominas, kad padėtumėte kitiems ir sau. Tipų užuominos padidina kodo skaitomumą, kai kodas yra savaime suprantamas.
 * Tipų užuominos taip pat padeda kurti ir palaikyti švaresnę kodo architektūrą, nes į tipus reikia atsižvelgti juos anotuojant savo kode.
