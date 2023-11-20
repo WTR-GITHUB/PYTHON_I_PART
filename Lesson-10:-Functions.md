@@ -1,4 +1,5 @@
 ## Introduction 
+
 What is a function?
 Functions are **a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time**. Also functions are a key way to define interfaces so programmers can share their code.
 In Python, you define a function with the _**def**_ keyword, then write the function identifier (name) followed by parentheses and a colon.
@@ -30,9 +31,10 @@ print_smth()
 
 ```
 
-## Naming
+## `Naming`
 
-Choosing names for your variables, functions and/or classes, and so forth can be challenging. You should put a fair amount of thought into your naming choices when writing code as it will make your code more readable. The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.
+Choosing names for your `variables`, `functions` and/or `classes`, and so forth can be challenging. You should put a fair amount of thought into your naming choices when writing code as it will make your code more readable. The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.
+
 Main rules as follows: 
 * Use only lowercase in method names.
 ```python
@@ -57,8 +59,8 @@ def __get_secret():
 
 A very good source of naming rules and examples are here: [Python Function Naming](https://melevir.medium.com/python-functions-naming-tips-376f12549f9) ❗ **Must be read!** ❗
 
-## Return statement 
-Return statements are used to end a function while returning an expression that can be used later on. However, they are not mandatory and can be left out when unneeded.
+## `return` statement 
+`return` statements are used to end a function while returning an expression that can be used later on. However, they are not mandatory and can be left out when unneeded.
 Syntax:
 ```
 return [expression]
@@ -100,10 +102,10 @@ def check_if_exist(a=None):
     
 ```
 
-## Parameters in Functions:
-Parameters, or arguments, are values that you can pass to a function that will determine how a function will get executed. There are different ways on how we can pass the parameters.
+## `Parameters` in functions:
+`Parameters`, or `arguments`, are values that you can pass to a function that will determine how a function will get executed. There are different ways on how we can pass the parameters.
 
-Positional Parameters:
+### `Positional Parameters`
 The most common type of passing parameters is by calling a function and passing the parameters in the same position as in the definition of the function. Let’s take an example of a division function:
 
 ```python
@@ -115,7 +117,7 @@ integer_division(10, 2)
 ----OUTPUT----
 >>>> 5
 ```
-Keyword Parameters:
+### `Keyword Parameters`:
 We can also pass the parameters in a key=value format when calling a function. This means we don’t require to keep the sequence in mind. Consider the same function as above:
 
 ```python
@@ -129,7 +131,7 @@ integer_division(10, 2)
 ```
 
 ## ℹ️ Short Intro to Type Hints
-Type hints, also known as `type annotations`, are completely optional in Python. Yet, there are huge benefits of using them in your code.
+`Type hints`, also known as `type annotations`, are completely optional in Python. Yet, there are huge benefits of using them in your code.
 The type term used in Python refers to the object type. Objects are mainly things containing data and the functions act on that data. As an example; an integer object in python can store integer values and you can perform some tasks with that object, such as doing arithmetic calculations.
 
 Objects have strict types. You cannot store a string value in an integer object type as this is not allowed in that specific type. But names we use in our code can point to any object type. You have to spend some time reviewing the code to understand how a specific name can be used if object types are not clearly annotated. This will be a more obvious problem if you have a complex code base.
@@ -203,7 +205,7 @@ from typing import Tuple, Optional, Union
 def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None) -> str:
    return 'You called the_func with ' + str(x) + str(y) + str(z)
 ```
-This example shows you that the_func() takes three arguments, x, y, and, z that x can be either an integer or float, y should be tuple storing strings and the z can be either none or float. The return type is str, which you specify using the -> after the ending parentheses but before the colon.
+This example shows you that `the_func()` takes three arguments, `x`, `y`, and, `z` that x can be either an `integer` or `float`, `y` should be `tuple` storing `strings` and the `z` can be either `none` or `float`. The return type is `str`, which you specify using the -> after the ending parentheses but before the colon.
 ℹ️ 
 
 ## Exercises: 
@@ -211,9 +213,9 @@ This example shows you that the_func() takes three arguments, x, y, and, z that 
 
 ❗ All tasks must include types ❗ 
 * Create at least 5 different functions by your own and test it.
-* Create a function that adds a string ending to each member in a list.
-* Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication.
-* Create a function that returns only strings with unique characters.
+* Create a function that adds a `string` ending to each member in a `list`.
+* Create a mini python program which would take two `numbers` as an input and would return their `sum`, `subtraction`, `division`, `multiplication`.
+* Create a function that returns only `strings` with unique characters.
 
 
 ## 🌐  Extra reading:
