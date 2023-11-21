@@ -1,7 +1,7 @@
 ## `Continue`
 One of the powerful yet less popular feature of Python are the `*args` and the `**kwargs` arguments, `lambda function`.
 
-## `*args`, `**kwargs`
+### `*args`, `**kwargs`
 So, what are the `*args` and `**kwargs` arguments? On a high level, they allow functions to _accept optional arguments_ providing us with the flexibility to call a function with any number of arguments. Therefore, using them allows us to write more flexible classes and modules.
 
 A simple example : 🔽 
