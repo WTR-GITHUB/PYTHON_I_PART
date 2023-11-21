@@ -15,7 +15,7 @@ def check_arguments(mandatory: Any, *args, **kwargs) -> None:
         print(kwargs)
 ```
 
-Above function `check_arguments` requires at least one argument called “mandatory” but it can accept extra positional and keyword arguments as well.
+Above function `check_arguments` requires at least one argument called “mandatory” but it can accept extra `positional` and `keyword` arguments as well.
 If we call the function with additional arguments, `args` will collect extra _positional arguments_ as a **tuple** because the parameter name has a * prefix.
 
 Likewise, `kwargs` will collect extra keyword arguments **as a dictionary** because the parameter name has a ** prefix. Both `args` and `kwargs` will be empty if no extra arguments are passed to the function.
@@ -96,7 +96,7 @@ print(multiplication)
 ```
 
 ### Usage
-The Lambda function is preferred:
+The `lambda` function is preferred:
 
 * When you want one-time usage of the function.
 * When there is a single expression in the function definition.
@@ -109,9 +109,9 @@ However, it is not suitable:
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
-* Write a function that takes two lists and adds the first element in the first list with the first element in the second list, the second element in the 
-  first list with the second element in the second list, etc, etc. Return True if all element combinations add up to the same number. Otherwise, return  
-  False.
+1) Write a function that takes two `lists` and adds the first element in the first `list` with the first element in the second `list`, the second element 
+   in the first `list` with the second element in the second `list`, etc, etc. Return `True` if all element combinations add up to the same number. 
+   Otherwise, return `False`.
   Example: 
 
   ```python
@@ -123,7 +123,7 @@ However, it is not suitable:
   puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
   ```
 
-* There's a great war between the even and odd numbers. Many numbers already lost their lives in this war and it's your task to end this. You have to 
+2) There's a great war between the even and odd numbers. Many numbers already lost their lives in this war and it's your task to end this. You have to 
   determine which group sums larger: the evens or the odds. The larger group wins.
 
   Create a function that takes a list of integers, sums the even and odd numbers separately, then returns the difference between the sums of the even and 
@@ -140,8 +140,8 @@ However, it is not suitable:
   war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
   ```
 
-* You are given an input array of bigrams, and an array of words. Write a function that returns True if every single bigram from this array can be found 
-  at least once in an array of words.
+3) You are given an input array of bigrams, and an array of words. Write a function that returns True if every single bigram from this array can be found 
+   at least once in an array of words.
    
   Example:
   ```python
@@ -151,7 +151,7 @@ However, it is not suitable:
   can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
   can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]) ➞ False
   ```
-* Reimplement some previous solutions using the lambda function. 
+4) Reimplement some previous solutions using the lambda function. 
 ## 🌐  Extra reading:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
