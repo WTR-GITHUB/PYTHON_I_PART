@@ -62,7 +62,7 @@ def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
 <class 'dict'> {'e': 6, 'f': 7}
 ```
 
-## Lambda function
+## `Lambda function`
 **Lambda Functions** are _anonymous_ function in Python. Lambda functions are similar to regular functions. The difference between regular function and lambda function is that they can be **defined without a name** but the normal functions are defined with `def` keyword.
 **_lambda_** keyword is used to define an anonymous or lambda function.
 If we could compare a lambda function with normal function:
@@ -95,7 +95,7 @@ print(multiplication)
 >>> 6
 ```
 
-### Usage
+### `Usage`
 The `lambda` function is preferred:
 
 * When you want one-time usage of the function.
