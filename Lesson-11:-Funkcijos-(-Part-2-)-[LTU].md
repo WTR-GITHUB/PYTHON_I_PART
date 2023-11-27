@@ -1,8 +1,9 @@
-## Tęsinys
-Viena iš galingų, tačiau mažiau populiarių "Python" funkcijų yra *args ir **kwargs argumentai, lambda funkcija.
+## `Tęsinys`
+Viena iš galingų, tačiau mažiau populiarių "Python" funkcijų yra `*args` ir `**kwargs` argumentai, `lambda` funkcija.
 
-## *args, **kwargs
-Taigi, kas yra `*args` ir `**kwargs` argumentai? Aukščiausiu lygiu jie leidžia funkcijoms _priimti neprivalomus argumentus_ ir suteikia mums lankstumo kviesti funkciją su bet kokiu argumentų skaičiumi. Todėl juos naudodami galime rašyti lankstesnes klases ir modulius.
+### `*args`, `**kwargs`
+
+Taigi, kas yra `*args` ir `**kwargs` argumentai? Aukščiausiu lygiu jie leidžia funkcijoms _priimti neprivalomus argumentus_ ir suteikia mums lankstumo kviesti funkciją su bet kokiu argumentų skaičiumi. Todėl juos naudodami galime rašyti lankstesnes klases, funkcijas ir modulius.
 
 Paprastas pavyzdys: 🔽 
 
@@ -15,16 +16,16 @@ def check_arguments(mandatory: Any, *args, **kwargs) -> None:
         print (kvargs)
 ```
 
-Pirmiau pateikta funkcija `check_arguments` reikalauja bent vieno argumento, vadinamo "privalomas", tačiau ji gali priimti ir papildomus pozicinius bei raktinius argumentus.
-Jei iškviesime funkciją su papildomais argumentais, `args` surinks papildomus _pozicinius argumentus_ kaip **tinklą**, nes parametro vardas turi * priešdėlį.
+Pirmiau pateikta funkcija `check_arguments` reikalauja bent vieno argumento, vadinamo "privalomu", tačiau ji gali priimti ir papildomus pozicinius bei raktinius argumentus.
+Jei iškviesime funkciją su papildomais argumentais, `args` surinks papildomus _pozicinius argumentus_ kaip **tuple**, nes parametro vardas turi * priešdėlį.
 
-Taip pat `kwargs` surinks papildomus raktinių žodžių argumentus **kaip žodyną**, nes parametro vardas turi ** priešdėlį. Ir `args`, ir `kwargs` bus tušti, jei funkcijai neperduodami jokie papildomi argumentai.
+Taip pat `kwargs` surinks papildomus raktinių žodžių argumentus **kaip dict**, nes parametro vardas turi ** priešdėlį. Ir `args`, ir `kwargs` bus tušti, jei funkcijai neperduodami jokie papildomi argumentai.
 Kad suprastume `args` ir `kwargs` elgesį, iškvieskime savo `check_arguments` metodą su skirtingais argumentais:
 
 ```python
 >>> check_arguments():
 TypeError:
-"check_arguments() trūksta 1 privalomo pozicinio argumento: 'mandatory'".
+"check_arguments() missing 1 required positional arg: 'mandatory'"
 >>> check_arguments('welcome')
 welcome
 
@@ -35,7 +36,7 @@ welcome
 >>> toy_fun('welcome', 1, 2, 3, name='Sarah', age=26)
 welcome
 (1, 2, 3)
-{"vardas": "Sarah", "amžius": 26}
+{'name': 'Sarah', 'age': 26}
 ```
 👨🏫 ❗ **GERAI ŽINOTI** ❗ 
 ** ``args` ir `kwargs` yra paprasta pavadinimų suteikimo konvencija. Aukščiau pateiktas pavyzdys puikiai veiktų, jei pavadintume juos `*parms` ir `**argv` arba bet kaip kitaip. Tikroji sintaksė yra tik žvaigždutė (*) arba dviguba žvaigždutė (**)**.
@@ -53,21 +54,21 @@ def my_func(a:int, b:int, *args, c: int = 5, d: int = 9, **kwargs) -> None:
     print (a, b)
     print (type(args), args)
     print (c, d)
-    print (type(kvargs), kvargs)
+    print (type(kwargs), kwargs)
 
 >>> my_func(1, 2, 3, 4, 5, e=6, f = 7)
 1, 2
-<klasė 'tuple'> (3, 4, 5)
+<class 'tuple'> (3, 4, 5)
 5, 9
 <class 'dict'> {'e': 6, 'f': 7}
 ```
-## Lambda funkcija
-**Lambda funkcijos** yra _anoniminės_ funkcijos Pythone. Lambda funkcijos yra panašios į įprastas funkcijas. Skirtumas tarp įprastų funkcijų ir lambda funkcijų yra tas, kad jas galima **apibrėžti be pavadinimo**, tačiau įprastos funkcijos apibrėžiamos raktiniu žodžiu `def`.
+### `Lambda` funkcija
+**Lambda funkcijos** yra _anoniminės_ funkcijos Pythone. `Lambda` funkcijos yra panašios į įprastas funkcijas. Skirtumas tarp įprastų funkcijų ir `lambda` funkcijų yra tas, kad jas galima **apibrėžti be pavadinimo**, tačiau įprastos funkcijos apibrėžiamos raktiniu žodžiu `def`.
 **_lambda_** raktažodis naudojamas anoniminei arba lambda funkcijai apibrėžti.
-Jei galėtume palyginti lambda funkciją su įprasta funkcija:
+Jei galėtume palyginti `lambda` funkciją su įprasta funkcija:
 
 * `lambda` funkcija gali priimti bet kokį argumentų skaičių, bet gali turėti tik vieną išraišką, o įprasta funkcija turi tikslų argumentų skaičių, kurį deklaruojame apibrėžimo metu.
-* `Lambda` funkcijos yra vienos eilutės funkcijos. jos kūnas turi išraišką toje pačioje eilutėje, kurioje ji apibrėžiama. Įprastose funkcijose yra kūno blokai, kuriuose apibrėžtos tam tikros vykdomos frazės.
+* `Lambda` funkcijos yra vienos eilutės funkcijos. Jos implementavimas turi išraišką toje pačioje eilutėje, kurioje ji apibrėžiama. Įprastose funkcijose yra funkcijos blokai, kuriuose apibrėžtos tam tikros vykdomos frazės.
 * Kadangi `lambda` yra vienos eilutės funkcija, ji gali būti iškviečiama iš karto, o įprastinė funkcija turi pati save iškviesti ir jai iškviesti reikia laiko.
 
 Paprasta daugybos funkcija: 
@@ -94,8 +95,8 @@ print(multiplication)
 >>> 6
 ```
 
-#### Naudojimas
-Pirmenybė teikiama lambda funkcijai:
+#### `Naudojimas`
+Pirmenybė teikiama `lambda` funkcijai:
 
 * Kai norite, kad funkcija būtų naudojama vieną kartą.
 * Kai funkcijos apibrėžtyje yra viena išraiška.
@@ -104,12 +105,11 @@ Pirmenybė teikiama lambda funkcijai:
 Tačiau jis nėra tinkamas:
 
 * Kai funkciją reikia naudoti vėl ir vėl.
-* kai funkcijos apibrėžtyje yra daug ar sudėtingų išraiškų.
+* Kai funkcijos apibrėžtyje yra daug ar sudėtingų išraiškų.
 
 ## Pratimai: 
-Duomenų struktūros (1 dalis)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(1 dalis)), [Duomenų struktūros (2 dalis)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(2 dalis)), [Sąlyginiai teiginiai](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Ciklai](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), kad užbaigtumėte šią užduotį.
 
-* Parašykite funkciją, kuri paima du sąrašus ir prie pirmojo sąrašo pirmojo elemento prideda antrojo sąrašo pirmąjį elementą, antrojo sąrašo antrąjį 
+1) Parašykite funkciją, kuri paima du `list'us` ir prie pirmojo `list` pirmojo elemento prideda antrojo `list`pirmąjį elementą, antrojo sąrašo antrąjį 
   elementą, antrojo sąrašo antrąjį elementą ir antrojo sąrašo antrąjį elementą. 
   pirmąjį sąrašą su antruoju antrojo sąrašo elementu ir t. t., ir t. t. Grąžinkite True, jei visi elementų deriniai sudaro tą patį skaičių. Priešingu 
   atveju grąžinama False.
@@ -124,7 +124,7 @@ Duomenų struktūros (1 dalis)](https://github.com/CodeAcademy-Online/python-new
   puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
   ```
 
-* Tarp lyginių ir nelyginių skaičių vyksta didelis karas. Šiame kare jau žuvo daug skaičių, todėl tavo užduotis - jį nutraukti. Jūs turite 
+2) Tarp lyginių ir nelyginių skaičių vyksta didelis karas. Šiame kare jau žuvo daug skaičių, todėl tavo užduotis - jį nutraukti. Jūs turite 
   nustatyti, kurios grupės sumos didesnės: lyginių ar nelyginių. Laimi didesnė grupė.
 
   Sukurkite funkciją, kuri paimtų sveikųjų skaičių sąrašą, atskirai suskaičiuotų lyginių ir nelyginių skaičių sumas, tada grąžintų lyginių ir nelyginių 
@@ -141,7 +141,7 @@ Duomenų struktūros (1 dalis)](https://github.com/CodeAcademy-Online/python-new
   war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
   ```
 
-* Jums duotas bigramų masyvas ir žodžių masyvas. Parašykite funkciją, kuri grąžintų True, jei iš šio masyvo galima rasti kiekvieną bigramą 
+3) Jums duotas bigramų masyvas ir žodžių masyvas. Parašykite funkciją, kuri grąžintų True, jei iš šio masyvo galima rasti kiekvieną bigramą 
   bent vieną kartą žodžių masyve.
    
   Pavyzdys:
@@ -152,7 +152,7 @@ Duomenų struktūros (1 dalis)](https://github.com/CodeAcademy-Online/python-new
   can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
   can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks", "cooks"]) ➞ False
   ```
-* Iš naujo įgyvendinkite kai kuriuos ankstesnius sprendimus naudodami lambda funkciją. 
+4) Iš naujo įgyvendinkite kai kuriuos ankstesnius sprendimus naudodami `lambda` funkciją. 
 
 ## 🌐 Papildomas skaitymas:
 
