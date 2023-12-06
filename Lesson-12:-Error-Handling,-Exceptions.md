@@ -2,7 +2,7 @@
 
 `Exceptions` are the events that are triggered when the program encounters an **error during execution**. When an error occurs, we can handle these exceptions to avoid the program from getting crashed.
 
-### Why do we Require Exception Handling?
+### `Why do we Require Exception Handling?`
 
 * **Error Handling**: In the case of Errors during runtime, the application might terminate unconditionally. Using the Exception Handling, we can handle the scenario of Failures and avoid termination of the program.
 * **Code Separation**: Error Handling can help us segregate the code that is required for error handling from the main logic. The error related code can be placed inside the “except” block which is segregating it from the regular code that contains the application logic.
@@ -27,7 +27,7 @@ SyntaxError: invalid syntax
 
 Another type of error we may observe is an `Exception` error. These types of errors occur when our code is syntactically correct but an unexpected event occurred during the execution of the program. They are not unconditionally fatal and can be handled at runtime.
 
-## Catching and handling Exceptions
+### `Catching and handling Exceptions`
 To capture the exceptions we use a code block called `try-except`. We put the piece of code that is suspected to be a source of error inside a `try` block then capture and design the response inside the `except` block.
 
 A simple `boilerplate` code example would be: 
@@ -51,7 +51,7 @@ Python consists of several built-in exceptions we may leverage in our programs: 
 ![](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/1%20yKRseWKBjdccXRoFsjIIQw.png)
 
 ### --- Examples ---
-#### Basic:
+#### `Basic`
 Lets use simple function to divide 2 numbers and try to handle possible error:
 ```python
 def divide_two_numbers(dividend: int, divisor: int) -> None:
@@ -68,7 +68,7 @@ Result = 25
 >>> divide(50, 0)
 Divisor is zero; Division is impossible
 ```
-#### Multiple except clauses:
+#### `Multiple except clauses`
 It is possible that your code may raise more than just one type of exception. It may be ValueError, AttributeError, KeyError etc. These are some of the built-in exceptions we already mentioned above. Lets take example of the simple statement:
 ```python
 >>> int_value = int(a)
@@ -89,7 +89,7 @@ def my_dummy_int_func(a: Union[str, float]) -> None:
     except TypeError:
         print('Type of "a" is incompatible; should either be a number or a string')
 ```
-#### Multiple exceptions in a single except clause:
+#### `Multiple exceptions in a single except clause`
 Boilerplate code : 
 
 ```
@@ -109,7 +109,7 @@ def my_dummy_int_func(a: Union[string, float]) -> None:
         print('Error occurred. Either "a" is not an integer or type of "a" is incompatible')
 ```
 
-#### Aliasing:
+### `Aliasing`
 Notice the following line in the code below:
 
 ```
@@ -178,7 +178,7 @@ def my_func() -> Any:
 
 my_func()
 ```
-#### Else clause: 
+### `Else clause` 
 `else` clause is optional and if it is present, it should always follow `except` clause. Code under `else` clause is executed only when code under `try` clause raises no exception. If an exception occurs in the `try` block then `else` block won’t be executed though the `except` clause handles it:
 
 ```python
@@ -197,7 +197,7 @@ Output = 2.0>>> divide(20, 0)
 Cannot divide by zero
 ```
 
-#### Finally clause:
+### `Finally clause`
 The `try` statement has one last clause `finally`, which is basically used for clean up actions. When used, it should follow all other clauses. `finally` clause is executed in any event irrespective of whether an exception has occurred or not. `finally` clause does not strictly need the else or except clause to be present:
 
 ```python
@@ -228,10 +228,10 @@ A `finally` clause is always executed before leaving the [try](https://docs.pyth
 
 ## Exercises: 
 🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish these task.
-* Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
-* Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
-* Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
-* Update previous task with possible `raise` exception.
+1) Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
+2) Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
+3) Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
+4) Update previous task with possible `raise` exception.
 
 
 ## 🌐  Extra reading:
