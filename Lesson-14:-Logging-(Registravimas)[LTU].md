@@ -129,7 +129,7 @@ ZeroDivisionError: division by zero
   def start_car() -> None:
     check_engine()...
   .......
-    
+  ```
 
 4) Sukurkite programą, kuri priima 4 duomenų tipus/struktūras: `strings`, `numbers`, `list`, `dict`. Iteriuokite 10 kartų su įvestimis ir užregistruokite, koks duomenų tipas/struktūra ir kiek kartų buvo įvesta. Apdorokite visas galimas klaidas ir jas užregistruokite.
 
