@@ -76,36 +76,34 @@ jei po kodo irašymo atlikote tam tikrus pakeitimus, bet tam tikru momentu nuspr
 
 `git restore <failas_pavadinimas>`
 
-Ne tai, kad taip negalima atkurti įvestų pakeitimų
+###  `reset`
 
-## atkurti 
+Komanda `git reset` yra sudėtinga ir universali pakeitimų atšaukimo priemonė. Ji turi tris pagrindines iškvietimo formas. Šios formos atitinka komandinės eilutės argumentus `--soft`, `--mixed`, `--hard`. Kiekvienas iš šių trijų argumentų atitinka tris `git` vidinės būsenos valdymo mechanizmus: "The Commit Tree" (HEAD), "The Staging Index" ir "The Working Directory".
 
-Komanda `git reset` yra sudėtinga ir universali pakeitimų atšaukimo priemonė. Ji turi tris pagrindines iškvietimo formas. Šios formos atitinka komandinės eilutės argumentus --soft, --mixed, --hard. Kiekvienas iš šių trijų argumentų atitinka tris "Git" vidinės būsenos valdymo mechanizmus: "The Commit Tree" (HEAD), "The Staging Index" ir "The Working Directory".
+#### `hard`
 
-### Sunku
+Tai pati tiesiausia, **pavojingiausia** ir dažniausiai naudojama parinktis. Perdavus `--hard`, vykdymų istorijos nuorodų rodyklės atnaujinamos į nurodytą įvykdymą. Tuomet iš naujo nustatomi `Staging Index` ir `Working Directory`, kad atitiktų nurodyto įsipareigojimo pakitimus. Bet kokie anksčiau neatlikti `Staging Index` ir `Working Directory` pakeitimai iš naujo nustatomi taip, kad atitiktų įsipareigojimų medžio būseną. Tai reiškia, kad bet kokie nebaigti darbai, kurie kabojo `Staging Index` ir `Working Directory`, **bus prarasti**.
 
-Tai pati tiesiausia, pavojingiausia ir dažniausiai naudojama parinktis. Perdavus --hard Įvykdymų istorijos nuorodų rodyklės atnaujinamos į nurodytą įvykdymą. Tuomet iš naujo nustatomi Staging Index ir Working Directory, kad atitiktų nurodyto įsipareigojimo rodiklius. Bet kokie anksčiau neatlikti Staging Index ir Working Directory pakeitimai iš naujo nustatomi taip, kad atitiktų įsipareigojimų medžio būseną. Tai reiškia, kad bet kokie nebaigti darbai, kurie kabojo Staging Index ir Working Directory, bus prarasti.
+#### `mixed`
 
-#### Mišrus
-
-Tai numatytasis darbo režimas. Atnaujinamos nuorodų rodyklės. Stažuotės rodyklė atstatoma į nurodyto įsipareigojimo būseną. Visi pakeitimai, kurie buvo atšaukti iš Staging Index, perkeliami į darbinį katalogą. Tęskime toliau.
+Tai numatytasis darbo režimas. Atnaujinamos nuorodų rodyklės. Stažuotės rodyklė atstatoma į nurodyto įsipareigojimo būseną. Visi pakeitimai, kurie buvo atšaukti iš `Staging Index`, perkeliami į darbinį katalogą. Tęskime toliau.
 
 
-#### Minkštas
+#### `soft`
 
-Kai perduodamas argumentas --soft, atnaujinamos nuorodų rodyklės ir atstatymas sustabdomas. Etapinė rodyklė ir darbinis katalogas lieka nepaliesti. Tokį elgesį gali būti sunku aiškiai parodyti. Tęskime savo demonstracinę repą ir paruoškime ją minkštajam atstatymui.
+Kai perduodamas argumentas `--soft`, atnaujinamos nuorodų rodyklės ir atstatymas sustabdomas. Etapinė rodyklė ir darbinis katalogas lieka nepaliesti. Tokį elgesį gali būti sunku aiškiai parodyti. Tęskime savo demonstracinę repą ir paruoškime ją `soft` atstatymui.
 
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/reset.svg)
 
 
-## diff
+### `diff`
 
-komanda paprasčiausiai leidžia pamatyti failo skirtumus.
-komanda:
+komanda paprasčiausiai leidžia pamatyti failo padarytus pakitimus:
+
 `git diff <failas_pavadinimas>`
 
 
-## žyma
+### `tag`
 
 Programinė įranga, kaip žinome, būna įvairių versijų - Windows 98,2000,7,8,10,11...  Python 2.7, 3.5, 3.6....
 Paprastai pavadinimai suteikiami taip:
@@ -118,18 +116,21 @@ komanda:
 `git tag -a v1.4 -m "mano versija 1.4"`
 
 
-## checkout
+### `checkout`
 
-tai daugiafunkcinė komanda, leidžianti atlikti daugybę veiksmų, iš kurių pagrindiniai yra šie:
+Tai daugiafunkcinė komanda, leidžianti atlikti daugybę veiksmų, iš kurių pagrindinės yra šios:
 1. Peršokti iš vienos šakos į kitą `git checkout <šakos pavadinimas>`
-1. Sukurti šaką `git checkout -b <branch_name>``
-1. Gali peršokti į tam tikrą commit hash ir apsižvalgyti, patikrinti failus ir t. t. (Tai grąžina Detached HEAD, scenarijus parodytas paveikslėlyje toliau).
+2. Sukurti šaką `git checkout -b <branch_name>`
+3. Gali peršokti į tam tikrą `commit hash` ir apsižvalgyti, patikrinti failus ir t. t. (Tai grąžina `Detached HEAD`, scenarijus parodytas paveikslėlyje toliau).
 
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/detached.svg)
 
 ## 🧠 Pratimai
 
-1. Sukurkite projektą
-1. Pabandykite žaisti su visomis šioje paskaitoje parodytomis komandomis
-1. Jei kas nors neaišku - https://git-scm.com/doc
+1. Sukurkite paprastą projektą dirbant poroje su kolega. Pridėkite šiek tiek kodo ir pabandykite imituoti darbą komandoje pagal pilną git darbo eigą. 
+2. Pabandykite išsibandyti visas šioje paskaitoje parodytas komandas.
 
+## 🌐  Extra reading (or watching 📺 ):
+
+* [More on git commands](https://git-scm.com/doc)
+***
