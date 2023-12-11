@@ -76,23 +76,23 @@ simply allows us to see all the history, commit after commit of what happened.
 ![IMG](https://github.com/CodeAcademy-Online/python-new-material/blob/master/images/git_log.jpg)
 
 ### `restore`
-if after a commit you have done some changes, but at some point decided that you want to roll back you can do:
+If after a commit you have done some changes, but at some point decided that you want to roll back you can do:
 
 
 `git restore <file_name>`
 
-Not that commited changes cannot be restored like that.
+Note that commited changes cannot be restored like that.
 
 ### `reset` 
 
 The `git reset` command is a complex and versatile tool for undoing changes. It has three primary forms of invocation. These forms correspond to command line arguments --soft, --mixed, --hard. The three arguments each correspond to `Git's` three internal state management mechanism's, The `Commit Tree (HEAD)`, The `Staging Index`, and The `Working Directory`.
 
 
-### Hard
+### `hard`
 
 This is the most direct, **DANGEROUS**, and frequently used option. When passed `--hard` The `Commit History` ref pointers are updated to the specified commit. Then, the `Staging Index` and `Working Directory` are reset to match that of the specified commit. Any previously pending changes to the `Staging Index` and the `Working Directory` gets **reset** to match the state of the `Commit Tree`. **This means any pending work that was hanging out in the Staging Index and Working Directory will be lost.**
 
-### `Mixed`
+### `mixed`
 
 This is the default operating mode. The ref pointers are updated. The `Staging Index` is reset to the state of the specified commit. Any changes that have been undone from the `Staging Index` are moved to the `Working Directory`. Let us continue.
 
