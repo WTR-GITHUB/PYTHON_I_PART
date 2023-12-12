@@ -1,25 +1,25 @@
 ## Introduction 
-As we already know, Python is an Object-Oriented Programming language. Everything in Python is an object. Like other Object-Oriented languages, when creating objects using classes, there are 4 basic principles for writing clean and concise code. These principles are called the **four pillars of object-oriented programming (OOP)**. These four pillars are:  **Inheritance, Polymorphism, Encapsulation and Abstraction.** 
+As we already know, `Python` is an Object-Oriented Programming language. Everything in Python is an object. Like other Object-Oriented languages, when creating objects using classes, there are 4 basic principles for writing clean and concise code. These principles are called the **four pillars of object-oriented programming (OOP)**. These four pillars are:  **Inheritance, Polymorphism, Encapsulation and Abstraction.** 
 
-### Why OOP?
+### `Why OOP?`
 A few to name:
 * It makes it so much easier to maintain and update existing code.
 * Provides code reusability.
 * Provides a modular structure.
 * It is easy to debug.
 
-## Access modifiers
-In most of the object-oriented languages access modifiers are used to limit the access to the variables and functions of a class. Most of the languages use three types of access modifiers, they are - private, public and protected.
+### `Access modifiers`
+In most of the object-oriented languages access modifiers are used **to limit the access to the variables and functions of a class**. Most of the languages use three types of access modifiers, they are - **private, public and protected**.
 
 Just like any other [object oriented programming language](https://en.wikipedia.org/wiki/List_of_object-oriented_programming_languages), access to variables or functions can also be limited in python using the access modifiers. Python makes the use of `underscores` to specify the access modifier for a specific data member and member function in a class.
 
-Access modifiers play an **important role to protect the data from unauthorized access as well as protecting it from getting manipulated**. When inheritance (look at the following chapter ⬇️ ) is implemented there is a huge risk for the data to get destroyed(manipulated) due to transfer of unwanted data from the parent class to the child class. Therefore, it is very important to provide the right access modifiers for different data members and member functions depending upon the requirements.
+Access modifiers play an **important role to protect the data from unauthorized access as well as protecting it from getting manipulated**. When inheritance (look at the following chapter ⬇️ ) is implemented there is a huge risk for the data to get destroyed(manipulated) due to transfer of unwanted data from the parent class to the child class. Therefore, it is very important to provide the right `access modifiers` for different data members and member functions depending upon the requirements.
 There are 3 types of access modifiers for a class in Python. These access modifiers define how the members of the class can be accessed. 
 These are:
 
-* Public - the members declared as Public are accessible from outside the Class through an object of the class.
-* Protected - the members declared as Protected are accessible from outside the class but only in a class derived from it that is in the child or subclass.
-* Private - these members are only accessible from within the class. No outside Access is allowed.
+* Public - the members declared as `Public` are accessible from outside the `class` through an object of the `class`.
+* Protected - the members declared as `Protected` are accessible from outside the `class` but only in a `class `derived from it that is in the child or subclass.
+* Private - these members are only accessible from within the class. No outside `Access` is allowed.
 
 _Public_
 ```python
@@ -70,7 +70,7 @@ AttributeError: 'employee' object has no attribute '__sal'
 ```
 ℹ️ 
 There are **private and protected methods** too. The working mechanism of access modifiers applies the same as for the class attributes:
-A private method can be only called inside the particular class, a protected method inside the particular class and by its child classes.
+**A private method can be only called inside the particular class, a protected method inside the particular class and by its child classes.**
 
 _Private method_
 ```python
@@ -110,11 +110,11 @@ Checking if cowboy has signed up already.
 Besides these two obvious differences between protected and private methods, the major difference between these two kinds of methods_ pertains to their accessibility within their subclasses_. That is, protected methods are accessible within the subclasses, while private methods are not accessible within the subclasses (although the reason is also due to name mangling). 
 ℹ️ 
 
-##  Four pillars of OOP
-### Inheritance
-`Inheritance` is the process by which one class inherits the properties of another class. This newly formed class is called a child class and the other class is called a parent class. It provides code reusability because we are using an existing class to increase the properties of a new class. A child class can access all the data members and functions of the parent class.
+##  `Four pillars of OOP`
+### `Inheritance`
+`Inheritance` is the process by which **one class inherits the properties of another class**. This newly formed class is called a **child class** and the other class is called a parent class. It provides code reusability because we are using an existing class to increase the properties of a new class. A child class can access all the data members and functions of the parent class.
 
-In Python, to inherit a class, we use `ChildClass(ParentClass)` at the time of defining the class: 🔽 
+In Python, to `inherit` a class, we use `ChildClass(ParentClass)` at the time of defining the class: 🔽 
 
 ```python
 class Employee:                     
@@ -167,12 +167,12 @@ obj = Employee('Garry',35,10,50000)
 obj.debug()                                                         ## AttributeError: 'Employee' object has no attribute 'debug' , A parent can not access a child class
 '''
 ```
-At first, we have a parent class `Employee` that has some basic information: name, age, exp (experience), and salary. Employee class has a constructor that contains all the instance attributes. Lastly, we also have a method named show that only has a print statement and is used for printing the information.
-Engineer and Designer both are the child classes of the parent class Employee.
-The** `super()` method** helps a child class to access the members of the parent class. Engineers class accesses name, age, exp, and salary information from the parent class.
+At first, we have a parent class `Employee` that has some basic information: `name`, `age`, `exp` (experience), and `salary`. `Employee` class has a constructor that contains all the instance attributes. Lastly, we also have a method named show that only has a print statement and is used for printing the information.
+`Engineer` and `Designer` both are the child classes of the parent class `Employee`.
+The ** `super()` method** helps a child class to access the members of the parent class. `Engineers` class accesses `name`, `age`, `exp`, and `salary` information from the parent class.
 
-### Encapsulation
-**Encapsulation** is the process of hiding the data, providing security to data by making the variable protected. The protected member can only be accessed by the class member. If you try to access it outside the class normally, by creating an object. it will result in an error. To access the protected member you need to use `object._protectedmember`.
+### `Encapsulation`
+**Encapsulation** is the process of **hiding the data**, providing security to data by making the variable protected. The protected member can only be accessed by the class member. If you try to access it outside the class normally, by creating an object. it will result in an error. To access the protected member you need to use `object._protectedmember`.
 
 In Python, to create a protected member, we use the convention of prefixing the name of the member by a single underscore, e.g., _name.
 
@@ -237,18 +237,18 @@ for data in (rec, squ):
 200
 100
 ```
-In the code above, `area()` is performing two tasks in different instances of the program. On one side it is calculating the area of the rectangle, and on the other side it is calculating the area of the square in the same program.
+In the code above, `area()` is performing two tasks in different instances of the program. On one side it is calculating the `area` of the `rectangle`, and on the other side it is calculating the area of the square in the same program.
 
-### Abstraction
-**Abstraction** is used to hide the internal functionality of the function from the users. By applying abstraction, each object is only exposed to a high-level mechanism for using it. A method that only has a declaration and not a definition is called an abstract method. An abstract method doesn’t have anything inside the body. A class that has an abstract method is called an abstract class.
+### `Abstraction`
+**Abstraction** is used to hide the internal functionality of the function from the users. By applying `abstraction`, each object is only exposed to a high-level mechanism for using it. A method that only has a declaration and not a definition is called an `abstract method`. An `abstract method` doesn’t have anything inside the body. A class that has an abstract method is called an `abstract class`.
 
-Python by default does not support abstract classes, but there is a module named abc that allows Python to create abstract methods and classes.
+Python by default does not support `abstract classes,` but there is a module named `abc` that allows Python to create `abstract methods` and `classes`.
 More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.com/python-interface/)
 
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
-* Create a few examples of yourself where you show four pillars of OOP in action.
-* A stack machine processes instructions by pushing and popping values to an internal stack.
+1) Create a few examples of yourself where you show four pillars of OOP in action.
+2) A stack machine processes instructions by pushing and popping values to an internal stack.
   A simple example of this is a calculator.
 
   The argument passed to `run(instructions)` will always be a string containing a series of instructions.
@@ -275,7 +275,7 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
 
    "x y +" ➞ Invalid instruction: x
    ```
-* Write a class called `CoffeeShop`, which has three instance variables:
+3) Write a class called `CoffeeShop`, which has three instance variables:
 
   - name : a string (basically, of the shop)
   - menu : a list of items (of dict type), with each item containing the item (name of the item), type (whether a food or a drink) and price.
@@ -324,7 +324,7 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
   ```
   Notes: Round off due amount up to two decimal places.
 
-* Update previous task's solution using four pillars paradigm of OOP. (Minimum Encapsulation, Inheritance)
+4) Update previous task's solution using four pillars paradigm of OOP. (Minimum Encapsulation, Inheritance)
 
 
 ## 🌐  Extra reading (or watching 📺 ):
