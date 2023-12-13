@@ -190,19 +190,19 @@ class House:
 
 1) Sukurkite `Calculator` klasę su pagrindinėmis funkcijomis: sudėti, dalyti, dauginti, atimti ir t. t.. Inicijuokite klasę ir parodykite keletą 
    skaičiavimų.
-2) Darbuotojo klasėje sukurkite egzempliorių atributus fullname (vardas, pavardė) ir email (el. paštas). Turint asmens vardą ir pavardę:
+2) Darbuotojo klasėje sukurkite egzempliorių atributus `fullname` (vardas, pavardė) ir `email` (el. paštas). Turint asmens vardą ir pavardę:
    - Vardą ir pavardę suformuokite paprasčiausiai sujungdami vardą ir pavardę, atskiriamus tarpeliu.
-   - Elektroninį paštą suformuokite sujungdami vardą ir pavardę, tarp jų įterpdami simbolį . ir pabaigoje įrašydami @company.com. Įsitikinkite, kad visas 
-     el. laiškas būtų rašomas mažosiomis raidėmis.
+   - Elektroninį paštą suformuokite sujungdami vardą ir pavardę, tarp jų įterpdami simbolį . Pabaigoje įrašydami `@company.com`. Įsitikinkite, kad visas 
+     el. laiškas būtų** rašomas mažosiomis raidėmis**.
 
-3) Sukurkite knygos klasę Book, kuri turi du atributus:
-    - Pavadinimas
-    - autorius
+3) Sukurkite knygos klasę `Book`, kuri turi du atributus:
+    - `name`
+    - `author`
 
-  ir du metodus:
+   ir du metodus:
 
-    - Metodas, pavadintas .get_title(), kuris grąžina: "Pavadinimas: " + egzemplioriaus pavadinimas.
-    - Metodas .get_autor(), kuris grąžina: "Autorius: " + egzempliorius autorius.
+    - Metodas, pavadintas `.get_title()`, kuris grąžina: "Pavadinimas: " + egzemplioriaus pavadinimas.
+    - Metodas `.get_autor()`, kuris grąžina: "Autorius: " + egzempliorius autorius.
 
   ir instancuokite šią klasę sukurdami 3 naujas knygas:
 
@@ -210,7 +210,7 @@ class House:
     - Hamletas - Viljamas Šekspyras (H)
     - Karas ir taika - Levas Tolstojus (WP)
 
-  Naujų egzempliorių pavadinimai turėtų būti atitinkamai PP, H ir WP. Pavyzdžiui, jei, naudodamas šią knygų klasę, instancuočiau šią knygą:
+   Naujų egzempliorių pavadinimai turėtų būti atitinkamai `PP`, `H` ir `WP`. Pavyzdžiui, jei, naudodamas šią knygų klasę, instancuočiau šią knygą:
 
     - Haris Poteris - J. K. Rowling (HP)
 
@@ -227,7 +227,7 @@ class House:
    - Didelė gyventojų skaičiumi.
    - Didelė pagal plotą.
 
-  Šalies klasę papildykite taip, kad joje būtų atributas is_big. Nustatykite jį į True, jei tenkinamas kuris nors iš šių kriterijų:
+  Šalies klasę papildykite taip, kad joje būtų atributas `is_big`. Nustatykite jį į `True`, jei tenkinamas kuris nors iš šių kriterijų:
 
    - Gyventojų skaičius yra didesnis nei 20 mln.
    - Plotas didesnis nei 3 mln. km².
@@ -240,12 +240,12 @@ class House:
   Pavyzdys:
   
   ```python
-  australia = Country("Australija", 23545500, 7692024)
-  andora = Country("Andora", 76098, 468)
+  australia = Country("Australia", 23545500, 7692024)
+  andorra = Country("Andorra", 76098, 468)
 
   australia.is_big ➞ True
   andorra.is_big ➞ False
-  andorra.compare_pd(australia) ➞ "Andoros gyventojų tankis didesnis nei Australijos"
+  andorra.compare_pd(australia) ➞ "Andorra has a larger population density than Australia"
   ```
 
 ## 🌐 Papildomas skaitymas (arba žiūrėjimas 📺 ):
