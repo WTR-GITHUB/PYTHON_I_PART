@@ -43,14 +43,14 @@ We easily can compare both object instances:
 False
 
 ```
-### `Class Constructor (```.__init__()```)`
+### `Class Constructor (.__init__())`
 
 The `House` class isn’t very interesting right now, so let’s spruce it up a bit by defining some properties that all `House` objects should have. There are a number of properties that we can choose from, including cost, age, color, and number of bedrooms. To keep things simple, we’ll just use cost and age.
-The properties that all `House` objects must have are defined in a method called ```.__init__()```. Every time a new `House` object is created, ```.__init__()``` sets the initial state of the object by assigning the values of the object’s properties. That is, ** ```.__init__()``` initializes each new instance of the class**.
+The properties that all `House` objects must have are defined in a method called `.__init__()`. Every time a new `House` object is created, `.__init__()` sets the initial state of the object by assigning the values of the object’s properties. That is, ** `.__init__()` initializes each new instance of the class**.
 
-You can give ```.__init__()``` any number of parameters, but the first parameter will always be a variable called `self`. When a new class instance is created, the instance is automatically passed to the self parameter in ```.__init__()``` so that new attributes can be defined on the object.
+You can give `.__init__()` any number of parameters, but the first parameter will always be a variable called `self`. When a new class instance is created, the instance is automatically passed to the self parameter in `.__init__()` so that new attributes can be defined on the object.
 
-Let’s update the `House` class with an ```.__init__()``` method that creates `.cost` and `.age` attributes:
+Let’s update the `House` class with an `.__init__()` method that creates `.cost` and `.age` attributes:
 
 ```python
 class House:
@@ -59,9 +59,9 @@ class House:
         self.age: float = age
 
 ```
-Notice that the ```.__init__()``` method’s signature is indented four spaces. The body of the method is indented by eight spaces. **This indentation is vitally important**. It tells Python that the ```.__init__()``` method **belongs to the House class**.
+Notice that the `.__init__()` method’s signature is indented four spaces. The body of the method is indented by eight spaces. **This indentation is vitally important**. It tells Python that the `.__init__()` method **belongs to the House class**.
 
-In the body of ```.__init__()```, there are two statements using the `self` variable:
+In the body of `.__init__()`, there are two statements using the `self` variable:
 
 `self.cost = cost` creates an attribute called `cost` and assigns to it the value of the `cost` parameter.
 
@@ -69,9 +69,9 @@ In the body of ```.__init__()```, there are two statements using the `self` vari
 
 ### `Class & Instance attributes`
 
-Attributes created in ```.__init__()``` are called** instance attributes**. An instance attribute’s **value is specific to a particular instance of the class**. All `House` objects have a `cost` and an `age`, **but the values for the cost and age attributes** will vary depending on the **House instance**.
+Attributes created in `.__init__()` are called** instance attributes**. An instance attribute’s **value is specific to a particular instance of the class**. All `House` objects have a `cost` and an `age`, **but the values for the cost and age attributes** will vary depending on the **House instance**.
 
-On the other hand, **class attributes** are attributes that have the same value **for all class instances**. You can define a class attribute by assigning a value to a variable name outside of ``.__init__()``.
+On the other hand, **class attributes** are attributes that have the same value **for all class instances**. You can define a class attribute by assigning a value to a variable name outside of `.__init__()`.
 
 For example:
 
