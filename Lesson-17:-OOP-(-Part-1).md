@@ -159,7 +159,7 @@ class House:
 ```
 
 ```python
->>> house = Dog(100000, 12.5)
+>>> house = House(100000, 12.5)
 
 >>> house.get_cost()
 'The house cost is: 100000'
