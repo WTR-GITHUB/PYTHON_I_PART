@@ -275,7 +275,9 @@ Daugiau apie abstrakciją: 📖 [Real Phyton : Python Interfaces](https://realpy
    - `food_only`: grąžina tik meniu maisto tipo elementų pavadinimus.
 
   SVARBU: Užsakymai vykdomi FIFO (first IN, first OUT) tvarka.
+
   Pavyzdžiai: 
+
     ```python
     tcs.add_order("hot cocoa") ➞ "This item is currently unavailable!"
     # Tesha's coffee shop does not sell hot cocoa
