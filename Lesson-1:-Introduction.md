@@ -82,9 +82,9 @@ Are the results understandable? If not raise discussion in class.
 
 ## Excercise:
 🧠 
-* Try the operations yourself.
-* Make sure you have the IDE setup.
 
+* Make sure you the IDE is ready.
+* Try the operations yourself.
 
 ## 🌐 Extra Reading:
 
