@@ -210,6 +210,24 @@ print(numbers_set)
 2. Pabandykite sukurti `dict` struktūrą, kurioje turite panaudoti visas jums žinomas duomenų struktūras ir tipus.
 3. Sukurkite programą, kuri iš sakinių, kuriuos jus įvedėt, sukurtų `dict`, kuriame `keys` reikštų `raides`, o `values`
    šių raidžių dažnumą tuose sakiniuose. Programa turi reikalauti, kad vartotojas įvestų ne mažiau kaip 3 sakinius. 
+4. Sukurkite studentų vardų ir jų pažymėjimų žodyną:
+
+    - Studentų vardus saugokite kaip raktus, o jų pažymėjimus - kaip reikšmes žodyne.
+
+   Apskaičiuokite visų studentų vidutinį pažymėjimą:
+
+    - Naudokite `sum()` ir `len()` funkcijas apskaičiuoti bendrą ir pažymėjimų skaičių, atitinkamai, o tada bendrąjį skaičių padalinkite iš skaičiaus, 
+      kad gautumėte vidurkį.
+
+    Pašalinti studentus, kuriems pažymėjimai mažesni nei 80, iš žodyno:
+
+    Naudokite `set`, kad sukurtumėte studentų vardų rinkinį, kurių pažymėjimai yra mažesni nei 80.
+
+   Pažiūrėti, ar konkretus studentas egzistuoja žodyne:
+
+     - Įveskite studento vardą iš vartotojo.
+    - Naudokite `in` operatorių, norėdami patikrinti, ar studento vardas egzistuoja žodyne.
+    - Spausdinkite pranešimą, rodantį, ar studento vardas yra rastas, ar ne.
 
 ## 🌐 Papildomas skaitymas:
 * [Python duomenų struktūras](https://corporatefinanceinstitute.com/resources/data
