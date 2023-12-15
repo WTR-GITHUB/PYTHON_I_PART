@@ -290,21 +290,21 @@ Kintamieji negali būti vadinami "Python" built-in funkcijų vardais arba specia
 
 
 # Pratimai 🧠 
-1
-* Sukurkite programą, leidžiančią vartotojui įvesti savo vardą ir amžių.
-* Apskaičiuoti metus, kuriais vartotojas gimė.
-* Išspausdinti atsakymą į terminalą.
+1)
+ * Sukurkite programą, leidžiančią vartotojui įvesti savo vardą ir amžių.
+ * Apskaičiuoti metus, kuriais vartotojas gimė.
+ * Išspausdinti atsakymą į terminalą.
 
 
-2
-* Sukurti programą, leidžiančią vartotojui įvesti pilną sakinį.
-* išspausdinti sakinį atbuline tvarka.
-* spausdinti kas antrą sakinio raidę.
+2)
+ * Sukurti programą, leidžiančią vartotojui įvesti pilną sakinį.
+ * išspausdinti sakinį atbuline tvarka.
+ * spausdinti kas antrą sakinio raidę.
 
-3
-* Sukurkite programą, kuri tikisi, kad naudotojas įves du skaičius.
-* padauginkite šiuos skaičius ir išspausdinkite atsakymą.
-* Sukurkite panašias programas su kitais ženklais.
+3)
+ * Sukurkite programą, kuri tikisi, kad naudotojas įves du skaičius.
+ * padauginkite šiuos skaičius ir išspausdinkite atsakymą.
+ * Sukurkite panašias programas su kitais ženklais.
 
 ## 🌐 Papildomas skaitymas:
 
