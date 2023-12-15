@@ -208,10 +208,25 @@ print(numbers_set)
 
 ## 🧠Exercises
 
-1. Write python program that asks user to enter `name`, `surname`, `age`. Put these values into a dictionary and print it.
-2. Try creating `nested` `dict` structure which would use all data types and structures you already know.
-3. Create a program, that would take sentences from the `input` and create a `dictionary` where they `keys` represents `letters` and `values`
+1) Write python program that asks user to enter `name`, `surname`, `age`. Put these values into a dictionary and print it.
+2) Try creating `nested` `dict` structure which would use all data types and structures you already know.
+3) Create a program, that would take sentences from the `input` and create a `dictionary` where they `keys` represents `letters` and `values`
    the frequency those letters appeared in those sentence. The program must demand that user should enter `3` or more sentences. 
+4)
+  Create a dictionary of student names and their grades:
+   - Store student names as keys and their grades as values in a dictionary.
+
+  Calculate the average grade of all students:
+   - Use `sum()` and `len()` functions to calculate the total and number of grades, respectively, and then divide the total by the number to get the 
+     average.
+
+  Remove students with grades below `80` from the dictionary:
+   - Create a set of student names with grades below 80.
+
+  Check if a specific student exists in the dictionary:
+   - Input a student name from the user.
+   - Use the in operator to check if the student name exists in the dictionary.
+   - Print a message indicating whether the student name is found or not.
 
 
 ## 🌐  Extra reading:
