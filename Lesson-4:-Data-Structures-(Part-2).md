@@ -212,7 +212,9 @@ print(numbers_set)
 2) Try creating `nested` `dict` structure which would use all data types and structures you already know.
 3) Create a program, that would take sentences from the `input` and create a `dictionary` where they `keys` represents `letters` and `values`
    the frequency those letters appeared in those sentence. The program must demand that user should enter `3` or more sentences. 
-4)Create a dictionary of student names and their grades:
+
+4)
+  Create a dictionary of student names and their grades:
 
    - Store student names as keys and their grades as values in a dictionary.
 
