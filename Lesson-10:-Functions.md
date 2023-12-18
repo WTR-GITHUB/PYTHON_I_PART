@@ -212,11 +212,11 @@ This example shows you that `the_func()` takes three arguments, `x`, `y`, and, `
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
 
 ❗ All tasks must include types ❗ 
-* Create at least 5 different functions by your own and test it.
-* Create a function that adds a `string` ending to each member in a `list`.
-* Create a mini python program which would take two `numbers` as an input and would return their `sum`, `subtraction`, `division`, `multiplication`.
-* Create a function that returns only `strings` with unique characters.
-
+1) Create at least 5 different functions by your own and test it.
+2) Create a function that adds a `string` ending to each member in a `list`.
+3) Create a mini python program which would take two `numbers` as an input and would return their `sum`, `subtraction`, `division`, `multiplication`.
+4) Create a function that returns only `strings` with unique characters.
+5) Write a program that defines a function called `extract_email_addresses()` that takes a text as input and extracts all email addresses from the text.
 
 ## 🌐  Extra reading:
 
