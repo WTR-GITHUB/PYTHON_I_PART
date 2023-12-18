@@ -211,10 +211,12 @@ def the_func(x: Union[int, float], y: Tuple[str, str], z: Optional[float] = None
 ## Užduotys
 
 ❗ Visose užduotyse turi būti nurodyti tipų anotacijos❗ 
-* Patys sukurkite bent 5 skirtingas funkcijas ir jas išbandykite.
-* Sukurkite funkciją, kuri prie kiekvieno `list` nario prideda `string` galūnę.
-* Sukurkite mini python programą, kuri kaip įvestį paimtų du skaičius ir grąžintų jų `sumą`, `atimtį`, `dalybą`, `daugybą`.
-* Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias `string` reikšmes.
+1) Patys sukurkite bent 5 skirtingas funkcijas ir jas išbandykite.
+2) Sukurkite funkciją, kuri prie kiekvieno `list` nario prideda `string` galūnę.
+3) Sukurkite mini python programą, kuri kaip įvestį paimtų du skaičius ir grąžintų jų `sumą`, `atimtį`, `dalybą`, `daugybą`.
+4) Sukurkite funkciją, kuri grąžintų tik unikalius simbolius turinčias `string` reikšmes.
+5) Parašykite programą, apibrėžiančią funkciją `extract_email_addresses()`, kuri priima tekstą kaip įvestį ir iš teksto ištraukia visus el. pašto 
+   adresus.
 
 
 ## 🌐 Papildomas skaitymas:
