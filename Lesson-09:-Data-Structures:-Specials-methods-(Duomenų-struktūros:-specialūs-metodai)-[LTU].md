@@ -202,7 +202,7 @@ print(math.pow(5, 5))
 #### `square root`
 
 
-````python
+```python
 importuoti math
 print (math.sqrt(9))
 ```
