@@ -218,11 +218,11 @@ There is more functionality in math library as said before, here we reviewed jus
 
 ## Exercises 🧠 :
 
-1. Find all of the numbers from 1-1000 that are divisible by 6.
-1. Find all number from 1-1000 that have 9 in them.
-1. Given string: `text = 'In this lecture we will review some additional functionalities of python built-in data structures.'` calculate how many words have letter 'e' in it.
-1. Given the same string as in previous exercise: calculate count of words that have more than 5 characters.
-1. Given the same string calculate the occurrence of each letter in the string. (HINT: store everything in dictionary)
+1. Find all of the numbers from `1-1000` that are divisible by `6`.
+1. Find all number from `1-1000` that have `9` in them.
+1. Given string: `text = 'In this lecture we will review some additional functionalities of python built-in data structures.'` calculate how many words have letter `e` in it.
+1. Given the same string as in previous exercise: calculate count of words that have more than `5` characters.
+1. Given the same string calculate the occurrence of each letter in the string. (HINT: store everything in `dictionary`)
 1. Write a program that checks if given number is a perfect square.
 
 ## 🌐  Extra reading:
