@@ -141,6 +141,7 @@ while i < 6:
 2. Leiskite naudotojui įvesti 10 sveikųjų skaičių, tada spausdinkite šių įvestų skaičių sumą ir vidurkį.
 3. Sugeneruokite `dict` iš 10 skaitmenų (`keys`): 1,2,3...10. Kiekvienam `key` turėtų būti priskirta atsitiktinio sveikojo skaičiaus vertė nuo 1 iki 100.
 4. Sukurkite PIN kodo nulaužimo programą. Tarkime, PIN kodą sudaro 4 atsitiktiniai skaitmenys. Reikšmę galite saugoti kintamajame. Tada sukurkite ciklą, einantį per visas galimas kombinacijas, kol rasite tą, kurią įvedėte.
+5. Sukurkite programą, kuri leistų naudotojui įvesti skaičių seriją ir apskaičiuotų visų skaičių vidurkį. Programa taip pat turėtų išspausdinti visų skaičių `list'a` ir vidurkį.
 
 ## 🌐 Papildomas skaitymas:
 
