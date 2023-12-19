@@ -141,8 +141,8 @@ However, it is not suitable:
    war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
    ```
 
-3) You are given an input array of bigrams, and an array of words. Write a function that returns True if every single bigram from this array can be found 
-   at least once in an array of words.
+3) You are given an input array of bigrams, and an array of words. Write a function that returns `True` if every single bigram from this array can be 
+   found at least once in an array of words.
    
    Example:
    ```python
@@ -152,7 +152,8 @@ However, it is not suitable:
    can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
    can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]) ➞ False
    ```
-4) Reimplement some previous solutions using the lambda function. 
+4) Create a function that takes a `list` of strings and returns a new list containing only the strings that start with a `vowel`. Use lambda functions to 
+   implement the logic for checking if a string starts with a vowel. 
 ## 🌐  Extra reading:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
