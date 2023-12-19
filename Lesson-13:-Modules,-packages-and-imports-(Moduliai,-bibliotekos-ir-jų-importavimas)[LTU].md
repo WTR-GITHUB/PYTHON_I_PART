@@ -134,6 +134,15 @@ Kodo įterpimas po `if __name__ == "__main__"` leidžia patenkinti skirtingus na
 3) Sukurkite modulį ir importuokite bet kurį pasirinktą `PIP` paketą. Tada sukurkite funkciją, kuri jį naudotų.
   Importuokite tą funkciją į `main.py` modulį ir ją naudokite.
 
+4) "Python" modulis `os` suteikia galimybę naudotis nuo operacinės sistemos priklausančiomis funkcijomis, pvz., skaityti arba rašyti į failų sistemą.
+   Jūsų užduotis yra:
+   - Importuoti `os` modulį.
+   - Sukurti funkciją, kuri išvardytų visus dabartiniame kataloge esančius failus.
+   - Sukurti funkciją, kuri sukuria naują katalogą.
+   - Sukurti funkciją, kuri pervadina failą.
+   - Sukurkite funkciją, kuri perkelia failą iš vieno katalogo į kitą.
+   - Sukurkite funkciją, kuri ištrina failą.
+
 
 ## 🌐 Papildomas skaitymas (arba žiūrėjimas 📺 ):
 
