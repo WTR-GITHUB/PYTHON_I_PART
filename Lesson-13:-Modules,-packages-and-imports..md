@@ -122,15 +122,25 @@ Nesting code under `if __name__ == "__main__"` allows you to cater to different 
 ## Exercises: 
 
 1) Create a simple calculus program as a script and as module.
-2) Create a program with 3 different modules: 
-  - first, to do basic tasks with strings
-  - second, basic tasks with lists.
-  - third, basic tasks with numbers
 
-  Import them as modules to the `main.py` module and show calculations.
+2) Create a program with 3 different modules: 
+   - first, to do basic tasks with strings
+   - second, basic tasks with lists.
+   - third, basic tasks with numbers
+
+   Import them as modules to the `main.py` module and show calculations.
 
 3) Create a module and import any PIP package of your choice. Then create a function that would use it.
-  Import that function to the `main.py` module and use it.
+   Import that function to the `main.py` module and use it.
+
+4) Python's `os` module provides a way of using operating system dependent functionality such as reading or writing to the file system.
+   Your task is to:
+   - Import the `os` module.
+   - Create a function that lists all files in the current directory.
+   - Create a function that creates a new directory.
+   - Create a function that renames a file.
+   - Create a function that moves a file from one directory to another.
+   - Create a function that deletes a file.
 
 
 ## 🌐  Extra reading (or watching 📺 ):
