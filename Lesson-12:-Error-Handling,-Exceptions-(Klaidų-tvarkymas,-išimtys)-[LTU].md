@@ -231,7 +231,14 @@ TypeError: unsupported operand type(s) for /: 'str' and 'str'
 🧠 : Pakartokite [Funkcijos](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) ir [Funkcijos (2 dalis)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)), kad užbaigtumėte šias užduotis.
 
 1) Sukurkite bent 5 skirtingas funkcijas ir pabandykite apdoroti bent 5 integruotas "Python" išimtis.
-2) Sukurkite funkciją, kuri apimtų visą klaidų tvarkymo ciklą (try/except/else/finally) su realaus pasaulio scenarijaus pavyzdžiu.
+2) Python kalboje, dalijant iš `nulio`, gauname `ZeroDivisionError`. Jūsų užduotis - sukurti funkciją, kuri:
+   - Kaip argumentus priima du skaičius.
+   - Mėgina padalyti pirmąjį skaičių iš antrojo.
+   - Jei antrasis skaičius yra `nulis`, ji turėtų sugauti `ZeroDivisionError` ir grąžinti pasirinktinį klaidos pranešimą.
+   - Jei dalijimas sėkmingas, turėtų būti grąžinamas rezultatas.
+   - Nepriklausomai nuo to, ar dalijimas pavyko, ar ne, turėtų būti išspausdintas pranešimas "Attempted division".
+   Jei įvesties duomenys nėra skaičiai, pateikiamas `TypeError` pranešimas.
+   Funkcija pagauna šią `TypeError` ir grąžina pasirinktinį klaidos pranešimą.
 3) Sukurkite mini "Python" programą, kuri įvestų du skaičius ir grąžintų jų sumą, atimtį, dalybą, daugybą. Tvarkykite visas galimas klaidas.  
 4) Atnaujinkite ankstesnę užduotį su galimomis `raise` išimtimis.
 
