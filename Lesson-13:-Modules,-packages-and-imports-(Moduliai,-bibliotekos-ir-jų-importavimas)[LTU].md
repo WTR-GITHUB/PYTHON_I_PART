@@ -127,12 +127,13 @@ Kodo įterpimas po `if __name__ == "__main__"` leidžia patenkinti skirtingus na
 2) Sukurkite programą su 3 skirtingais moduliais: 
    - Pirma, atlikti pagrindines užduotis su `string`
    - antra, pagrindinius uždavinius su `list`.
-   - trečias, pagrindiniai uždaviniai su 'float/ int'
+   - trečias, pagrindiniai uždaviniai su `float/ int`
 
   Importuokite juos kaip `modulius` į `main.py` modulį ir parodykite skaičiavimus.
 
 3) Sukurkite modulį ir importuokite bet kurį pasirinktą `PIP` paketą. Tada sukurkite funkciją, kuri jį naudotų.
   Importuokite tą funkciją į `main.py` modulį ir ją naudokite.
+
 
 ## 🌐 Papildomas skaitymas (arba žiūrėjimas 📺 ):
 
