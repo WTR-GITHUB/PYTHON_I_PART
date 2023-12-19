@@ -229,7 +229,14 @@ A `finally` clause is always executed before leaving the [try](https://docs.pyth
 ## Exercises: 
 🧠 : Repeat the [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) and [Functions (Part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-11:-Functions-(-Part-2-)) to finish these task.
 1) Create at least 5 different functions and try to handle at least 5 built-in Python Exceptions.
-2) Create a function what would include full cycle of error handling (try/except/else/finally) with real world scenario example.
+2) In Python, dividing by `zero` raises a `ZeroDivisionError`. Your task is to create a function that:
+   - Takes two numbers as arguments.
+   - Tries to divide the first number by the second number.
+   - If the second number is `zero`, it should catch the `ZeroDivisionError `and return a custom error message.
+   - If the division is successful, it should return the result.
+   - Regardless of whether the division is successful or not, it should print a message saying "Attempted division.
+   If the inputs are not numbers, it raises a `TypeError`.
+   It catches this `TypeError` and returns a custom error message.
 3) Create a mini python program which would take two numbers as an input and would return their sum, subtraction, division, multiplication. Handle all possible errors that may occur.  
 4) Update previous task with possible `raise` exception.
 
