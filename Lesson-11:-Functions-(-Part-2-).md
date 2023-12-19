@@ -109,19 +109,20 @@ However, it is not suitable:
 
 ## Exercises: 
 🧠 : Repeat the [Data Structures (part 1)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-3:-Data-Structures-(Part-1)), [Data Structures (part 2)](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-5:-Data-Structures-(Part-2)), [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops) to finish these task.
+
 1) Write a function that takes two `lists` and adds the first element in the first `list` with the first element in the second `list`, the second element 
    in the first `list` with the second element in the second `list`, etc, etc. Return `True` if all element combinations add up to the same number. 
    Otherwise, return `False`.
-  Example: 
+   Example: 
 
-  ```python
-  puzzle_pieces([1, 2, 3, 4], [4, 3, 2, 1]) ➞ True
-  # 1 + 4 = 5;  2 + 3 = 5;  3 + 2 = 5;  4 + 1 = 5
-  # Both lists sum to [5, 5, 5, 5]
-  puzzle_pieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]) ➞ True
-  puzzle_pieces([1, 2], [-1, -1]) ➞ False
-  puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
-  ```
+   ```python
+   puzzle_pieces([1, 2, 3, 4], [4, 3, 2, 1]) ➞ True
+   # 1 + 4 = 5;  2 + 3 = 5;  3 + 2 = 5;  4 + 1 = 5
+   # Both lists sum to [5, 5, 5, 5]
+   puzzle_pieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]) ➞ True
+   puzzle_pieces([1, 2], [-1, -1]) ➞ False
+   puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
+   ```
 
 2) There's a great war between the even and odd numbers. Many numbers already lost their lives in this war and it's your task to end this. You have to 
   determine which group sums larger: the evens or the odds. The larger group wins.
