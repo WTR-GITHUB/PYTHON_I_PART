@@ -154,6 +154,11 @@ However, it is not suitable:
    ```
 4) Create a function that takes a `list` of strings and returns a new list containing only the strings that start with a `vowel`. Use lambda functions to 
    implement the logic for checking if a string starts with a vowel. 
+
+5) Create a lambda function that:
+   - Takes two arguments: a string and a number.
+   - Returns a new string that repeats the original string as many times as the number.
+   For example, if the inputs are `Hello` and `3`, the function should return `HelloHelloHello`.
 ## 🌐  Extra reading:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
