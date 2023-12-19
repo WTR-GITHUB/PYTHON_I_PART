@@ -129,10 +129,10 @@ Kodo įterpimas po `if __name__ == "__main__"` leidžia patenkinti skirtingus na
    - antra, pagrindinius uždavinius su `list`.
    - trečias, pagrindiniai uždaviniai su `float/ int`
 
-  Importuokite juos kaip `modulius` į `main.py` modulį ir parodykite skaičiavimus.
+   Importuokite juos kaip `modulius` į `main.py` modulį ir parodykite skaičiavimus.
 
 3) Sukurkite modulį ir importuokite bet kurį pasirinktą `PIP` paketą. Tada sukurkite funkciją, kuri jį naudotų.
-  Importuokite tą funkciją į `main.py` modulį ir ją naudokite.
+   Importuokite tą funkciją į `main.py` modulį ir ją naudokite.
 
 4) "Python" modulis `os` suteikia galimybę naudotis nuo operacinės sistemos priklausančiomis funkcijomis, pvz., skaityti arba rašyti į failų sistemą.
    Jūsų užduotis yra:
