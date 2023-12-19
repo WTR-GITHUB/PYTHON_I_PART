@@ -110,29 +110,32 @@ ZeroDivisionError: division by zero
 
 1) Create a simple program that would log all inputs from the terminal. Configs must show all additional data (time, date, level etc.)
 2) Write a function that moves all elements of one type to the end of the list:
-  ```python
-  move_to_end([1, 3, 2, 4, 4, 1], 1) ➞ [3, 2, 4, 4, 1, 1]
-  # Move all the 1s to the end of the array.
-  ```
-  Log out inputs and results in a file.
+   ```python
+   move_to_end([1, 3, 2, 4, 4, 1], 1) ➞ [3, 2, 4, 4, 1, 1]
+   # Move all the 1s to the end of the array.
+   ```
+   Log out inputs and results in a file.
 
 3) Create 3 functions, that are related to each other (one is being called in another), and test all logger severity levels by your own design. 
   
-  Function examples:
-  ```python
-  def check_engine() -> None:
-    pass
+   Function examples:
+   ```python
+   def check_engine() -> None:
+     pass
    
-  def start_car() -> None:
-    check_engine()...
-  .......
+   def start_car() -> None:
+     check_engine()...
+   .......
     
-  ```
+   ```
 
-4) Create a program that takes 4 data types/structures: `strings`, `numbers`, `list`, `dict`. Iterate 10 times with inputs and log what data type/structure and how many times was entered. Handle all possible errors and log it.
+4) Create a program that takes 4 data types/structures: `strings`, `numbers`, `list`, `dict`. Iterate 10 times with inputs and log what data 
+   type/structure and how many times was entered. Handle all possible errors and log it.
 
 
-5) Setup accounting software , that would take annual income , expenses , VAT rate (all values must be floats) and calculate profit, paid taxes in 4 different currencies (USD, EU, JPY, CNY). All calculations and results should be printed on screen. All data and possible errors must be logged to a file. 
+5) Setup accounting software , that would take annual income , expenses , VAT rate (all values must be floats) and calculate profit, paid taxes in 4 
+   different currencies (USD, EU, JPY, CNY). All calculations and results should be printed on screen. All data and possible errors must be logged to a 
+   file. 
 
 ## 🌐  Extra reading (or watching 📺 ):
 
