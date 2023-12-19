@@ -110,49 +110,50 @@ Tačiau jis nėra tinkamas:
 ## Pratimai: 
 
 1) Parašykite funkciją, kuri paima du `list'us` ir prie pirmojo `list` pirmojo elemento prideda antrojo `list`pirmąjį elementą, antrojo sąrašo antrąjį 
-  elementą, antrojo sąrašo antrąjį elementą ir antrojo sąrašo antrąjį elementą. 
-  pirmąjį sąrašą su antruoju antrojo sąrašo elementu ir t. t., ir t. t. Grąžinkite True, jei visi elementų deriniai sudaro tą patį skaičių. Priešingu 
-  atveju grąžinama False.
-  Pavyzdys: 
+   elementą, antrojo sąrašo antrąjį elementą ir antrojo sąrašo antrąjį elementą. 
+   pirmąjį sąrašą su antruoju antrojo sąrašo elementu ir t. t., ir t. t. Grąžinkite True, jei visi elementų deriniai sudaro tą patį skaičių. Priešingu 
+   atveju grąžinama False.
+   Pavyzdys: 
 
-  ```python
-  puzzle_pieces([1, 2, 3, 4], [4, 3, 2, 1]) ➞ True
-  # 1 + 4 = 5; 2 + 3 = 5; 3 + 2 = 5; 4 + 1 = 5
-  # Abiejų sąrašų suma yra [5, 5, 5, 5, 5]
-  puzzle_pieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]) ➞ True
-  puzzle_pieces([1, 2], [-1, -1]) ➞ False
-  puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
-  ```
+   ```python
+   puzzle_pieces([1, 2, 3, 4], [4, 3, 2, 1]) ➞ True
+   # 1 + 4 = 5; 2 + 3 = 5; 3 + 2 = 5; 4 + 1 = 5
+   # Abiejų sąrašų suma yra [5, 5, 5, 5, 5]
+   puzzle_pieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]) ➞ True
+   puzzle_pieces([1, 2], [-1, -1]) ➞ False
+   puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
+   ```
 
 2) Tarp lyginių ir nelyginių skaičių vyksta didelis karas. Šiame kare jau žuvo daug skaičių, todėl tavo užduotis - jį nutraukti. Jūs turite 
-  nustatyti, kurios grupės sumos didesnės: lyginių ar nelyginių. Laimi didesnė grupė.
+   nustatyti, kurios grupės sumos didesnės: lyginių ar nelyginių. Laimi didesnė grupė.
 
-  Sukurkite funkciją, kuri paimtų sveikųjų skaičių sąrašą, atskirai suskaičiuotų lyginių ir nelyginių skaičių sumas, tada grąžintų lyginių ir nelyginių 
-  skaičių sumų skirtumą skaičių.
+   Sukurkite funkciją, kuri paimtų sveikųjų skaičių sąrašą, atskirai suskaičiuotų lyginių ir nelyginių skaičių sumas, tada grąžintų lyginių ir nelyginių 
+   skaičių sumų skirtumą skaičių.
 
-  Pavyzdys: 
-  ```python
-  war_of_numbers([2, 8, 7, 5]) ➞ 2
-  # 2 + 8 = 10
-  # 7 + 5 = 12
-  # 12 yra didesnis už 10
-  # Taigi grąžiname 12 - 10 = 2
-  war_of_numbers([12, 90, 75]) ➞ 27
-  war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
-  ```
+   Pavyzdys: 
+   ```python
+   war_of_numbers([2, 8, 7, 5]) ➞ 2
+   # 2 + 8 = 10
+   # 7 + 5 = 12
+   # 12 yra didesnis už 10
+   # Taigi grąžiname 12 - 10 = 2
+   war_of_numbers([12, 90, 75]) ➞ 27
+   war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
+   ```
 
 3) Jums duotas bigramų masyvas ir žodžių masyvas. Parašykite funkciją, kuri grąžintų True, jei iš šio masyvo galima rasti kiekvieną bigramą 
-  bent vieną kartą žodžių masyve.
+   bent vieną kartą žodžių masyve.
    
-  Pavyzdys:
-  ```python
-  can_find([["at", "be", "th", "au"], ["beautiful", "the", "hat"]) ➞ True
-  can_find([["ay", "be", "ta", "cu"], ["maybe", "beta", "abet", "course"]) ➞ False
-  # "cu" nėra nė viename iš žodžių.
-  can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
-  can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks", "cooks"]) ➞ False
-  ```
-4) Iš naujo įgyvendinkite kai kuriuos ankstesnius sprendimus naudodami `lambda` funkciją. 
+   Pavyzdys:
+   ```python
+   can_find([["at", "be", "th", "au"], ["beautiful", "the", "hat"]) ➞ True
+   can_find([["ay", "be", "ta", "cu"], ["maybe", "beta", "abet", "course"]) ➞ False
+   # "cu" nėra nė viename iš žodžių.
+   can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ True
+   can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks", "cooks"]) ➞ False
+   ```
+4) Sukurkite funkciją, kuri priima eilučių sąrašą ir grąžina naują sąrašą, kuriame yra tik tos eilutės, kurios prasideda balsiu. Naudokite lambda 
+   funkcijas, kad įgyvendintumėte logiką, tikrinančią, ar eilutė prasideda balsiu. 
 
 ## 🌐 Papildomas skaitymas:
 
