@@ -155,6 +155,11 @@ Tačiau jis nėra tinkamas:
 4) Sukurkite funkciją, kuri priima eilučių sąrašą ir grąžina naują sąrašą, kuriame yra tik tos eilutės, kurios prasideda balsiu. Naudokite lambda 
    funkcijas, kad įgyvendintumėte logiką, tikrinančią, ar eilutė prasideda balsiu. 
 
+5) Sukurkite lambda funkciją, kuri:
+   - priima du argumentus: eilutę ir skaičių.
+   - grąžina naują eilutę, kuri pakartoja pradinę eilutę tiek kartų, kiek kartų pakartotas skaičius.
+   Pavyzdžiui, jei įvesties duomenys yra `Hello` ir `3`, funkcija turėtų grąžinti `HelloHelloHello`.
+
 ## 🌐 Papildomas skaitymas:
 
 * [Type Annotations in Python 3.8](https://medium.com/analytics-vidhya/type-annotations-in-python-3-8-3b401384403d)
