@@ -171,7 +171,7 @@ pipenv graph
 Paketų pašalinimas:_
 
 ```python
-pipenv uninstall <paketo pavadinimas>
+pipenv uninstall <package name>
 ```
 
 ## Pratimai: 
