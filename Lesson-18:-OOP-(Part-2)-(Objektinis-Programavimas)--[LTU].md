@@ -308,6 +308,23 @@ Daugiau apie abstrakciją: 📖 [Real Phyton : Python Interfaces](https://realpy
     ```
 
 3) Atnaujinkite ankstesnės užduoties sprendimą, naudodami OOP paradigmas. (Minimaliai: įkapsuliavimas, paveldimumas)
+4) Sukurkite Python programą, imituojančią elektronikos parduotuvę. Parduotuvėje parduodami įvairių tipų elektroniniai prietaisai, pvz., nešiojamieji 
+   kompiuteriai, išmanieji telefonai ir televizoriai.
+
+   - Sukurkite bazinę klasę `ElectronicDevice` su tokiais atributais kaip `brand`, `price` ir `warranty_period`. Ji turėtų turėti metodus `get_details()` 
+     ir  `pirkti()`. Metodas `purchase()` turėtų sumažinti įrenginio atsargas `1`.
+
+    - Sukurkite antrines klases `Laptop`, Smartphone` ir `Television`, kurios paveldi iš klasės `ElectronicDevice`. Kiekviena iš šių klasių turėtų turėti 
+      papildomų joms būdingų atributų. Pavyzdžiui, `Laptop` gali turėti `ram` ir `storage`, `Smartphone` gali turėti `screen_size` ir 
+      `battery_capacity`, o `Television` gali turėti `screen_size` ir `resolution`.
+
+    - Naudokite prieigos modifikatorius, kad užtikrintumėte, jog kainos ir atsargų atributai negali būti tiesiogiai pasiekiami ar keičiami už klasės 
+      ribų.
+
+    - Sukurkite kiekvieno įrenginio klasės instance ir iškvieskite jų metodus, kad išbandytumėte funkcionalumą.
+
+    - Įgyvendinkite `Discount` klasę, kurią galima taikyti elektroniniams prietaisams, kad sumažėtų jų kaina. Ši klasė turėtų turėti metodą 
+      `apply_discount()`, kuris priima `ElectronicDevice` objektą ir nuolaidos procentą bei grąžina kainą po nuolaidos.
 
 ## 🌐 Papildomas skaitymas (arba žiūrėjimas 📺 ):
 
