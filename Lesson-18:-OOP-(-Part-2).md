@@ -248,83 +248,58 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
 ## Exercises: 
 🧠 : Repeat the [Conditional Statements](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-6:-Conditional-Statements), [Loops](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-8:-Loops), [Functions](https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-10:-Functions) to finish these task.
 1) Create a few examples of yourself where you show four pillars of OOP in action.
-2) A stack machine processes instructions by pushing and popping values to an internal stack.
-  A simple example of this is a calculator.
+2) Write a class called `CoffeeShop`, which has three instance variables:
 
-  The argument passed to `run(instructions)` will always be a string containing a series of instructions.
-  The instruction set of the calculator will be this:
-
-   - +: Pop the last 2 values from the stack, add them, and push the result onto the stack.
-   - -: Pop the last 2 values from the stack, subtract the lower one from the topmost one, and push the result.
-   - *: Pop the last 2 values, multiply, and push the result.
-   - /: Pop the last 2 values, divide the topmost one by the lower one, and push the result.
-   - DUP: Duplicate (not double) the top value on the stack.
-   - POP: Pop the last value from the stack and discard it.
-   - PSH: Performed whenever a number appears as an instruction. Push the number to the stack.
-   - Any other instruction (for example, a letter) should result in the value "Invalid instruction: [instruction]"
-
-  Examples:
-   ```python
-   "" ➞ 0
-
-   "5 6 +" ➞ 11
-
-   "3 DUP +" ➞ 6
-
-   "6 5 5 7 * - /" ➞ 5
-
-   "x y +" ➞ Invalid instruction: x
-   ```
-3) Write a class called `CoffeeShop`, which has three instance variables:
-
-  - name : a string (basically, of the shop)
-  - menu : a list of items (of dict type), with each item containing the item (name of the item), type (whether a food or a drink) and price.
-  - orders : an empty list
+  - `name` : a string (basically, of the shop)
+  - `menu` : a list of items (of dict type), with each item containing the item (name of the item), type (whether a food or a drink) and price.
+  - `orders` : an empty list
 
   and seven methods:
 
-   - add_order: adds the name of the item to the end of the orders list if it exists on the menu, otherwise, return "This item is currently unavailable!"
-   - fulfill_order: if the orders list is not empty, return "The {item} is ready!". If the orders list is empty, return "All orders have been fulfilled!"
-   - list_orders: returns the item names of the orders taken, otherwise, an empty list.
-   - due_amount: returns the total amount due for the orders taken.
-   - cheapest_item: returns the name of the cheapest item on the menu.
-   - drinks_only: returns only the item names of type drink from the menu.
-   - food_only: returns only the item names of type food from the menu.
+   - `add_order`: adds the name of the item to the end of the orders list if it exists on the menu, otherwise, return "This item is currently 
+      unavailable!"
+   - `fulfill_order`: if the orders list is not empty, return "The {item} is ready!". If the orders list is empty, return "All orders have been 
+      fulfilled!"
+   - `list_orders`: returns the item names of the orders taken, otherwise, an empty list.
+   - `due_amount`: returns the total amount due for the orders taken.
+   - `cheapest_item`: returns the name of the cheapest item on the menu.
+   - `drinks_only`: returns only the item names of type drink from the menu.
+   - `food_only`: returns only the item names of type food from the menu.
 
-  IMPORTANT: Orders are fulfilled in a FIFO (first-in, first-out) order.
-  Examples: 
-  ```python
-  tcs.add_order("hot cocoa") ➞ "This item is currently unavailable!"
-  # Tesha's coffee shop does not sell hot cocoa
-  tcs.add_order("iced tea") ➞ "This item is currently unavailable!"
-  # specifying the variant of "iced tea" will help the process
+   IMPORTANT: Orders are fulfilled in a FIFO (first-in, first-out) order.
+   Examples: 
+   ```python
+   tcs.add_order("hot cocoa") ➞ "This item is currently unavailable!"
+   # Tesha's coffee shop does not sell hot cocoa
+   tcs.add_order("iced tea") ➞ "This item is currently unavailable!"
+   # specifying the variant of "iced tea" will help the process
 
-  tcs.add_order("cinnamon roll") ➞  "Order added!"
-  tcs.add_order("iced coffee") ➞ "Order added!"
-  tcs.list_orders ➞ ["cinnamon roll", "iced coffee"]
-  # all items of the current order
+   tcs.add_order("cinnamon roll") ➞  "Order added!"
+   tcs.add_order("iced coffee") ➞ "Order added!"
+   tcs.list_orders ➞ ["cinnamon roll", "iced coffee"]
+   # all items of the current order
 
-  tcs.due_amount() ➞ 2.17
+   tcs.due_amount() ➞ 2.17
 
-  tcs.fulfill_order() ➞ "The cinnamon roll is ready!"
-  tcs.fulfill_order() ➞ "The iced coffee is ready!"
-  tcs.fulfill_order() ➞ "All orders have been fulfilled!"
-  # all orders have been presumably served
+   tcs.fulfill_order() ➞ "The cinnamon roll is ready!"
+   tcs.fulfill_order() ➞ "The iced coffee is ready!"
+   tcs.fulfill_order() ➞ "All orders have been fulfilled!"
+   # all orders have been presumably served
 
-  tcs.list_orders() ➞ []
-  # an empty list is returned if all orders have been exhausted
+   tcs.list_orders() ➞ []
+   # an empty list is returned if all orders have been exhausted
 
-  tcs.due_amount() ➞ 0.0
-  # no new orders taken, expect a zero payable
+   tcs.due_amount() ➞ 0.0
+   # no new orders taken, expect a zero payable
 
-  tcs.cheapest_item() ➞ "lemonade"
-  tcs.drinks_only() ➞ ["orange juice", "lemonade", "cranberry juice", "pineapple juice", "lemon iced tea", "vanilla chai latte", "hot chocolate", "iced 
-  coffee"]
-  tcs.food_only() ➞ ["tuna sandwich", "ham and cheese sandwich", "bacon and egg", "steak", "hamburger", "cinnamon roll"]
-  ```
-  Notes: Round off due amount up to two decimal places.
+   tcs.cheapest_item() ➞ "lemonade"
+   tcs.drinks_only() ➞ ["orange juice", "lemonade", "cranberry juice", "pineapple juice", "lemon iced tea", "vanilla chai latte", "hot chocolate", "iced 
+   coffee"]
+   tcs.food_only() ➞ ["tuna sandwich", "ham and cheese sandwich", "bacon and egg", "steak", "hamburger", "cinnamon roll"]
+   ```
+   Notes: Round off due amount up to two decimal places.
 
-4) Update previous task's solution using four pillars paradigm of OOP. (Minimum Encapsulation, Inheritance)
+3) Update previous task's solution using four pillars paradigm of OOP. (Minimum Encapsulation, Inheritance)
 
 
 ## 🌐  Extra reading (or watching 📺 ):
