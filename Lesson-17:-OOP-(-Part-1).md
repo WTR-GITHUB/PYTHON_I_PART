@@ -195,54 +195,54 @@ class House:
     - title
     - author
 
-  and two methods:
+    and two methods:
 
     - A method named `.get_title()` that returns: "Title: " + the instance title.
     - A method named `.get_author()` that returns: "Author: " + the instance author.
 
-  and instantiate this class by creating 3 new books:
+    and instantiate this class by creating 3 new books:
 
     - Pride and Prejudice - Jane Austen (PP)
     - Hamlet - William Shakespeare (H)
     - War and Peace - Leo Tolstoy (WP)
 
-  The name of the new instances should be `PP`, `H`, and `WP`, respectively. For instance, if I instantiated the following book using this Book class:
+    The name of the new instances should be `PP`, `H`, and `WP`, respectively. For instance, if I instantiated the following book using this Book class:
 
     - Harry Potter - J.K. Rowling (HP)
 
-  I would get the following attributes and methods:
-  ```python
-  HP.title ➞ "Harry Potter"
-  HP.author ➞ "J.K. Rowling"
-  HP.get_title() ➞ "Title: Harry Potter"
-  HP.get_author() ➞ "Author: J.K. Rowling"
-  ```
+    I would get the following attributes and methods:
+    ```python
+    HP.title ➞ "Harry Potter"
+    HP.author ➞ "J.K. Rowling"
+    HP.get_title() ➞ "Title: Harry Potter"
+    HP.get_author() ➞ "Author: J.K. Rowling"
+    ```
 
 4) A country can be said as being big if it is:
 
    - Big in terms of population.
    - Big in terms of area.
 
-  Add to the `Country` class so that it contains the attribute `is_big`. Set it to `True` if either criteria are met:
+   Add to the `Country` class so that it contains the attribute `is_big`. Set it to `True` if either criteria are met:
 
    - Population is greater than 20 million.
    - Area is larger than 3 million square km.
 
-  Also, create a method which compares a country's population density to another country object. Return a `string` in the following format:
+   Also, create a method which compares a country's population density to another country object. Return a `string` in the following format:
   
-  ```python
-  {country} has a {smaller / larger} population density than {other_country}
-  ```
-  Examples:
+   ```python
+   {country} has a {smaller / larger} population density than {other_country}
+   ```
+   Examples:
   
-  ```python
-  australia = Country("Australia", 23545500, 7692024)
-  andorra = Country("Andorra", 76098, 468)
+   ```python
+   australia = Country("Australia", 23545500, 7692024)
+   andorra = Country("Andorra", 76098, 468)
 
-  australia.is_big ➞ True
-  andorra.is_big ➞ False
-  andorra.compare_pd(australia) ➞ "Andorra has a larger population density than Australia"
-  ```
+   australia.is_big ➞ True
+   andorra.is_big ➞ False
+   andorra.compare_pd(australia) ➞ "Andorra has a larger population density than Australia"
+   ```
 
 ## 🌐  Extra reading (or watching 📺 ):
 
