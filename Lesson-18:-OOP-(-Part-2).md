@@ -300,6 +300,22 @@ More on Abstraction: 📖  [Real Phyton : Python Interfaces](https://realpython.
     Notes: Round off due amount up to two decimal places.
 
 3) Update previous task's solution using four pillars paradigm of OOP. (Minimum Encapsulation, Inheritance)
+4) Create a Python program that simulates an electronics store. The store sells different types of electronic devices like laptops, smartphones, and 
+   televisions.
+
+    - Create a base class `ElectronicDevice` with attributes like `brand`, `price`, and `warranty_period`. It should have methods to `get_details()` and 
+      `purchase()`. The `purchase()` method should reduce the stock of the device by `1`.
+
+    - Create child classes `Laptop`, Smartphone`, and `Television` that inherit from the `ElectronicDevice` class. Each of these classes should have 
+      additional attributes specific to them. For example, `Laptop` can have `ram` and `storage`, `Smartphone` can have `screen_size` and 
+      `battery_capacity`, and `Television` can have `screen_size` and `resolution`.
+
+    - Use access modifiers to ensure that the price and stock attributes cannot be directly accessed or modified outside the class.
+
+    - Create an instance of each device and call their methods to test the functionality.
+
+    - Implement a `Discount` class that can be applied to the electronic devices to reduce their price. This class should have a method 
+      `apply_discount()` that takes an `ElectronicDevice` object and a discount percentage, and returns the price after discount.
 
 
 ## 🌐  Extra reading (or watching 📺 ):
