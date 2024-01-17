@@ -153,7 +153,7 @@ class House:
 
     # Yet another instance method
     def get_house_colour(self, colour: string = 'White') -> string:
-        return f"The house colour is:{self.age}"
+        return f"The house colour is:{self.colour}"
 
 
 ```
