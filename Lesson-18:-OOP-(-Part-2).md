@@ -49,7 +49,7 @@ class Employee:
 
 ---- OUTPUT ----
 >>> emp = Employee("Captain", 10000);
->>> emp.sal
+>>> emp._sal
 10000
 ```
 _Private_
