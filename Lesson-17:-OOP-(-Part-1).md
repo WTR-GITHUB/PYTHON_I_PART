@@ -107,18 +107,18 @@ class House:
         self.age: float = age
     
     # Instance method
-    def get_cost(self) -> int:
+    def get_cost(self) -> str:
         return f"The house cost is:{self.cost}"
 
     # Another instance method
-    def get_age(self) -> float:
+    def get_age(self) -> str:
         return f"The house age is:{self.age}"
 
 ```
 This `House` class has **two instance methods**:
 
-* `get_cost()` -  returns an `int` displaying the `cost` of the house.
-* `get_age()` -  returns a `float` displaying the `age` of the house.
+* `get_cost()` -  returns an `str` displaying the `cost` of the house.
+* `get_age()` -  returns a `str` displaying the `age` of the house.
 
 Lets initiate the class and call some methods:
 
@@ -144,11 +144,11 @@ class House:
         self.age: float = age
     
     # Instance method
-    def get_cost(self) -> int:
+    def get_cost(self) -> str:
         return f"The house cost is:{self.cost}"
 
     # Another instance method
-    def get_age(self) -> float:
+    def get_age(self) -> str:
         return f"The house age is:{self.age}"
 
     # Yet another instance method
@@ -206,16 +206,17 @@ class House:
     - Hamlet - William Shakespeare (H)
     - War and Peace - Leo Tolstoy (WP)
 
-    The name of the new instances should be `PP`, `H`, and `WP`, respectively. For instance, if I instantiated the following book using this Book class:
+    The name of the new instances should be `pride_and_prejudice`, `hamlet`, and `war_and_peace`, respectively. For instance, if I instantiated the 
+    following book using this Book class:
 
-    - Harry Potter - J.K. Rowling (HP)
+    - Harry Potter - J.K. Rowling (harry_potter)
 
     I would get the following attributes and methods:
     ```python
-    HP.title ➞ "Harry Potter"
-    HP.author ➞ "J.K. Rowling"
-    HP.get_title() ➞ "Title: Harry Potter"
-    HP.get_author() ➞ "Author: J.K. Rowling"
+    harry_potter.title ➞ "Harry Potter"
+    harry_potter.author ➞ "J.K. Rowling"
+    harry_potter.get_title() ➞ "Title: Harry Potter"
+    harry_potter.get_author() ➞ "Author: J.K. Rowling"
     ```
 
 4) A country can be said as being big if it is:
