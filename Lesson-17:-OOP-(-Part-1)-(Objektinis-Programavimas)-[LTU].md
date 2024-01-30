@@ -112,18 +112,18 @@ class House:
         self.age: float = age
     
     # Instance method
-    def get_cost(self) -> int:
+    def get_cost(self) -> str:
         return f"The house cost is:{self.cost}"
 
     # Another instance method
-    def get_age(self) -> float:
+    def get_age(self) -> str:
         return f"The house age is:{self.age}"
 ```
 
 Ši `House` klasė turi **dvi instancijas**:
 
-* get_cost() - grąžina `int`, rodantį namo `kainą`.
-* get_age() - grąžina `float`, rodantį namo `amžių`.
+* get_cost() - grąžina `str`, rodantį namo `kainą`.
+* get_age() - grąžina `str`, rodantį namo `amžių`.
 
 Inicijuojame klasę ir iškviečiame keletą metodų:
 
@@ -150,11 +150,11 @@ class House:
         self.age: float = age
     
     # Instance method
-    def get_cost(self) -> int:
+    def get_cost(self) -> str:
         return f"The house cost is:{self.cost}"
 
     # Another instance method
-    def get_age(self) -> float:
+    def get_age(self) -> str:
         return f"The house age is:{self.age}"
 
     # Yet another instance method
@@ -210,16 +210,17 @@ class House:
     - Hamletas - Viljamas Šekspyras (H)
     - Karas ir taika - Levas Tolstojus (WP)
 
-   Naujų egzempliorių pavadinimai turėtų būti atitinkamai `PP`, `H` ir `WP`. Pavyzdžiui, jei, naudodamas šią knygų klasę, instancuočiau šią knygą:
+   Naujų egzempliorių pavadinimai turėtų būti atitinkamai `pride_and_prejudice`, `hamlet` ir `war_and_peace`. Pavyzdžiui, jei, naudodamas šią knygų 
+   klasę, instancuočiau šią knygą:
 
-    - Haris Poteris - J. K. Rowling (HP)
+    - Haris Poteris - J. K. Rowling (harry_potter)
 
   Gaučiau šiuos atributus ir metodus:
   ```python
-  HP.title ➞ "Harry Potter"
-  HP.author ➞ "J.K. Rowling"
-  HP.get_title() ➞ "Pavadinimas: Haris Poteris"
-  HP.get_author() ➞ "Autorius: Rowling"
+  harry_potter.title ➞ "Harry Potter"
+  harry_potter.author ➞ "J.K. Rowling"
+  harry_potter.get_title() ➞ "Pavadinimas: Haris Poteris"
+  harry_potter.get_author() ➞ "Autorius: Rowling"
   ```
 
 4) Apie šalį galima sakyti, kad ji yra didelė, jei ji yra:
